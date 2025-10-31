@@ -16,23 +16,23 @@
 //           {/* <!-- Vertical Divider --> */}
 //           <div className="hidden md:block w-[1px] bg-gray-500 h-44"></div>
 
-//           {/* <!-- Follow Us --> */}
-//           <div className="md:w-1/2 flex flex-col items-center md:items-center text-center">
-//             <h3 className="text-lg font-semibold mb-3">Follow Us</h3>
-//             <p className="text-sm mb-4">Join us on social media</p>
-//             <div className="flex justify-center space-x-4 text-2xl">
-//               <a href="#" className="hover:text-blue-500">
-//                 <i className="fab fa-facebook"></i>
-//               </a>
-//               <a href="#" className="hover:text-pink-500">
-//                 <i className="fab fa-instagram"></i>
-//               </a>
-//               <a href="#" className="hover:text-sky-400">
-//                 <i className="fab fa-twitter"></i>
-//               </a>
-//             </div>
-//           </div>
-//         </div>
+          {/* <!-- Follow Us --> */}
+          <div className="md:w-1/2 flex flex-col items-center md:items-center text-center">
+            <h3 className="text-lg font-semibold mb-3">Follow Us</h3>
+            <p className="text-sm mb-4">Join us on social media</p>
+            <div className="flex justify-center space-x-4 text-2xl">
+              <a href="#" className="hover:text-blue-500">
+                <i className="fab fa-facebook"></i>
+              </a>
+              <a href="#" className="hover:text-pink-500">
+                <i className="fab fa-instagram"></i>
+              </a>
+              <a href="#" className="hover:text-sky-400">
+                <i className="fab fa-twitter"></i>
+              </a>
+            </div>
+          </div>
+        </div>
 
         {/* <!-- Bottom Section --> */}
         <div className="bg-[#0b111a] text-center py-4 text-sm border-t border-gray-700 rounded-md">
