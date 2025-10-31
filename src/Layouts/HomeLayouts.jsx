@@ -7,12 +7,12 @@
 //   return (
 //     <div className="container max-w-7xl mx-auto">
 //       <Navbar/>
-//       <div className="container max-w-7xl mx-auto">
-//           <Outlet></Outlet>
-//       </div>
-//       <Footer/>
-//     </div>
-//   )
-// }
+      <div className="container max-w-7xl mx-auto">
+          <Outlet></Outlet>
+      </div>
+      <Footer/>
+    </div>
+  )
+}
 
-// export default HomeLayouts
+export default HomeLayouts
