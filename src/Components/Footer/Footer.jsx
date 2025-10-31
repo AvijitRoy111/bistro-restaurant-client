@@ -34,13 +34,13 @@
 //           </div>
 //         </div>
 
-//         {/* <!-- Bottom Section --> */}
-//         <div className="bg-[#0b111a] text-center py-4 text-sm border-t border-gray-700 rounded-md">
-//           <p>&copy; CulinaryCloud. All rights reserved.</p>
-//         </div>
-//       </footer>
-//     </div>
-//   );
-// };
+        {/* <!-- Bottom Section --> */}
+        <div className="bg-[#0b111a] text-center py-4 text-sm border-t border-gray-700 rounded-md">
+          <p>&copy; CulinaryCloud. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+  );
+};
 
-// export default Footer;
+export default Footer;
