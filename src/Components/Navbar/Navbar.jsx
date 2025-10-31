@@ -1,154 +1,164 @@
-import { Menu, X, User, LogOut, LogIn } from "lucide-react";
 import { useState } from "react";
+import { NavLink, useNavigate } from "react-router-dom";
+import { FaUser, FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isUserMenuOpen, setIsUserMenuOpen] = useState(false);
-  const [isLoggedIn, setIsLoggedIn] = useState(false); 
-  const [theme, setTheme] = useState("dark");
+  const navigate = useNavigate();
 
- 
+  const user = {
+    displayName: "Bidhan Bormon",
+    photoURL: "",
+  };
+
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [userMenuOpen, setUserMenuOpen] = useState(false);
+
+  const handleUserClick = () => {
+    if (user) {
+      setUserMenuOpen(!userMenuOpen);
+    } else {
+      navigate("/login");
+    }
+  };
+
+  const handleLogout = () => {
+    console.log("Logged out");
+    setUserMenuOpen(false);
+  };
+
+  const navLinks = (
+    <>
+      <li>
+        <NavLink to="/" className="text-white hover:text-gray-300">
+          Home
+        </NavLink>
+      </li>
+      <li>
+        <NavLink to="/menu" className="text-white hover:text-gray-300">
+          Our Menu
+        </NavLink>
+      </li>
+      <li>
+        <NavLink to="/Contact" className="text-white hover:text-gray-300">
+          Contact Us
+        </NavLink>
+      </li>
+      <li>
+        <NavLink to="/Dashboard" className="text-white hover:text-gray-300">
+          Dashboard
+        </NavLink>
+      </li>
+      <li>
+        <NavLink to="/Shop" className="text-white hover:text-gray-300">
+          Our Shop
+        </NavLink>
+      </li>
+    </>
+  );
 
   return (
-    <>
-      {/* Navbar */}
-      <nav
-        className={`
-          fixed top-0 left-0 w-full z-50
-          flex items-center justify-between
-          px-6 py-3 border-b border-[#7c0a02]/50
-          backdrop-blur-md
-        `}
-      >
-        {/* Left Logo */}
-        <div className="flex flex-col leading-tight">
-          <span className="text-sm tracking-widest font-semibold">BISTRO BOSS</span>
-          <span className="text-[10px] tracking-[2px] text-gray-400">
-            R E S T A U R A N T
-          </span>
-        </div>
+    <div className="navbar bg-black/40 shadow-md fixed top-0 left-0 right-0 z-50">
+      {/* Navbar Start */}
+      <div className="navbar-start">
+        <a className="btn btn-ghost text-xl font-bold text-white">
+          Bistro Restaurant
+        </a>
+      </div>
 
-        {/* Center Menu (Hidden on Mobile) */}
-        <ul className="hidden md:flex items-center gap-6 text-xs uppercase font-semibold">
-          <li className="text-[#e5d410] cursor-pointer">Home</li>
-          <li className="cursor-pointer hover:text-[#e5d410] transition">Contact Us</li>
-          <li className="cursor-pointer hover:text-[#e5d410] transition">Dashboard</li>
-          <li className="cursor-pointer hover:text-[#e5d410] transition">Our Menu</li>
-          <li className="cursor-pointer hover:text-[#e5d410] transition">Our Shop</li>
-        </ul>
+      {/* Navbar Center */}
+      <div className="navbar-center hidden lg:flex">
+        <ul className="menu menu-horizontal px-1">{navLinks}</ul>
+      </div>
 
-        {/* Right Side */}
-        <div className="flex items-center gap-4 relative">
-          {/* User Icon */}
+      {/* Navbar End */}
+      <div className="navbar-end space-x-2">
+        {/* User Icon */}
+        <div className="relative">
           <button
-            onClick={() => setIsUserMenuOpen((prev) => !prev)}
-            className="bg-white text-black rounded-full p-1"
+            onClick={handleUserClick}
+            className="btn btn-ghost btn-circle avatar"
           >
-            <User className="h-5 w-5" />
+            {user && user.photoURL ? (
+              <div className="w-10 rounded-full">
+                <img src={user.photoURL} alt="User" />
+              </div>
+            ) : (
+              <FaUser className="text-xl text-white" />
+            )}
           </button>
 
-          {/* Dropdown for User */}
-          {isUserMenuOpen && (
-            <div
-              className={`absolute top-10 right-0 w-40 rounded-md shadow-lg p-3
-                
-              `}
-            >
-              {isLoggedIn ? (
-                <>
-                  <p className="text-sm mb-2 text-gray-400">Hi, {username}</p>
-                  <button
-                    onClick={() => setIsLoggedIn(false)}
-                    className="flex items-center gap-2 text-sm text-red-500 hover:text-red-400"
-                  >
-                    <LogOut className="h-4 w-4" /> Logout
-                  </button>
-                </>
+          {/* User Dropdown */}
+          {user && userMenuOpen && (
+            <div className="absolute right-0 mt-3 w-48 bg-black/40 rounded-lg shadow-lg p-4 border border-gray-600 z-50 text-white backdrop-blur-md">
+              <p className="font-semibold">{user.displayName}</p>
+              <hr className="my-2 border-gray-500" />
+              <button
+                onClick={handleLogout}
+                className="btn btn-sm btn-error text-white w-full"
+              >
+                Logout
+              </button>
+            </div>
+          )}
+        </div>
+
+        {/* Mobile Menu Icon */}
+        <button
+          className="btn btn-ghost btn-circle lg:hidden"
+          onClick={() => setMobileMenuOpen(true)}
+        >
+          <FaBars className="text-xl text-white" />
+        </button>
+      </div>
+
+      {/* Mobile Drawer Menu */}
+      {mobileMenuOpen && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex justify-end">
+          <div className="w-64 bg-gray-900 h-full shadow-lg p-4 relative animate-slideIn text-white">
+            <div className="flex justify-between items-center mb-3">
+              {/* User Section */}
+              <div
+                onClick={handleUserClick}
+                className="btn btn-ghost btn-circle avatar"
+              >
+                {user && user.photoURL ? (
+                  <div className="w-10 rounded-full">
+                    <img src={user.photoURL} alt="User" />
+                  </div>
+                ) : (
+                  <FaUser className="text-xl text-white" />
+                )}
+              </div>
+
+              {/* Close Icon */}
+              <button onClick={() => setMobileMenuOpen(false)}>
+                <FaTimes className="text-2xl text-white" />
+              </button>
+            </div>
+            <hr className="border-gray-600" />
+            <div className="mt-4">
+              <ul className="menu text-white">{navLinks}</ul>
+              <hr className="my-2 border-gray-600" />
+              {user ? (
+                <button
+                  onClick={handleLogout}
+                  className="btn btn-error text-white w-full"
+                >
+                  Logout
+                </button>
               ) : (
                 <button
-                  onClick={() => setIsLoggedIn(true)}
-                  className="flex items-center justify-center text-center gap-2 text-sm text-blue-500 hover:text-blue-400"
+                  onClick={() => navigate("/login")}
+                  className="btn btn-primary text-white w-full"
                 >
-                  <LogIn className="h-4 w-4" /> Login
+                  Login
                 </button>
               )}
             </div>
-          )}
-
-          {/* Menu Icon (Only Mobile) */}
-          <button
-            className="md:hidden p-2 hover:bg-white/10 rounded-md transition"
-            onClick={() => setIsMenuOpen(true)}
-          >
-            <Menu className="h-5 w-5" />
-          </button>
-        </div>
-      </nav>
-
-      {/* Mobile Sidebar Menu */}
-      <div
-        className={`fixed top-0 right-0 h-full w-64 bg-[#0e1621] text-white shadow-lg transform transition-transform duration-300 ease-in-out z-50
-        ${isMenuOpen ? "translate-x-0" : "translate-x-full"}`}
-      >
-        {/* Header */}
-        <div className="flex justify-between items-center p-4 border-b border-gray-700">
-          <div className="flex items-center gap-2">
-            <User className="h-5 w-5" />
-            <span className="text-sm font-semibold">
-              {isLoggedIn ? username : "Guest"}
-            </span>
           </div>
-          <button
-            onClick={() => setIsMenuOpen(false)}
-            className="p-2 hover:bg-white/10 rounded-md"
-          >
-            <X className="h-5 w-5" />
-          </button>
         </div>
-
-        {/* Menu Links */}
-        <ul className="flex flex-col p-4 gap-4 text-sm uppercase font-semibold">
-          <li className="text-[#e5d410] cursor-pointer">Home</li>
-          <li className="cursor-pointer hover:text-[#e5d410] transition">Contact Us</li>
-          <li className="cursor-pointer hover:text-[#e5d410] transition">Dashboard</li>
-          <li className="cursor-pointer hover:text-[#e5d410] transition">Our Menu</li>
-          <li className="cursor-pointer hover:text-[#e5d410] transition">Our Shop</li>
-        </ul>
-
-        {/* Bottom Logout/Login Button */}
-        <div className="p-4 border-t border-gray-700">
-          {isLoggedIn ? (
-            <button
-              onClick={() => {
-                setIsLoggedIn(false);
-                setIsMenuOpen(false);
-              }}
-              className="flex items-center gap-2 text-sm text-red-500 hover:text-red-400"
-            >
-              <LogOut className="h-4 w-4" /> Logout
-            </button>
-          ) : (
-            <button
-              onClick={() => {
-                setIsLoggedIn(true);
-                setIsMenuOpen(false);
-              }}
-              className="flex items-center gap-2 text-sm text-blue-400 hover:text-blue-300"
-            >
-              <LogIn className="h-4 w-4" /> Login
-            </button>
-          )}
-        </div>
-      </div>
-
-      {/* Overlay when mobile menu open */}
-      {isMenuOpen && (
-        <div
-          className="fixed inset-0 bg-black/40 z-40"
-          onClick={() => setIsMenuOpen(false)}
-        ></div>
       )}
-    </>
+    </div>
   );
 };
 
