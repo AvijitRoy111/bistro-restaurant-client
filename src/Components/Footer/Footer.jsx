@@ -1,9 +1,9 @@
-// const Footer = () => {
-//   return (
-//     <div>
-//       <footer className="bg-[#0e1621] text-white rounded-md">
-//         {/* <!-- Top Section --> */}
-//         <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-center items-center px-6 py-10 space-y-8 md:space-y-0 md:space-x-12 relative">
+const Footer = () => {
+  return (
+    <div>
+      <footer className="bg-[#0e1621] text-white rounded-md">
+        {/* <!-- Top Section --> */}
+        <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-center items-center px-6 py-10 space-y-8 md:space-y-0 md:space-x-12 relative">
           {/* <!-- Contact Us --> */}
           <div className="md:w-1/2 flex flex-col items-center md:items-center text-center">
             <h3 className="text-lg font-semibold mb-3">CONTACT US</h3>
