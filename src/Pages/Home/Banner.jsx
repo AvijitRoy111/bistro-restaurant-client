@@ -34,25 +34,25 @@
 //   },
 // ];
 
-// const Banner = () => {
-//   const [current, setCurrent] = useState(0);
-//   const length = images.length;
+const Banner = () => {
+  const [current, setCurrent] = useState(0);
+  const length = images.length;
 
-//   // Auto slide every 5 seconds
-//   useEffect(() => {
-//     const timer = setInterval(() => {
-//       nextSlide();
-//     }, 5000);
-//     return () => clearInterval(timer);
-//   }, [current]);
+  // Auto slide every 5 seconds
+  useEffect(() => {
+    const timer = setInterval(() => {
+      nextSlide();
+    }, 5000);
+    return () => clearInterval(timer);
+  }, [current]);
 
-//   const nextSlide = () => {
-//     setCurrent(current === length - 1 ? 0 : current + 1);
-//   };
+  const nextSlide = () => {
+    setCurrent(current === length - 1 ? 0 : current + 1);
+  };
 
-//   const prevSlide = () => {
-//     setCurrent(current === 0 ? length - 1 : current - 1);
-//   };
+  const prevSlide = () => {
+    setCurrent(current === 0 ? length - 1 : current - 1);
+  };
 
   return (
     <div className="relative w-full ">
