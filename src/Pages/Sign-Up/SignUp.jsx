@@ -23,13 +23,13 @@ const SignUp = () => {
             }}
           >
             {/* Left Image Section */}
-            {/* <div className="w-full md:w-1/2 flex justify-center items-center  md:h-full py-6 md:py-0">
+            <div className="w-full md:w-1/2 flex justify-center items-center  md:h-full py-6 md:py-0">
               <img
                 src={image}
                 alt="login illustration"
                 className="w-3/4 md:w-4/5 object-contain"
               />
-            </div> */}
+            </div> 
     
             {/* Right Login Form Section */}
             <div className="w-full md:w-1/2 px-4 md:px-12 py-6 md:py-10 flex flex-col justify-center  ">
