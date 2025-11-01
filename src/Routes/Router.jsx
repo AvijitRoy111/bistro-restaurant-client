@@ -7,42 +7,61 @@ import Error from "../Components/Error/Error";
 import Menu from "../Pages/Menu/Menu";
 import Contact from "../Pages/Contact Us/Contact";
 import Shop from "../Pages/Our-Shop/Shop";
+import AuthLayouts from "../Layouts/AuthLayouts";
+import SignIn from "../Pages/Sign-in/SignIn";
+import SignUp from "../Pages/Sign-Up/SignUp";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <HomeLayouts/>,
-    errorElement:<Error/>,
-    children:[
+    element: <HomeLayouts />,
+    errorElement: <Error />,
+    children: [
       {
-            path:"/",
-            element:<Home/>
-      },
-      {
-            path:"/menu",
-            element:<Menu/>
+        path: "/",
+        element: <Home />,
       },
       {
-            path:"/shop",
-            element:<Shop/>
-      },
-       {
-            path:"/contact",
-            element:<Contact/>
+        path: "/menu",
+        element: <Menu />,
       },
       {
-            path:"/navbar",
-            element:<Navbar/>
+        path: "/shop",
+        element: <Shop />,
       },
       {
-            path:"/footer",
-            element:<Footer/>
+        path: "/contact",
+        element: <Contact />,
       },
-       {
-            path:"/error",
-            element:<Error/>
+      {
+        path: "/navbar",
+        element: <Navbar />,
       },
-    ]
+      {
+        path: "/footer",
+        element: <Footer />,
+      },
+      {
+        path: "/error",
+        element: <Error />,
+      },
+    ],
+  },
+
+  {
+    path: "/",
+    element: <AuthLayouts />,
+    errorElement: <Error />,
+    children: [
+      {
+        path: "/signIn",
+        element: <SignIn />,
+      },
+      {
+        path: "/signUp",
+        element: <SignUp />,
+      },
+    ],
   },
 ]);
 
