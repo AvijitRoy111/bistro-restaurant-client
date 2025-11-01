@@ -1,10 +1,10 @@
-// import { useState, useEffect } from "react";
-// import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-// import banner1 from "../../assets/banner/banner-1.png";
-// import banner2 from "../../assets/banner/banner-2.jpg";
-// import banner3 from "../../assets/banner/banner-3.jpg";
-// import banner4 from "../../assets/banner/banner-4.jpg";
-// import banner5 from "../../assets/banner/banner-5.jpg";
+import { useState, useEffect } from "react";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import banner1 from "../../assets/banner/banner-1.png";
+import banner2 from "../../assets/banner/banner-2.jpg";
+import banner3 from "../../assets/banner/banner-3.jpg";
+import banner4 from "../../assets/banner/banner-4.jpg";
+import banner5 from "../../assets/banner/banner-5.jpg";
 
 const images = [
   {
