@@ -33,7 +33,7 @@ const SignIn = () => {
         {/* Right Login Form Section */}
         <div className="w-full md:w-1/2 px-4 md:px-12 py-6 md:py-10 flex flex-col justify-center  ">
           <h2 className="text-3xl font-bold text-center mb-6 text-gray-800">
-            Login
+            Sign-In
           </h2>
 
           <form className="flex flex-col space-y-4 flex-grow">
