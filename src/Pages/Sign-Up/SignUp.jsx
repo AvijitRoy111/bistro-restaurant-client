@@ -102,7 +102,7 @@ const SignUp = () => {
                   </a>
                 </div>
     
-                {/* <div>
+                <div>
                   <p className="text-sm text-gray-500 mb-2">Or sign in with</p>
                   <div className="flex justify-center space-x-5 text-[#c19a6b] text-lg">
                     <a href="#" className="border-2 rounded-full p-2 border-[#c19a6b]">
@@ -115,7 +115,7 @@ const SignUp = () => {
                       <FaGithub />
                     </a>
                   </div>
-                </div> */}
+                </div>
               </div>
             </div> 
           </div>
