@@ -113,14 +113,14 @@
 //             <button
 //               onClick={handleGoogleSignIn}
 //               className="flex justify-center items-center gap-2 w-full py-2 border-2 border-[#c19a6b] text-[#c19a6b] rounded-md hover:bg-[#c19a6b] hover:text-white transition"
-//             >
-//               <FaGoogle /> Continue with Google
-//             </button>
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
+            >
+              <FaGoogle /> Continue with Google
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
 
-// export default SignIn;
+export default SignIn;
