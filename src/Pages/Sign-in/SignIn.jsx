@@ -13,21 +13,21 @@
 //   const [error, setError] = useState("");
 //   const [showPassword, setShowPassword] = useState(false);
 
-//   // handle email/password sign in
-//   const handleSubmit = async (e) => {
-//     e.preventDefault();
-//     const email = e.target.email.value;
-//     const password = e.target.password.value;
+  // handle email/password sign in
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const email = e.target.email.value;
+    const password = e.target.password.value;
 
-//     try {
-//       await signIn(email, password);
-//       toast.success("User Sign in successful!");
-//       navigate("/");
-//     } catch (err) {
-//       setError(err.message);
-//       toast.error("Sign in failed. Please check your credentials.");
-//     }
-//   };
+    try {
+      await signIn(email, password);
+      toast.success("User Sign in successful!");
+      navigate("/");
+    } catch (err) {
+      setError(err.message);
+      toast.error("Sign in failed. Please check your credentials.");
+    }
+  };
 
   // handle google sign in
   const handleGoogleSignIn = async () => {
