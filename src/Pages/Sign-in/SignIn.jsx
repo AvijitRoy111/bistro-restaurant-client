@@ -51,10 +51,10 @@
 //         className="relative w-full max-w-[1000px] md:h-[600px] bg-cover bg-center backdrop-blur-sm shadow-2xl rounded-xl flex flex-col md:flex-row items-center justify-between overflow-hidden mx-4 my-6"
 //         style={{ backgroundImage: `url(${background})` }}
 //       >
-//         {/* Left Image */}
-//         <div className="w-full md:w-1/2 flex justify-center items-center md:h-full py-6 md:py-0">
-//           <img src={image} alt="login" className="w-3/4 md:w-4/5 object-contain" />
-//         </div>
+        {/* Left Image */}
+        <div className="w-full md:w-1/2 flex justify-center items-center md:h-full py-6 md:py-0">
+          <img src={image} alt="login" className="w-3/4 md:w-4/5 object-contain" />
+        </div>
 
         {/* Right Form */}
         <div className="w-full md:w-1/2 px-6 md:px-12 py-6 flex flex-col justify-center">
