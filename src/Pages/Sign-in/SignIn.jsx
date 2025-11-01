@@ -60,22 +60,22 @@
 //         <div className="w-full md:w-1/2 px-6 md:px-12 py-6 flex flex-col justify-center">
 //           <h2 className="text-3xl font-bold text-center mb-6 text-gray-800">Sign In</h2>
 
-//           <form onSubmit={handleSubmit} className="space-y-4">
-//             {/* Email */}
-//             <div>
-//               <label className="block text-gray-600 text-sm mb-1">Email</label>
-//               <input
-//                 type="email"
-//                 name="email"
-//                 placeholder="Type your email"
-//                 required
-//                 className="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-[#c19a6b]"
-//               />
-//             </div>
+          <form onSubmit={handleSubmit} className="space-y-4">
+            {/* Email */}
+            <div>
+              <label className="block text-gray-600 text-sm mb-1">Email</label>
+              <input
+                type="email"
+                name="email"
+                placeholder="Type your email"
+                required
+                className="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-[#c19a6b]"
+              />
+            </div>
 
-//             {/* Password */}
-//             <div className="relative">
-//               <label className="block text-gray-600 text-sm mb-1">Password</label>
+            {/* Password */}
+            <div className="relative">
+              <label className="block text-gray-600 text-sm mb-1">Password</label>
               <input
                 type={showPassword ? "text" : "password"}
                 name="password"
