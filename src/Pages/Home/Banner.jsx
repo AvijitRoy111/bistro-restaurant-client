@@ -54,21 +54,21 @@
 //     setCurrent(current === 0 ? length - 1 : current - 1);
 //   };
 
-//   return (
-//     <div className="relative w-full ">
-//       {/* Slider Container */}
-//       <div className="relative w-full h-[80vh] max-h-[700px]">
-//         {images.map((img, index) => (
-//           <div
-//             key={index}
-//             className={`absolute inset-0 transition-opacity duration-[1500ms] ease-in-out 
-//               ${index === current ? "opacity-100 z-10" : "opacity-0 z-0"}`}
-//           >
-//             <img
-//               src={img.src}
-//               alt={`banner-${index}`}
-//               className="w-full h-full object-cover"
-//             />
+  return (
+    <div className="relative w-full ">
+      {/* Slider Container */}
+      <div className="relative w-full h-[80vh] max-h-[700px]">
+        {images.map((img, index) => (
+          <div
+            key={index}
+            className={`absolute inset-0 transition-opacity duration-[1500ms] ease-in-out 
+              ${index === current ? "opacity-100 z-10" : "opacity-0 z-0"}`}
+          >
+            <img
+              src={img.src}
+              alt={`banner-${index}`}
+              className="w-full h-full object-cover"
+            />
 
             {/* Gradient Card (Same color top to bottom) */}
             <div
