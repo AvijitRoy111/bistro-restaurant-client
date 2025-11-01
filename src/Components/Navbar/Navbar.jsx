@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { NavLink, useNavigate } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import { FaUser, FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
@@ -83,7 +83,9 @@ const Navbar = () => {
                 <img src={user.photoURL} alt="User" />
               </div>
             ) : (
-              <FaUser className="text-xl text-white" />
+              
+                <FaUser className="text-xl text-white" />
+              
             )}
           </button>
 
@@ -126,7 +128,9 @@ const Navbar = () => {
                     <img src={user.photoURL} alt="User" />
                   </div>
                 ) : (
-                  <FaUser className="text-xl text-white" />
+                   <Link to="/signIn">
+                <FaUser className="text-xl text-white" />
+              </Link>
                 )}
               </div>
 
