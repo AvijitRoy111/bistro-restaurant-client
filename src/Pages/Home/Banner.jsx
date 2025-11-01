@@ -98,7 +98,7 @@ const Banner = () => {
               className={`w-3.5 h-3.5 rounded-full border border-white transition-all duration-300
                 ${
                   index === current
-                    ? "bg-blue-500 scale-110"
+                    ? "bg-orange-500 scale-110"
                     : "bg-white/60 hover:bg-white"
                 }`}
             ></button>
@@ -115,7 +115,7 @@ const Banner = () => {
             className={`w-16 h-10 cursor-pointer rounded-md overflow-hidden border-2 transition-all duration-300
               ${
                 index === current
-                  ? "border-blue-500 scale-110 shadow-lg"
+                  ?  "border-2 border-blue-500 scale-110 shadow-lg"
                   : "border-transparent hover:opacity-90"
               }`}
           >

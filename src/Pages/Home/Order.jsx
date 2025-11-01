@@ -87,7 +87,7 @@ const Order = () => {
               key={index}
               className={`w-3.5 h-3.5 rounded-full transition-all duration-300 ${
                 index === activeIndex
-                  ? "bg-blue-500 scale-110"
+                  ? "bg-orange-500 scale-110"
                   : "bg-gray-300 hover:bg-gray-400"
               }`}
             ></button>

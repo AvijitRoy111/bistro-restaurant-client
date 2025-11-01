@@ -8,14 +8,15 @@ import {
   signOut,
   updateProfile,
 } from "firebase/auth";
-import { auth } from "../FireBase/firebase.config";
+import { auth } from "../Firebase/firebase";
 import axios from "axios";
+
 
 export const AuthContext = createContext(null);
 
 const googleProvider = new GoogleAuthProvider();
 
-const AuthProvider = () => {
+const AuthProvider = ({children}) => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
 
