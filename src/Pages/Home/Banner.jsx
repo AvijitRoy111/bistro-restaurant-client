@@ -6,33 +6,33 @@
 // import banner4 from "../../assets/banner/banner-4.jpg";
 // import banner5 from "../../assets/banner/banner-5.jpg";
 
-// const images = [
-//   {
-//     src: banner1,
-//     title: "Discover Beautiful Places",
-//     subtitle: "Explore the world with us and find your dream destination.",
-//   },
-//   {
-//     src: banner2,
-//     title: "Adventure Awaits",
-//     subtitle: "Experience thrilling moments in breathtaking locations.",
-//   },
-//   {
-//     src: banner3,
-//     title: "Feel the Nature",
-//     subtitle: "Reconnect with the beauty of nature and find peace.",
-//   },
-//   {
-//     src: banner4,
-//     title: "Luxury Experience",
-//     subtitle: "Stay in style and comfort wherever you travel.",
-//   },
-//   {
-//     src: banner5,
-//     title: "Luxury Experience",
-//     subtitle: "Stay in style and comfort wherever you travel.",
-//   },
-// ];
+const images = [
+  {
+    src: banner1,
+    title: "Discover Beautiful Places",
+    subtitle: "Explore the world with us and find your dream destination.",
+  },
+  {
+    src: banner2,
+    title: "Adventure Awaits",
+    subtitle: "Experience thrilling moments in breathtaking locations.",
+  },
+  {
+    src: banner3,
+    title: "Feel the Nature",
+    subtitle: "Reconnect with the beauty of nature and find peace.",
+  },
+  {
+    src: banner4,
+    title: "Luxury Experience",
+    subtitle: "Stay in style and comfort wherever you travel.",
+  },
+  {
+    src: banner5,
+    title: "Luxury Experience",
+    subtitle: "Stay in style and comfort wherever you travel.",
+  },
+];
 
 const Banner = () => {
   const [current, setCurrent] = useState(0);
