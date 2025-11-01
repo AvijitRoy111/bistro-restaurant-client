@@ -101,14 +101,14 @@
 //             </button>
 //           </form>
 
-//           {/* Footer */}
-//           <div className="mt-6 text-center">
-//             <p className="text-sm text-gray-600 mb-3">
-//               New here?{" "}
-//               <Link to="/signUp" className="text-[#c19a6b] font-medium">
-//                 Create a New Account
-//               </Link>
-//             </p>
+          {/* Footer */}
+          <div className="mt-6 text-center">
+            <p className="text-sm text-gray-600 mb-3">
+              New here?{" "}
+              <Link to="/signUp" className="text-[#c19a6b] font-medium">
+                Create a New Account
+              </Link>
+            </p>
 
             <button
               onClick={handleGoogleSignIn}
