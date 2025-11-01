@@ -41,16 +41,16 @@
 //     }
 //   };
 
-//   return (
-//     <div
-//       className="min-h-screen flex justify-center items-center relative bg-cover bg-center"
-//       style={{ backgroundImage: `url(${background})` }}
-//     >
-//       <div className="absolute inset-0 bg-black/20"></div>
-//       <div
-//         className="relative w-full max-w-[1000px] md:h-[600px] bg-cover bg-center backdrop-blur-sm shadow-2xl rounded-xl flex flex-col md:flex-row items-center justify-between overflow-hidden mx-4 my-6"
-//         style={{ backgroundImage: `url(${background})` }}
-//       >
+  return (
+    <div
+      className="min-h-screen flex justify-center items-center relative bg-cover bg-center"
+      style={{ backgroundImage: `url(${background})` }}
+    >
+      <div className="absolute inset-0 bg-black/20"></div>
+      <div
+        className="relative w-full max-w-[1000px] md:h-[600px] bg-cover bg-center backdrop-blur-sm shadow-2xl rounded-xl flex flex-col md:flex-row items-center justify-between overflow-hidden mx-4 my-6"
+        style={{ backgroundImage: `url(${background})` }}
+      >
         {/* Left Image */}
         <div className="w-full md:w-1/2 flex justify-center items-center md:h-full py-6 md:py-0">
           <img src={image} alt="login" className="w-3/4 md:w-4/5 object-contain" />
