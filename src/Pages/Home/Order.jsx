@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode, Autoplay } from "swiper/modules";
 import "swiper/css";
@@ -22,6 +23,8 @@ const slides = [
 ];
 
 const Order = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
+
   return (
     <div className="w-full py-20 bg-white flex flex-col items-center">
       {/* Title Section */}
@@ -53,6 +56,9 @@ const Order = () => {
             768: { slidesPerView: 3 },
             1024: { slidesPerView: 4 },
           }}
+          onSlideChange={(swiper) =>
+            setActiveIndex(swiper.realIndex % slides.length)
+          }
           className="mySwiper"
         >
           {slides.map((slide, index) => (
@@ -73,6 +79,20 @@ const Order = () => {
             </SwiperSlide>
           ))}
         </Swiper>
+
+        {/* Dots Indicator */}
+        <div className="flex justify-center gap-2 mt-6">
+          {slides.map((_, index) => (
+            <button
+              key={index}
+              className={`w-3.5 h-3.5 rounded-full transition-all duration-300 ${
+                index === activeIndex
+                  ? "bg-blue-500 scale-110"
+                  : "bg-gray-300 hover:bg-gray-400"
+              }`}
+            ></button>
+          ))}
+        </div>
       </div>
     </div>
   );
