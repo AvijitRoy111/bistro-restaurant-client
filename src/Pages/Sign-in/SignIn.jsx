@@ -76,22 +76,22 @@
 //             {/* Password */}
 //             <div className="relative">
 //               <label className="block text-gray-600 text-sm mb-1">Password</label>
-//               <input
-//                 type={showPassword ? "text" : "password"}
-//                 name="password"
-//                 placeholder="Type your password"
-//                 required
-//                 className="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-[#c19a6b] pr-10"
-//               />
-//               <span
-//                 onClick={() => setShowPassword(!showPassword)}
-//                 className="absolute right-3 top-[32px] text-gray-500 cursor-pointer"
-//               >
-//                 {showPassword ? <FaEyeSlash size={25}/> : <FaEye size={25}/>}
-//               </span>
-//             </div>
+              <input
+                type={showPassword ? "text" : "password"}
+                name="password"
+                placeholder="Type your password"
+                required
+                className="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-[#c19a6b] pr-10"
+              />
+              <span
+                onClick={() => setShowPassword(!showPassword)}
+                className="absolute right-3 top-[32px] text-gray-500 cursor-pointer"
+              >
+                {showPassword ? <FaEyeSlash size={25}/> : <FaEye size={25}/>}
+              </span>
+            </div>
 
-//             {error && <p className="text-red-500 text-sm">{error}</p>}
+            {error && <p className="text-red-500 text-sm">{error}</p>}
 
             <button
               type="submit"
