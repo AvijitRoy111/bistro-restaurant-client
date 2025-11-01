@@ -102,46 +102,46 @@
 //           <FaChevronRight />
 //         </button>
 
-//         {/* Circle Indicators (Inside Image Bottom Center) */}
-//         <div className="absolute z-30 bottom-6 left-1/2 -translate-x-1/2 flex gap-3">
-//           {images.map((_, index) => (
-//             <button
-//               key={index}
-//               onClick={() => setCurrent(index)}
-//               className={`w-3.5 h-3.5 rounded-full border border-white transition-all duration-300
-//                 ${
-//                   index === current
-//                     ? "bg-blue-500 scale-110"
-//                     : "bg-white/60 hover:bg-white"
-//                 }`}
-//             ></button>
-//           ))}
-//         </div>
-//       </div>
+        {/* Circle Indicators (Inside Image Bottom Center) */}
+        <div className="absolute z-30 bottom-6 left-1/2 -translate-x-1/2 flex gap-3">
+          {images.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => setCurrent(index)}
+              className={`w-3.5 h-3.5 rounded-full border border-white transition-all duration-300
+                ${
+                  index === current
+                    ? "bg-blue-500 scale-110"
+                    : "bg-white/60 hover:bg-white"
+                }`}
+            ></button>
+          ))}
+        </div>
+      </div>
 
-//       {/* Thumbnail Preview Below Image */}
-//       <div className="flex justify-center gap-3 mt-6 mb-3">
-//         {images.map((thumb, index) => (
-//           <div
-//             key={index}
-//             onClick={() => setCurrent(index)}
-//             className={`w-16 h-10 cursor-pointer rounded-md overflow-hidden border-2 transition-all duration-300
-//               ${
-//                 index === current
-//                   ? "border-blue-500 scale-110 shadow-lg"
-//                   : "border-transparent hover:opacity-90"
-//               }`}
-//           >
-//             <img
-//               src={thumb.src}
-//               alt={`thumb-${index}`}
-//               className="w-full h-full object-cover"
-//             />
-//           </div>
-//         ))}
-//       </div>
-//     </div>
-//   );
-// };
+      {/* Thumbnail Preview Below Image */}
+      <div className="flex justify-center gap-3 mt-6 mb-3">
+        {images.map((thumb, index) => (
+          <div
+            key={index}
+            onClick={() => setCurrent(index)}
+            className={`w-16 h-10 cursor-pointer rounded-md overflow-hidden border-2 transition-all duration-300
+              ${
+                index === current
+                  ? "border-blue-500 scale-110 shadow-lg"
+                  : "border-transparent hover:opacity-90"
+              }`}
+          >
+            <img
+              src={thumb.src}
+              alt={`thumb-${index}`}
+              className="w-full h-full object-cover"
+            />
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
 
-// export default Banner;
+export default Banner;
