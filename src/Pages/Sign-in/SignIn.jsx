@@ -93,13 +93,13 @@
 
 //             {error && <p className="text-red-500 text-sm">{error}</p>}
 
-//             <button
-//               type="submit"
-//               className="w-full py-2 bg-[#c19a6b] text-white font-semibold rounded-md hover:bg-[#b58c5e] transition"
-//             >
-//               Sign In
-//             </button>
-//           </form>
+            <button
+              type="submit"
+              className="w-full py-2 bg-[#c19a6b] text-white font-semibold rounded-md hover:bg-[#b58c5e] transition"
+            >
+              Sign In
+            </button>
+          </form>
 
           {/* Footer */}
           <div className="mt-6 text-center">
