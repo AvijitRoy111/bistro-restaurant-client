@@ -7,11 +7,11 @@
 // import { toast } from "react-toastify";
 
 
-// const SignIn = () => {
-//   const { signIn, signInWithGoogle } = useContext(AuthContext);
-//   const navigate = useNavigate();
-//   const [error, setError] = useState("");
-//   const [showPassword, setShowPassword] = useState(false);
+const SignIn = () => {
+  const { signIn, signInWithGoogle } = useContext(AuthContext);
+  const navigate = useNavigate();
+  const [error, setError] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
 
   // handle email/password sign in
   const handleSubmit = async (e) => {
