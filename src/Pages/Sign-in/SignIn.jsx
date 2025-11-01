@@ -56,9 +56,9 @@
 //           <img src={image} alt="login" className="w-3/4 md:w-4/5 object-contain" />
 //         </div>
 
-//         {/* Right Form */}
-//         <div className="w-full md:w-1/2 px-6 md:px-12 py-6 flex flex-col justify-center">
-//           <h2 className="text-3xl font-bold text-center mb-6 text-gray-800">Sign In</h2>
+        {/* Right Form */}
+        <div className="w-full md:w-1/2 px-6 md:px-12 py-6 flex flex-col justify-center">
+          <h2 className="text-3xl font-bold text-center mb-6 text-gray-800">Sign In</h2>
 
           <form onSubmit={handleSubmit} className="space-y-4">
             {/* Email */}
