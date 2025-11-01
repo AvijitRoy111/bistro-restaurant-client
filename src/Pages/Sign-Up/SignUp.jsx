@@ -32,13 +32,13 @@ const SignUp = () => {
             </div> */}
     
             {/* Right Login Form Section */}
-            {/* <div className="w-full md:w-1/2 px-4 md:px-12 py-6 md:py-10 flex flex-col justify-center  ">
+            <div className="w-full md:w-1/2 px-4 md:px-12 py-6 md:py-10 flex flex-col justify-center  ">
               <h2 className="text-3xl font-bold text-center mb-6 text-gray-800">
                 Login
               </h2>
     
               <form className="flex flex-col space-y-4 flex-grow">
-                {/* Email
+                Email
                 <div>
                   <label className="block text-gray-600 text-sm mb-1">Email</label>
                   <input
@@ -117,7 +117,7 @@ const SignUp = () => {
                   </div>
                 </div>
               </div>
-            </div>  */}
+            </div> 
           </div>
         </div>
   )
