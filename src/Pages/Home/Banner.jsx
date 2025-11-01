@@ -55,7 +55,7 @@ const Banner = () => {
   };
 
   return (
-    <div className="relative w-full ">
+    <div className="relative w-full">
       {/* Slider Container */}
       <div className="relative w-full h-[80vh] max-h-[700px]">
         {images.map((img, index) => (
@@ -69,19 +69,6 @@ const Banner = () => {
               alt={`banner-${index}`}
               className="w-full h-full object-cover"
             />
-
-            {/* Gradient Card (Same color top to bottom) */}
-            <div
-              className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
-                         bg-black/40 rounded-2xl px-8 py-10 sm:px-12 sm:py-14
-                         flex flex-col justify-center items-center text-center text-white
-                         max-w-3xl h-44 md:h-64 w-[90%] space-y-4"
-            >
-              <h2 className="text-3xl sm:text-5xl font-bold mb-3">
-                {img.title}
-              </h2>
-              <p className="text-sm sm:text-lg opacity-90">{img.subtitle}</p>
-            </div>
           </div>
         ))}
 
@@ -102,7 +89,7 @@ const Banner = () => {
           <FaChevronRight />
         </button>
 
-        {/* Circle Indicators (Inside Image Bottom Center) */}
+        {/* Circle Indicators */}
         <div className="absolute z-30 bottom-6 left-1/2 -translate-x-1/2 flex gap-3">
           {images.map((_, index) => (
             <button
