@@ -85,22 +85,22 @@
 //           </div>
 //         ))}
 
-//         {/* Prev / Next Buttons — Always Visible */}
-//         <button
-//           onClick={prevSlide}
-//           className="absolute z-30 left-5 top-1/2 transform -translate-y-1/2 
-//                      bg-black/40 hover:bg-black/70 text-white p-3 rounded-full shadow-md transition"
-//         >
-//           <FaChevronLeft />
-//         </button>
+        {/* Prev / Next Buttons — Always Visible */}
+        <button
+          onClick={prevSlide}
+          className="absolute z-30 left-5 top-1/2 transform -translate-y-1/2 
+                     bg-black/40 hover:bg-black/70 text-white p-3 rounded-full shadow-md transition"
+        >
+          <FaChevronLeft />
+        </button>
 
-//         <button
-//           onClick={nextSlide}
-//           className="absolute z-30 right-5 top-1/2 transform -translate-y-1/2 
-//                      bg-black/40 hover:bg-black/70 text-white p-3 rounded-full shadow-md transition"
-//         >
-//           <FaChevronRight />
-//         </button>
+        <button
+          onClick={nextSlide}
+          className="absolute z-30 right-5 top-1/2 transform -translate-y-1/2 
+                     bg-black/40 hover:bg-black/70 text-white p-3 rounded-full shadow-md transition"
+        >
+          <FaChevronRight />
+        </button>
 
         {/* Circle Indicators (Inside Image Bottom Center) */}
         <div className="absolute z-30 bottom-6 left-1/2 -translate-x-1/2 flex gap-3">
