@@ -29,17 +29,17 @@
 //     }
 //   };
 
-//   // handle google sign in
-//   const handleGoogleSignIn = async () => {
-//     try {
-//       await signInWithGoogle();
-//       toast.success("User Sign in successful!");
-//       navigate("/");
-//     } catch (err) {
-//       setError(err.message);
-//       toast.error("Google sign in failed.");
-//     }
-//   };
+  // handle google sign in
+  const handleGoogleSignIn = async () => {
+    try {
+      await signInWithGoogle();
+      toast.success("User Sign in successful!");
+      navigate("/");
+    } catch (err) {
+      setError(err.message);
+      toast.error("Google sign in failed.");
+    }
+  };
 
   return (
     <div
