@@ -83,9 +83,9 @@ const Navbar = () => {
                 <img src={user.photoURL} alt="User" />
               </div>
             ) : (
-              
+              <Link to="/signIn">
                 <FaUser className="text-xl text-white" />
-              
+              </Link>
             )}
           </button>
 
@@ -128,9 +128,9 @@ const Navbar = () => {
                     <img src={user.photoURL} alt="User" />
                   </div>
                 ) : (
-                   <Link to="/signIn">
-                <FaUser className="text-xl text-white" />
-              </Link>
+                  <Link to="/signIn">
+                    <FaUser className="text-xl text-white" />
+                  </Link>
                 )}
               </div>
 
