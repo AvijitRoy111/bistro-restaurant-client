@@ -2,7 +2,7 @@ import { useContext, useState } from "react";
 import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
 import { FaUser, FaBars, FaTimes } from "react-icons/fa";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
-import logo from "../../assets/icon/logo.png"
+import logo from "../../assets/icon/logo.png";
 import {
   Contact,
   House,
@@ -98,7 +98,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className="navbar bg-black/40 shadow-md fixed top-0 left-0 right-0 z-50 px-4 md:px-20">
+    <div className="navbar bg-black/60 backdrop-blur-3xl shadow-md fixed top-0 left-0 right-0 z-50 px-4 md:px-20">
       {/* Navbar Start */}
       <div className="navbar-start flex items-center gap-2 space-x-2">
         <button
@@ -108,9 +108,16 @@ const Navbar = () => {
           <FaBars className="text-2xl text-white" />
         </button>
 
-        <h to="/" className="text-xl font-bold text-white flex gap-4 items-center justify-center">
-          <img className="w-10 h-10 hidden md:block" src={logo} alt="" /><p className="flex flex-col items-center justify-center gap-0"><span className="text-2xl ">BISTRO-E</span> <span className="text-white/70">Restaurant</span></p>
-        </h>
+        <a
+          to="/"
+          className="text-xl font-bold text-white flex gap-4 items-center justify-center"
+        >
+          <img className="w-10 h-10 hidden md:block" src={logo} alt="" />
+          <p className="flex flex-col items-center justify-center gap-0">
+            <span className="text-2xl ">BISTRO-E</span>{" "}
+            <span className="text-white/70">Restaurant</span>
+          </p>
+        </a>
       </div>
 
       {/* Navbar Center */}
@@ -126,13 +133,13 @@ const Navbar = () => {
           <>
             {user ? (
               <>
-              <Link to="/signIn">
-                <button
-                  onClick={handleLogout}
-                  className="px-3 py-1 text-white hover:bg-white/10 bg-orange-500  rounded-xl shadow-sm transition-all duration-300 border-l-4  border-l-amber-900  border-r-4 border-r-amber-900 border-b-4 border-b-amber-900"
-                >
-                  Logout
-                </button>
+                <Link to="/signIn">
+                  <button
+                    onClick={handleLogout}
+                    className="px-3 py-1 text-white hover:bg-white/10 bg-orange-500  rounded-xl shadow-sm transition-all duration-300 border-l-4  border-l-amber-900  border-r-4 border-r-amber-900 border-b-4 border-b-amber-900"
+                  >
+                    Logout
+                  </button>
                 </Link>
 
                 <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-white">
@@ -148,19 +155,22 @@ const Navbar = () => {
               </>
             ) : (
               <>
-              <Link to="/signIn"><button
-                  onClick={handleLoginNavigate}
-                  className="px-3 py-1 text-white hover:bg-white/10 bg-orange-500  rounded-xl shadow-sm transition-all duration-300 border-l-4  border-l-amber-900  border-r-4 border-r-amber-900 border-b-4 border-b-amber-900"
-                >
-                  Login
-                </button></Link>
-                
+                <Link to="/signIn">
+                  <button
+                    onClick={handleLoginNavigate}
+                    className="px-3 py-1 text-white hover:bg-white/10 bg-orange-500  rounded-xl shadow-sm transition-all duration-300 border-l-4  border-l-amber-900  border-r-4 border-r-amber-900 border-b-4 border-b-amber-900"
+                  >
+                    Login
+                  </button>
+                </Link>
+
                 <span
                   onClick={handleLoginNavigate}
                   className="border-2 border-orange-500 rounded-full p-3 bg-black/40 cursor-pointer"
                 >
-                  <Link to="/signIn"><FaUser className="text-xl text-white " /></Link>
-                  
+                  <Link to="/signIn">
+                    <FaUser className="text-xl text-white " />
+                  </Link>
                 </span>
               </>
             )}
@@ -169,9 +179,18 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Drawer Menu */}
+
       {mobileMenuOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex justify-start">
-          <div className="w-64 bg-gray-900 h-full shadow-lg p-4 relative text-white animate-slideInLeft">
+        <div className="fixed inset-0 z-50">
+          {/* Overlay */}
+          <div
+            className="absolute inset-0 bg-black/50"
+            onClick={() => setMobileMenuOpen(false)}
+          ></div>
+
+          {/* Drawer */}
+          <div className="absolute left-0 top-0 h-screen w-64 bg-gray-900 text-white shadow-2xl p-4 animate-slideInLeft z-50">
+            {/* Header */}
             <div className="flex justify-between items-center mb-3">
               <div className="flex items-center gap-2">
                 {loading ? (
@@ -190,33 +209,36 @@ const Navbar = () => {
                 ) : (
                   <span
                     onClick={handleLoginNavigate}
-                    className="border-2 border-orange-500 rounded-full p-3  cursor-pointer"
+                    className="border-2 border-orange-500 rounded-full p-3 cursor-pointer"
                   >
-                    <FaUser className="text-xl text-white " />
+                    <FaUser className="text-xl text-white" />
                   </span>
                 )}
               </div>
-
 
               <button onClick={() => setMobileMenuOpen(false)}>
                 <FaTimes className="text-2xl text-white" />
               </button>
             </div>
+
             <hr className="border-gray-600" />
+
+            {/* Menu Items */}
             <div className="mt-4">
               <ul className="menu text-white space-y-2">{navLinks}</ul>
               <hr className="my-2 border-gray-600" />
+
               {user ? (
                 <button
                   onClick={handleLogout}
-                  className="w-full px-3 py-2 border border-amber-900 rounded-xl text-white hover:bg-white/10 transition border-l-8  border-l-amber-900  border-r-8 border-r-amber-900 border-b-8 border-8-amber-900"
+                  className="w-full px-3 py-2 border border-amber-900 rounded-xl text-white hover:bg-white/10 transition border-l-8 border-l-amber-900 border-r-8 border-r-amber-900 border-b-8 border-b-amber-900"
                 >
                   Logout
                 </button>
               ) : (
                 <button
                   onClick={handleLoginNavigate}
-                  className="w-full px-3 py-2 border border-amber-900 rounded-xl text-white hover:bg-white/10 transition border-l-8  border-l-amber-900  border-r-8 border-r-amber-900 border-b-8 border-8-amber-900"
+                  className="w-full px-3 py-2 border border-amber-900 rounded-xl text-white hover:bg-white/10 transition border-l-8 border-l-amber-900 border-r-8 border-r-amber-900 border-b-8 border-b-amber-900"
                 >
                   Login
                 </button>
