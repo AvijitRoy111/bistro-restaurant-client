@@ -117,8 +117,8 @@
 
 //       <FaQuoteLeft className="text-4xl text-gray-400 mx-auto mb-4" />
 
-//       {/* Testimonial Text */}
-//       <p className="text-gray-600 text-sm md:text-base px-4 mb-6">{text}</p>
+      {/* Testimonial Text */}
+      <p className="text-gray-600 text-sm md:text-base px-4 mb-6">{text}</p>
 
       {/* User Info */}
       <div className="flex flex-col items-center space-y-2">
