@@ -127,8 +127,8 @@
 //           alt={name}
 //           className="w-16 h-16 rounded-full object-cover border-2 border-yellow-500"
 //         />
-//         <p className="text-yellow-600 font-semibold uppercase">{name}</p>
-//       </div>
+        <p className="text-yellow-600 font-semibold uppercase">{name}</p>
+      </div>
 
       {/* Navigation Arrows */}
       <button
