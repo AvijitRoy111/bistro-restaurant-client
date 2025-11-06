@@ -103,17 +103,17 @@
 //         <hr className="border-2 border-gray-300 w-80 " />
 //       </div>
 
-//       {/* Rating */}
-//       <div className="flex justify-center mb-4">
-//         {[...Array(5)].map((_, i) => (
-//           <FaStar
-//             key={i}
-//             className={`mx-1 ${
-//               i < rating ? "text-yellow-500" : "text-gray-300"
-//             }`}
-//           />
-//         ))}
-//       </div>
+      {/* Rating */}
+      <div className="flex justify-center mb-4">
+        {[...Array(5)].map((_, i) => (
+          <FaStar
+            key={i}
+            className={`mx-1 ${
+              i < rating ? "text-yellow-500" : "text-gray-300"
+            }`}
+          />
+        ))}
+      </div>
 
       <FaQuoteLeft className="text-4xl text-gray-400 mx-auto mb-4" />
 
