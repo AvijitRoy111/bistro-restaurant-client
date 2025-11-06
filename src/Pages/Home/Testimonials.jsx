@@ -6,78 +6,78 @@
 //   FaChevronRight,
 // } from "react-icons/fa";
 
-// const testimonials = [
-//   {
-//     id: 1,
-//     name: "Jane Doe",
-//     text: "Various versions have evolved over the years, sometimes by accident, sometimes on purpose.",
-//     rating: 4,
-//     image: "https://randomuser.me/api/portraits/women/1.jpg",
-//   },
-//   {
-//     id: 2,
-//     name: "John Smith",
-//     text: "Excellent service and great attention to detail. Highly recommended!",
-//     rating: 5,
-//     image: "https://randomuser.me/api/portraits/men/2.jpg",
-//   },
-//   {
-//     id: 3,
-//     name: "Sophia Lee",
-//     text: "Very professional and friendly. My experience was wonderful!",
-//     rating: 5,
-//     image: "https://randomuser.me/api/portraits/women/3.jpg",
-//   },
-//   {
-//     id: 4,
-//     name: "Michael Brown",
-//     text: "They made everything so easy. I’ll definitely return again.",
-//     rating: 4,
-//     image: "https://randomuser.me/api/portraits/men/4.jpg",
-//   },
-//   {
-//     id: 5,
-//     name: "Emily Davis",
-//     text: "Amazing quality and very fast support. Totally satisfied.",
-//     rating: 5,
-//     image: "https://randomuser.me/api/portraits/women/5.jpg",
-//   },
-//   {
-//     id: 6,
-//     name: "Chris Johnson",
-//     text: "Very smooth experience, would highly recommend to anyone.",
-//     rating: 4,
-//     image: "https://randomuser.me/api/portraits/men/6.jpg",
-//   },
-//   {
-//     id: 7,
-//     name: "Isabella Clark",
-//     text: "I loved the design and user experience. Absolutely fantastic!",
-//     rating: 5,
-//     image: "https://randomuser.me/api/portraits/women/7.jpg",
-//   },
-//   {
-//     id: 8,
-//     name: "Ethan Wilson",
-//     text: "Their customer service is top-notch. Great job team!",
-//     rating: 5,
-//     image: "https://randomuser.me/api/portraits/men/8.jpg",
-//   },
-//   {
-//     id: 9,
-//     name: "Olivia Taylor",
-//     text: "Beautiful design and really easy to use. Loved it!",
-//     rating: 5,
-//     image: "https://randomuser.me/api/portraits/women/9.jpg",
-//   },
-//   {
-//     id: 10,
-//     name: "Liam Martinez",
-//     text: "A perfect experience from start to finish. Highly appreciated!",
-//     rating: 5,
-//     image: "https://randomuser.me/api/portraits/men/10.jpg",
-//   },
-// ];
+const testimonials = [
+  {
+    id: 1,
+    name: "Jane Doe",
+    text: "Various versions have evolved over the years, sometimes by accident, sometimes on purpose.",
+    rating: 4,
+    image: "https://randomuser.me/api/portraits/women/1.jpg",
+  },
+  {
+    id: 2,
+    name: "John Smith",
+    text: "Excellent service and great attention to detail. Highly recommended!",
+    rating: 5,
+    image: "https://randomuser.me/api/portraits/men/2.jpg",
+  },
+  {
+    id: 3,
+    name: "Sophia Lee",
+    text: "Very professional and friendly. My experience was wonderful!",
+    rating: 5,
+    image: "https://randomuser.me/api/portraits/women/3.jpg",
+  },
+  {
+    id: 4,
+    name: "Michael Brown",
+    text: "They made everything so easy. I’ll definitely return again.",
+    rating: 4,
+    image: "https://randomuser.me/api/portraits/men/4.jpg",
+  },
+  {
+    id: 5,
+    name: "Emily Davis",
+    text: "Amazing quality and very fast support. Totally satisfied.",
+    rating: 5,
+    image: "https://randomuser.me/api/portraits/women/5.jpg",
+  },
+  {
+    id: 6,
+    name: "Chris Johnson",
+    text: "Very smooth experience, would highly recommend to anyone.",
+    rating: 4,
+    image: "https://randomuser.me/api/portraits/men/6.jpg",
+  },
+  {
+    id: 7,
+    name: "Isabella Clark",
+    text: "I loved the design and user experience. Absolutely fantastic!",
+    rating: 5,
+    image: "https://randomuser.me/api/portraits/women/7.jpg",
+  },
+  {
+    id: 8,
+    name: "Ethan Wilson",
+    text: "Their customer service is top-notch. Great job team!",
+    rating: 5,
+    image: "https://randomuser.me/api/portraits/men/8.jpg",
+  },
+  {
+    id: 9,
+    name: "Olivia Taylor",
+    text: "Beautiful design and really easy to use. Loved it!",
+    rating: 5,
+    image: "https://randomuser.me/api/portraits/women/9.jpg",
+  },
+  {
+    id: 10,
+    name: "Liam Martinez",
+    text: "A perfect experience from start to finish. Highly appreciated!",
+    rating: 5,
+    image: "https://randomuser.me/api/portraits/men/10.jpg",
+  },
+];
 
 const Testimonials = () => {
   const [index, setIndex] = useState(0);
