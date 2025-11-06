@@ -137,14 +137,14 @@
 //       >
 //         <FaChevronLeft />
 //       </button>
-//       <button
-//         onClick={nextSlide}
-//         className="absolute right-0 top-1/2 transform -translate-y-1/2  bg-orange-500 text-white shadow-md rounded-full p-2 mr-2 hover:bg-orange-600 transition"
-//       >
-//         <FaChevronRight />
-//       </button>
-//     </div>
-//   );
-// };
+      <button
+        onClick={nextSlide}
+        className="absolute right-0 top-1/2 transform -translate-y-1/2  bg-orange-500 text-white shadow-md rounded-full p-2 mr-2 hover:bg-orange-600 transition"
+      >
+        <FaChevronRight />
+      </button>
+    </div>
+  );
+};
 
-// export default Testimonials;
+export default Testimonials;
