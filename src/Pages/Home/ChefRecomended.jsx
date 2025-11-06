@@ -56,11 +56,7 @@ const ChefRecomended = () => {
 //                 alt={item.name}
 //                 className="w-80 h-64 md:w-96 md:h-80 object-cover rounded-xl "
 //               />
-//               <span className="absolute top-2 right-3 bg-black/70 text-white text-xs font-semibold px-2 py-1 rounded border-b-4 border-b-amber-800">
-//                 {item.price}
-//               </span>
-//             </div>
-
+g
             {/* Text Section */}
             <div className="text-center mt-6 mb-4 px-2">
               <h3 className="text-2xl font-bold text-[#151515]">{item.name}</h3>
