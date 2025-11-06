@@ -35,20 +35,20 @@ const ChefRecomended = () => {
         <h1 className="text-xl font-bold text-center text-[#D99904]">
           ---From 11:00am to 10:00pm---
         </h1>
-//         <hr className="border-2 border-gray-300 w-80" />
-//         <h2 className="text-3xl font-bold text-center text-[#151515]">
-//           CHEF RECOMMENDS
-//         </h2>
-//         <hr className="border-2 border-gray-300 w-80" />
-//       </div>
+        <hr className="border-2 border-gray-300 w-80" />
+        <h2 className="text-3xl font-bold text-center text-[#151515]">
+          CHEF RECOMMENDS
+        </h2>
+        <hr className="border-2 border-gray-300 w-80" />
+      </div>
 
       {/* Cards Section */}
-//       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
-//         {items.map((item) => (
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+        {items.map((item) => (
           <div
             key={item.id}
             className="border rounded-xl shadow-sm hover:shadow-md transition p-4 flex flex-col items-center bg-white"
-          > 
+          >
             {/* Image Section */}
             <div className="relative ">
               <img
@@ -56,6 +56,10 @@ const ChefRecomended = () => {
                 alt={item.name}
                 className="w-80 h-64 md:w-96 md:h-80 object-cover rounded-xl "
               />
+              <span className="absolute top-2 right-3 bg-black/70 text-white text-xs font-semibold px-2 py-1 rounded border-b-4 border-b-amber-800">
+                {item.price}
+              </span>
+            </div>
 
             {/* Text Section */}
             <div className="text-center mt-6 mb-4 px-2">
