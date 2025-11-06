@@ -83,13 +83,13 @@
 //   const [index, setIndex] = useState(0);
 //   const { name, text, rating, image } = testimonials[index];
 
-//   const nextSlide = () => {
-//     setIndex((prev) => (prev + 1) % testimonials.length);
-//   };
+  const nextSlide = () => {
+    setIndex((prev) => (prev + 1) % testimonials.length);
+  };
 
-//   const prevSlide = () => {
-//     setIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length);
-//   };
+  const prevSlide = () => {
+    setIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+  };
 
   return (
     <div className="bg-white py-16 px-4 text-center relative max-w-3xl mx-auto">
