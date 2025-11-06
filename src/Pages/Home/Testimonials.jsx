@@ -98,10 +98,10 @@
 //         <p className="text-yellow-500 italic mb-2">
 //           ---What Our Clients Say---
 //         </p>
-//         <hr className="border-2 border-gray-300 w-80" />
-//         <h2 className="text-2xl font-bold tracking-wide">TESTIMONIALS</h2>
-//         <hr className="border-2 border-gray-300 w-80 " />
-//       </div>
+        <hr className="border-2 border-gray-300 w-80" />
+        <h2 className="text-2xl font-bold tracking-wide">TESTIMONIALS</h2>
+        <hr className="border-2 border-gray-300 w-80 " />
+      </div>
 
       {/* Rating */}
       <div className="flex justify-center mb-4">
