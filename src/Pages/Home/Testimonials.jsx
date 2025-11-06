@@ -79,9 +79,9 @@
 //   },
 // ];
 
-// const Testimonials = () => {
-//   const [index, setIndex] = useState(0);
-//   const { name, text, rating, image } = testimonials[index];
+const Testimonials = () => {
+  const [index, setIndex] = useState(0);
+  const { name, text, rating, image } = testimonials[index];
 
   const nextSlide = () => {
     setIndex((prev) => (prev + 1) % testimonials.length);
