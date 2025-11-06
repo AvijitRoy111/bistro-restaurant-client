@@ -61,12 +61,12 @@ const ChefRecomended = () => {
 //               </span>
 //             </div>
 
-//             {/* Text Section */}
-//             <div className="text-center mt-6 mb-4 px-2">
-//               <h3 className="text-2xl font-bold text-[#151515]">{item.name}</h3>
-//               <p className="text-base text-gray-600 mt-3 leading-relaxed">
-//                 {item.description}
-//               </p>
+            {/* Text Section */}
+            <div className="text-center mt-6 mb-4 px-2">
+              <h3 className="text-2xl font-bold text-[#151515]">{item.name}</h3>
+              <p className="text-base text-gray-600 mt-3 leading-relaxed">
+                {item.description}
+              </p>
               <button className="mt-6 px-5 py-2 bg-gray-200 text-orange-600 font-medium rounded hover:bg-gray-300 transition border-b-4 border-b-orange-900">
                 ADD TO CART
               </button>
