@@ -120,13 +120,13 @@
 //       {/* Testimonial Text */}
 //       <p className="text-gray-600 text-sm md:text-base px-4 mb-6">{text}</p>
 
-//       {/* User Info */}
-//       <div className="flex flex-col items-center space-y-2">
-//         <img
-//           src={image}
-//           alt={name}
-//           className="w-16 h-16 rounded-full object-cover border-2 border-yellow-500"
-//         />
+      {/* User Info */}
+      <div className="flex flex-col items-center space-y-2">
+        <img
+          src={image}
+          alt={name}
+          className="w-16 h-16 rounded-full object-cover border-2 border-yellow-500"
+        />
         <p className="text-yellow-600 font-semibold uppercase">{name}</p>
       </div>
 
