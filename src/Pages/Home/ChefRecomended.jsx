@@ -3,29 +3,29 @@ import image1 from "../../assets/home/slide1.jpg";
 import image2 from "../../assets/home/slide4.jpg";
 import image3 from "../../assets/home/slide5.jpg";
 
-// const items = [
-//   {
-//     id: 1,
-//     name: "Caesar Salad",
-//     description: "Lettuce, Eggs, Parmesan Cheese, Chicken Breast Fillets",
-//     price: "$14.5",
-//     image: image1,
-//   },
-//   {
-//     id: 2,
-//     name: "Pizza Margherita",
-//     description: "Tomato sauce, mozzarella cheese, fresh basil leaves",
-//     price: "$18.0",
-//     image: image2,
-//   },
-//   {
-//     id: 3,
-//     name: "Hot Soup Bowl",
-//     description: "Fresh vegetables, aromatic herbs, and tender chicken broth",
-//     price: "$12.5",
-//     image: image3,
-//   },
-// ];
+const items = [
+  {
+    id: 1,
+    name: "Caesar Salad",
+    description: "Lettuce, Eggs, Parmesan Cheese, Chicken Breast Fillets",
+    price: "$14.5",
+    image: image1,
+  },
+  {
+    id: 2,
+    name: "Pizza Margherita",
+    description: "Tomato sauce, mozzarella cheese, fresh basil leaves",
+    price: "$18.0",
+    image: image2,
+  },
+  {
+    id: 3,
+    name: "Hot Soup Bowl",
+    description: "Fresh vegetables, aromatic herbs, and tender chicken broth",
+    price: "$12.5",
+    image: image3,
+  },
+];
 
 // const ChefRecomended = () => {
 //   return (
