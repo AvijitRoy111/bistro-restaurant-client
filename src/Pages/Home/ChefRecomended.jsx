@@ -28,13 +28,13 @@ const items = [
 ];
 
 const ChefRecomended = () => {
-//   return (
-//     <div className="mb-28 mx-4 md:mx-44">
-//       {/* Title Section */}
-//       <div className="flex flex-col items-center gap-3 pb-10">
-//         <h1 className="text-xl font-bold text-center text-[#D99904]">
-//           ---From 11:00am to 10:00pm---
-//         </h1>
+  return (
+    <div className="mb-28 mx-4 md:mx-44">
+      {/* Title Section */}
+      <div className="flex flex-col items-center gap-3 pb-10">
+        <h1 className="text-xl font-bold text-center text-[#D99904]">
+          ---From 11:00am to 10:00pm---
+        </h1>
 //         <hr className="border-2 border-gray-300 w-80" />
 //         <h2 className="text-3xl font-bold text-center text-[#151515]">
 //           CHEF RECOMMENDS
