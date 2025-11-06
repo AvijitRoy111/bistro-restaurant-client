@@ -91,10 +91,10 @@
 //     setIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length);
 //   };
 
-//   return (
-//     <div className="bg-white py-16 px-4 text-center relative max-w-3xl mx-auto">
-//       {/* tesmonial text section */}
-//       <div className="flex flex-col items-center justify-center space-y-3 mb-6">
+  return (
+    <div className="bg-white py-16 px-4 text-center relative max-w-3xl mx-auto">
+      {/* tesmonial text section */}
+      <div className="flex flex-col items-center justify-center space-y-3 mb-6">
         <p className="text-yellow-500 italic mb-2">
           ---What Our Clients Say---
         </p>
