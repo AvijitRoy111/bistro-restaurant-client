@@ -86,73 +86,73 @@
 //             <div className="h-4 w-32 bg-gray-300 rounded"></div>
 //           </div>
 
-//           {/* Navigation Buttons Skeleton */}
-//           <div className="absolute left-0 top-1/2 transform -translate-y-1/2 p-2">
-//             <div className="w-8 h-8 bg-gray-300 rounded-full"></div>
-//           </div>
-//           <div className="absolute right-0 top-1/2 transform -translate-y-1/2 p-2">
-//             <div className="w-8 h-8 bg-gray-300 rounded-full"></div>
-//           </div>
-//         </div>
-//       ) : (
-//         //  Actual Testimonial Content
-//         <>
-//           {/* Section Header */}
-//           <div className="flex flex-col items-center justify-center space-y-3 mb-6">
-//             <p className="text-yellow-500 italic mb-2">
-//               ---What Our Clients Say---
-//             </p>
-//             <hr className="border-2 border-gray-300 w-80" />
-//             <h2 className="text-2xl font-bold tracking-wide">TESTIMONIALS</h2>
-//             <hr className="border-2 border-gray-300 w-80" />
-//           </div>
+          {/* Navigation Buttons Skeleton */}
+          <div className="absolute left-0 top-1/2 transform -translate-y-1/2 p-2">
+            <div className="w-8 h-8 bg-gray-300 rounded-full"></div>
+          </div>
+          <div className="absolute right-0 top-1/2 transform -translate-y-1/2 p-2">
+            <div className="w-8 h-8 bg-gray-300 rounded-full"></div>
+          </div>
+        </div>
+      ) : (
+        //  Actual Testimonial Content
+        <>
+          {/* Section Header */}
+          <div className="flex flex-col items-center justify-center space-y-3 mb-6">
+            <p className="text-yellow-500 italic mb-2">
+              ---What Our Clients Say---
+            </p>
+            <hr className="border-2 border-gray-300 w-80" />
+            <h2 className="text-2xl font-bold tracking-wide">TESTIMONIALS</h2>
+            <hr className="border-2 border-gray-300 w-80" />
+          </div>
 
-//           {/* Rating */}
-//           <div className="flex justify-center mb-4">
-//             {[...Array(5)].map((_, i) => (
-//               <FaStar
-//                 key={i}
-//                 className={`mx-1 ${
-//                   i < rating ? "text-yellow-500" : "text-gray-300"
-//                 }`}
-//               />
-//             ))}
-//           </div>
+          {/* Rating */}
+          <div className="flex justify-center mb-4">
+            {[...Array(5)].map((_, i) => (
+              <FaStar
+                key={i}
+                className={`mx-1 ${
+                  i < rating ? "text-yellow-500" : "text-gray-300"
+                }`}
+              />
+            ))}
+          </div>
 
-//           <FaQuoteLeft className="text-4xl text-gray-400 mx-auto mb-4" />
+          <FaQuoteLeft className="text-4xl text-gray-400 mx-auto mb-4" />
 
-//           {/* Review Text */}
-//           <p className="text-gray-600 text-sm md:text-base px-4 mb-6">
-//             {details}
-//           </p>
+          {/* Review Text */}
+          <p className="text-gray-600 text-sm md:text-base px-4 mb-6">
+            {details}
+          </p>
 
-//           {/* User Info */}
-//           <div className="flex flex-col items-center space-y-2">
-//             <img
-//               src={image}
-//               alt={name}
-//               className="w-16 h-16 rounded-full object-cover border-2 border-yellow-500"
-//             />
-//             <p className="text-yellow-600 font-semibold uppercase">{name}</p>
-//           </div>
+          {/* User Info */}
+          <div className="flex flex-col items-center space-y-2">
+            <img
+              src={image}
+              alt={name}
+              className="w-16 h-16 rounded-full object-cover border-2 border-yellow-500"
+            />
+            <p className="text-yellow-600 font-semibold uppercase">{name}</p>
+          </div>
 
-//           {/* Navigation Buttons */}
-//           <button
-//             onClick={prevSlide}
-//             className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-orange-500 text-white shadow-md rounded-full p-2 ml-2 hover:bg-orange-600 transition"
-//           >
-//             <FaChevronLeft />
-//           </button>
-//           <button
-//             onClick={nextSlide}
-//             className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-orange-500 text-white shadow-md rounded-full p-2 mr-2 hover:bg-orange-600 transition"
-//           >
-//             <FaChevronRight />
-//           </button>
-//         </>
-//       )}
-//     </div>
-//   );
-// };
+          {/* Navigation Buttons */}
+          <button
+            onClick={prevSlide}
+            className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-orange-500 text-white shadow-md rounded-full p-2 ml-2 hover:bg-orange-600 transition"
+          >
+            <FaChevronLeft />
+          </button>
+          <button
+            onClick={nextSlide}
+            className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-orange-500 text-white shadow-md rounded-full p-2 mr-2 hover:bg-orange-600 transition"
+          >
+            <FaChevronRight />
+          </button>
+        </>
+      )}
+    </div>
+  );
+};
 
-// export default Testimonials;
+export default Testimonials;
