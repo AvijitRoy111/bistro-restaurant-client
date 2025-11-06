@@ -1,7 +1,7 @@
-// import banner1 from "../../assets/shop/banner.png";
-// import image1 from "../../assets/home/slide1.jpg";
-// import image2 from "../../assets/home/slide4.jpg";
-// import image3 from "../../assets/home/slide5.jpg";
+import banner1 from "../../assets/shop/banner.png";
+import image1 from "../../assets/home/slide1.jpg";
+import image2 from "../../assets/home/slide4.jpg";
+import image3 from "../../assets/home/slide5.jpg";
 
 // const items = [
 //   {
