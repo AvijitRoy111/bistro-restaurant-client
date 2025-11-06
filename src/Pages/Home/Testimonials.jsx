@@ -130,13 +130,13 @@
 //         <p className="text-yellow-600 font-semibold uppercase">{name}</p>
 //       </div>
 
-//       {/* Navigation Arrows */}
-//       <button
-//         onClick={prevSlide}
-//         className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-orange-500 text-white shadow-md rounded-full p-2 ml-2 hover:bg-orange-600 transition"
-//       >
-//         <FaChevronLeft />
-//       </button>
+      {/* Navigation Arrows */}
+      <button
+        onClick={prevSlide}
+        className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-orange-500 text-white shadow-md rounded-full p-2 ml-2 hover:bg-orange-600 transition"
+      >
+        <FaChevronLeft />
+      </button>
       <button
         onClick={nextSlide}
         className="absolute right-0 top-1/2 transform -translate-y-1/2  bg-orange-500 text-white shadow-md rounded-full p-2 mr-2 hover:bg-orange-600 transition"
