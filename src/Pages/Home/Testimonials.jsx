@@ -1,10 +1,10 @@
-// import React, { useState } from "react";
-// import {
-//   FaStar,
-//   FaQuoteLeft,
-//   FaChevronLeft,
-//   FaChevronRight,
-// } from "react-icons/fa";
+import React, { useState } from "react";
+import {
+  FaStar,
+  FaQuoteLeft,
+  FaChevronLeft,
+  FaChevronRight,
+} from "react-icons/fa";
 
 const testimonials = [
   {
