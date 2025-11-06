@@ -49,14 +49,14 @@ const ChefRecomended = () => {
 //             key={item.id}
 //             className="border rounded-xl shadow-sm hover:shadow-md transition p-4 flex flex-col items-center bg-white"
 //           > */}
-//             {/* Image Section */}
-//             <div className="relative ">
-//               <img
-//                 src={item.image}
-//                 alt={item.name}
-//                 className="w-80 h-64 md:w-96 md:h-80 object-cover rounded-xl "
-//               />
-g
+            {/* Image Section */}
+            <div className="relative ">
+              <img
+                src={item.image}
+                alt={item.name}
+                className="w-80 h-64 md:w-96 md:h-80 object-cover rounded-xl "
+              />
+
             {/* Text Section */}
             <div className="text-center mt-6 mb-4 px-2">
               <h3 className="text-2xl font-bold text-[#151515]">{item.name}</h3>
