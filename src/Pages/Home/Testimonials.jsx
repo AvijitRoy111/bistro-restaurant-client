@@ -1,90 +1,90 @@
-// import React, { useState, useEffect } from "react";
-// import axios from "axios";
-// import {
-//   FaStar,
-//   FaQuoteLeft,
-//   FaChevronLeft,
-//   FaChevronRight,
-// } from "react-icons/fa";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+import {
+  FaStar,
+  FaQuoteLeft,
+  FaChevronLeft,
+  FaChevronRight,
+} from "react-icons/fa";
 
-// const Testimonials = () => {
-//   const [reviews, setReviews] = useState([]);
-//   const [index, setIndex] = useState(0);
-//   const [loading, setLoading] = useState(true);
+const Testimonials = () => {
+  const [reviews, setReviews] = useState([]);
+  const [index, setIndex] = useState(0);
+  const [loading, setLoading] = useState(true);
 
-//   // 🔹 Fetch data from API
-//   useEffect(() => {
-//     const fetchReviews = async () => {
-//       try {
-//         const res = await axios.get("http://localhost:5000/reviews");
-//         setReviews(res.data.data);
-//         setLoading(false);
-//       } catch (error) {
-//         console.error("Error fetching reviews:", error);
-//         setLoading(false);
-//       }
-//     };
+  // 🔹 Fetch data from API
+  useEffect(() => {
+    const fetchReviews = async () => {
+      try {
+        const res = await axios.get("http://localhost:5000/reviews");
+        setReviews(res.data.data);
+        setLoading(false);
+      } catch (error) {
+        console.error("Error fetching reviews:", error);
+        setLoading(false);
+      }
+    };
 
-//     fetchReviews();
-//   }, []);
+    fetchReviews();
+  }, []);
 
-//   // jodi data na thake
-//   if (!reviews.length && !loading) {
-//     return (
-//       <div className="text-center py-10 text-gray-500 font-semibold">
-//         No reviews found.
-//       </div>
-//     );
-//   }
+  // jodi data na thake
+  if (!reviews.length && !loading) {
+    return (
+      <div className="text-center py-10 text-gray-500 font-semibold">
+        No reviews found.
+      </div>
+    );
+  }
 
-//   const { name, details, rating } = reviews[index] || {};
-//   const image =
-//     reviews[index]?.image ||
-//     `https://randomuser.me/api/portraits/men/${(index % 10) + 1}.jpg`;
+  const { name, details, rating } = reviews[index] || {};
+  const image =
+    reviews[index]?.image ||
+    `https://randomuser.me/api/portraits/men/${(index % 10) + 1}.jpg`;
 
-//   const nextSlide = () => {
-//     setIndex((prev) => (prev + 1) % reviews.length);
-//   };
+  const nextSlide = () => {
+    setIndex((prev) => (prev + 1) % reviews.length);
+  };
 
-//   const prevSlide = () => {
-//     setIndex((prev) => (prev - 1 + reviews.length) % reviews.length);
-//   };
+  const prevSlide = () => {
+    setIndex((prev) => (prev - 1 + reviews.length) % reviews.length);
+  };
 
-//   return (
-//     <div className="bg-white py-16 px-4 text-center relative max-w-3xl mx-auto shadow-lg rounded-2xl mb-20">
-//       {loading ? (
-//         // 🩶 Skeleton Loader Layout
-//         <div className="animate-pulse space-y-6">
-//           {/* Header Skeleton */}
-//           <div className="flex flex-col items-center space-y-3">
-//             <div className="h-4 w-48 bg-gray-300 rounded"></div>
-//             <div className="h-8 w-64 bg-gray-300 rounded"></div>
-//           </div>
+  return (
+    <div className="bg-white py-16 px-4 text-center relative max-w-3xl mx-auto shadow-lg rounded-2xl mb-20">
+      {loading ? (
+        // 🩶 Skeleton Loader Layout
+        <div className="animate-pulse space-y-6">
+          {/* Header Skeleton */}
+          <div className="flex flex-col items-center space-y-3">
+            <div className="h-4 w-48 bg-gray-300 rounded"></div>
+            <div className="h-8 w-64 bg-gray-300 rounded"></div>
+          </div>
 
-//           {/* Rating Skeleton */}
-//           <div className="flex justify-center space-x-2 mt-6">
-//             {[...Array(5)].map((_, i) => (
-//               <div key={i} className="h-5 w-5 bg-gray-300 rounded"></div>
-//             ))}
-//           </div>
+          {/* Rating Skeleton */}
+          <div className="flex justify-center space-x-2 mt-6">
+            {[...Array(5)].map((_, i) => (
+              <div key={i} className="h-5 w-5 bg-gray-300 rounded"></div>
+            ))}
+          </div>
 
-//           {/* Quote Icon Skeleton */}
-//           <div className="flex justify-center mt-6">
-//             <div className="h-8 w-8 bg-gray-300 rounded-full"></div>
-//           </div>
+          {/* Quote Icon Skeleton */}
+          <div className="flex justify-center mt-6">
+            <div className="h-8 w-8 bg-gray-300 rounded-full"></div>
+          </div>
 
-//           {/* Text Skeleton */}
-//           <div className="space-y-2 mt-6 px-6">
-//             <div className="h-3 w-full bg-gray-300 rounded"></div>
-//             <div className="h-3 w-5/6 bg-gray-300 rounded"></div>
-//             <div className="h-3 w-3/4 bg-gray-300 rounded"></div>
-//           </div>
+          {/* Text Skeleton */}
+          <div className="space-y-2 mt-6 px-6">
+            <div className="h-3 w-full bg-gray-300 rounded"></div>
+            <div className="h-3 w-5/6 bg-gray-300 rounded"></div>
+            <div className="h-3 w-3/4 bg-gray-300 rounded"></div>
+          </div>
 
-//           {/* Image + Name Skeleton */}
-//           <div className="flex flex-col items-center space-y-3 mt-6">
-//             <div className="w-16 h-16 rounded-full bg-gray-300"></div>
-//             <div className="h-4 w-32 bg-gray-300 rounded"></div>
-//           </div>
+          {/* Image + Name Skeleton */}
+          <div className="flex flex-col items-center space-y-3 mt-6">
+            <div className="w-16 h-16 rounded-full bg-gray-300"></div>
+            <div className="h-4 w-32 bg-gray-300 rounded"></div>
+          </div>
 
           {/* Navigation Buttons Skeleton */}
           <div className="absolute left-0 top-1/2 transform -translate-y-1/2 p-2">
