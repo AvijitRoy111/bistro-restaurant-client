@@ -12,9 +12,9 @@ const Sidebar = () => {
     { name: "Settings", icon: <Settings size={18} /> },
   ];
 
-//   return (
-//     <div className="w-64 bg-[#18122B] text-white h-screen flex flex-col justify-between">
-//       <div>
+  return (
+    <div className="w-64 bg-[#18122B] text-white h-screen flex flex-col justify-between">
+      <div>
 //         <h2 className="text-2xl font-bold p-6">POPY LIBRARY</h2>
 //         <ul className="px-4 space-y-2">
 //           {menuItems.map((item) => (
