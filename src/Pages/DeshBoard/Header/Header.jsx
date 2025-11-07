@@ -1,7 +1,7 @@
-// import { Clock } from "lucide-react";
+import { Clock } from "lucide-react";
 
-// const Header = () => {
-//   const time = new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
+const Header = () => {
+  const time = new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
 
 //   return (
 //     <div className="w-full bg-[#18122B] text-white flex items-center justify-between px-6 py-4 shadow-md">
