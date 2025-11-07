@@ -2,7 +2,7 @@ import { Menu, UserRoundCog } from "lucide-react";
 
 const Header = ({ setIsOpen }) => {
   return (
-    <div className="w-full bg-gray-800 text-white flex items-center justify-between px-6 py-4 border-b border-gray-700 shadow-md">
+    <header className="fixed top-0 left-0 w-full h-[60px] bg-gray-800 text-white flex items-center justify-between px-6 border-b border-gray-700 shadow-md z-40">
       {/* Mobile menu button */}
       <div className="flex items-center gap-3">
         <button
@@ -11,19 +11,17 @@ const Header = ({ setIsOpen }) => {
         >
           <Menu size={20} />
         </button>
-      
+        <h1 className="font-semibold text-lg hidden lg:block">Dashboard</h1>
       </div>
 
-      {/* Right side (always visible) */}
+      {/* Right side */}
       <div className="flex items-center gap-2 bg-[#393053] px-3 py-2 rounded-full">
         <div className="w-8 h-8 rounded-full bg-gray-500 flex items-center justify-center font-bold">
           GH
         </div>
-        <span className="font-medium text-sm">
-          <UserRoundCog />
-        </span>
+        <UserRoundCog size={18} />
       </div>
-    </div>
+    </header>
   );
 };
 

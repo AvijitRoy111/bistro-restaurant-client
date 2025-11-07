@@ -117,7 +117,7 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
             )}
 
             <div
-                className={`fixed lg:static top-0 left-0 h-screen bg-gray-800 text-white flex flex-col justify-between w-64 lg:w-56 transform transition-transform duration-300 z-50 ${isOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"
+                className={`fixed lg:static top-0 left-0 h-screen bg-gray-800 text-white flex flex-col justify-between w-64 lg:w-56  transform transition-transform duration-300 z-50 ${isOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0 fixed"
                     }`}
             >
                 {/* Header (mobile only) */}
@@ -133,7 +133,7 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
                 {/* Scrollable menu section */}
                 <div className="flex-1 overflow-y-auto mt-16 lg:mt-0 border-r border-r-white/15">
                     {/* Title for desktop */}
-                    <h2 className="text-2xl font-bold p-6 hidden lg:block border-b border-b-white/15">
+                    <h2 className="text-2xl font-bold py-[13px] px-6 hidden lg:block border-b border-b-white/15">
                         BISTRO-E
                     </h2>
 
