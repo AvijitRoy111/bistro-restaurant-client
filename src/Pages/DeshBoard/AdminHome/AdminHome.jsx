@@ -2,6 +2,6 @@
 
 export const AdminHome = () => {
   return (
-    <div>AdminHome</div>
+    <div> this is admin home page.................</div>
   )
 }

@@ -11,10 +11,15 @@ import AuthLayouts from "../Layouts/AuthLayouts";
 import SignIn from "../Pages/Sign-in/SignIn";
 import SignUp from "../Pages/Sign-Up/SignUp";
 import DashBoardLayouts from "../Layouts/DashBoardLayout/DashBoardLayouts";
-import { DashBoard } from "../Pages/DeshBoard/DashBoard/DashBoard";
 import { AdminHome } from "../Pages/DeshBoard/AdminHome/AdminHome";
 import Header from "../Pages/DeshBoard/Header/Header";
 import SideBar from "../Pages/DeshBoard/SideBar/SideBar";
+import { AddItems } from "../Pages/DeshBoard/AddItems/AddItems";
+import DashBoard from "../Pages/DeshBoard/DashBoard/DashBoard";
+import ManageItems from "../Pages/DeshBoard/ManageItems/ManageItems";
+import ManageBooking from "../Pages/DeshBoard/ManageBooking/ManageBooking";
+import AllUser from "../Pages/DeshBoard/AllUser/AllUser";
+import Setting from "../Pages/DeshBoard/Setting/Setting";
 
 
 const router = createBrowserRouter([
@@ -86,6 +91,26 @@ const router = createBrowserRouter([
       {
         path: "/Adminhome",
         element: <AdminHome />
+      },
+      {
+        path: "/addItems",
+        element: <AddItems />
+      },
+      {
+        path: "/manageItems",
+        element: <ManageItems/>
+      },
+      {
+        path: "/manageBooking",
+        element: <ManageBooking />
+      },
+      {
+        path: "/allusers",
+        element: <AllUser />
+      },
+      {
+        path: "/setting",
+        element: <Setting />
       },
       {
         path: "/header",
