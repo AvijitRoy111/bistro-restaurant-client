@@ -1,7 +1,7 @@
 
 
-// export const AdminHome = () => {
-//   return (
-//     <div>AdminHome</div>
-//   )
-// }
+export const AdminHome = () => {
+  return (
+    <div>AdminHome</div>
+  )
+}
