@@ -12,12 +12,12 @@ const Testimonials = () => {
   const [index, setIndex] = useState(0);
   const [loading, setLoading] = useState(true);
 
-  // 🔹 Fetch data from API
+  //  Fetch data from API
   useEffect(() => {
     const fetchReviews = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/reviews");
-        setReviews(res.data.data);
+        const data = await axios.get(`${import.meta.env.VITE_api}/reviews`);
+        setReviews(data.data.data);
         setLoading(false);
       } catch (error) {
         console.error("Error fetching reviews:", error);
@@ -51,10 +51,10 @@ const Testimonials = () => {
   };
 
   return (
-    <div className="bg-white py-16 px-4 text-center relative max-w-3xl mx-auto shadow-lg rounded-2xl mb-20">
+    <div className="relative max-w-3xl mx-auto mb-20 px-4 sm:px-6 lg:px-0">
       {loading ? (
-        // 🩶 Skeleton Loader Layout
-        <div className="animate-pulse space-y-6">
+        // 🩶 Full Card Skeleton Loader
+        <div className="animate-pulse bg-gray-200 shadow-lg rounded-2xl py-16 px-4 text-center space-y-6 ">
           {/* Header Skeleton */}
           <div className="flex flex-col items-center space-y-3">
             <div className="h-4 w-48 bg-gray-300 rounded"></div>
@@ -95,13 +95,11 @@ const Testimonials = () => {
           </div>
         </div>
       ) : (
-        //  Actual Testimonial Content
-        <>
+        // 🌟 Actual Testimonial Content
+        <div className="bg-white py-16 px-4 text-center relative max-w-3xl mx-auto shadow-lg rounded-2xl">
           {/* Section Header */}
           <div className="flex flex-col items-center justify-center space-y-3 mb-6">
-            <p className="text-yellow-500 italic mb-2">
-              ---What Our Clients Say---
-            </p>
+            <p className="text-yellow-500 italic mb-2">---What Our Clients Say---</p>
             <hr className="border-2 border-gray-300 w-80" />
             <h2 className="text-2xl font-bold tracking-wide">TESTIMONIALS</h2>
             <hr className="border-2 border-gray-300 w-80" />
@@ -112,14 +110,13 @@ const Testimonials = () => {
             {[...Array(5)].map((_, i) => (
               <FaStar
                 key={i}
-                className={`mx-1 ${
-                  i < rating ? "text-yellow-500" : "text-gray-300"
-                }`}
+                className={`mx-1 ${i < rating ? "text-yellow-500" : "text-gray-300"
+                  }`}
               />
             ))}
           </div>
 
-          <FaQuoteLeft className="text-4xl text-gray-400 mx-auto mb-4" />
+          <FaQuoteLeft className="text-6xl text-black mx-auto mb-4" />
 
           {/* Review Text */}
           <p className="text-gray-600 text-sm md:text-base px-4 mb-6">
@@ -149,9 +146,10 @@ const Testimonials = () => {
           >
             <FaChevronRight />
           </button>
-        </>
+        </div>
       )}
     </div>
+
   );
 };
 

@@ -1,29 +1,39 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode, Autoplay } from "swiper/modules";
+import { useNavigate } from "react-router-dom";
+import axios from "axios";
+
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/autoplay";
 
-import image1 from "../../assets/home/slide1.jpg";
-import image2 from "../../assets/home/slide2.jpg";
-import image3 from "../../assets/home/slide3.jpg";
-import image4 from "../../assets/home/slide4.jpg";
-import image5 from "../../assets/home/slide5.jpg";
-
-const slides = [
-  { image: image1, title: "SALADS" },
-  { image: image2, title: "PIZZAS" },
-  { image: image3, title: "SOUPS" },
-  { image: image4, title: "DESSERTS" },
-  { image: image5, title: "DRINKS" },
-  { image: image2, title: "PIZZAS" },
-  { image: image3, title: "SOUPS" },
-  { image: image4, title: "DESSERTS" },
-];
-
 const Order = () => {
+  const [categories, setCategories] = useState([]);
   const [activeIndex, setActiveIndex] = useState(0);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const fetchMenu = async () => {
+      try {
+        const res = await axios.get(`${import.meta.env.VITE_api}/menuItems`);
+        // Unique category with one sample image each
+        const grouped = res.data.data.reduce((acc, item) => {
+          if (!acc[item.category]) acc[item.category] = item.image;
+          return acc;
+        }, {});
+        setCategories(
+          Object.keys(grouped).slice(0, 6).map((cat) => ({
+            name: cat.toUpperCase(),
+            image: grouped[cat],
+          }))
+        );
+      } catch (err) {
+        console.error("Error fetching categories:", err);
+      }
+    };
+    fetchMenu();
+  }, []);
 
   return (
     <div className="w-full py-20 bg-white flex flex-col items-center">
@@ -39,17 +49,14 @@ const Order = () => {
         <hr className="border-2 border-gray-300 w-80" />
       </div>
 
-      {/* Swiper Container */}
+      {/* Swiper Section */}
       <div className="w-full max-w-7xl px-4 md:px-10">
         <Swiper
           modules={[FreeMode, Autoplay]}
           freeMode={true}
           grabCursor={true}
           loop={true}
-          autoplay={{
-            delay: 2000,
-            disableOnInteraction: false,
-          }}
+          autoplay={{ delay: 2500, disableOnInteraction: false }}
           spaceBetween={20}
           breakpoints={{
             320: { slidesPerView: 2 },
@@ -57,22 +64,23 @@ const Order = () => {
             1024: { slidesPerView: 4 },
           }}
           onSlideChange={(swiper) =>
-            setActiveIndex(swiper.realIndex % slides.length)
+            setActiveIndex(swiper.realIndex % categories.length)
           }
-          className="mySwiper"
         >
-          {slides.map((slide, index) => (
+          {categories.map((cat, index) => (
             <SwiperSlide key={index}>
-              <div className="relative rounded-2xl overflow-hidden shadow-lg">
+              <div
+                onClick={() => navigate(`/shop/${cat.name.toLowerCase()}`)}
+                className="relative rounded-2xl overflow-hidden shadow-lg cursor-pointer group"
+              >
                 <img
-                  src={slide.image}
-                  alt={slide.title}
-                  className="w-full h-[320px] object-cover"
+                  src={cat.image}
+                  alt={cat.name}
+                  className="w-full h-[320px] object-cover group-hover:scale-105 transition"
                 />
-                {/* Overlay + Title */}
                 <div className="absolute inset-0 bg-black/30 flex items-end justify-center pb-6">
                   <h2 className="text-white text-2xl font-bold">
-                    {slide.title}
+                    {cat.name}
                   </h2>
                 </div>
               </div>
@@ -82,7 +90,7 @@ const Order = () => {
 
         {/* Dots Indicator */}
         <div className="flex justify-center gap-2 mt-6">
-          {slides.map((_, index) => (
+          {categories.map((_, index) => (
             <button
               key={index}
               className={`w-3.5 h-3.5 rounded-full transition-all duration-300 ${

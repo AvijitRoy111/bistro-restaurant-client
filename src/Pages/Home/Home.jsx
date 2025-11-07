@@ -1,34 +1,23 @@
-import Banner from "./Banner"
-import BistroBoss from "./BristoBoss"
-import ChefRecomended from "./ChefRecomended"
-import Contact from "./Contact"
-import HomeMenu from "./HomeMenu"
-import Order from "./Order"
-import OurMenuSection from "./OurMenuSection"
-import Testimonials from "./Testimonials"
+import Banner from "./Banner";
+import BistroBoss from "./BristoBoss";
+import Contact from "./Contact";
+import Testimonials from "./Testimonials";
+import Order from "./Order";
+import OurMenuSection from "./OurMenuSection";
+import ChefRecomended from "./ChefRecomended";
 
 const Home = () => {
   return (
     <div className="w-full">
-            <Banner/>
-            <Order/>
-            <BistroBoss/>
-            <OurMenuSection/>
-            <Contact/>
-            <ChefRecomended/>
-            <HomeMenu/>
-            <Testimonials/>
+      <Banner />
+      <Order />
+      <BistroBoss />
+      <OurMenuSection />
+      <Contact />
+      <ChefRecomended />
+      <Testimonials />
     </div>
-  )
-}
+  );
+};
 
-export default Home
-
-
-
-
-
-
-
-
-
+export default Home;
