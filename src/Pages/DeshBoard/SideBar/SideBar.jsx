@@ -29,15 +29,15 @@ const Sidebar = () => {
             >               {item.icon}
               <span>{item.name}</span>
          </li>
-//           ))}
-//         </ul>
-//       </div>
-//       <div className="p-4 border-t border-gray-700 flex items-center gap-3 cursor-pointer hover:bg-[#2a2440] transition-all">
-//         <LogOut size={18} />
-//         <span>Log out</span>
-//       </div>
-//     </div>
-//   );
-// };
+          ))}
+        </ul>
+      </div>
+      <div className="p-4 border-t border-gray-700 flex items-center gap-3 cursor-pointer hover:bg-[#2a2440] transition-all">
+        <LogOut size={18} />
+        <span>Log out</span>
+      </div>
+    </div>
+  );
+};
 
 // export default Sidebar;
