@@ -1,5 +1,5 @@
-// import { useState } from "react";
-// import { Home, Users, Book, ShoppingCart, Settings, LogOut } from "lucide-react";
+import { useState } from "react";
+import { Home, Users, Book, ShoppingCart, Settings, LogOut } from "lucide-react";
 
 // const Sidebar = () => {
 //   const [active, setActive] = useState("Dashboard");
