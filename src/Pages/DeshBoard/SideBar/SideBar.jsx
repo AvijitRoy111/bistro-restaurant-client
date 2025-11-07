@@ -4,13 +4,13 @@ import { Home, Users, Book, ShoppingCart, Settings, LogOut } from "lucide-react"
 const Sidebar = () => {
   const [active, setActive] = useState("Dashboard");
 
-//   const menuItems = [
-//     { name: "Dashboard", icon: <Home size={18} /> },
-//     { name: "User", icon: <Users size={18} /> },
-//     { name: "Books", icon: <Book size={18} /> },
-//     { name: "Orders", icon: <ShoppingCart size={18} /> },
-//     { name: "Settings", icon: <Settings size={18} /> },
-//   ];
+  const menuItems = [
+    { name: "Dashboard", icon: <Home size={18} /> },
+    { name: "User", icon: <Users size={18} /> },
+    { name: "Books", icon: <Book size={18} /> },
+    { name: "Orders", icon: <ShoppingCart size={18} /> },
+    { name: "Settings", icon: <Settings size={18} /> },
+  ];
 
 //   return (
 //     <div className="w-64 bg-[#18122B] text-white h-screen flex flex-col justify-between">
