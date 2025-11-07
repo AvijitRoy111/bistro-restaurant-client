@@ -74,7 +74,7 @@ const Navbar = () => {
       </li>
       <li>
         <NavLink
-          to="/Dashboard"
+          to="/dashBoard"
           className={({ isActive }) =>
             isActive ? activeLinkStyle : normalLinkStyle
           }

@@ -68,7 +68,7 @@ const Menu = () => {
               {grouped[category].slice(0, 8).map((item) => (
                 <div
                   key={item._id}
-                  onClick={() => handleNavigate(item.category, item._id)} // 🟢 click event
+                  onClick={() => handleNavigate(item.category, item._id)}
                   className="flex items-center justify-between gap-4 border-b border-gray-200 pb-3 cursor-pointer hover:bg-gray-50 transition"
                 >
                   <div className="flex items-center gap-4">

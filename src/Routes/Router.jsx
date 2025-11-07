@@ -10,6 +10,12 @@ import Shop from "../Pages/Our-Shop/Shop";
 import AuthLayouts from "../Layouts/AuthLayouts";
 import SignIn from "../Pages/Sign-in/SignIn";
 import SignUp from "../Pages/Sign-Up/SignUp";
+import DashBoardLayouts from "../Layouts/DashBoardLayout/DashBoardLayouts";
+import { DashBoard } from "../Pages/DeshBoard/DashBoard/DashBoard";
+import { AdminHome } from "../Pages/DeshBoard/AdminHome/AdminHome";
+import Header from "../Pages/DeshBoard/Header/Header";
+import SideBar from "../Pages/DeshBoard/SideBar/SideBar";
+
 
 const router = createBrowserRouter([
   {
@@ -67,6 +73,31 @@ const router = createBrowserRouter([
       },
     ],
   },
+
+  {
+    path: "/",
+    element: <DashBoardLayouts />,
+    errorElement: <Error />,
+    children: [
+      {
+        path: "/Dashboard",
+        element: <DashBoard />
+      },
+      {
+        path: "/Adminhome",
+        element: <AdminHome />
+      },
+      {
+        path: "/header",
+        element: <Header/>
+      },
+       {
+        path: "/sidebar",
+        element: <SideBar/>
+      },
+    ],
+  },
+
 ]);
 
 export default router;
