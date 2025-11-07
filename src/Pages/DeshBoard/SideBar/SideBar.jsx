@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Home, Users, Book, ShoppingCart, Settings, LogOut } from "lucide-react";
 
-// const Sidebar = () => {
-//   const [active, setActive] = useState("Dashboard");
+const Sidebar = () => {
+  const [active, setActive] = useState("Dashboard");
 
 //   const menuItems = [
 //     { name: "Dashboard", icon: <Home size={18} /> },
