@@ -1,106 +1,104 @@
-import { useState } from "react";
 import {
     Home,
-    Users,
     Settings,
     LogOut,
     X,
-    BookText,
-    TableOfContents,
-    Utensils,
     CalendarDays,
-    UtensilsCrossed,
+    ShoppingCart,
+    MailCheck,
+    BookCopy,
     PhoneCall,
+    UtensilsCrossed,
 } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 
-const Sidebar = ({ isOpen, setIsOpen }) => {
+const UserSidebar = ({ isOpen, setIsOpen }) => {
     const location = useLocation();
 
     const headerLinks = <>
-        {/* Admin Home */}
+        {/* User Home */}
         <li>
             <Link
-                to="/Adminhome"
+                to="/user-home"
                 onClick={() => setIsOpen(false)}
-                className={`flex items-center gap-3 py-2 px-3 rounded-md transition-all ${location.pathname === "/Adminhome"
-                        ? "bg-gray-900/70 border-r-4 border-l-4 border-orange-500"
-                        : "hover:bg-gray-700"
+                className={`flex items-center gap-3 py-2 px-3 rounded-md transition-all ${location.pathname === "/user-home"
+                    ? "bg-gray-900/70 border-r-4 border-l-4 border-orange-500"
+                    : "hover:bg-gray-700"
                     }`}
             >
                 <Home size={14} />
-                <span>Admin Home</span>
+                <span>User Home</span>
             </Link>
         </li>
 
-        {/* Add Items */}
+        {/* Reservation*/}
         <li>
             <Link
-                to="/addItems"
+                to="/user-reservation"
                 onClick={() => setIsOpen(false)}
-                className={`flex items-center gap-3 py-2 px-3 rounded-md transition-all ${location.pathname === "/addItems"
-                        ? "bg-gray-900/70 border-r-4 border-l-4 border-orange-500"
-                        : "hover:bg-gray-700"
+                className={`flex items-center gap-3 py-2 px-3 rounded-md transition-all ${location.pathname === "/user-reservation"
+                    ? "bg-gray-900/70 border-r-4 border-l-4 border-orange-500"
+                    : "hover:bg-gray-700"
                     }`}
             >
-                <Utensils size={14} />
-                <span>Add Items</span>
+                <CalendarDays size={14} />
+                <span>Reservation</span>
             </Link>
         </li>
 
-        {/* Manage Items */}
+        {/* My Cart */}
         <li>
             <Link
-                to="/manageItems"
+                to="/cart"
                 onClick={() => setIsOpen(false)}
-                className={`flex items-center gap-3 py-2 px-3 rounded-md transition-all ${location.pathname === "/manageItems"
-                        ? "bg-gray-900/70 border-r-4 border-l-4 border-orange-500"
-                        : "hover:bg-gray-700"
+                className={`flex items-center gap-3 py-2 px-3 rounded-md transition-all ${location.pathname === "/cart"
+                    ? "bg-gray-900/70 border-r-4 border-l-4 border-orange-500"
+                    : "hover:bg-gray-700"
                     }`}
             >
-                <TableOfContents size={14} />
-                <span>Manage Items</span>
+                <ShoppingCart size={14} />
+                <span>My Cart</span>
             </Link>
         </li>
 
-        {/* Manage Bookings */}
+        {/* Add Review */}
         <li>
             <Link
-                to="/manageBooking"
+                to="/add-reveiw"
                 onClick={() => setIsOpen(false)}
-                className={`flex items-center gap-3 py-2 px-3 rounded-md transition-all ${location.pathname === "/manageBooking"
-                        ? "bg-gray-900/70 border-r-4 border-l-4 border-orange-500"
-                        : "hover:bg-gray-700"
+                className={`flex items-center gap-3 py-2 px-3 rounded-md transition-all ${location.pathname === "/add-reveiw"
+                    ? "bg-gray-900/70 border-r-4 border-l-4 border-orange-500"
+                    : "hover:bg-gray-700"
                     }`}
             >
-                <BookText size={14} />
-                <span>Manage Bookings</span>
+                <MailCheck size={14} />
+                <span>Add Review</span>
             </Link>
         </li>
 
-        {/* All Users */}
+        {/* My Booking */}
         <li>
             <Link
-                to="/allusers"
+                to="/booking"
                 onClick={() => setIsOpen(false)}
-                className={`flex items-center gap-3 py-2 px-3 rounded-md transition-all ${location.pathname === "/allusers"
-                        ? "bg-gray-900/70 border-r-4 border-l-4 border-orange-500"
-                        : "hover:bg-gray-700"
+                className={`flex items-center gap-3 py-2 px-3 rounded-md transition-all ${location.pathname === "/booking"
+                    ? "bg-gray-900/70 border-r-4 border-l-4 border-orange-500"
+                    : "hover:bg-gray-700"
                     }`}
             >
-                <Users size={14} />
-                <span>All Users</span>
+                <BookCopy size={14} />
+                <span>My Booking</span>
             </Link>
         </li>
 
         {/* Settings */}
         <li>
             <Link
-                to="/setting"
+                to="/settings"
                 onClick={() => setIsOpen(false)}
-                className={`flex items-center gap-3 py-2 px-3 rounded-md transition-all ${location.pathname === "/setting"
-                        ? "bg-gray-900/70 border-r-4 border-l-4 border-orange-500"
-                        : "hover:bg-gray-700"
+                className={`flex items-center gap-3 py-2 px-3 rounded-md transition-all ${location.pathname === "/settings"
+                    ? "bg-gray-900/70 border-r-4 border-l-4 border-orange-500"
+                    : "hover:bg-gray-700"
                     }`}
             >
                 <Settings size={14} />
@@ -109,8 +107,7 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
         </li>
     </>
 
-
-       const homeLinks = <>
+    const homeLinks = <>
         {/*  Home */}
         <li>
             <Link
@@ -200,7 +197,7 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
                 <div className="flex-1 overflow-y-auto mt-16 lg:mt-0 border-r border-r-white/15">
                     {/* Title for desktop */}
                     <h2 className="text-2xl font-bold py-[13px] px-6 hidden lg:block border-b border-b-white/15">
-                        BISTRO-E 
+                        BISTRO-E
                     </h2>
 
                     <ul className="px-4 space-y-1 text-xs mt-2">
@@ -208,7 +205,9 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
                     </ul>
 
                     <div className="border-t border-t-white/40 mt-6">
-                        <ul className="px-4 space-y-1 text-xs mt-2">{homeLinks}</ul>
+                        <ul className="px-4 space-y-1 text-xs mt-2">
+                            {homeLinks}
+                        </ul>
                     </div>
                 </div>
 
@@ -219,7 +218,7 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
                 </div>
             </div>
         </>
-    );
-};
+    )
+}
 
-export default Sidebar;
+export default UserSidebar

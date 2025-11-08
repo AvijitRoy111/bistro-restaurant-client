@@ -2,7 +2,7 @@ import React from 'react'
 
 const Setting = () => {
   return (
-    <div>Setting page...................</div>
+    <div className='bg-slate-900 w-full h-full'>Setting page...................</div>
   )
 }
 

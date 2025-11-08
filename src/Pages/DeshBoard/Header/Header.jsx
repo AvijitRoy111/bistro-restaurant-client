@@ -11,7 +11,7 @@ const Header = ({ setIsOpen }) => {
         >
           <Menu size={20} />
         </button>
-        <h1 className="font-semibold text-lg hidden lg:block">Dashboard</h1>
+        <h1 className="font-semibold text-lg hidden lg:block ml-60">Admin</h1>
       </div>
 
       {/* Right side */}

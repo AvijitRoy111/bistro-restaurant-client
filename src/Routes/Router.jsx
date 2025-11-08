@@ -20,6 +20,14 @@ import ManageItems from "../Pages/DeshBoard/ManageItems/ManageItems";
 import ManageBooking from "../Pages/DeshBoard/ManageBooking/ManageBooking";
 import AllUser from "../Pages/DeshBoard/AllUser/AllUser";
 import Setting from "../Pages/DeshBoard/Setting/Setting";
+import ShopCart from "../Pages/ShopCarts/ShopCart";
+import UserCarts from "../Pages/UserCarts/UserCarts/UserCarts";
+import UserLayout from "../Layouts/DashBoardLayout/UserLayout/UserLayout";
+import UserHome from "../Pages/UserCarts/UserHome/UserHome";
+import UserReservation from "../Pages/UserCarts/UserReservation/UserReservation";
+import AddReveiw from "../Pages/UserCarts/AddReveiw/AddReveiw";
+import Booking from "../Pages/UserCarts/Booking/Booking";
+import Settings from "../Pages/UserCarts/Setting/Settings";
 
 
 const router = createBrowserRouter([
@@ -98,7 +106,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/manageItems",
-        element: <ManageItems/>
+        element: <ManageItems />
       },
       {
         path: "/manageBooking",
@@ -114,13 +122,47 @@ const router = createBrowserRouter([
       },
       {
         path: "/header",
-        element: <Header/>
+        element: <Header />
       },
-       {
+      {
         path: "/sidebar",
-        element: <SideBar/>
+        element: <SideBar />
       },
     ],
+  },
+  {
+    path: "/",
+    element: <UserLayout />,
+    children: [
+        {
+        path: "/user-home",
+        element: <UserHome />
+      },
+      {
+        path: "/user-reservation",
+        element: <UserReservation />
+      },
+      {
+        path: "/cart",
+        element: <ShopCart />
+      },
+      {
+        path: "/add-reveiw",
+        element: <AddReveiw />
+      },
+      {
+        path: "/booking",
+        element: <Booking />
+      },
+      {
+        path: "/settings",
+        element: <Settings/>
+      },
+      {
+        path: "/userCarts",
+        element: <UserCarts />
+      }
+    ]
   },
 
 ]);
