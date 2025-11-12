@@ -118,10 +118,10 @@ const AllUser = () => {
                 </div>
 
                 {/* Name + Email */}
-                {/* <div>
+                <div>
                   <p className="font-semibold">{user.name}</p>
                   <p className="text-sm text-gray-600">{user.email}</p>
-                </div> */}
+                </div>
 
                 {/* Role */}
                 <div>
