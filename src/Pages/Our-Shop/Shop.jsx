@@ -1,92 +1,92 @@
-// import { useContext, useEffect, useState } from "react";
-// import { useParams, useLocation } from "react-router-dom";
-// import axios from "axios";
-// import banner1 from "../../assets/shop/banner.png";
-// import { AuthContext } from "../../AuthProvider/AuthProvider";
-// import { CheckCircle } from "lucide-react";
-// import { CartContext } from "../../Components/Carts/CartContext";
+import { useContext, useEffect, useState } from "react";
+import { useParams, useLocation } from "react-router-dom";
+import axios from "axios";
+import banner1 from "../../assets/shop/banner.png";
+import { AuthContext } from "../../AuthProvider/AuthProvider";
+import { CheckCircle } from "lucide-react";
+import { CartContext } from "../../Components/Carts/CartContext";
 
-// const Shop = () => {
-//   const { user } = useContext(AuthContext);
-//   const { category } = useParams();
-//   const location = useLocation();
-//   const [items, setItems] = useState([]);
-//   const [active, setActive] = useState(category?.toUpperCase() || "SALAD");
-//   const [highlightId, setHighlightId] = useState(null);
-//   const [loading, setLoading] = useState(true);
-//   const [showModal, setShowModal] = useState(false);
-//   const [addedItem, setAddedItem] = useState(null);
-//   const { fetchCartCount } = useContext(CartContext);
+const Shop = () => {
+  const { user } = useContext(AuthContext);
+  const { category } = useParams();
+  const location = useLocation();
+  const [items, setItems] = useState([]);
+  const [active, setActive] = useState(category?.toUpperCase() || "SALAD");
+  const [highlightId, setHighlightId] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [showModal, setShowModal] = useState(false);
+  const [addedItem, setAddedItem] = useState(null);
+  const { fetchCartCount } = useContext(CartContext);
 
-//   // Pagination
-//   const [currentPage, setCurrentPage] = useState(1);
-//   const [itemsPerPage, setItemsPerPage] = useState(6);
+  // Pagination
+  const [currentPage, setCurrentPage] = useState(1);
+  const [itemsPerPage, setItemsPerPage] = useState(6);
 
-//   // Filters
-//   const [selectedCategory, setSelectedCategory] = useState("");
-//   const [minPrice, setMinPrice] = useState(0);
-//   const [maxPrice, setMaxPrice] = useState(500);
-//   const [sortOrder, setSortOrder] = useState("");
-//   const [searchQuery, setSearchQuery] = useState("");
+  // Filters
+  const [selectedCategory, setSelectedCategory] = useState("");
+  const [minPrice, setMinPrice] = useState(0);
+  const [maxPrice, setMaxPrice] = useState(500);
+  const [sortOrder, setSortOrder] = useState("");
+  const [searchQuery, setSearchQuery] = useState("");
 
-//   // Highlight
-//   useEffect(() => {
-//     const query = new URLSearchParams(location.search);
-//     const highlight = query.get("highlight");
-//     setHighlightId(highlight);
-//   }, [location.search]);
+  // Highlight
+  useEffect(() => {
+    const query = new URLSearchParams(location.search);
+    const highlight = query.get("highlight");
+    setHighlightId(highlight);
+  }, [location.search]);
 
-//   // Fetch items
-//   useEffect(() => {
-//     const fetchData = async () => {
-//       try {
-//         setLoading(true);
-//         const res = await axios.get(`${import.meta.env.VITE_api}/menuItems`);
-//         setItems(res.data.data);
-//       } catch (err) {
-//         console.error("Error fetching shop items:", err);
-//       } finally {
-//         setLoading(false);
-//       }
-//     };
-//     fetchData();
-//   }, [category]);
+  // Fetch items
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        setLoading(true);
+        const res = await axios.get(`${import.meta.env.VITE_api}/menuItems`);
+        setItems(res.data.data);
+      } catch (err) {
+        console.error("Error fetching shop items:", err);
+      } finally {
+        setLoading(false);
+      }
+    };
+    fetchData();
+  }, [category]);
 
-//   // Categories
-//   const categories = [...new Set(items.map((item) => item.category.toUpperCase()))];
+  // Categories
+  const categories = [...new Set(items.map((item) => item.category.toUpperCase()))];
 
-//   // Sync select with tab
-//   useEffect(() => {
-//     if (active) {
-//       setSelectedCategory(active);
-//       setCurrentPage(1);
-//     }
-//   }, [active]);
+  // Sync select with tab
+  useEffect(() => {
+    if (active) {
+      setSelectedCategory(active);
+      setCurrentPage(1);
+    }
+  }, [active]);
 
-//   useEffect(() => {
-//     if (selectedCategory) {
-//       setActive(selectedCategory.toUpperCase());
-//       setCurrentPage(1);
-//     }
-//   }, [selectedCategory]);
+  useEffect(() => {
+    if (selectedCategory) {
+      setActive(selectedCategory.toUpperCase());
+      setCurrentPage(1);
+    }
+  }, [selectedCategory]);
 
-//   // 🧠 Detect if search partially matches any category -> auto switch tab
-//   useEffect(() => {
-//     if (!searchQuery) return;
-//     const matchedCategory = categories.find((cat) =>
-//       cat.toLowerCase().includes(searchQuery.toLowerCase())
-//     );
-//     if (matchedCategory) {
-//       setActive(matchedCategory);
-//       setSelectedCategory(matchedCategory);
-//       setCurrentPage(1);
-//     }
-//   }, [searchQuery]);
+  // 🧠 Detect if search partially matches any category -> auto switch tab
+  useEffect(() => {
+    if (!searchQuery) return;
+    const matchedCategory = categories.find((cat) =>
+      cat.toLowerCase().includes(searchQuery.toLowerCase())
+    );
+    if (matchedCategory) {
+      setActive(matchedCategory);
+      setSelectedCategory(matchedCategory);
+      setCurrentPage(1);
+    }
+  }, [searchQuery]);
 
-//   // Filter
-//   const filteredByCategory = items.filter((item) =>
-//     active ? item.category.toUpperCase() === active.toUpperCase() : true
-//   );
+  // Filter
+  const filteredByCategory = items.filter((item) =>
+    active ? item.category.toUpperCase() === active.toUpperCase() : true
+  );
 
   const filtered = filteredByCategory
     .filter((item) => {
