@@ -159,82 +159,82 @@
 //     </div>
 //   );
 
-//   return (
-//     <div>
-//       {/* Banner */}
-//       <div className="relative w-full h-[70vh] overflow-hidden mb-10">
-//         <img src={banner1} alt="banner" className="w-full h-full object-cover" />
-//         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-black/40 rounded-2xl px-8 py-10 text-center text-white max-w-3xl h-44 md:h-64 w-[90%] backdrop-blur-sm">
-//           <h2 className="text-3xl sm:text-5xl font-bold mb-3">{title}</h2>
-//           <p className="text-sm sm:text-lg opacity-90">{subtitle}</p>
-//         </div>
-//       </div>
+  return (
+    <div>
+      {/* Banner */}
+      <div className="relative w-full h-[70vh] overflow-hidden mb-10">
+        <img src={banner1} alt="banner" className="w-full h-full object-cover" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-black/40 rounded-2xl px-8 py-10 text-center text-white max-w-3xl h-44 md:h-64 w-[90%] backdrop-blur-sm">
+          <h2 className="text-3xl sm:text-5xl font-bold mb-3">{title}</h2>
+          <p className="text-sm sm:text-lg opacity-90">{subtitle}</p>
+        </div>
+      </div>
 
-//       {/* Filters */}
-//       <div className="max-w-6xl mx-auto mb-8 px-4">
-//         <div className="grid grid-cols-1 md:grid-cols-5 gap-4 items-end">
-//           {/* Category */}
-//           <div>
-//             <label className="block text-sm font-semibold mb-1">Category</label>
-//             <select
-//               value={selectedCategory}
-//               onChange={(e) => setSelectedCategory(e.target.value)}
-//               className="w-full border px-2 py-1 rounded border-gray-300 focus:border-amber-700 focus:ring-1 focus:ring-amber-700 outline-none transition"
-//             >
-//               <option value="">All</option>
-//               {categories.map((cat) => (
-//                 <option key={cat} value={cat}>
-//                   {cat}
-//                 </option>
-//               ))}
-//             </select>
-//           </div>
+      {/* Filters */}
+      <div className="max-w-6xl mx-auto mb-8 px-4">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-4 items-end">
+          {/* Category */}
+          <div>
+            <label className="block text-sm font-semibold mb-1">Category</label>
+            <select
+              value={selectedCategory}
+              onChange={(e) => setSelectedCategory(e.target.value)}
+              className="w-full border px-2 py-1 rounded border-gray-300 focus:border-amber-700 focus:ring-1 focus:ring-amber-700 outline-none transition"
+            >
+              <option value="">All</option>
+              {categories.map((cat) => (
+                <option key={cat} value={cat}>
+                  {cat}
+                </option>
+              ))}
+            </select>
+          </div>
 
-//           {/* Sort By */}
-//           <div>
-//             <label className="block text-sm font-semibold mb-1">Sort By</label>
-//             <select
-//               value={sortOrder}
-//               onChange={(e) => {
-//                 setSortOrder(e.target.value);
-//                 setCurrentPage(1);
-//               }}
-//               className="w-full border px-2 py-1 rounded border-gray-300 focus:border-amber-700 focus:ring-1 focus:ring-amber-700 outline-none transition"
-//             >
-//               <option value="">Default</option>
-//               <option value="lowToHigh">Price: Low → High</option>
-//               <option value="highToLow">Price: High → Low</option>
-//               <option value="asc">Name: A → Z</option>
-//               <option value="desc">Name: Z → A</option>
-//             </select>
-//           </div>
+          {/* Sort By */}
+          <div>
+            <label className="block text-sm font-semibold mb-1">Sort By</label>
+            <select
+              value={sortOrder}
+              onChange={(e) => {
+                setSortOrder(e.target.value);
+                setCurrentPage(1);
+              }}
+              className="w-full border px-2 py-1 rounded border-gray-300 focus:border-amber-700 focus:ring-1 focus:ring-amber-700 outline-none transition"
+            >
+              <option value="">Default</option>
+              <option value="lowToHigh">Price: Low → High</option>
+              <option value="highToLow">Price: High → Low</option>
+              <option value="asc">Name: A → Z</option>
+              <option value="desc">Name: Z → A</option>
+            </select>
+          </div>
 
-//           {/* Search */}
-//           <div className="md:col-span-2">
-//             <label className="block text-sm font-semibold mb-1">Search</label>
-//             <input
-//               type="text"
-//               value={searchQuery}
-//               onChange={(e) => {
-//                 setSearchQuery(e.target.value);
-//                 setCurrentPage(1);
-//               }}
-//               placeholder="Search by name or category"
-//               className="w-full border px-2 py-1 rounded border-gray-300 focus:border-amber-700 focus:ring-1 focus:ring-amber-700 outline-none transition"
-//             />
-//           </div>
+          {/* Search */}
+          <div className="md:col-span-2">
+            <label className="block text-sm font-semibold mb-1">Search</label>
+            <input
+              type="text"
+              value={searchQuery}
+              onChange={(e) => {
+                setSearchQuery(e.target.value);
+                setCurrentPage(1);
+              }}
+              placeholder="Search by name or category"
+              className="w-full border px-2 py-1 rounded border-gray-300 focus:border-amber-700 focus:ring-1 focus:ring-amber-700 outline-none transition"
+            />
+          </div>
 
-//           {/* Reset Button */}
-//           <div className="md:col-span-1 flex justify-end items-center mt-4 md:mt-0">
-//             <button
-//               onClick={handleReset}
-//               className="bg-amber-700 text-white px-4 py-2 rounded hover:bg-amber-800 transition"
-//             >
-//               Reset Filters
-//             </button>
-//           </div>
-//         </div>
-//       </div>
+          {/* Reset Button */}
+          <div className="md:col-span-1 flex justify-end items-center mt-4 md:mt-0">
+            <button
+              onClick={handleReset}
+              className="bg-amber-700 text-white px-4 py-2 rounded hover:bg-amber-800 transition"
+            >
+              Reset Filters
+            </button>
+          </div>
+        </div>
+      </div>
 
       {/* Tabs */}
       <div className="flex justify-center space-x-6 border-b border-gray-200 mb-8">
