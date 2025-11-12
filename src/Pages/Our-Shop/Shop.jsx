@@ -350,9 +350,9 @@
 //         </>
 //       )}
 
-//       {/* Success Modal */}
-//       {showModal && (
-//         <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50">
+      {/* Success Modal */}
+      {showModal && (
+        <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50">
           <div className="bg-white rounded-2xl shadow-xl p-6 text-center w-[90%] max-w-sm animate-fadeIn">
             <CheckCircle size={60} className="text-green-500 mx-auto mb-4" />
             <h3 className="text-xl font-bold text-gray-800 mb-2">Item Added Successfully!</h3>
