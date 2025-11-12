@@ -12,23 +12,36 @@ const Testimonials = () => {
   const [index, setIndex] = useState(0);
   const [loading, setLoading] = useState(true);
 
-  //  Fetch data from API
-  useEffect(() => {
-    const fetchReviews = async () => {
-      try {
-        const data = await axios.get(`${import.meta.env.VITE_api}/reviews`);
-        setReviews(data.data.data);
-        setLoading(false);
-      } catch (error) {
-        console.error("Error fetching reviews:", error);
-        setLoading(false);
+  // Fetch data from API
+  const fetchReviews = async () => {
+    try {
+      const res = await axios.get(`${import.meta.env.VITE_api}/reviews`);
+      const fetched = res.data?.data || [];
+      setReviews(fetched);
+      setLoading(false);
+      if (fetched.length > 0 && index >= fetched.length) {
+        setIndex(0);
       }
-    };
+    } catch (error) {
+      console.error("Error fetching reviews:", error);
+      setLoading(false);
+    }
+  };
 
+  useEffect(() => {
     fetchReviews();
   }, []);
 
-  // jodi data na thake
+  
+  useEffect(() => {
+    const interval = setInterval(() => {
+      fetchReviews();
+    }, 10000); 
+    return () => clearInterval(interval);
+  }, []);
+
+  
+  // loading...........
   if (!reviews.length && !loading) {
     return (
       <div className="text-center py-10 text-gray-500 font-semibold">
@@ -53,53 +66,38 @@ const Testimonials = () => {
   return (
     <div className="relative max-w-3xl mx-auto mb-20 px-4 sm:px-6 lg:px-0">
       {loading ? (
-        // 🩶 Full Card Skeleton Loader
-        <div className="animate-pulse bg-gray-200 shadow-lg rounded-2xl py-16 px-4 text-center space-y-6 ">
-          {/* Header Skeleton */}
+        // 🩶 Skeleton Loader
+        <div className="animate-pulse bg-gray-200 shadow-lg rounded-2xl py-16 px-4 text-center space-y-6">
           <div className="flex flex-col items-center space-y-3">
             <div className="h-4 w-48 bg-gray-300 rounded"></div>
             <div className="h-8 w-64 bg-gray-300 rounded"></div>
           </div>
-
-          {/* Rating Skeleton */}
           <div className="flex justify-center space-x-2 mt-6">
             {[...Array(5)].map((_, i) => (
               <div key={i} className="h-5 w-5 bg-gray-300 rounded"></div>
             ))}
           </div>
-
-          {/* Quote Icon Skeleton */}
           <div className="flex justify-center mt-6">
             <div className="h-8 w-8 bg-gray-300 rounded-full"></div>
           </div>
-
-          {/* Text Skeleton */}
           <div className="space-y-2 mt-6 px-6">
             <div className="h-3 w-full bg-gray-300 rounded"></div>
             <div className="h-3 w-5/6 bg-gray-300 rounded"></div>
             <div className="h-3 w-3/4 bg-gray-300 rounded"></div>
           </div>
-
-          {/* Image + Name Skeleton */}
           <div className="flex flex-col items-center space-y-3 mt-6">
             <div className="w-16 h-16 rounded-full bg-gray-300"></div>
             <div className="h-4 w-32 bg-gray-300 rounded"></div>
           </div>
-
-          {/* Navigation Buttons Skeleton */}
-          <div className="absolute left-0 top-1/2 transform -translate-y-1/2 p-2">
-            <div className="w-8 h-8 bg-gray-300 rounded-full"></div>
-          </div>
-          <div className="absolute right-0 top-1/2 transform -translate-y-1/2 p-2">
-            <div className="w-8 h-8 bg-gray-300 rounded-full"></div>
-          </div>
         </div>
       ) : (
-        // 🌟 Actual Testimonial Content
-        <div className="bg-white py-16 px-4 text-center relative max-w-3xl mx-auto shadow-lg rounded-2xl">
-          {/* Section Header */}
+        // Actual Testimonial Card
+        <div className="bg-white py-16 px-4 text-center relative max-w-3xl mx-auto shadow-lg rounded-2xl transition-all duration-500">
+          {/* Header */}
           <div className="flex flex-col items-center justify-center space-y-3 mb-6">
-            <p className="text-yellow-500 italic mb-2">---What Our Clients Say---</p>
+            <p className="text-yellow-500 italic mb-2">
+              ---What Our Clients Say---
+            </p>
             <hr className="border-2 border-gray-300 w-80" />
             <h2 className="text-2xl font-bold tracking-wide">TESTIMONIALS</h2>
             <hr className="border-2 border-gray-300 w-80" />
@@ -110,8 +108,9 @@ const Testimonials = () => {
             {[...Array(5)].map((_, i) => (
               <FaStar
                 key={i}
-                className={`mx-1 ${i < rating ? "text-yellow-500" : "text-gray-300"
-                  }`}
+                className={`mx-1 ${
+                  i < rating ? "text-yellow-500" : "text-gray-300"
+                }`}
               />
             ))}
           </div>
@@ -149,7 +148,6 @@ const Testimonials = () => {
         </div>
       )}
     </div>
-
   );
 };
 

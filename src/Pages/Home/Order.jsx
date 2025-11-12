@@ -11,13 +11,13 @@ import "swiper/css/autoplay";
 const Order = () => {
   const [categories, setCategories] = useState([]);
   const [activeIndex, setActiveIndex] = useState(0);
+  const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
 
   useEffect(() => {
     const fetchMenu = async () => {
       try {
         const res = await axios.get(`${import.meta.env.VITE_api}/menuItems`);
-        // Unique category with one sample image each
         const grouped = res.data.data.reduce((acc, item) => {
           if (!acc[item.category]) acc[item.category] = item.image;
           return acc;
@@ -30,10 +30,37 @@ const Order = () => {
         );
       } catch (err) {
         console.error("Error fetching categories:", err);
+      } finally {
+        setLoading(false);
       }
     };
     fetchMenu();
   }, []);
+
+  // Skeleton Loader UI
+  if (loading) {
+    return (
+      <div className="w-full py-20 bg-white flex flex-col items-center">
+        <div className="flex flex-col items-center gap-3 pb-10">
+          <div className="h-6 w-80 bg-gray-300 rounded animate-pulse"></div>
+          <div className="h-1 w-80 bg-gray-300 rounded animate-pulse"></div>
+          <div className="h-8 w-60 bg-gray-300 rounded animate-pulse"></div>
+          <div className="h-1 w-80 bg-gray-300 rounded animate-pulse"></div>
+        </div>
+
+        <div className="w-full max-w-7xl px-4 md:px-10">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+            {[...Array(6)].map((_, index) => (
+              <div
+                key={index}
+                className="relative rounded-2xl overflow-hidden shadow-lg bg-gray-300 animate-pulse h-[320px]"
+              ></div>
+            ))}
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="w-full py-20 bg-white flex flex-col items-center">
@@ -50,7 +77,7 @@ const Order = () => {
       </div>
 
       {/* Swiper Section */}
-      <div className="w-full max-w-7xl px-4 md:px-10">
+      <div className="w-full max-w-7xl px-4 md:px-24">
         <Swiper
           modules={[FreeMode, Autoplay]}
           freeMode={true}
@@ -78,10 +105,8 @@ const Order = () => {
                   alt={cat.name}
                   className="w-full h-[320px] object-cover group-hover:scale-105 transition"
                 />
-                <div className="absolute inset-0 bg-black/30 flex items-end justify-center pb-6">
-                  <h2 className="text-white text-2xl font-bold">
-                    {cat.name}
-                  </h2>
+                <div className="absolute inset-0 bg-black/60 flex items-end justify-center pb-6">
+                  <h2 className="text-white text-2xl font-bold">{cat.name}</h2>
                 </div>
               </div>
             </SwiperSlide>

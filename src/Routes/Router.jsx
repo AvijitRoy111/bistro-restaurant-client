@@ -28,6 +28,11 @@ import UserReservation from "../Pages/UserCarts/UserReservation/UserReservation"
 import AddReveiw from "../Pages/UserCarts/AddReveiw/AddReveiw";
 import Booking from "../Pages/UserCarts/Booking/Booking";
 import Settings from "../Pages/UserCarts/Setting/Settings";
+import ManageOrder from "../Pages/DeshBoard/ManageOrder/ManageOrder";
+import EditManageItems from "../Pages/DeshBoard/ManageItems/EditManageItems";
+import AllContact from "../Pages/DeshBoard/AllContact/AllContact";
+import PrivateRoutes from "../PrivateRoutes/PrivateRoutes";
+import AdminPrivateRoutes from "../AdminPrivateRoutes/AdminPrivateRoutes";
 
 
 const router = createBrowserRouter([
@@ -54,7 +59,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/contact",
-        element: <Contact />,
+        element: <PrivateRoutes><Contact /></PrivateRoutes>,
       },
       {
         path: "/navbar",
@@ -89,7 +94,9 @@ const router = createBrowserRouter([
 
   {
     path: "/",
-    element: <DashBoardLayouts />,
+    element:<AdminPrivateRoutes>
+      <DashBoardLayouts />
+    </AdminPrivateRoutes> ,
     errorElement: <Error />,
     children: [
       {
@@ -109,12 +116,24 @@ const router = createBrowserRouter([
         element: <ManageItems />
       },
       {
+        path: "/Edite-ManageItems/:id",
+        element: <EditManageItems />
+      },
+      {
+        path: "/manage-order",
+        element: <ManageOrder />
+      },
+      {
         path: "/manageBooking",
         element: <ManageBooking />
       },
       {
         path: "/allusers",
         element: <AllUser />
+      },
+      {
+        path: "/allcontacts",
+        element: <AllContact />
       },
       {
         path: "/setting",
@@ -134,7 +153,7 @@ const router = createBrowserRouter([
     path: "/",
     element: <UserLayout />,
     children: [
-        {
+      {
         path: "/user-home",
         element: <UserHome />
       },
@@ -144,7 +163,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/cart",
-        element: <ShopCart />
+        element: <PrivateRoutes><ShopCart /></PrivateRoutes>
       },
       {
         path: "/add-reveiw",
@@ -156,7 +175,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/settings",
-        element: <Settings/>
+        element: <Settings />
       },
       {
         path: "/userCarts",

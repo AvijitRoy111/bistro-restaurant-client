@@ -5,6 +5,7 @@ import image from "../../assets/auth/authentication-1.png";
 import background from "../../assets/auth/authentication.png";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 import { toast } from "react-toastify";
+import axios from "axios"; 
 
 const SignUp = () => {
   const { createUser, updateUserProfile, signInWithGoogle } = useContext(AuthContext);
@@ -13,6 +14,7 @@ const SignUp = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [acceptTerms, setAcceptTerms] = useState(false);
 
+  // handle signup user....
   const handleSubmit = async (e) => {
     e.preventDefault();
     const name = e.target.name.value;
@@ -28,6 +30,16 @@ const SignUp = () => {
     try {
       const { user } = await createUser(email, password);
       await updateUserProfile(name, photoURL);
+
+      // ✅ Save user to database using axios
+      const saveUser = {
+        name: name,
+        email: user.email,
+        photoURL: photoURL,
+      };
+
+      await axios.post(`${import.meta.env.VITE_api}/users`, saveUser);
+
       toast.success("User Sign Up Successful!");
       navigate("/");
     } catch (err) {
@@ -35,9 +47,21 @@ const SignUp = () => {
     }
   };
 
+  // handlegoogle signin
   const handleGoogleSignIn = async () => {
     try {
-      await signInWithGoogle();
+      const result = await signInWithGoogle();
+      const user = result.user;
+
+      //  Save Google user to database using axios
+      const saveUser = {
+        name: user.displayName,
+        email: user.email,
+        photoURL: user.photoURL,
+      };
+
+      await axios.post(`${import.meta.env.VITE_api}/users`, saveUser);
+
       toast.success("Google Sign Up Successful!");
       navigate("/");
     } catch (err) {
@@ -47,7 +71,7 @@ const SignUp = () => {
 
   return (
     <div
-      className="min-h-screen flex justify-center items-center relative bg-cover bg-center"
+      className="min-h-screen flex justify-center items-center relative bg-cover bg-center pt-20"
       style={{ backgroundImage: `url(${background})` }}
     >
       <div className="absolute inset-0 bg-black/20"></div>
@@ -112,7 +136,7 @@ const SignUp = () => {
                 onClick={() => setShowPassword(!showPassword)}
                 className="absolute right-3 top-8 cursor-pointer text-gray-600"
               >
-                {showPassword ? <FaEyeSlash size={25}/> : <FaEye size={25}/>}
+                {showPassword ? <FaEye size={25} /> : <FaEyeSlash size={25} />}
               </span>
             </div>
 

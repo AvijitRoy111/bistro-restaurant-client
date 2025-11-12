@@ -9,8 +9,6 @@ import {
   updateProfile,
 } from "firebase/auth";
 import { auth } from "../Firebase/firebase";
-import axios from "axios";
-
 
 export const AuthContext = createContext(null);
 
@@ -35,10 +33,8 @@ const AuthProvider = ({children}) => {
     return signInWithPopup(auth, googleProvider);
   };
 
-  const logOut = async () => {
+  const logOut = () => {
     setLoading(true);
-    const { data } = await axios(`${import.meta.env.VITE_api}/log-out`);
-    console.log(data);
     return signOut(auth);
   };
 

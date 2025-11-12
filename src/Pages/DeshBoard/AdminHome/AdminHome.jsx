@@ -31,38 +31,7 @@ export const AdminHome = () => {
 
   const COLORS = ["#0088FE", "#FF7F0E", "#FFBB28", "#FF4D4D"];
 
-  const pendingOrders = [
-    {
-      id: 1,
-      img: "https://i.pravatar.cc/40?img=1",
-      name: "Avijit Roy",
-      email: "avijit@example.com",
-      orderName: "Pizza",
-      quantity: 2,
-      total: 500,
-      status: "Processing",
-    },
-    {
-      id: 2,
-      img: "https://i.pravatar.cc/40?img=2",
-      name: "Mim Akter",
-      email: "mim@example.com",
-      orderName: "Salad",
-      quantity: 1,
-      total: 220,
-      status: "Processing",
-    },
-    {
-      id: 3,
-      img: "https://i.pravatar.cc/40?img=3",
-      name: "Rafiul Hasan",
-      email: "rafi@example.com",
-      orderName: "Dessert",
-      quantity: 3,
-      total: 600,
-      status: "Processing",
-    },
-  ];
+  
 
   return (
     <div className="bg-[#1E1E2E] min-h-screen text-gray-900 p-6 ">
@@ -129,63 +98,7 @@ export const AdminHome = () => {
         </div>
       </div>
 
-      {/* Pending Orders Table */}
-      <div className="mt-10 bg-white rounded-xl shadow-sm p-5">
-        <h1 className="text-xl font-bold mb-4 text-gray-800">
-          Pending Orders
-        </h1>
-        <div className="overflow-x-auto">
-          <table className="min-w-full border-collapse">
-            <thead>
-              <tr className="bg-gray-100 text-left text-sm font-semibold text-gray-600">
-                <th className="p-3 border-b">#</th>
-                <th className="p-3 border-b">User</th>
-                <th className="p-3 border-b">Email</th>
-                <th className="p-3 border-b">Order Name</th>
-                <th className="p-3 border-b">Qty</th>
-                <th className="p-3 border-b">Total</th>
-                <th className="p-3 border-b">Status</th>
-                <th className="p-3 border-b text-center">Actions</th>
-              </tr>
-            </thead>
-            <tbody>
-              {pendingOrders.map((order, index) => (
-                <tr
-                  key={order.id}
-                  className="hover:bg-gray-50 text-sm transition-all"
-                >
-                  <td className="p-3 border-b">{index + 1}</td>
-                  <td className="p-3 border-b flex items-center gap-2">
-                    <img
-                      src={order.img}
-                      alt={order.name}
-                      className="w-8 h-8 rounded-full"
-                    />
-                    <span className="font-medium">{order.name}</span>
-                  </td>
-                  <td className="p-3 border-b">{order.email}</td>
-                  <td className="p-3 border-b">{order.orderName}</td>
-                  <td className="p-3 border-b">{order.quantity}</td>
-                  <td className="p-3 border-b">৳{order.total}</td>
-                  <td className="p-3 border-b">
-                    <span className="bg-yellow-100 text-yellow-700 px-2 py-1 rounded-full text-xs">
-                      {order.status}
-                    </span>
-                  </td>
-                  <td className="p-3 border-b flex justify-center gap-3">
-                    <button className="text-blue-500 hover:text-blue-700">
-                      <Edit2 size={18} />
-                    </button>
-                    <button className="text-red-500 hover:text-red-700">
-                      <Trash2 size={18} />
-                    </button>
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      </div>
+      
     </div>
   );
 };

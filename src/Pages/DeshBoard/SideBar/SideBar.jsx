@@ -11,6 +11,8 @@ import {
     CalendarDays,
     UtensilsCrossed,
     PhoneCall,
+    ListOrdered,
+    PhoneCallIcon,
 } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 
@@ -63,6 +65,21 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
             </Link>
         </li>
 
+        {/* Manage order */}
+        <li>
+            <Link
+                to="/manage-order"
+                onClick={() => setIsOpen(false)}
+                className={`flex items-center gap-3 py-2 px-3 rounded-md transition-all ${location.pathname === "/manage-order"
+                        ? "bg-gray-900/70 border-r-4 border-l-4 border-orange-500"
+                        : "hover:bg-gray-700"
+                    }`}
+            >
+                <ListOrdered size={14} />
+                <span>Manage Orders</span>
+            </Link>
+        </li>
+
         {/* Manage Bookings */}
         <li>
             <Link
@@ -75,6 +92,20 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
             >
                 <BookText size={14} />
                 <span>Manage Bookings</span>
+            </Link>
+        </li>
+        {/* All Users */}
+        <li>
+            <Link
+                to="/allcontacts"
+                onClick={() => setIsOpen(false)}
+                className={`flex items-center gap-3 py-2 px-3 rounded-md transition-all ${location.pathname === "/allcontacts"
+                        ? "bg-gray-900/70 border-r-4 border-l-4 border-orange-500"
+                        : "hover:bg-gray-700"
+                    }`}
+            >
+                <PhoneCallIcon size={14} />
+                <span>All Contacts</span>
             </Link>
         </li>
 
@@ -92,6 +123,7 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
                 <span>All Users</span>
             </Link>
         </li>
+
 
         {/* Settings */}
         <li>

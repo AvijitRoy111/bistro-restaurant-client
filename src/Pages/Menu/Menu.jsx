@@ -7,15 +7,19 @@ import image from "../../assets/home/Rectangle 11.png";
 
 const Menu = () => {
   const [menuItems, setMenuItems] = useState([]);
+  const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
 
   useEffect(() => {
     const fetchData = async () => {
       try {
+        setLoading(true);
         const res = await axios.get(`${import.meta.env.VITE_api}/menuItems`);
         setMenuItems(res.data.data);
       } catch (err) {
         console.error("Error fetching menu:", err);
+      } finally {
+        setLoading(false);
       }
     };
     fetchData();
@@ -24,14 +28,12 @@ const Menu = () => {
   const title = "OUR MENU";
   const subtitle = "Would you like to try a dish";
 
-  // Group items by category dynamically
   const grouped = menuItems.reduce((acc, item) => {
     if (!acc[item.category]) acc[item.category] = [];
     acc[item.category].push(item);
     return acc;
   }, {});
 
-  // 🟡 Handle navigate with category + highlight ID
   const handleNavigate = (category, id) => {
     navigate(`/shop/${category.toLowerCase()}?highlight=${id}`);
   };
@@ -59,76 +61,98 @@ const Menu = () => {
         <hr className="border-2 border-gray-300 w-64 md:w-80" />
       </div>
 
-      {/* Dynamic category sections */}
-      {Object.keys(grouped).map((category) => (
-        <div key={category} className="mt-20 mb-32">
-          {/* Menu list */}
-          <div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-8 max-w-5xl mx-auto text-left px-4">
-              {grouped[category].slice(0, 8).map((item) => (
-                <div
-                  key={item._id}
-                  onClick={() => handleNavigate(item.category, item._id)}
-                  className="flex items-center justify-between gap-4 border-b border-gray-200 pb-3 cursor-pointer hover:bg-gray-50 transition"
-                >
-                  <div className="flex items-center gap-4">
-                    <img
-                      className="w-16 h-16 object-cover"
-                      src={item.image || image}
-                      alt={item.name}
-                      style={{
-                        borderRadius: "0px 200px 200px 200px",
-                      }}
-                    />
-                    <div>
-                      <h3 className="font-semibold text-gray-800">
-                        {item.name}
-                      </h3>
-                      <p className="text-sm text-gray-500">
-                        {item.recipe || item.description}
-                      </p>
-                    </div>
+      {/* Skeleton Loading */}
+      {loading ? (
+        <div className="mt-20 mb-32">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-8 max-w-5xl mx-auto text-left px-4 animate-pulse">
+            {Array.from({ length: 8 }).map((_, i) => (
+              <div
+                key={i}
+                className="flex items-center justify-between gap-4 border-b border-gray-200 pb-3"
+              >
+                <div className="flex items-center gap-4">
+                  <div className="w-16 h-16 bg-gray-300 rounded-[0px_200px_200px_200px]"></div>
+                  <div>
+                    <div className="h-4 bg-gray-300 rounded w-32 mb-2"></div>
+                    <div className="h-3 bg-gray-200 rounded w-48"></div>
                   </div>
-
-                  <span className="text-yellow-500 font-semibold">
-                    ${item.price}
-                  </span>
                 </div>
-              ))}
-            </div>
-
-            {/* Button */}
-            <div className="mt-12 flex justify-center">
-              <Link to="/shop">
-                <button className="bg-gray-200 rounded-md text-gray-800 font-medium px-6 py-3 hover:bg-gray-300 border-b-4 border-b-amber-700 hover:border-b-amber-950 transition">
-                  ORDER YOUR FAVOURITE FOOD
-                </button>
-              </Link>
-            </div>
+                <div className="h-4 w-10 bg-gray-300 rounded"></div>
+              </div>
+            ))}
           </div>
 
-          {/* Category banner */}
-          <div
-            className="relative bg-center bg-cover h-[500px] flex items-center justify-center mt-10 mb-20"
-            style={{
-              backgroundImage: `url(${banner})`,
-            }}
-          >
-            <div className="absolute inset-0 bg-black/10 rounded-md"></div>
-
-            <div className="relative flex flex-col items-center justify-center bg-black/50 text-center max-w-4xl h-[350px] mx-4 px-10 py-10 rounded-md shadow-md">
-              <h2 className="text-3xl font-serif tracking-wide mb-3 text-white uppercase">
-                {category}
-              </h2>
-              <p className="text-sm text-white leading-relaxed">
-                Lorem Ipsum has been the industry’s standard dummy text ever
-                since the 1500s, when an unknown printer took a galley of type
-                and scrambled it to make a type specimen book.
-              </p>
-            </div>
+          <div className="mt-12 flex justify-center">
+            <div className="h-10 w-64 bg-gray-300 rounded-md"></div>
           </div>
         </div>
-      ))}
+      ) : (
+        Object.keys(grouped).map((category) => (
+          <div key={category} className="mt-20 mb-32">
+            <div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-8 max-w-5xl mx-auto text-left px-4">
+                {grouped[category].slice(0, 8).map((item) => (
+                  <div
+                    key={item._id}
+                    onClick={() => handleNavigate(item.category, item._id)}
+                    className="flex items-center justify-between gap-4 border-b border-gray-200 pb-3 cursor-pointer hover:bg-gray-50 transition"
+                  >
+                    <div className="flex items-center gap-4">
+                      <img
+                        className="w-16 h-16 object-cover"
+                        src={item.image || image}
+                        alt={item.name}
+                        style={{
+                          borderRadius: "0px 200px 200px 200px",
+                        }}
+                      />
+                      <div>
+                        <h3 className="font-semibold text-gray-800">
+                          {item.name}
+                        </h3>
+                        <p className="text-sm text-gray-500">
+                          {item.recipe || item.description}
+                        </p>
+                      </div>
+                    </div>
+                    <span className="text-yellow-500 font-semibold">
+                      ${item.price}
+                    </span>
+                  </div>
+                ))}
+              </div>
+
+              <div className="mt-12 flex justify-center">
+                <Link to="/shop">
+                  <button className="bg-gray-200 rounded-md text-gray-800 font-medium px-6 py-3 hover:bg-gray-300 border-b-4 border-b-amber-700 hover:border-b-amber-950 transition">
+                    ORDER YOUR FAVOURITE FOOD
+                  </button>
+                </Link>
+              </div>
+            </div>
+
+            <div
+              className="relative bg-center bg-cover h-[500px] flex items-center justify-center mt-10 mb-20"
+              style={{
+                backgroundImage: `url(${banner})`,
+              }}
+            >
+              <div className="absolute inset-0 bg-black/10 rounded-md"></div>
+
+              <div className="relative flex flex-col items-center justify-center bg-black/50 text-center max-w-4xl h-[350px] mx-4 px-10 py-10 rounded-md shadow-md">
+                <h2 className="text-3xl font-serif tracking-wide mb-3 text-white uppercase">
+                  {category}
+                </h2>
+                <p className="text-sm text-white leading-relaxed">
+                  Lorem Ipsum has been the industry’s standard dummy text ever
+                  since the 1500s, when an unknown printer took a galley of type
+                  and scrambled it to make a type specimen book.
+                </p>
+              </div>
+            </div>
+          </div>
+        ))
+      )}
     </div>
   );
 };

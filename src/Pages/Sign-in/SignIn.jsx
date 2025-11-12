@@ -5,7 +5,7 @@ import image from "../../assets/auth/authentication-1.png";
 import background from "../../assets/auth/authentication.png";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 import { toast } from "react-toastify";
-
+import axios from "axios";
 
 const SignIn = () => {
   const { signIn, signInWithGoogle } = useContext(AuthContext);
@@ -32,7 +32,18 @@ const SignIn = () => {
   // handle google sign in
   const handleGoogleSignIn = async () => {
     try {
-      await signInWithGoogle();
+      const result = await signInWithGoogle();
+      const user = result.user;
+
+      // Save Google user to database using axios
+      const saveUser = {
+        name: user.displayName,
+        email: user.email,
+        photoURL: user.photoURL,
+      };
+
+      await axios.post(`${import.meta.env.VITE_api}/users`, saveUser);
+
       toast.success("User Sign in successful!");
       navigate("/");
     } catch (err) {
@@ -87,7 +98,7 @@ const SignIn = () => {
                 onClick={() => setShowPassword(!showPassword)}
                 className="absolute right-3 top-[32px] text-gray-500 cursor-pointer"
               >
-                {showPassword ? <FaEyeSlash size={25}/> : <FaEye size={25}/>}
+                {showPassword ? <FaEye size={25}/> : <FaEyeSlash size={25}/>}
               </span>
             </div>
 

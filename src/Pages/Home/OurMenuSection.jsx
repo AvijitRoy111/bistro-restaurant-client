@@ -4,13 +4,14 @@ import axios from "axios";
 
 const OurMenuSection = () => {
   const [menuItems, setMenuItems] = useState([]);
+  const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
 
   useEffect(() => {
     const fetchMenu = async () => {
       try {
+        setLoading(true);
         const res = await axios.get(`${import.meta.env.VITE_api}/menuItems`);
-        // Group by category and take one item per category
         const grouped = Object.values(
           res.data.data.reduce((acc, item) => {
             if (!acc[item.category]) acc[item.category] = item;
@@ -20,6 +21,8 @@ const OurMenuSection = () => {
         setMenuItems(grouped);
       } catch (err) {
         console.error("Error fetching menu:", err);
+      } finally {
+        setLoading(false);
       }
     };
     fetchMenu();
@@ -39,35 +42,54 @@ const OurMenuSection = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-8 max-w-5xl mx-auto text-left">
-        {menuItems.map((item) => (
-          <div
-            key={item._id}
-            onClick={() =>
-              navigate(`/shop/${item.category.toLowerCase()}?highlight=${item._id}`)
-            }
-            className="flex items-center justify-between gap-4 border-b border-gray-200 pb-3 cursor-pointer hover:bg-gray-50"
-          >
-            <div className="flex items-center gap-4">
-              <img
-                className="w-16 h-16 object-cover rounded-[0px_200px_200px_200px]"
-                src={item.image}
-                alt={item.name}
-                style={{
-                  borderRadius: "0px 200px 200px 200px",
-                }}
-              />
-              <div>
-                <h3 className="font-semibold text-gray-800">{item.name}</h3>
-                <p className="text-sm text-gray-500">
-                  {item.recipe || item.description}
-                </p>
+        {/* loading  → skeleton */}
+        {loading
+          ? Array.from({ length: 6 }).map((_, i) => (
+              <div
+                key={i}
+                className="flex items-center justify-between gap-4 border-b border-gray-200 pb-3 animate-pulse"
+              >
+                <div className="flex items-center gap-4 w-full">
+                  <div className="w-16 h-16 bg-gray-300 rounded-[0px_200px_200px_200px]" />
+                  <div className="flex-1">
+                    <div className="h-4 bg-gray-300 rounded w-2/3 mb-2"></div>
+                    <div className="h-3 bg-gray-200 rounded w-1/2"></div>
+                  </div>
+                </div>
+                <div className="w-10 h-4 bg-gray-300 rounded"></div>
               </div>
-            </div>
-            <span className="text-yellow-500 font-semibold">
-              ${item.price}
-            </span>
-          </div>
-        ))}
+            ))
+          : menuItems.map((item) => (
+              <div
+                key={item._id}
+                onClick={() =>
+                  navigate(
+                    `/shop/${item.category.toLowerCase()}?highlight=${item._id}`
+                  )
+                }
+                className="flex items-center justify-between gap-4 border-b border-gray-200 pb-3 cursor-pointer hover:bg-gray-50 transition"
+              >
+                <div className="flex items-center gap-4">
+                  <img
+                    className="w-16 h-16 object-cover rounded-[0px_200px_200px_200px]"
+                    src={item.image}
+                    alt={item.name}
+                    style={{
+                      borderRadius: "0px 200px 200px 200px",
+                    }}
+                  />
+                  <div>
+                    <h3 className="font-semibold text-gray-800">{item.name}</h3>
+                    <p className="text-sm text-gray-500">
+                      {item.recipe || item.description}
+                    </p>
+                  </div>
+                </div>
+                <span className="text-yellow-500 font-semibold">
+                  ${item.price}
+                </span>
+              </div>
+            ))}
       </div>
 
       <div className="mt-12">
