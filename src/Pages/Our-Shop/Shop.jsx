@@ -309,18 +309,18 @@
 //                   Previous
 //                 </button>
 
-//                 {[...Array(totalPages)].map((_, i) => (
-//                   <button
-//                     key={i}
-//                     onClick={() => handlePageChange(i + 1)}
-//                     className={`px-3 py-1 text-sm rounded-md border ${currentPage === i + 1
-//                       ? "bg-amber-700 text-white border-amber-800"
-//                       : "bg-gray-100 hover:bg-amber-700"
-//                       }`}
-//                   >
-//                     {i + 1}
-//                   </button>
-//                 ))}
+                {[...Array(totalPages)].map((_, i) => (
+                  <button
+                    key={i}
+                    onClick={() => handlePageChange(i + 1)}
+                    className={`px-3 py-1 text-sm rounded-md border ${currentPage === i + 1
+                      ? "bg-amber-700 text-white border-amber-800"
+                      : "bg-gray-100 hover:bg-amber-700"
+                      }`}
+                  >
+                    {i + 1}
+                  </button>
+                ))}
 
                 <div className="flex justify-end max-w-6xl mx-auto px-4">
                   <select
