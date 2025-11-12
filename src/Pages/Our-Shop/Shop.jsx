@@ -113,28 +113,28 @@
 //     if (page >= 1 && page <= totalPages) setCurrentPage(page);
 //   };
 
-//   // Add to cart
-//   const handleAddToCart = async (item) => {
-//     try {
-//       const newItem = {
-//         name: item.name,
-//         image: item.image,
-//         recipe: item.recipe,
-//         price: item.price,
-//         userName: user?.displayName || "Guest",
-//         userEmail: user?.email || "Not Logged In",
-//       };
+  // Add to cart
+  const handleAddToCart = async (item) => {
+    try {
+      const newItem = {
+        name: item.name,
+        image: item.image,
+        recipe: item.recipe,
+        price: item.price,
+        userName: user?.displayName || "Guest",
+        userEmail: user?.email || "Not Logged In",
+      };
 
-//       const res = await axios.post(`${import.meta.env.VITE_api}/carts`, newItem);
-//       if (res.data.insertedId) {
-//         setAddedItem(item);
-//         setShowModal(true);
-//         fetchCartCount();
-//       }
-//     } catch (error) {
-//       console.error("Error adding to cart:", error);
-//     }
-//   };
+      const res = await axios.post(`${import.meta.env.VITE_api}/carts`, newItem);
+      if (res.data.insertedId) {
+        setAddedItem(item);
+        setShowModal(true);
+        fetchCartCount();
+      }
+    } catch (error) {
+      console.error("Error adding to cart:", error);
+    }
+  };
 
   const handleReset = () => {
     setSelectedCategory(active || "");
