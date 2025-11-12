@@ -88,21 +88,21 @@
 //     active ? item.category.toUpperCase() === active.toUpperCase() : true
 //   );
 
-//   const filtered = filteredByCategory
-//     .filter((item) => {
-//       const query = searchQuery.toLowerCase();
-//       const matchSearch = !query || item.name.toLowerCase().includes(query);
-//       const price = Number(item.price);
-//       const matchPrice = price >= minPrice && price <= maxPrice;
-//       return matchSearch && matchPrice;
-//     })
-//     .sort((a, b) => {
-//       if (sortOrder === "lowToHigh") return Number(a.price) - Number(b.price);
-//       if (sortOrder === "highToLow") return Number(b.price) - Number(a.price);
-//       if (sortOrder === "asc") return a.name.localeCompare(b.name);
-//       if (sortOrder === "desc") return b.name.localeCompare(a.name);
-//       return 0;
-//     });
+  const filtered = filteredByCategory
+    .filter((item) => {
+      const query = searchQuery.toLowerCase();
+      const matchSearch = !query || item.name.toLowerCase().includes(query);
+      const price = Number(item.price);
+      const matchPrice = price >= minPrice && price <= maxPrice;
+      return matchSearch && matchPrice;
+    })
+    .sort((a, b) => {
+      if (sortOrder === "lowToHigh") return Number(a.price) - Number(b.price);
+      if (sortOrder === "highToLow") return Number(b.price) - Number(a.price);
+      if (sortOrder === "asc") return a.name.localeCompare(b.name);
+      if (sortOrder === "desc") return b.name.localeCompare(a.name);
+      return 0;
+    });
 
   // Pagination
   const totalPages = Math.ceil(filtered.length / itemsPerPage || 1);
