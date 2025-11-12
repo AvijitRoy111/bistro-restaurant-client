@@ -136,28 +136,28 @@
 //     }
 //   };
 
-//   const handleReset = () => {
-//     setSelectedCategory(active || "");
-//     setMinPrice(0);
-//     setMaxPrice(500);
-//     setSortOrder("");
-//     setSearchQuery("");
-//     setCurrentPage(1);
-//   };
+  const handleReset = () => {
+    setSelectedCategory(active || "");
+    setMinPrice(0);
+    setMaxPrice(500);
+    setSortOrder("");
+    setSearchQuery("");
+    setCurrentPage(1);
+  };
 
-//   const title = "OUR SHOP";
-//   const subtitle = "Would you like to try a dish";
+  const title = "OUR SHOP";
+  const subtitle = "Would you like to try a dish";
 
-//   const SkeletonCard = () => (
-//     <div className="border rounded-lg shadow-sm p-4 animate-pulse">
-//       <div className="w-full h-48 bg-gray-200 rounded-md mb-4"></div>
-//       <div className="space-y-3 text-center">
-//         <div className="h-5 bg-gray-200 rounded w-3/4 mx-auto"></div>
-//         <div className="h-4 bg-gray-200 rounded w-full"></div>
-//         <div className="h-8 bg-gray-300 rounded w-1/2 mx-auto mt-3"></div>
-//       </div>
-//     </div>
-//   );
+  const SkeletonCard = () => (
+    <div className="border rounded-lg shadow-sm p-4 animate-pulse">
+      <div className="w-full h-48 bg-gray-200 rounded-md mb-4"></div>
+      <div className="space-y-3 text-center">
+        <div className="h-5 bg-gray-200 rounded w-3/4 mx-auto"></div>
+        <div className="h-4 bg-gray-200 rounded w-full"></div>
+        <div className="h-8 bg-gray-300 rounded w-1/2 mx-auto mt-3"></div>
+      </div>
+    </div>
+  );
 
   return (
     <div>
