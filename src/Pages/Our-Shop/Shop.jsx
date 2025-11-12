@@ -337,18 +337,18 @@
 //                   </select>
 //                 </div>
 
-//                 <button
-//                   onClick={() => handlePageChange(currentPage + 1)}
-//                   disabled={currentPage === totalPages}
-//                   className="px-3 py-1 text-sm rounded-md border bg-gray-100 hover:bg-amber-700 disabled:opacity-50 hover:text-white"
-//                 >
-//                   Next
-//                 </button>
-//               </div>
-//             </div>
-//           )}
-//         </>
-//       )}
+                <button
+                  onClick={() => handlePageChange(currentPage + 1)}
+                  disabled={currentPage === totalPages}
+                  className="px-3 py-1 text-sm rounded-md border bg-gray-100 hover:bg-amber-700 disabled:opacity-50 hover:text-white"
+                >
+                  Next
+                </button>
+              </div>
+            </div>
+          )}
+        </>
+      )}
 
       {/* Success Modal */}
       {showModal && (
