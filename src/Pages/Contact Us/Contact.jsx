@@ -66,24 +66,24 @@
 //         description,
 //       });
 
-//       if (res.data?.success) {
-//         setSuccessMessage(res.data.message);
-//         setShowModal(true);
-//         form.reset();
-//         setCaptchaInput("");
-//         setIsCaptchaValid(false);
-//         setCaptchaKey(Date.now()); // refresh captcha after submit
-//       } else {
-//         throw new Error(res.data?.message || "Failed to send message");
-//       }
-//     } catch (err) {
-//       console.error(err);
-//       setSuccessMessage(err.message);
-//       setShowModal(true);
-//     } finally {
-//       setLoading(false);
-//     }
-//   };
+      if (res.data?.success) {
+        setSuccessMessage(res.data.message);
+        setShowModal(true);
+        form.reset();
+        setCaptchaInput("");
+        setIsCaptchaValid(false);
+        setCaptchaKey(Date.now()); // refresh captcha after submit
+      } else {
+        throw new Error(res.data?.message || "Failed to send message");
+      }
+    } catch (err) {
+      console.error(err);
+      setSuccessMessage(err.message);
+      setShowModal(true);
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     <div>
