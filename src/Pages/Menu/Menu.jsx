@@ -41,10 +41,10 @@ const Menu = () => {
   return (
     <div className="mb-0 md:mb-24 lg:mb-32">
       {/* Top Banner */}
-      <div className="relative w-full h-[30vh] md:h-[80vh] overflow-hidden">
+      <div className="relative w-full h-[60vh] md:h-[80vh] overflow-hidden">
         <img src={banner1} alt="banner" className="w-full h-full object-cover" />
         <div
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+          className="absolute top-52 md:top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
                         bg-black/40 rounded-2xl px-8 py-10 text-center text-white
                         max-w-3xl w-[90%] space-y-4 backdrop-blur-sm"
         >

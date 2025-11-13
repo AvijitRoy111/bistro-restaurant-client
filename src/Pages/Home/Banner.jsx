@@ -57,7 +57,7 @@ const Banner = () => {
   return (
     <div className="relative w-full">
       {/* Slider Container */}
-      <div className="relative w-full h-[80vh] max-h-[700px]">
+      <div className="relative w-full h-[70vh] max-h-[700px]">
         {images.map((img, index) => (
           <div
             key={index}
