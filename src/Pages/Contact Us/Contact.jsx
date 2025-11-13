@@ -151,16 +151,16 @@
 //               ></textarea>
 //             </div>
 
-//             {/* CAPTCHA Section */}
-//             <div className="flex flex-col items-start gap-2 mt-4">
-//               <LoadCanvasTemplate key={captchaKey} />
-//               <div className="flex gap-2 w-full">
-//                 <input
-//                   type="text"
-//                   placeholder="Enter CAPTCHA"
-//                   value={captchaInput}
-//                   onChange={handleCaptchaChange}
-//                   className="flex-1 border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#D99904]"
+            {/* CAPTCHA Section */}
+            <div className="flex flex-col items-start gap-2 mt-4">
+              <LoadCanvasTemplate key={captchaKey} />
+              <div className="flex gap-2 w-full">
+                <input
+                  type="text"
+                  placeholder="Enter CAPTCHA"
+                  value={captchaInput}
+                  onChange={handleCaptchaChange}
+                  className="flex-1 border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#D99904]"
                 />
                 <button
                   type="button"
