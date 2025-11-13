@@ -231,18 +231,18 @@
 //               <h3 className="text-xl font-semibold text-gray-800 mb-1">Success!</h3>
 //               <p className="text-gray-600 mb-4">{successMessage}</p>
 
-//               <button
-//                 onClick={() => setShowModal(false)}
-//                 className="bg-amber-700 hover:bg-amber-800 text-white py-2 px-6 rounded-md font-medium"
-//               >
-//                 Close
-//               </button>
-//             </motion.div>
-//           </motion.div>
-//         )}
-//       </AnimatePresence>
-//     </div>
-//   );
-// };
+              <button
+                onClick={() => setShowModal(false)}
+                className="bg-amber-700 hover:bg-amber-800 text-white py-2 px-6 rounded-md font-medium"
+              >
+                Close
+              </button>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+};
 
-// export default Contact;
+export default Contact;
