@@ -27,11 +27,11 @@ const SignUp = () => {
     setIsCaptchaValid(false);
   };
 
-  // const handleValidateCaptcha = () => {
-  //   if (validateCaptcha(captchaInput)) {
-  //     setIsCaptchaValid(true);
-  //     toast.success("CAPTCHA Matched Successfully!");
-  //   } else {
+  const handleValidateCaptcha = () => {
+    if (validateCaptcha(captchaInput)) {
+      setIsCaptchaValid(true);
+      toast.success("CAPTCHA Matched Successfully!");
+    } else {
       setIsCaptchaValid(false);
       toast.error("CAPTCHA didn't match! Try again.");
     }
