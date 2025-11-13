@@ -26,17 +26,17 @@
 //     setIsCaptchaValid(false); // default invalid
 //   };
 
-//   // Validate captcha manually
-//   const handleValidateCaptcha = () => {
-//     if (validateCaptcha(captchaInput)) {
-//       setIsCaptchaValid(true);
-//     } else {
-//       setIsCaptchaValid(false);
-//       setCaptchaInput("");
-//       setCaptchaKey(Date.now()); // refresh captcha
-//       alert("Incorrect CAPTCHA! Try again."); // optional
-//     }
-//   };
+  // Validate captcha manually
+  const handleValidateCaptcha = () => {
+    if (validateCaptcha(captchaInput)) {
+      setIsCaptchaValid(true);
+    } else {
+      setIsCaptchaValid(false);
+      setCaptchaInput("");
+      setCaptchaKey(Date.now()); // refresh captcha
+      alert("Incorrect CAPTCHA! Try again."); // optional
+    }
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
