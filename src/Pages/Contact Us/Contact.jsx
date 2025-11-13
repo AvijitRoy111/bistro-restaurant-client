@@ -1,19 +1,19 @@
-// import { useState, useEffect } from "react";
-// import ContactBanner from "./ContactBanner";
-// import ContactCard from "./ContactCard";
-// import { FaPaperPlane } from "react-icons/fa";
-// import { motion, AnimatePresence } from "framer-motion";
-// import { CheckCircle2, X } from "lucide-react";
-// import axios from "axios";
-// import { loadCaptchaEnginge, LoadCanvasTemplate, validateCaptcha } from "react-simple-captcha";
+import { useState, useEffect } from "react";
+import ContactBanner from "./ContactBanner";
+import ContactCard from "./ContactCard";
+import { FaPaperPlane } from "react-icons/fa";
+import { motion, AnimatePresence } from "framer-motion";
+import { CheckCircle2, X } from "lucide-react";
+import axios from "axios";
+import { loadCaptchaEnginge, LoadCanvasTemplate, validateCaptcha } from "react-simple-captcha";
 
-// const Contact = () => {
-//   const [showModal, setShowModal] = useState(false);
-//   const [successMessage, setSuccessMessage] = useState("");
-//   const [loading, setLoading] = useState(false);
-//   const [captchaInput, setCaptchaInput] = useState("");
-//   const [isCaptchaValid, setIsCaptchaValid] = useState(false);
-//   const [captchaKey, setCaptchaKey] = useState(Date.now()); // unique key to refresh captcha
+const Contact = () => {
+  const [showModal, setShowModal] = useState(false);
+  const [successMessage, setSuccessMessage] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [captchaInput, setCaptchaInput] = useState("");
+  const [isCaptchaValid, setIsCaptchaValid] = useState(false);
+  const [captchaKey, setCaptchaKey] = useState(Date.now()); // unique key to refresh captcha
 
   // Load captcha once
   useEffect(() => {
