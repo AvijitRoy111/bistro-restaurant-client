@@ -38,17 +38,17 @@
 //     }
 //   };
 
-//   const handleSubmit = async (e) => {
-//     e.preventDefault();
+  const handleSubmit = async (e) => {
+    e.preventDefault();
 
-//     // Validate captcha before submit
-//     if (!validateCaptcha(captchaInput)) {
-//       setIsCaptchaValid(false);
-//       setCaptchaInput("");
-//       setCaptchaKey(Date.now()); // refresh captcha
-//       alert("Incorrect CAPTCHA! Try again.");
-//       return;
-//     }
+    // Validate captcha before submit
+    if (!validateCaptcha(captchaInput)) {
+      setIsCaptchaValid(false);
+      setCaptchaInput("");
+      setCaptchaKey(Date.now()); // refresh captcha
+      alert("Incorrect CAPTCHA! Try again.");
+      return;
+    }
 
     setLoading(true);
 
