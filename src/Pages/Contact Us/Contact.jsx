@@ -50,21 +50,21 @@
 //       return;
 //     }
 
-//     setLoading(true);
+    setLoading(true);
 
-//     const form = e.target;
-//     const name = form.name.value;
-//     const email = form.email.value;
-//     const phone = form.number.value;
-//     const description = form.description.value;
+    const form = e.target;
+    const name = form.name.value;
+    const email = form.email.value;
+    const phone = form.number.value;
+    const description = form.description.value;
 
-//     try {
-//       const res = await axios.post(`${import.meta.env.VITE_api}/contacts`, {
-//         name,
-//         email,
-//         phone,
-//         description,
-//       });
+    try {
+      const res = await axios.post(`${import.meta.env.VITE_api}/contacts`, {
+        name,
+        email,
+        phone,
+        description,
+      });
 
       if (res.data?.success) {
         setSuccessMessage(res.data.message);
