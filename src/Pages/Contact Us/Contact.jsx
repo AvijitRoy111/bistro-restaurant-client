@@ -90,17 +90,17 @@
 //       <ContactBanner />
 
 
-//       <div>
-//         <div className="flex flex-col items-center gap-3 pb-8">
-//           <h1 className="text-xl font-bold text-center text-[#D99904]">
-//             ---Send Us a Message---
-//           </h1>
-//           <hr className="border-2 border-gray-300 w-80" />
-//           <h2 className="text-3xl font-bold text-center text-[#151515]">
-//             CONTACT FORM
-//           </h2>
-//           <hr className="border-2 border-gray-300 w-80" />
-//         </div>
+      <div>
+        <div className="flex flex-col items-center gap-3 pb-8">
+          <h1 className="text-xl font-bold text-center text-[#D99904]">
+            ---Send Us a Message---
+          </h1>
+          <hr className="border-2 border-gray-300 w-80" />
+          <h2 className="text-3xl font-bold text-center text-[#151515]">
+            CONTACT FORM
+          </h2>
+          <hr className="border-2 border-gray-300 w-80" />
+        </div>
 
         <div className="bg-gray-100 p-8 max-w-4xl mx-auto rounded-md shadow-md mt-10 mb-20">
           <form onSubmit={handleSubmit} className="space-y-6">
