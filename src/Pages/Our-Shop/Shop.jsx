@@ -70,7 +70,7 @@ const Shop = () => {
     }
   }, [selectedCategory]);
 
-  // 🧠 Detect if search partially matches any category -> auto switch tab
+  //  Detect if search partially matches any category -> auto switch tab
   useEffect(() => {
     if (!searchQuery) return;
     const matchedCategory = categories.find((cat) =>
@@ -191,7 +191,7 @@ const Shop = () => {
           </div>
 
           {/* Sort By */}
-          <div>
+          {/* <div>
             <label className="block text-sm font-semibold mb-1">Sort By</label>
             <select
               value={sortOrder}
@@ -201,13 +201,13 @@ const Shop = () => {
               }}
               className="w-full border px-2 py-1 rounded border-gray-300 focus:border-amber-700 focus:ring-1 focus:ring-amber-700 outline-none transition"
             >
-              <option value="">Default</option>
-              <option value="lowToHigh">Price: Low → High</option>
-              <option value="highToLow">Price: High → Low</option>
-              <option value="asc">Name: A → Z</option>
-              <option value="desc">Name: Z → A</option>
+              <option className="block text-sm  text-gray-600 font-semibold mb-1" value="">Default</option>
+              <option className="block text-sm  text-gray-600 font-semibold mb-1" value="lowToHigh">Price: Low → High</option>
+              <option className="block text-sm  text-gray-600 font-semibold mb-1" value="highToLow">Price: High → Low</option>
+              <option className="block text-sm  text-gray-600 font-semibold mb-1"  value="asc">Name: A → Z</option>
+              <option className="block text-sm  text-gray-600 font-semibold mb-1" value="desc">Name: Z → A</option>
             </select>
-          </div>
+          </div> */}
 
           {/* Search */}
           <div className="md:col-span-2">
@@ -237,7 +237,7 @@ const Shop = () => {
       </div>
 
       {/* Tabs */}
-      <div className="flex justify-center space-x-6 border-b border-gray-200 mb-8">
+      <div className="flex justify-center space-x-4 md:space-x-6 border-b border-gray-200 mb-8">
         {categories.map((cat) => (
           <button
             key={cat}
@@ -259,7 +259,7 @@ const Shop = () => {
 
       {/* Items */}
       {loading ? (
-        <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-3 gap-6 px-4 pb-20">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 px-4 pb-20">
           {Array(6)
             .fill(0)
             .map((_, i) => (
@@ -268,7 +268,7 @@ const Shop = () => {
         </div>
       ) : (
         <>
-          <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-3 gap-6 px-4 pb-10">
+          <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 px-4 pb-10">
             {paginatedItems.map((item) => (
               <div
                 key={item._id}
