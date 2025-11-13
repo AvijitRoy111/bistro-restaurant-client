@@ -194,13 +194,10 @@
 //             </div>
 //           </form>
 //         </div>
-
-
-
 //       </div>
 
 
-//       <ContactCard />
+      <ContactCard />
 
       {/* Success Modal */}
       <AnimatePresence>
