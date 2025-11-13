@@ -85,9 +85,9 @@
 //     }
 //   };
 
-//   return (
-//     <div>
-//       <ContactBanner />
+  return (
+    <div>
+      <ContactBanner />
 
 
       <div>
