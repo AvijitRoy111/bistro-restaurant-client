@@ -34,7 +34,9 @@ const SignUp = () => {
     } else {
       setIsCaptchaValid(false);
       toast.error("CAPTCHA didn't match! Try again.");
+      setCaptchaInput("");
     }
+
   };
 
   const handleSubmit = async (e) => {
