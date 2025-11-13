@@ -13,7 +13,8 @@ createRoot(document.getElementById('root')).render(
     <AuthProvider>
       <CartProvider>
         <RouterProvider router={router} />
-        <ToastContainer position="top-center" reverseOrder={false} />
+        <ToastContainer position="top-center"reverseOrder={false}/>
+
       </CartProvider>
     </AuthProvider>
   </StrictMode>,

@@ -13,17 +13,17 @@ const Contact = () => {
   const [loading, setLoading] = useState(false);
   const [captchaInput, setCaptchaInput] = useState("");
   const [isCaptchaValid, setIsCaptchaValid] = useState(false);
-  const [captchaKey, setCaptchaKey] = useState(Date.now()); // unique key to refresh captcha
+  const [captchaKey, setCaptchaKey] = useState(Date.now()); 
 
   // Load captcha once
   useEffect(() => {
-    loadCaptchaEnginge(6); // 6 character captcha
+    loadCaptchaEnginge(6);
   }, [captchaKey]);
 
   // Handle input change
   const handleCaptchaChange = (e) => {
     setCaptchaInput(e.target.value);
-    setIsCaptchaValid(false); // default invalid
+    setIsCaptchaValid(false);
   };
 
   // Validate captcha manually
@@ -33,8 +33,8 @@ const Contact = () => {
     } else {
       setIsCaptchaValid(false);
       setCaptchaInput("");
-      setCaptchaKey(Date.now()); // refresh captcha
-      alert("Incorrect CAPTCHA! Try again."); // optional
+      setCaptchaKey(Date.now()); 
+      alert("Incorrect CAPTCHA! Try again."); 
     }
   };
 
@@ -45,7 +45,7 @@ const Contact = () => {
     if (!validateCaptcha(captchaInput)) {
       setIsCaptchaValid(false);
       setCaptchaInput("");
-      setCaptchaKey(Date.now()); // refresh captcha
+      setCaptchaKey(Date.now()); 
       alert("Incorrect CAPTCHA! Try again.");
       return;
     }
@@ -72,7 +72,7 @@ const Contact = () => {
         form.reset();
         setCaptchaInput("");
         setIsCaptchaValid(false);
-        setCaptchaKey(Date.now()); // refresh captcha after submit
+        setCaptchaKey(Date.now()); 
       } else {
         throw new Error(res.data?.message || "Failed to send message");
       }

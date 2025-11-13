@@ -1,11 +1,12 @@
-import { useContext, useState } from "react";
+import { useContext, useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import image from "../../assets/auth/authentication-1.png";
 import background from "../../assets/auth/authentication.png";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 import { toast } from "react-toastify";
-import axios from "axios"; 
+import axios from "axios";
+import { loadCaptchaEnginge, LoadCanvasTemplate, validateCaptcha } from "react-simple-captcha";
 
 const SignUp = () => {
   const { createUser, updateUserProfile, signInWithGoogle } = useContext(AuthContext);
@@ -13,10 +14,36 @@ const SignUp = () => {
   const [error, setError] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   const [acceptTerms, setAcceptTerms] = useState(false);
+  const [captchaInput, setCaptchaInput] = useState("");
+  const [isCaptchaValid, setIsCaptchaValid] = useState(false);
+  const [captchaKey, setCaptchaKey] = useState(Date.now());
 
-  // handle signup user....
+  useEffect(() => {
+    loadCaptchaEnginge(6);
+  }, [captchaKey]);
+
+  const handleCaptchaChange = (e) => {
+    setCaptchaInput(e.target.value);
+    setIsCaptchaValid(false);
+  };
+
+  const handleValidateCaptcha = () => {
+    if (validateCaptcha(captchaInput)) {
+      setIsCaptchaValid(true);
+      toast.success("CAPTCHA Matched Successfully!");
+    } else {
+      setIsCaptchaValid(false);
+      toast.error("CAPTCHA didn't match! Try again.");
+    }
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (!validateCaptcha(captchaInput)) {
+      alert("Incorrect CAPTCHA! Try again.");
+      return;
+    }
+
     const name = e.target.name.value;
     const email = e.target.email.value;
     const password = e.target.password.value;
@@ -31,11 +58,10 @@ const SignUp = () => {
       const { user } = await createUser(email, password);
       await updateUserProfile(name, photoURL);
 
-      // ✅ Save user to database using axios
       const saveUser = {
-        name: name,
+        name,
         email: user.email,
-        photoURL: photoURL,
+        photoURL,
       };
 
       await axios.post(`${import.meta.env.VITE_api}/users`, saveUser);
@@ -47,13 +73,11 @@ const SignUp = () => {
     }
   };
 
-  // handlegoogle signin
   const handleGoogleSignIn = async () => {
     try {
       const result = await signInWithGoogle();
       const user = result.user;
 
-      //  Save Google user to database using axios
       const saveUser = {
         name: user.displayName,
         email: user.email,
@@ -61,7 +85,6 @@ const SignUp = () => {
       };
 
       await axios.post(`${import.meta.env.VITE_api}/users`, saveUser);
-
       toast.success("Google Sign Up Successful!");
       navigate("/");
     } catch (err) {
@@ -77,14 +100,12 @@ const SignUp = () => {
       <div className="absolute inset-0 bg-black/20"></div>
 
       <div
-        className="relative w-full max-w-[1000px] md:h-[650px] bg-cover bg-center backdrop-blur-sm shadow-2xl rounded-xl flex flex-col-reverse md:flex-row items-center justify-between overflow-hidden mx-4 my-6"
+        className="relative w-full max-w-[1000px] md:h-[850px] bg-cover bg-center backdrop-blur-sm shadow-2xl rounded-xl flex flex-col-reverse md:flex-row items-center justify-between overflow-hidden mx-4 my-6"
         style={{ backgroundImage: `url(${background})` }}
       >
         {/* Left Form */}
-        <div className="w-full md:w-1/2 px-6 md:px-12 py-6 flex flex-col justify-center">
-          <h2 className="text-3xl font-bold text-center mb-6 text-gray-800">
-            Sign Up
-          </h2>
+        <div className="w-full md:w-1/2 px-6 md:px-12 py-6 flex flex-col  justify-center">
+          <h2 className="text-3xl font-bold text-center mb-6 text-gray-800">Sign Up</h2>
 
           <form onSubmit={handleSubmit} className="space-y-4">
             {/* Name */}
@@ -117,12 +138,13 @@ const SignUp = () => {
               <input
                 type="text"
                 name="photoURL"
+                required
                 placeholder="Your photo URL"
                 className="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-[#c19a6b]"
               />
             </div>
 
-            {/* Password + Eye Toggle */}
+            {/* Password */}
             <div className="relative">
               <label className="block text-gray-600 text-sm mb-1">Password</label>
               <input
@@ -140,7 +162,35 @@ const SignUp = () => {
               </span>
             </div>
 
-            {/* Terms & Conditions */}
+            {/* CAPTCHA */}
+            <div className="flex flex-col gap-2 mt-3">
+              <LoadCanvasTemplate key={captchaKey} />
+              <div className="flex gap-2">
+                <input
+                  type="text"
+                  placeholder="Enter CAPTCHA"
+                  value={captchaInput}
+                  onChange={handleCaptchaChange}
+                  className="flex-1 border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#c19a6b]"
+                />
+                <button
+                  type="button"
+                  onClick={() => setCaptchaKey(Date.now())}
+                  className="bg-gray-300 px-4 rounded-md hover:bg-gray-400"
+                >
+                  Refresh
+                </button>
+              </div>
+              <button
+                type="button"
+                onClick={handleValidateCaptcha}
+                className="bg-[#c19a6b] hover:bg-[#b58c5e] text-white py-1 px-4 rounded-md"
+              >
+                Validate CAPTCHA
+              </button>
+            </div>
+
+            {/* Terms */}
             <div className="flex items-center gap-2 mt-2">
               <input
                 type="checkbox"
@@ -159,10 +209,13 @@ const SignUp = () => {
             {/* Error */}
             {error && <p className="text-red-500 text-sm">{error}</p>}
 
-            {/* Submit Button */}
             <button
               type="submit"
-              className="w-full py-2 bg-[#c19a6b] text-white font-semibold rounded-md hover:bg-[#b58c5e] transition"
+              disabled={!isCaptchaValid}
+              className={`w-full py-2 ${isCaptchaValid
+                ? "bg-[#ca8531] hover:bg-[#b58c5e]"
+                : "bg-gray-400 cursor-not-allowed"
+                } text-white font-semibold rounded-md transition`}
             >
               Sign Up
             </button>
@@ -176,7 +229,6 @@ const SignUp = () => {
             </Link>
           </div>
 
-          {/* Google Sign Up */}
           <button
             onClick={handleGoogleSignIn}
             className="mt-4 w-full py-2 border-2 border-[#c19a6b] text-[#c19a6b] rounded-md hover:bg-[#c19a6b] hover:text-white transition"
@@ -187,11 +239,7 @@ const SignUp = () => {
 
         {/* Right Image */}
         <div className="w-full md:w-1/2 flex justify-center items-center py-6 md:py-0">
-          <img
-            src={image}
-            alt="signup"
-            className="w-3/4 md:w-4/5 object-contain"
-          />
+          <img src={image} alt="signup" className="w-3/4 md:w-4/5 object-contain" />
         </div>
       </div>
     </div>
