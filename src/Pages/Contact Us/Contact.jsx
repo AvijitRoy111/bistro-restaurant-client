@@ -102,20 +102,20 @@
 //           <hr className="border-2 border-gray-300 w-80" />
 //         </div>
 
-//         <div className="bg-gray-100 p-8 max-w-4xl mx-auto rounded-md shadow-md mt-10 mb-20">
-//           <form onSubmit={handleSubmit} className="space-y-6">
-//             {/* Name, Email, Phone, Message fields */}
-//             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-//               <div>
-//                 <label className="block text-gray-700 mb-2 font-medium">Name</label>
-//                 <input
-//                   type="text"
-//                   name="name"
-//                   placeholder="Enter your name"
-//                   required
-//                   className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#D99904]"
-//                 />
-//               </div>
+        <div className="bg-gray-100 p-8 max-w-4xl mx-auto rounded-md shadow-md mt-10 mb-20">
+          <form onSubmit={handleSubmit} className="space-y-6">
+            {/* Name, Email, Phone, Message fields */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label className="block text-gray-700 mb-2 font-medium">Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Enter your name"
+                  required
+                  className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#D99904]"
+                />
+              </div>
 
               <div>
                 <label className="block text-gray-700 mb-2 font-medium">Email*</label>
