@@ -203,11 +203,11 @@ const Shop = () => {
             >
               <option className="block text-sm  text-gray-600 font-semibold mb-1" value="">Default</option>
               <option className="block text-sm  text-gray-600 font-semibold mb-1" value="lowToHigh">Price: Low → High</option>
-              <option className="block text-sm  text-gray-600 font-semibold mb-1" value="highToLow">Price: High → Low</option>
-              {/* <option className="block text-sm  text-gray-600 font-semibold mb-1"  value="asc">Name: A → Z</option>
+              {/* <option className="block text-sm  text-gray-600 font-semibold mb-1" value="highToLow">Price: High → Low</option> */}
+              <option className="block text-sm  text-gray-600 font-semibold mb-1"  value="asc">Name: A → Z</option>
               <option className="block text-sm  text-gray-600 font-semibold mb-1" value="desc">Name: Z → A</option>
             </select>
-          </div>  */}
+          </div> 
 
           {/* Search */}
           <div className="md:col-span-2">
