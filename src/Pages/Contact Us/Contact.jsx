@@ -15,16 +15,16 @@
 //   const [isCaptchaValid, setIsCaptchaValid] = useState(false);
 //   const [captchaKey, setCaptchaKey] = useState(Date.now()); // unique key to refresh captcha
 
-//   // Load captcha once
-//   useEffect(() => {
-//     loadCaptchaEnginge(6); // 6 character captcha
-//   }, [captchaKey]);
+  // Load captcha once
+  useEffect(() => {
+    loadCaptchaEnginge(6); // 6 character captcha
+  }, [captchaKey]);
 
-//   // Handle input change
-//   const handleCaptchaChange = (e) => {
-//     setCaptchaInput(e.target.value);
-//     setIsCaptchaValid(false); // default invalid
-//   };
+  // Handle input change
+  const handleCaptchaChange = (e) => {
+    setCaptchaInput(e.target.value);
+    setIsCaptchaValid(false); // default invalid
+  };
 
   // Validate captcha manually
   const handleValidateCaptcha = () => {
