@@ -60,17 +60,17 @@
 //     </div>
 //   );
 
-//   return (
-//     <div className="min-h-screen bg-slate-900 py-10 px-4 text-gray-900 flex flex-col items-center">
-//       {/* Header */}
-//       <div className="flex flex-col items-center justify-center mb-8 space-y-4">
-//         <p className="text-center text-yellow-600 italic mb-2">---How many??---</p>
-//         <hr className="border-2 border-gray-300 w-[350px]" />
-//         <h2 className="text-center text-3xl font-bold tracking-wide text-white">
-//           MANAGE ALL USERS
-//         </h2>
-//         <hr className="border-2 border-gray-300 w-[350px]" />
-//       </div>
+  return (
+    <div className="min-h-screen bg-slate-900 py-10 px-4 text-gray-900 flex flex-col items-center">
+      {/* Header */}
+      <div className="flex flex-col items-center justify-center mb-8 space-y-4">
+        <p className="text-center text-yellow-600 italic mb-2">---How many??---</p>
+        <hr className="border-2 border-gray-300 w-[350px]" />
+        <h2 className="text-center text-3xl font-bold tracking-wide text-white">
+          MANAGE ALL USERS
+        </h2>
+        <hr className="border-2 border-gray-300 w-[350px]" />
+      </div>
 
       {/* Table Container */}
       <div className="bg-white shadow-md rounded-md max-w-6xl w-full p-8 overflow-x-auto">
