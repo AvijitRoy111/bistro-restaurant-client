@@ -155,13 +155,13 @@
 //         </div>
 //       </div>
 
-//       {/* Delete Confirmation Modal */}
-//       {showModal && selectedUser && (
-//         <div className="fixed inset-0 bg-black/60 flex justify-center items-center z-50">
-//           <div className="bg-white rounded-lg shadow-lg p-6 w-[350px] text-center">
-//             <h3 className="text-xl font-semibold mb-3 text-gray-800">
-//               Confirm Delete
-//             </h3>
+      {/* Delete Confirmation Modal */}
+      {showModal && selectedUser && (
+        <div className="fixed inset-0 bg-black/60 flex justify-center items-center z-50">
+          <div className="bg-white rounded-lg shadow-lg p-6 w-[350px] text-center">
+            <h3 className="text-xl font-semibold mb-3 text-gray-800">
+              Confirm Delete
+            </h3>
             <p className="text-gray-600 mb-5">
               Are you sure you want to delete <br />
               <span className="font-bold">{selectedUser.name}</span>?
