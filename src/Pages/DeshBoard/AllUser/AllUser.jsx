@@ -1,7 +1,7 @@
-// import { useEffect, useState } from "react";
-// import axios from "axios";
-// import { FaUserShield, FaTrashAlt } from "react-icons/fa";
-// import { toast } from "react-toastify";
+import { useEffect, useState } from "react";
+import axios from "axios";
+import { FaUserShield, FaTrashAlt } from "react-icons/fa";
+import { toast } from "react-toastify";
 
 const AllUser = () => {
   const [users, setUsers] = useState([]);
