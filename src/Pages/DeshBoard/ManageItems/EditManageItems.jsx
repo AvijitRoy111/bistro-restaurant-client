@@ -247,8 +247,8 @@
 //                 )}
 //             </AnimatePresence>
 
-//         </div>
-//     );
-// };
+        </div>
+    );
+};
 
-// export default EditManageItems;
+export default EditManageItems;
