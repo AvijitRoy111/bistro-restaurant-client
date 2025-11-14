@@ -72,14 +72,14 @@
 //         <hr className="border-2 border-gray-300 w-[350px]" />
 //       </div>
 
-//       {/* Table Container */}
-//       <div className="bg-white shadow-md rounded-md max-w-6xl w-full p-8 overflow-x-auto">
-//         <h3 className="text-xl font-semibold mb-6">
-//           TOTAL USERS:{" "}
-//           <span className="font-bold">
-//             {loading ? "Loading..." : users.length}
-//           </span>
-//         </h3>
+      {/* Table Container */}
+      <div className="bg-white shadow-md rounded-md max-w-6xl w-full p-8 overflow-x-auto">
+        <h3 className="text-xl font-semibold mb-6">
+          TOTAL USERS:{" "}
+          <span className="font-bold">
+            {loading ? "Loading..." : users.length}
+          </span>
+        </h3>
 
         {/* Table Header */}
         <div className="grid grid-cols-[60px_100px_1.5fr_1fr_1fr_100px] font-semibold text-white bg-yellow-700 py-3 px-4 rounded-t-md">
