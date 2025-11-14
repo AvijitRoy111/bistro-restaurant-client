@@ -119,29 +119,29 @@
 //                         />
 //                     </div>
 
-//                     {/* Category & Price */}
-//                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-//                         <div>
-//                             <label className="block text-sm font-medium text-gray-700 mb-1">
-//                                 Category*
-//                             </label>
-//                             <select
-//                                 name="category"
-//                                 value={item?.category || ""}
-//                                 onChange={(e) => setItem({ ...item, category: e.target.value })}
-//                                 className="w-full px-4 py-2 border-2 border-gray-300 rounded-md focus:outline-none focus:border-amber-700 transition"
-//                                 required
-//                             >
-//                                 <option value="">Select Category</option>
-//                                 <option value="Salad">Salad</option>
-//                                 <option value="Drink">Drink</option>
-//                                 <option value="Popular">Popular</option>
-//                                 <option value="Dessert">Dessert</option>
-//                                 <option value="Pizza">Pizza</option>
-//                                 <option value="Soup">Soup</option>
-//                                 <option value="Offered">Offered</option>
-//                             </select>
-//                         </div>
+                    {/* Category & Price */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label className="block text-sm font-medium text-gray-700 mb-1">
+                                Category*
+                            </label>
+                            <select
+                                name="category"
+                                value={item?.category || ""}
+                                onChange={(e) => setItem({ ...item, category: e.target.value })}
+                                className="w-full px-4 py-2 border-2 border-gray-300 rounded-md focus:outline-none focus:border-amber-700 transition"
+                                required
+                            >
+                                <option value="">Select Category</option>
+                                <option value="Salad">Salad</option>
+                                <option value="Drink">Drink</option>
+                                <option value="Popular">Popular</option>
+                                <option value="Dessert">Dessert</option>
+                                <option value="Pizza">Pizza</option>
+                                <option value="Soup">Soup</option>
+                                <option value="Offered">Offered</option>
+                            </select>
+                        </div>
 
                         <div>
                             <label className="block text-sm font-medium text-gray-700 mb-1">
