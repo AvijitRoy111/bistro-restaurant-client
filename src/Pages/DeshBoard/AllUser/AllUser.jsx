@@ -91,22 +91,22 @@
 //           <div className="text-center">ACTION</div>
 //         </div>
 
-//         {/* Table Rows */}
-//         <div className="divide-y divide-gray-200">
-//           {loading ? (
-//             <>
-//               {Array.from({ length: 6 }).map((_, i) => (
-//                 <SkeletonRow key={i} index={i} />
-//               ))}
-//             </>
-//           ) : users.length > 0 ? (
-//             users.map((user, index) => (
-//               <div
-//                 key={user._id}
-//                 className="grid grid-cols-[60px_100px_1.5fr_1fr_1fr_100px] items-center py-4 px-4 hover:bg-gray-50 transition"
-//               >
-//                 {/* Serial */}
-//                 <div>{index + 1}</div>
+        {/* Table Rows */}
+        <div className="divide-y divide-gray-200">
+          {loading ? (
+            <>
+              {Array.from({ length: 6 }).map((_, i) => (
+                <SkeletonRow key={i} index={i} />
+              ))}
+            </>
+          ) : users.length > 0 ? (
+            users.map((user, index) => (
+              <div
+                key={user._id}
+                className="grid grid-cols-[60px_100px_1.5fr_1fr_1fr_100px] items-center py-4 px-4 hover:bg-gray-50 transition"
+              >
+                {/* Serial */}
+                <div>{index + 1}</div>
 
                 {/* Photo */}
                 <div className="flex items-center justify-start">
