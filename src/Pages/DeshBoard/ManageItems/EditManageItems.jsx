@@ -77,23 +77,23 @@
 //         }
 //     };
 
-//     // Skeleton Loader UI
-//     if (loading) {
-//         return (
-//             <div className="min-h-screen bg-slate-900 flex flex-col items-center py-12 px-4">
-//                 <div className="bg-white shadow-lg rounded-2xl p-6 w-full max-w-4xl animate-pulse space-y-5">
-//                     <div className="h-6 bg-gray-300 rounded w-1/3"></div>
-//                     <div className="h-10 bg-gray-300 rounded w-full"></div>
-//                     <div className="grid grid-cols-2 gap-4">
-//                         <div className="h-10 bg-gray-300 rounded w-full"></div>
-//                         <div className="h-10 bg-gray-300 rounded w-full"></div>
-//                     </div>
-//                     <div className="h-24 bg-gray-300 rounded w-full"></div>
-//                     <div className="h-10 bg-gray-300 rounded w-full"></div>
-//                 </div>
-//             </div>
-//         );
-//     }
+    // Skeleton Loader UI
+    if (loading) {
+        return (
+            <div className="min-h-screen bg-slate-900 flex flex-col items-center py-12 px-4">
+                <div className="bg-white shadow-lg rounded-2xl p-6 w-full max-w-4xl animate-pulse space-y-5">
+                    <div className="h-6 bg-gray-300 rounded w-1/3"></div>
+                    <div className="h-10 bg-gray-300 rounded w-full"></div>
+                    <div className="grid grid-cols-2 gap-4">
+                        <div className="h-10 bg-gray-300 rounded w-full"></div>
+                        <div className="h-10 bg-gray-300 rounded w-full"></div>
+                    </div>
+                    <div className="h-24 bg-gray-300 rounded w-full"></div>
+                    <div className="h-10 bg-gray-300 rounded w-full"></div>
+                </div>
+            </div>
+        );
+    }
 
     return (
         <div className="min-h-screen bg-slate-900 flex flex-col items-center py-12 px-4">
