@@ -95,13 +95,13 @@
 //         );
 //     }
 
-//     return (
-//         <div className="min-h-screen bg-slate-900 flex flex-col items-center py-12 px-4">
-//             <p className="text-center text-amber-600 italic text-sm mb-2">--- Update Item ---</p>
+    return (
+        <div className="min-h-screen bg-slate-900 flex flex-col items-center py-12 px-4">
+            <p className="text-center text-amber-600 italic text-sm mb-2">--- Update Item ---</p>
 
-//             <h2 className="text-2xl md:text-3xl font-semibold text-white border-y border-gray-500 py-2 mb-8">
-//                 EDIT ITEM
-//             </h2>
+            <h2 className="text-2xl md:text-3xl font-semibold text-white border-y border-gray-500 py-2 mb-8">
+                EDIT ITEM
+            </h2>
 
             <div className="bg-white shadow-lg rounded-2xl p-6 w-full max-w-4xl">
                 <form onSubmit={handleUpdate} className="space-y-5">
