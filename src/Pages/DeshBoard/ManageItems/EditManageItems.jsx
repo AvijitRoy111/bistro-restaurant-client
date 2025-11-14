@@ -231,9 +231,9 @@
 //                                 <CheckCircle2 className="text-green-500 w-14 h-14" />
 //                             </div>
 
-//                             {/* Success Text */}
-//                             <h3 className="text-xl font-semibold text-gray-800 mb-1">Success!</h3>
-//                             <p className="text-gray-600 mb-4">{successMessage}</p>
+                            {/* Success Text */}
+                            <h3 className="text-xl font-semibold text-gray-800 mb-1">Success!</h3>
+                            <p className="text-gray-600 mb-4">{successMessage}</p>
 
                             {/* Close Button */}
                             <button
