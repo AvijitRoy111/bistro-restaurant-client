@@ -100,8 +100,8 @@
 //       </div>
 
      
-//     </div>
-//   )
-// }
+    </div>
+  )
+}
 
-// export default DashBoard
+export default DashBoard
