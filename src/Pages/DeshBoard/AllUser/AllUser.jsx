@@ -147,13 +147,13 @@
 //                     <FaTrashAlt />
 //                   </button>
 //                 </div>
-//               </div>
-//             ))
-//           ) : (
-//             <p className="text-center py-6 text-gray-500">No users found!</p>
-//           )}
-//         </div>
-//       </div>
+              </div>
+            ))
+          ) : (
+            <p className="text-center py-6 text-gray-500">No users found!</p>
+          )}
+        </div>
+      </div>
 
       {/* Delete Confirmation Modal */}
       {showModal && selectedUser && (
