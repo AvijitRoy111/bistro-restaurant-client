@@ -103,21 +103,21 @@
 //                 EDIT ITEM
 //             </h2>
 
-//             <div className="bg-white shadow-lg rounded-2xl p-6 w-full max-w-4xl">
-//                 <form onSubmit={handleUpdate} className="space-y-5">
-//                     {/* Recipe Name */}
-//                     <div>
-//                         <label className="block text-sm font-medium text-gray-700 mb-1">
-//                             Recipe name*
-//                         </label>
-//                         <input
-//                             type="text"
-//                             name="name"
-//                             defaultValue={item?.name}
-//                             className="w-full px-4 py-2 border-2 border-gray-300 rounded-md focus:outline-none focus:border-amber-700 transition"
-//                             required
-//                         />
-//                     </div>
+            <div className="bg-white shadow-lg rounded-2xl p-6 w-full max-w-4xl">
+                <form onSubmit={handleUpdate} className="space-y-5">
+                    {/* Recipe Name */}
+                    <div>
+                        <label className="block text-sm font-medium text-gray-700 mb-1">
+                            Recipe name*
+                        </label>
+                        <input
+                            type="text"
+                            name="name"
+                            defaultValue={item?.name}
+                            className="w-full px-4 py-2 border-2 border-gray-300 rounded-md focus:outline-none focus:border-amber-700 transition"
+                            required
+                        />
+                    </div>
 
                     {/* Category & Price */}
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
