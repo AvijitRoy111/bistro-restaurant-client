@@ -83,13 +83,13 @@
 
 //         {/* Table Header */}
 //         <div className="grid grid-cols-[60px_100px_1.5fr_1fr_1fr_100px] font-semibold text-white bg-yellow-700 py-3 px-4 rounded-t-md">
-//           <div>#</div>
-//           <div>PHOTO</div>
-//           <div>USER INFO</div>
-//           <div>ROLE</div>
-//           <div>ADDED</div>
-//           <div className="text-center">ACTION</div>
-//         </div>
+          <div>#</div>
+          <div>PHOTO</div>
+          <div>USER INFO</div>
+          <div>ROLE</div>
+          <div>ADDED</div>
+          <div className="text-center">ACTION</div>
+        </div>
 
         {/* Table Rows */}
         <div className="divide-y divide-gray-200">
