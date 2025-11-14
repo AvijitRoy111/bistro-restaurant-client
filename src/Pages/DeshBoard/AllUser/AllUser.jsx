@@ -167,12 +167,12 @@
 //               <span className="font-bold">{selectedUser.name}</span>?
 //             </p>
 //             <div className="flex justify-center gap-4">
-//               <button
-//                 onClick={() => setShowModal(false)}
-//                 className="bg-gray-300 px-4 py-2 rounded-md hover:bg-gray-400"
-//               >
-//                 Cancel
-//               </button>
+              <button
+                onClick={() => setShowModal(false)}
+                className="bg-gray-300 px-4 py-2 rounded-md hover:bg-gray-400"
+              >
+                Cancel
+              </button>
               <button
                 onClick={handleDelete}
                 className="bg-amber-700 text-white px-4 py-2 rounded-md hover:bg-amber-800"
