@@ -3,15 +3,15 @@
 // import { FaUserShield, FaTrashAlt } from "react-icons/fa";
 // import { toast } from "react-toastify";
 
-// const AllUser = () => {
-//   const [users, setUsers] = useState([]);
-//   const [loading, setLoading] = useState(true);
-//   const [selectedUser, setSelectedUser] = useState(null);
-//   const [showModal, setShowModal] = useState(false);
-//   const [showSuccessModal, setShowSuccessModal] = useState(false);
+const AllUser = () => {
+  const [users, setUsers] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [selectedUser, setSelectedUser] = useState(null);
+  const [showModal, setShowModal] = useState(false);
+  const [showSuccessModal, setShowSuccessModal] = useState(false);
 
 
-//   const api = `${import.meta.env.VITE_api}/users`;
+  const api = `${import.meta.env.VITE_api}/users`;
 
 
   //  Load all users
