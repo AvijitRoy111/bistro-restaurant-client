@@ -14,24 +14,24 @@
 //   const api = `${import.meta.env.VITE_api}/users`;
 
 
-//   //  Load all users
-//   useEffect(() => {
-//     const fetchUsers = async () => {
-//       try {
-//         const { data } = await axios.get(api);
-//         setUsers(data.data || data);
-//       } catch (err) {
-//         toast.error("Failed to load users!");
-//       } finally {
-//         setLoading(false);
-//       }
-//     };
-//     fetchUsers();
-//   }, [api]);
+  //  Load all users
+  useEffect(() => {
+    const fetchUsers = async () => {
+      try {
+        const { data } = await axios.get(api);
+        setUsers(data.data || data);
+      } catch (err) {
+        toast.error("Failed to load users!");
+      } finally {
+        setLoading(false);
+      }
+    };
+    fetchUsers();
+  }, [api]);
 
-//   //  Handle delete user
-//   const handleDelete = async () => {
-//     if (!selectedUser) return;
+  //  Handle delete user
+  const handleDelete = async () => {
+    if (!selectedUser) return;
 
     try {
       await axios.delete(`${api}/${selectedUser._id}`);
