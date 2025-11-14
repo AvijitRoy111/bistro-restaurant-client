@@ -45,20 +45,20 @@
 //     }
 //   };
 
-//   //  Skeleton Loading Row
-//   const SkeletonRow = ({ index }) => (
-//     <div className="grid grid-cols-[60px_100px_1.5fr_1fr_1fr_100px] items-center py-4 px-4 animate-pulse">
-//       <div className="h-4 bg-gray-200 rounded w-6"></div>
-//       <div className="h-10 w-10 bg-gray-200 rounded-full"></div>
-//       <div className="space-y-2">
-//         <div className="h-4 bg-gray-200 rounded w-3/4"></div>
-//         <div className="h-3 bg-gray-200 rounded w-1/2"></div>
-//       </div>
-//       <div className="h-6 bg-gray-200 rounded w-20"></div>
-//       <div className="h-4 bg-gray-200 rounded w-16"></div>
-//       <div className="h-8 bg-gray-200 rounded w-8 mx-auto"></div>
-//     </div>
-//   );
+  //  Skeleton Loading Row
+  const SkeletonRow = ({ index }) => (
+    <div className="grid grid-cols-[60px_100px_1.5fr_1fr_1fr_100px] items-center py-4 px-4 animate-pulse">
+      <div className="h-4 bg-gray-200 rounded w-6"></div>
+      <div className="h-10 w-10 bg-gray-200 rounded-full"></div>
+      <div className="space-y-2">
+        <div className="h-4 bg-gray-200 rounded w-3/4"></div>
+        <div className="h-3 bg-gray-200 rounded w-1/2"></div>
+      </div>
+      <div className="h-6 bg-gray-200 rounded w-20"></div>
+      <div className="h-4 bg-gray-200 rounded w-16"></div>
+      <div className="h-8 bg-gray-200 rounded w-8 mx-auto"></div>
+    </div>
+  );
 
   return (
     <div className="min-h-screen bg-slate-900 py-10 px-4 text-gray-900 flex flex-col items-center">
