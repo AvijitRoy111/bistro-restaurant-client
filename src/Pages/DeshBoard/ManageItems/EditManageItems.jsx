@@ -157,19 +157,19 @@
 //                         </div>
 //                     </div>
 
-//                     {/* Recipe Details */}
-//                     <div>
-//                         <label className="block text-sm font-medium text-gray-700 mb-1">
-//                             Recipe Details*
-//                         </label>
-//                         <textarea
-//                             name="recipe"
-//                             rows="4"
-//                             defaultValue={item?.recipe}
-//                             className="w-full px-4 py-2 border-2 border-gray-300 rounded-md hover:border-amber-700 focus:outline-none focus:border-amber-700 transition"
-//                             required
-//                         ></textarea>
-//                     </div>
+                    {/* Recipe Details */}
+                    <div>
+                        <label className="block text-sm font-medium text-gray-700 mb-1">
+                            Recipe Details*
+                        </label>
+                        <textarea
+                            name="recipe"
+                            rows="4"
+                            defaultValue={item?.recipe}
+                            className="w-full px-4 py-2 border-2 border-gray-300 rounded-md hover:border-amber-700 focus:outline-none focus:border-amber-700 transition"
+                            required
+                        ></textarea>
+                    </div>
 
                     {/* File Upload */}
                     <div>
