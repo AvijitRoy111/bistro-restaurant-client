@@ -33,17 +33,17 @@
 //   const handleDelete = async () => {
 //     if (!selectedUser) return;
 
-//     try {
-//       await axios.delete(`${api}/${selectedUser._id}`);
-//       setUsers(users.filter((user) => user._id !== selectedUser._id));
-//       setShowModal(false);
-//       setShowSuccessModal(true);
-//       toast.success("User deleted successfully!");
-//       setTimeout(() => setShowSuccessModal(false), 2000);
-//     } catch (err) {
-//       toast.error("Failed to delete user!");
-//     }
-//   };
+    try {
+      await axios.delete(`${api}/${selectedUser._id}`);
+      setUsers(users.filter((user) => user._id !== selectedUser._id));
+      setShowModal(false);
+      setShowSuccessModal(true);
+      toast.success("User deleted successfully!");
+      setTimeout(() => setShowSuccessModal(false), 2000);
+    } catch (err) {
+      toast.error("Failed to delete user!");
+    }
+  };
 
   //  Skeleton Loading Row
   const SkeletonRow = ({ index }) => (
