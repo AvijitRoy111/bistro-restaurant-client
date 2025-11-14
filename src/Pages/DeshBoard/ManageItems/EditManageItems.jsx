@@ -203,15 +203,15 @@
 //                 </form>
 //             </div>
 
-//             {/* Success Modal */}
-//             <AnimatePresence>
-//                 {showModal && (
-//                     <motion.div
-//                         className="fixed inset-0 bg-black/50 flex items-center justify-center z-50"
-//                         initial={{ opacity: 0 }}
-//                         animate={{ opacity: 1 }}
-//                         exit={{ opacity: 0 }}
-//                     >
+            {/* Success Modal */}
+            <AnimatePresence>
+                {showModal && (
+                    <motion.div
+                        className="fixed inset-0 bg-black/50 flex items-center justify-center z-50"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                    >
                         <motion.div
                             className="bg-white rounded-2xl shadow-xl w-80 text-center p-6 relative"
                             initial={{ scale: 0.8, opacity: 0 }}
