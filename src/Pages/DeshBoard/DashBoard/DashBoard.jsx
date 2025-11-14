@@ -1,15 +1,15 @@
-// import {
-//   BarChart,
-//   Bar,
-//   XAxis,
-//   YAxis,
-//   Tooltip,
-//   Legend,
-//   PieChart,
-//   Pie,
-//   Cell,
-//   ResponsiveContainer,
-// } from "recharts";
+import {
+  BarChart,
+  Bar,
+  XAxis,
+  YAxis,
+  Tooltip,
+  Legend,
+  PieChart,
+  Pie,
+  Cell,
+  ResponsiveContainer,
+} from "recharts";
 
 
 const DashBoard = () => {
