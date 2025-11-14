@@ -1,48 +1,48 @@
-// import { useEffect, useState } from "react";
-// import { useParams, useNavigate } from "react-router-dom";
-// import axios from "axios";
-// import { motion, AnimatePresence } from "framer-motion";
-// import { CheckCircle2, X } from "lucide-react";
+import { useEffect, useState } from "react";
+import { useParams, useNavigate } from "react-router-dom";
+import axios from "axios";
+import { motion, AnimatePresence } from "framer-motion";
+import { CheckCircle2, X } from "lucide-react";
 
-// const EditManageItems = () => {
-//     const { id } = useParams();
+const EditManageItems = () => {
+    const { id } = useParams();
 
-//     const [item, setItem] = useState(null);
-//     const [loading, setLoading] = useState(true);
-//     const [updating, setUpdating] = useState(false);
-//     const [showModal, setShowModal] = useState(false);
-//     const [successMessage, setSuccessMessage] = useState("");
+    const [item, setItem] = useState(null);
+    const [loading, setLoading] = useState(true);
+    const [updating, setUpdating] = useState(false);
+    const [showModal, setShowModal] = useState(false);
+    const [successMessage, setSuccessMessage] = useState("");
 
-//     // Fetch the item by id
-//     useEffect(() => {
-//         const fetchItem = async () => {
-//             try {
-//                 const res = await axios.get(`${import.meta.env.VITE_api}/menuItems`);
-//                 const found = res.data?.data?.find((x) => x._id === id);
-//                 setItem(found || {});
-//             } catch (error) {
-//                 console.error("Failed to fetch item:", error);
-//             } finally {
-//                 setLoading(false);
-//             }
-//         };
-//         fetchItem();
-//     }, [id]);
+    // Fetch the item by id
+    useEffect(() => {
+        const fetchItem = async () => {
+            try {
+                const res = await axios.get(`${import.meta.env.VITE_api}/menuItems`);
+                const found = res.data?.data?.find((x) => x._id === id);
+                setItem(found || {});
+            } catch (error) {
+                console.error("Failed to fetch item:", error);
+            } finally {
+                setLoading(false);
+            }
+        };
+        fetchItem();
+    }, [id]);
 
-//     // Handle update
-//     const handleUpdate = async (e) => {
-//         e.preventDefault();
-//         setUpdating(true);
+    // Handle update
+    const handleUpdate = async (e) => {
+        e.preventDefault();
+        setUpdating(true);
 
-//         const form = e.target;
-//         const name = form.name.value;
-//         const category = form.category.value;
-//         const price = parseFloat(form.price.value);
-//         const recipe = form.recipe.value;
-//         const imageFile = form.image.files[0];
+        const form = e.target;
+        const name = form.name.value;
+        const category = form.category.value;
+        const price = parseFloat(form.price.value);
+        const recipe = form.recipe.value;
+        const imageFile = form.image.files[0];
 
-//         let image = item.image;
-//         const imgbbKey = "0a09262de568e9918e006ba7b68b098f";
+        let image = item.image;
+        const imgbbKey = "0a09262de568e9918e006ba7b68b098f";
 
         try {
             if (imageFile) {
