@@ -162,11 +162,11 @@
 //             <h3 className="text-xl font-semibold mb-3 text-gray-800">
 //               Confirm Delete
 //             </h3>
-//             <p className="text-gray-600 mb-5">
-//               Are you sure you want to delete <br />
-//               <span className="font-bold">{selectedUser.name}</span>?
-//             </p>
-//             <div className="flex justify-center gap-4">
+            <p className="text-gray-600 mb-5">
+              Are you sure you want to delete <br />
+              <span className="font-bold">{selectedUser.name}</span>?
+            </p>
+            <div className="flex justify-center gap-4">
               <button
                 onClick={() => setShowModal(false)}
                 className="bg-gray-300 px-4 py-2 rounded-md hover:bg-gray-400"
