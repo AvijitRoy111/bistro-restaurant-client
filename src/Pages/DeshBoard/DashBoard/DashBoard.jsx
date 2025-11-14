@@ -38,16 +38,16 @@
 //     <div className="bg-[#1E1E2E] min-h-screen text-gray-900 p-6 ">
 //       <h2 className="text-xl font-semibold mb-6 text-white">Hi, Welcome Back!</h2>
 
-//       {/* Top Cards */}
-//       <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-10">
-//         <div className="bg-gradient-to-r from-purple-400 to-pink-400 text-white rounded-xl p-5 text-center shadow-md">
-//           <h3 className="text-3xl font-bold">100</h3>
-//           <p className="text-sm mt-1">Revenue</p>
-//         </div>
-//         <div className="bg-gradient-to-r from-yellow-400 to-orange-300 text-white rounded-xl p-5 text-center shadow-md">
-//           <h3 className="text-3xl font-bold">150</h3>
-//           <p className="text-sm mt-1">Customers</p>
-//         </div>
+      {/* Top Cards */}
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-10">
+        <div className="bg-gradient-to-r from-purple-400 to-pink-400 text-white rounded-xl p-5 text-center shadow-md">
+          <h3 className="text-3xl font-bold">100</h3>
+          <p className="text-sm mt-1">Revenue</p>
+        </div>
+        <div className="bg-gradient-to-r from-yellow-400 to-orange-300 text-white rounded-xl p-5 text-center shadow-md">
+          <h3 className="text-3xl font-bold">150</h3>
+          <p className="text-sm mt-1">Customers</p>
+        </div>
         <div className="bg-gradient-to-r from-pink-400 to-red-400 text-white rounded-xl p-5 text-center shadow-md">
           <h3 className="text-3xl font-bold">10</h3>
           <p className="text-sm mt-1">Products</p>
