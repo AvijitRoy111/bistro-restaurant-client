@@ -108,14 +108,14 @@
 //                 {/* Serial */}
 //                 <div>{index + 1}</div>
 
-//                 {/* Photo */}
-//                 <div className="flex items-center justify-start">
-//                   <img
-//                     src={user.photoURL || "https://i.ibb.co/5GzXkwq/user.png"}
-//                     alt={user.name}
-//                     className="w-10 h-10 rounded-full object-cover border"
-//                   />
-//                 </div>
+                {/* Photo */}
+                <div className="flex items-center justify-start">
+                  <img
+                    src={user.photoURL || "https://i.ibb.co/5GzXkwq/user.png"}
+                    alt={user.name}
+                    className="w-10 h-10 rounded-full object-cover border"
+                  />
+                </div>
 
                 {/* Name + Email */}
                 <div>
