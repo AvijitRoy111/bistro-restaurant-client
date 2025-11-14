@@ -135,18 +135,18 @@
 //                    N/A
 //                 </div>
 
-//                 {/* Delete */}
-//                 <div className="flex justify-center">
-//                   <button
-//                     onClick={() => {
-//                       setSelectedUser(user);
-//                       setShowModal(true);
-//                     }}
-//                     className="bg-amber-700 hover:bg-amber-800 text-white p-2 rounded-md"
-//                   >
-//                     <FaTrashAlt />
-//                   </button>
-//                 </div>
+                {/* Delete */}
+                <div className="flex justify-center">
+                  <button
+                    onClick={() => {
+                      setSelectedUser(user);
+                      setShowModal(true);
+                    }}
+                    className="bg-amber-700 hover:bg-amber-800 text-white p-2 rounded-md"
+                  >
+                    <FaTrashAlt />
+                  </button>
+                </div>
               </div>
             ))
           ) : (
