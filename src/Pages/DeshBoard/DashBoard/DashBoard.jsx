@@ -12,15 +12,15 @@
 // } from "recharts";
 
 
-// const DashBoard = () => {
-//   const barData = [
-//     { name: "Dessert", sold: 30 },
-//     { name: "Pizza", sold: 35 },
-//     { name: "Salad", sold: 20 },
-//     { name: "Soup", sold: 25 },
-//     { name: "Populler", sold: 35 },
-//     { name: "Offer", sold: 15 },
-//   ];
+const DashBoard = () => {
+  const barData = [
+    { name: "Dessert", sold: 30 },
+    { name: "Pizza", sold: 35 },
+    { name: "Salad", sold: 20 },
+    { name: "Soup", sold: 25 },
+    { name: "Populler", sold: 35 },
+    { name: "Offer", sold: 15 },
+  ];
 
   const pieData = [
     { name: "Dessert", value: 21 },
