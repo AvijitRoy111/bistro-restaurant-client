@@ -130,10 +130,10 @@
 //                   </button>
 //                 </div>
 
-//                 {/* Joined Time (Live Update) */}
-//                 <div className="text-sm text-gray-700">
-//                    N/A
-//                 </div>
+                {/* Joined Time (Live Update) */}
+                <div className="text-sm text-gray-700">
+                   N/A
+                </div>
 
                 {/* Delete */}
                 <div className="flex justify-center">
