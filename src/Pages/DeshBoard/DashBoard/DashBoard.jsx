@@ -34,9 +34,9 @@
 
 
 
-//   return (
-//     <div className="bg-[#1E1E2E] min-h-screen text-gray-900 p-6 ">
-//       <h2 className="text-xl font-semibold mb-6 text-white">Hi, Welcome Back!</h2>
+  return (
+    <div className="bg-[#1E1E2E] min-h-screen text-gray-900 p-6 ">
+      <h2 className="text-xl font-semibold mb-6 text-white">Hi, Welcome Back!</h2>
 
       {/* Top Cards */}
       <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-10">
