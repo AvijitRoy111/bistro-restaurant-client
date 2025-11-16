@@ -34,15 +34,15 @@
 //         e.preventDefault();
 //         setUpdating(true);
 
-//         const form = e.target;
-//         const name = form.name.value;
-//         const category = form.category.value;
-//         const price = parseFloat(form.price.value);
-//         const recipe = form.recipe.value;
-//         const imageFile = form.image.files[0];
+        const form = e.target;
+        const name = form.name.value;
+        const category = form.category.value;
+        const price = parseFloat(form.price.value);
+        const recipe = form.recipe.value;
+        const imageFile = form.image.files[0];
 
-//         let image = item.image;
-//         const imgbbKey = "0a09262de568e9918e006ba7b68b098f";
+        let image = item.image;
+        const imgbbKey = "0a09262de568e9918e006ba7b68b098f";
 
         try {
             if (imageFile) {
