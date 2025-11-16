@@ -192,16 +192,16 @@
 //                     </div>
 
 
-//                     {/* Submit */}
-//                     <button
-//                         type="submit"
-//                         disabled={updating}
-//                         className="w-full bg-amber-700 text-white py-2 rounded-md font-medium hover:bg-amber-800 transition disabled:opacity-50"
-//                     >
-//                         {updating ? "Updating..." : "Update Item"}
-//                     </button>
-//                 </form>
-//             </div>
+                    {/* Submit */}
+                    <button
+                        type="submit"
+                        disabled={updating}
+                        className="w-full bg-amber-700 text-white py-2 rounded-md font-medium hover:bg-amber-800 transition disabled:opacity-50"
+                    >
+                        {updating ? "Updating..." : "Update Item"}
+                    </button>
+                </form>
+            </div>
 
             {/* Success Modal */}
             <AnimatePresence>
