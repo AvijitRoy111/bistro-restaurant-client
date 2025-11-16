@@ -62,20 +62,20 @@
 //                 updatedItem
 //             );
 
-//             if (res.data?.success) {
-//                 setSuccessMessage("Menu item updated successfully!");
-//                 setShowModal(true);
-//             } else {
-//                 throw new Error("Update failed!");
-//             }
-//         } catch (error) {
-//             console.error("Update error:", error);
-//             setSuccessMessage(error.message || "Something went wrong!");
-//             setShowModal(true);
-//         } finally {
-//             setUpdating(false);
-//         }
-//     };
+            if (res.data?.success) {
+                setSuccessMessage("Menu item updated successfully!");
+                setShowModal(true);
+            } else {
+                throw new Error("Update failed!");
+            }
+        } catch (error) {
+            console.error("Update error:", error);
+            setSuccessMessage(error.message || "Something went wrong!");
+            setShowModal(true);
+        } finally {
+            setUpdating(false);
+        }
+    };
 
     // Skeleton Loader UI
     if (loading) {
