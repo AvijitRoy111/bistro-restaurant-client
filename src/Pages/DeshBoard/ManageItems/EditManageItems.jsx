@@ -4,14 +4,14 @@
 // import { motion, AnimatePresence } from "framer-motion";
 // import { CheckCircle2, X } from "lucide-react";
 
-// const EditManageItems = () => {
-//     const { id } = useParams();
+const EditManageItems = () => {
+    const { id } = useParams();
 
-//     const [item, setItem] = useState(null);
-//     const [loading, setLoading] = useState(true);
-//     const [updating, setUpdating] = useState(false);
-//     const [showModal, setShowModal] = useState(false);
-//     const [successMessage, setSuccessMessage] = useState("");
+    const [item, setItem] = useState(null);
+    const [loading, setLoading] = useState(true);
+    const [updating, setUpdating] = useState(false);
+    const [showModal, setShowModal] = useState(false);
+    const [successMessage, setSuccessMessage] = useState("");
 
     // Fetch the item by id
     useEffect(() => {
