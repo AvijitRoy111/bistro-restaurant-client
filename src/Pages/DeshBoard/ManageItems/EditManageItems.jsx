@@ -1,8 +1,8 @@
-// import { useEffect, useState } from "react";
-// import { useParams, useNavigate } from "react-router-dom";
-// import axios from "axios";
-// import { motion, AnimatePresence } from "framer-motion";
-// import { CheckCircle2, X } from "lucide-react";
+import { useEffect, useState } from "react";
+import { useParams, useNavigate } from "react-router-dom";
+import axios from "axios";
+import { motion, AnimatePresence } from "framer-motion";
+import { CheckCircle2, X } from "lucide-react";
 
 const EditManageItems = () => {
     const { id } = useParams();
