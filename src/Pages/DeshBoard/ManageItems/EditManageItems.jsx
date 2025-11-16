@@ -226,10 +226,10 @@
 //                                 <X size={20} />
 //                             </button>
 
-//                             {/* Success Icon */}
-//                             <div className="flex justify-center mb-3">
-//                                 <CheckCircle2 className="text-green-500 w-14 h-14" />
-//                             </div>
+                            {/* Success Icon */}
+                            <div className="flex justify-center mb-3">
+                                <CheckCircle2 className="text-green-500 w-14 h-14" />
+                            </div>
 
                             {/* Success Text */}
                             <h3 className="text-xl font-semibold text-gray-800 mb-1">Success!</h3>
