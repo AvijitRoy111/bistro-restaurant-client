@@ -13,26 +13,26 @@
 //     const [showModal, setShowModal] = useState(false);
 //     const [successMessage, setSuccessMessage] = useState("");
 
-//     // Fetch the item by id
-//     useEffect(() => {
-//         const fetchItem = async () => {
-//             try {
-//                 const res = await axios.get(`${import.meta.env.VITE_api}/menuItems`);
-//                 const found = res.data?.data?.find((x) => x._id === id);
-//                 setItem(found || {});
-//             } catch (error) {
-//                 console.error("Failed to fetch item:", error);
-//             } finally {
-//                 setLoading(false);
-//             }
-//         };
-//         fetchItem();
-//     }, [id]);
+    // Fetch the item by id
+    useEffect(() => {
+        const fetchItem = async () => {
+            try {
+                const res = await axios.get(`${import.meta.env.VITE_api}/menuItems`);
+                const found = res.data?.data?.find((x) => x._id === id);
+                setItem(found || {});
+            } catch (error) {
+                console.error("Failed to fetch item:", error);
+            } finally {
+                setLoading(false);
+            }
+        };
+        fetchItem();
+    }, [id]);
 
-//     // Handle update
-//     const handleUpdate = async (e) => {
-//         e.preventDefault();
-//         setUpdating(true);
+    // Handle update
+    const handleUpdate = async (e) => {
+        e.preventDefault();
+        setUpdating(true);
 
         const form = e.target;
         const name = form.name.value;
