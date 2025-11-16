@@ -44,23 +44,23 @@
 //         let image = item.image;
 //         const imgbbKey = "0a09262de568e9918e006ba7b68b098f";
 
-//         try {
-//             if (imageFile) {
-//                 const formData = new FormData();
-//                 formData.append("image", imageFile);
-//                 const imgRes = await axios.post(
-//                     `https://api.imgbb.com/1/upload?key=${imgbbKey}`,
-//                     formData
-//                 );
-//                 if (!imgRes.data.success) throw new Error("Image upload failed");
-//                 image = imgRes.data.data.display_url;
-//             }
+        try {
+            if (imageFile) {
+                const formData = new FormData();
+                formData.append("image", imageFile);
+                const imgRes = await axios.post(
+                    `https://api.imgbb.com/1/upload?key=${imgbbKey}`,
+                    formData
+                );
+                if (!imgRes.data.success) throw new Error("Image upload failed");
+                image = imgRes.data.data.display_url;
+            }
 
-//             const updatedItem = { name, category, price, recipe, image };
-//             const res = await axios.put(
-//                 `${import.meta.env.VITE_api}/menuItems/${id}`,
-//                 updatedItem
-//             );
+            const updatedItem = { name, category, price, recipe, image };
+            const res = await axios.put(
+                `${import.meta.env.VITE_api}/menuItems/${id}`,
+                updatedItem
+            );
 
             if (res.data?.success) {
                 setSuccessMessage("Menu item updated successfully!");
