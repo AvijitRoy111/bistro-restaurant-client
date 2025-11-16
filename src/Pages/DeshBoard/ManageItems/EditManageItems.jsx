@@ -143,19 +143,19 @@
 //                             </select>
 //                         </div>
 
-//                         <div>
-//                             <label className="block text-sm font-medium text-gray-700 mb-1">
-//                                 Price*
-//                             </label>
-//                             <input
-//                                 type="number"
-//                                 name="price"
-//                                 defaultValue={item?.price}
-//                                 className="w-full px-4 py-2 border-2 border-gray-300 rounded-md focus:outline-none focus:border-amber-700 transition"
-//                                 required
-//                             />
-//                         </div>
-//                     </div>
+                        <div>
+                            <label className="block text-sm font-medium text-gray-700 mb-1">
+                                Price*
+                            </label>
+                            <input
+                                type="number"
+                                name="price"
+                                defaultValue={item?.price}
+                                className="w-full px-4 py-2 border-2 border-gray-300 rounded-md focus:outline-none focus:border-amber-700 transition"
+                                required
+                            />
+                        </div>
+                    </div>
 
                     {/* Recipe Details */}
                     <div>
