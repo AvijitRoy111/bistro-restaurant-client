@@ -208,12 +208,12 @@
 //             className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
 //           >
 //             <div className="bg-white rounded-xl shadow-xl p-6 text-center w-80 flex flex-col items-center justify-center">
-//               <div className="text-red-600 text-4xl mb-3 text-center"><Trash  size={80}/></div>
-//               <h3 className="text-lg font-semibold mb-2">Are you sure?</h3>
-//               <p className="text-gray-600 mb-4">
-//                 Do you really want to delete this item? This action cannot be undone.
-//               </p>
-//               <div className="flex justify-center gap-3">
+              <div className="text-red-600 text-4xl mb-3 text-center"><Trash  size={80}/></div>
+              <h3 className="text-lg font-semibold mb-2">Are you sure?</h3>
+              <p className="text-gray-600 mb-4">
+                Do you really want to delete this item? This action cannot be undone.
+              </p>
+              <div className="flex justify-center gap-3">
                 <button
                   onClick={() => setShowConfirm(false)}
                   className="bg-gray-500 hover:bg-gray-600 text-white px-4 py-2 rounded-md"
