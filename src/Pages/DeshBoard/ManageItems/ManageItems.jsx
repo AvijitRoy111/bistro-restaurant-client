@@ -40,26 +40,26 @@
 //     fetchItems();
 //   }, []);
 
-//   // ✅ Delete Menu Item (Fixed)
-//   const handleDelete = async () => {
-//     try {
-//       const res = await axios.delete(`${import.meta.env.VITE_api}/menuItems/${deleteId}`);
-//       if (res.data?.success) {
-//         setItems((prev) => prev.filter((item) => item._id !== deleteId));
-//         setShowConfirm(false);
-//         setShowSuccess(true);
-//         const updatedTotalPages = Math.ceil((items.length - 1) / limit);
-//         setTotalPages(updatedTotalPages || 1);
-//         if (page > updatedTotalPages) setPage(updatedTotalPages || 1);
-//       } else {
-//         console.error("Delete failed:", res.data);
-//       }
-//     } catch (error) {
-//       console.error("Delete failed:", error);
-//     }
-//   };
+  //  Delete Menu Item (Fixed)
+  const handleDelete = async () => {
+    try {
+      const res = await axios.delete(`${import.meta.env.VITE_api}/menuItems/${deleteId}`);
+      if (res.data?.success) {
+        setItems((prev) => prev.filter((item) => item._id !== deleteId));
+        setShowConfirm(false);
+        setShowSuccess(true);
+        const updatedTotalPages = Math.ceil((items.length - 1) / limit);
+        setTotalPages(updatedTotalPages || 1);
+        if (page > updatedTotalPages) setPage(updatedTotalPages || 1);
+      } else {
+        console.error("Delete failed:", res.data);
+      }
+    } catch (error) {
+      console.error("Delete failed:", error);
+    }
+  };
 
-//   const paginatedItems = items.slice((page - 1) * limit, page * limit);
+  const paginatedItems = items.slice((page - 1) * limit, page * limit);
 
   return (
     <div className="min-h-screen bg-slate-900 py-10 px-4 flex flex-col items-center">
