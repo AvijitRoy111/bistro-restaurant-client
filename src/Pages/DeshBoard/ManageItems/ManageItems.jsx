@@ -232,16 +232,16 @@
 //         )}
 //       </AnimatePresence>
 
-//       {/*  Success Modal */}
-//       <AnimatePresence>
-//         {showSuccess && (
-//           <motion.div
-//             initial={{ opacity: 0, scale: 0.8 }}
-//             animate={{ opacity: 1, scale: 1 }}
-//             exit={{ opacity: 0, scale: 0.8 }}
-//             className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
-//           >
-//             <div className="bg-white rounded-xl shadow-xl p-6 text-center w-80 flex flex-col justify-center items-center">
+      {/*  Success Modal */}
+      <AnimatePresence>
+        {showSuccess && (
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.8 }}
+            className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
+          >
+            <div className="bg-white rounded-xl shadow-xl p-6 text-center w-80 flex flex-col justify-center items-center">
               <div className="text-green-600 text-4xl mb-3"><LaptopMinimalCheck  size={60}/></div>
               <h3 className="text-lg font-semibold mb-2">Deleted Successfully!</h3>
               <p className="text-gray-600 mb-4">The menu item has been removed.</p>
