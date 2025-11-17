@@ -80,31 +80,31 @@
 //             TOTAL ITEMS: <span className="font-bold">{items?.length}</span>
 //           </h3>
 
-//           {/* Limit Selector */}
-//           <div className="flex items-center gap-2">
-//             <label htmlFor="limit" className="text-gray-700 font-medium">
-//               Show:
-//             </label>
-//             <select
-//               id="limit"
-//               value={limit}
-//               onChange={(e) => {
-//                 const newLimit = parseInt(e.target.value);
-//                 setLimit(newLimit);
-//                 setTotalPages(Math.ceil(items.length / newLimit));
-//                 setPage(1);
-//               }}
-//               className="border border-gray-300 rounded-md px-2 py-1"
-//             >
-//               {[5, 10, 20, 30].map((num) => (
-//                 <option key={num} value={num}>
-//                   {num}
-//                 </option>
-//               ))}
-//             </select>
-//             <span className="text-gray-700">items per page</span>
-//           </div>
-//         </div>
+          {/* Limit Selector */}
+          <div className="flex items-center gap-2">
+            <label htmlFor="limit" className="text-gray-700 font-medium">
+              Show:
+            </label>
+            <select
+              id="limit"
+              value={limit}
+              onChange={(e) => {
+                const newLimit = parseInt(e.target.value);
+                setLimit(newLimit);
+                setTotalPages(Math.ceil(items.length / newLimit));
+                setPage(1);
+              }}
+              className="border border-gray-300 rounded-md px-2 py-1"
+            >
+              {[5, 10, 20, 30].map((num) => (
+                <option key={num} value={num}>
+                  {num}
+                </option>
+              ))}
+            </select>
+            <span className="text-gray-700">items per page</span>
+          </div>
+        </div>
 
         {/* Table Header */}
         <div className="grid grid-cols-6 font-semibold text-white bg-yellow-700 py-3 px-4 rounded-t-md">
