@@ -214,12 +214,12 @@
 //                 Do you really want to delete this item? This action cannot be undone.
 //               </p>
 //               <div className="flex justify-center gap-3">
-//                 <button
-//                   onClick={() => setShowConfirm(false)}
-//                   className="bg-gray-500 hover:bg-gray-600 text-white px-4 py-2 rounded-md"
-//                 >
-//                   Cancel
-//                 </button>
+                <button
+                  onClick={() => setShowConfirm(false)}
+                  className="bg-gray-500 hover:bg-gray-600 text-white px-4 py-2 rounded-md"
+                >
+                  Cancel
+                </button>
                 <button
                   onClick={handleDelete}
                   className="bg-amber-700 hover:bg-amber-800 text-white px-4 py-2 rounded-md"
