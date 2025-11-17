@@ -198,16 +198,16 @@
 //         )}
 //       </div>
 
-//       {/* Delete Confirmation Modal */}
-//       <AnimatePresence>
-//         {showConfirm && (
-//           <motion.div
-//             initial={{ opacity: 0, scale: 0.9 }}
-//             animate={{ opacity: 1, scale: 1 }}
-//             exit={{ opacity: 0, scale: 0.9 }}
-//             className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
-//           >
-//             <div className="bg-white rounded-xl shadow-xl p-6 text-center w-80 flex flex-col items-center justify-center">
+      {/* Delete Confirmation Modal */}
+      <AnimatePresence>
+        {showConfirm && (
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.9 }}
+            className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
+          >
+            <div className="bg-white rounded-xl shadow-xl p-6 text-center w-80 flex flex-col items-center justify-center">
               <div className="text-red-600 text-4xl mb-3 text-center"><Trash  size={80}/></div>
               <h3 className="text-lg font-semibold mb-2">Are you sure?</h3>
               <p className="text-gray-600 mb-4">
