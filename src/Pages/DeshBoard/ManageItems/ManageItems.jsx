@@ -61,17 +61,17 @@
 
 //   const paginatedItems = items.slice((page - 1) * limit, page * limit);
 
-//   return (
-//     <div className="min-h-screen bg-slate-900 py-10 px-4 flex flex-col items-center">
-//       {/* Header */}
-//       <div className="flex flex-col items-center justify-center mb-8 space-y-4">
-//         <p className="text-center text-yellow-600 italic mb-2">--- Hurry Up! ---</p>
-//         <hr className="border-2 border-gray-300 w-[350px]" />
-//         <h2 className="text-center text-3xl font-bold tracking-wide text-white">
-//           MANAGE ALL ITEMS
-//         </h2>
-//         <hr className="border-2 border-gray-300 w-[350px]" />
-//       </div>
+  return (
+    <div className="min-h-screen bg-slate-900 py-10 px-4 flex flex-col items-center">
+      {/* Header */}
+      <div className="flex flex-col items-center justify-center mb-8 space-y-4">
+        <p className="text-center text-yellow-600 italic mb-2">--- Hurry Up! ---</p>
+        <hr className="border-2 border-gray-300 w-[350px]" />
+        <h2 className="text-center text-3xl font-bold tracking-wide text-white">
+          MANAGE ALL ITEMS
+        </h2>
+        <hr className="border-2 border-gray-300 w-[350px]" />
+      </div>
 
       {/* Table */}
       <div className="bg-white shadow-md rounded-md max-w-6xl w-full p-8">
