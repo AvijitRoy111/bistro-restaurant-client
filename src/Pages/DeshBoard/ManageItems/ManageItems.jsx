@@ -249,12 +249,12 @@
 //                 onClick={() => setShowSuccess(false)}
 //                 className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-md"
 //               >
-//                 Close
-//               </button>
-//             </div>
-//           </motion.div>
-//         )}
-//       </AnimatePresence>
+                Close
+              </button>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 };
