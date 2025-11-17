@@ -255,8 +255,8 @@
 //           </motion.div>
 //         )}
 //       </AnimatePresence>
-//     </div>
-//   );
-// };
+    </div>
+  );
+};
 
-// export default ManageItems;
+export default ManageItems;
