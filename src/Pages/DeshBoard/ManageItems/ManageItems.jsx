@@ -137,19 +137,19 @@
 //               </div>
 //             ))
 //           ) : (
-//             paginatedItems.map((item, index) => (
-//               <div
-//                 key={item._id}
-//                 className="grid grid-cols-6 items-center py-4 px-4 hover:bg-gray-50 transition"
-//               >
-//                 <div>{(page - 1) * limit + index + 1}</div>
-//                 <div>
-//                   <img
-//                     src={item.image}
-//                     alt={item.name}
-//                     className="w-12 h-12 rounded-md object-cover mx-auto"
-//                   />
-//                 </div>
+            paginatedItems.map((item, index) => (
+              <div
+                key={item._id}
+                className="grid grid-cols-6 items-center py-4 px-4 hover:bg-gray-50 transition"
+              >
+                <div>{(page - 1) * limit + index + 1}</div>
+                <div>
+                  <img
+                    src={item.image}
+                    alt={item.name}
+                    className="w-12 h-12 rounded-md object-cover mx-auto"
+                  />
+                </div>
                 <div>{item.category}</div>
                 <div>{item.name}</div>
                 <div>${item.price}</div>
