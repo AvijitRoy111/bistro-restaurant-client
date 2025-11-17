@@ -1,9 +1,9 @@
-// import { useEffect, useState } from "react";
-// import axios from "axios";
-// import { FaEdit, FaTrashAlt } from "react-icons/fa";
-// import { motion, AnimatePresence } from "framer-motion";
-// import { Link } from "react-router-dom";
-// import { LaptopMinimalCheck, Trash } from "lucide-react";
+import { useEffect, useState } from "react";
+import axios from "axios";
+import { FaEdit, FaTrashAlt } from "react-icons/fa";
+import { motion, AnimatePresence } from "framer-motion";
+import { Link } from "react-router-dom";
+import { LaptopMinimalCheck, Trash } from "lucide-react";
 
 const ManageItems = () => {
   const [items, setItems] = useState([]);
