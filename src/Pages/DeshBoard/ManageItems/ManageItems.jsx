@@ -116,27 +116,27 @@
 //           <div className="text-center">ACTION</div>
 //         </div>
 
-//         {/* Table Body */}
-//         <div className="divide-y divide-gray-200">
-//           {loading ? (
-//             // 🦴 Skeleton Loading
-//             Array.from({ length: limit }).map((_, index) => (
-//               <div
-//                 key={index}
-//                 className="grid grid-cols-6 items-center py-4 px-4 animate-pulse"
-//               >
-//                 <div className="h-4 bg-gray-300 rounded w-6"></div>
-//                 <div className="w-12 h-12 bg-gray-300 rounded-md mx-auto"></div>
-//                 <div className="h-4 bg-gray-300 rounded w-24"></div>
-//                 <div className="h-4 bg-gray-300 rounded w-32"></div>
-//                 <div className="h-4 bg-gray-300 rounded w-16"></div>
-//                 <div className="flex justify-center gap-2">
-//                   <div className="w-8 h-8 bg-gray-300 rounded-md"></div>
-//                   <div className="w-8 h-8 bg-gray-300 rounded-md"></div>
-//                 </div>
-//               </div>
-//             ))
-//           ) : (
+        {/* Table Body */}
+        <div className="divide-y divide-gray-200">
+          {loading ? (
+            // 🦴 Skeleton Loading
+            Array.from({ length: limit }).map((_, index) => (
+              <div
+                key={index}
+                className="grid grid-cols-6 items-center py-4 px-4 animate-pulse"
+              >
+                <div className="h-4 bg-gray-300 rounded w-6"></div>
+                <div className="w-12 h-12 bg-gray-300 rounded-md mx-auto"></div>
+                <div className="h-4 bg-gray-300 rounded w-24"></div>
+                <div className="h-4 bg-gray-300 rounded w-32"></div>
+                <div className="h-4 bg-gray-300 rounded w-16"></div>
+                <div className="flex justify-center gap-2">
+                  <div className="w-8 h-8 bg-gray-300 rounded-md"></div>
+                  <div className="w-8 h-8 bg-gray-300 rounded-md"></div>
+                </div>
+              </div>
+            ))
+          ) : (
             paginatedItems.map((item, index) => (
               <div
                 key={item._id}
