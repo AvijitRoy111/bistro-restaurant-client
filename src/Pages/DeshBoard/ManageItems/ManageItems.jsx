@@ -159,20 +159,20 @@
 //                       <FaEdit />
 //                     </button>
 //                   </Link>
-//                   <button
-//                     onClick={() => {
-//                       setDeleteId(item._id);
-//                       setShowConfirm(true);
-//                     }}
-//                     className="bg-red-600 hover:bg-red-700 text-white p-2 rounded-md"
-//                   >
-//                     <Trash />
-//                   </button>
-//                 </div>
-//               </div>
-//             ))
-//           )}
-//         </div>
+                  <button
+                    onClick={() => {
+                      setDeleteId(item._id);
+                      setShowConfirm(true);
+                    }}
+                    className="bg-red-600 hover:bg-red-700 text-white p-2 rounded-md"
+                  >
+                    <Trash />
+                  </button>
+                </div>
+              </div>
+            ))
+          )}
+        </div>
 
         {/* Pagination */}
         {!loading && (
