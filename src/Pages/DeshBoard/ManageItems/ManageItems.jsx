@@ -73,12 +73,12 @@
 //         <hr className="border-2 border-gray-300 w-[350px]" />
 //       </div>
 
-//       {/* Table */}
-//       <div className="bg-white shadow-md rounded-md max-w-6xl w-full p-8">
-//         <div className="flex justify-between items-center mb-6">
-//           <h3 className="text-xl font-semibold">
-//             TOTAL ITEMS: <span className="font-bold">{items?.length}</span>
-//           </h3>
+      {/* Table */}
+      <div className="bg-white shadow-md rounded-md max-w-6xl w-full p-8">
+        <div className="flex justify-between items-center mb-6">
+          <h3 className="text-xl font-semibold">
+            TOTAL ITEMS: <span className="font-bold">{items?.length}</span>
+          </h3>
 
           {/* Limit Selector */}
           <div className="flex items-center gap-2">
