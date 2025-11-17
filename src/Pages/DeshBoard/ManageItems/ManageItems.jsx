@@ -106,15 +106,15 @@
 //           </div>
 //         </div>
 
-//         {/* Table Header */}
-//         <div className="grid grid-cols-6 font-semibold text-white bg-yellow-700 py-3 px-4 rounded-t-md">
-//           <div>#</div>
-//           <div>IMAGE</div>
-//           <div>CATEGORY</div>
-//           <div>NAME</div>
-//           <div>PRICE</div>
-//           <div className="text-center">ACTION</div>
-//         </div>
+        {/* Table Header */}
+        <div className="grid grid-cols-6 font-semibold text-white bg-yellow-700 py-3 px-4 rounded-t-md">
+          <div>#</div>
+          <div>IMAGE</div>
+          <div>CATEGORY</div>
+          <div>NAME</div>
+          <div>PRICE</div>
+          <div className="text-center">ACTION</div>
+        </div>
 
         {/* Table Body */}
         <div className="divide-y divide-gray-200">
