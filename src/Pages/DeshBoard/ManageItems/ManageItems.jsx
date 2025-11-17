@@ -15,30 +15,30 @@
 //   const [limit, setLimit] = useState(10);
 //   const [totalPages, setTotalPages] = useState(1);
 
-//   // ✅ Fetch Items
-//   const fetchItems = async () => {
-//     try {
-//       setLoading(true);
-//       const res = await axios.get(`${import.meta.env.VITE_api}/menuItems`);
-//       const fetchedItems = res.data?.data;
+  //  Fetch Items
+  const fetchItems = async () => {
+    try {
+      setLoading(true);
+      const res = await axios.get(`${import.meta.env.VITE_api}/menuItems`);
+      const fetchedItems = res.data?.data;
 
-//       if (Array.isArray(fetchedItems)) {
-//         setItems(fetchedItems);
-//         setTotalPages(Math.ceil(fetchedItems.length / limit));
-//       } else {
-//         setItems([]);
-//       }
-//     } catch (error) {
-//       console.error("Failed to fetch menu items:", error);
-//       setItems([]);
-//     } finally {
-//       setLoading(false);
-//     }
-//   };
+      if (Array.isArray(fetchedItems)) {
+        setItems(fetchedItems);
+        setTotalPages(Math.ceil(fetchedItems.length / limit));
+      } else {
+        setItems([]);
+      }
+    } catch (error) {
+      console.error("Failed to fetch menu items:", error);
+      setItems([]);
+    } finally {
+      setLoading(false);
+    }
+  };
 
-//   useEffect(() => {
-//     fetchItems();
-//   }, []);
+  useEffect(() => {
+    fetchItems();
+  }, []);
 
   //  Delete Menu Item (Fixed)
   const handleDelete = async () => {
