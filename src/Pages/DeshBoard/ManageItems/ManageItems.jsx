@@ -5,15 +5,15 @@
 // import { Link } from "react-router-dom";
 // import { LaptopMinimalCheck, Trash } from "lucide-react";
 
-// const ManageItems = () => {
-//   const [items, setItems] = useState([]);
-//   const [deleteId, setDeleteId] = useState(null);
-//   const [showConfirm, setShowConfirm] = useState(false);
-//   const [showSuccess, setShowSuccess] = useState(false);
-//   const [loading, setLoading] = useState(true);
-//   const [page, setPage] = useState(1);
-//   const [limit, setLimit] = useState(10);
-//   const [totalPages, setTotalPages] = useState(1);
+const ManageItems = () => {
+  const [items, setItems] = useState([]);
+  const [deleteId, setDeleteId] = useState(null);
+  const [showConfirm, setShowConfirm] = useState(false);
+  const [showSuccess, setShowSuccess] = useState(false);
+  const [loading, setLoading] = useState(true);
+  const [page, setPage] = useState(1);
+  const [limit, setLimit] = useState(10);
+  const [totalPages, setTotalPages] = useState(1);
 
   //  Fetch Items
   const fetchItems = async () => {
