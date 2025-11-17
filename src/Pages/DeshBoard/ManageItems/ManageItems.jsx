@@ -220,17 +220,17 @@
 //                 >
 //                   Cancel
 //                 </button>
-//                 <button
-//                   onClick={handleDelete}
-//                   className="bg-amber-700 hover:bg-amber-800 text-white px-4 py-2 rounded-md"
-//                 >
-//                   Confirm
-//                 </button>
-//               </div>
-//             </div>
-//           </motion.div>
-//         )}
-//       </AnimatePresence>
+                <button
+                  onClick={handleDelete}
+                  className="bg-amber-700 hover:bg-amber-800 text-white px-4 py-2 rounded-md"
+                >
+                  Confirm
+                </button>
+              </div>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       {/*  Success Modal */}
       <AnimatePresence>
