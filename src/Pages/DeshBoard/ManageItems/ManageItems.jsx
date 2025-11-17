@@ -150,15 +150,15 @@
 //                     className="w-12 h-12 rounded-md object-cover mx-auto"
 //                   />
 //                 </div>
-//                 <div>{item.category}</div>
-//                 <div>{item.name}</div>
-//                 <div>${item.price}</div>
-//                 <div className="flex justify-center gap-2">
-//                   <Link to={`/Edite-ManageItems/${item._id}`}>
-//                     <button className="bg-yellow-600 hover:bg-yellow-700 text-white p-2 rounded-md">
-//                       <FaEdit />
-//                     </button>
-//                   </Link>
+                <div>{item.category}</div>
+                <div>{item.name}</div>
+                <div>${item.price}</div>
+                <div className="flex justify-center gap-2">
+                  <Link to={`/Edite-ManageItems/${item._id}`}>
+                    <button className="bg-yellow-600 hover:bg-yellow-700 text-white p-2 rounded-md">
+                      <FaEdit />
+                    </button>
+                  </Link>
                   <button
                     onClick={() => {
                       setDeleteId(item._id);
