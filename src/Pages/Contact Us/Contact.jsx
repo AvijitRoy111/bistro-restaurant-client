@@ -117,17 +117,17 @@
 //                 />
 //               </div>
 
-//               <div>
-//                 <label className="block text-gray-700 mb-2 font-medium">Email*</label>
-//                 <input
-//                   type="email"
-//                   name="email"
-//                   placeholder="Enter your email"
-//                   required
-//                   className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#D99904]"
-//                 />
-//               </div>
-//             </div>
+              <div>
+                <label className="block text-gray-700 mb-2 font-medium">Email*</label>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Enter your email"
+                  required
+                  className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#D99904]"
+                />
+              </div>
+            </div>
 
             <div>
               <label className="block text-gray-700 mb-2 font-medium">Phone*</label>
