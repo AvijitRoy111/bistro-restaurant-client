@@ -162,14 +162,14 @@
 //                   onChange={handleCaptchaChange}
 //                   className="flex-1 border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#D99904]"
 //                 />
-//                 <button
-//                   type="button"
-//                   onClick={() => setCaptchaKey(Date.now())}
-//                   className="bg-gray-300 px-4 rounded-md hover:bg-gray-400"
-//                 >
-//                   Refresh
-//                 </button>
-//               </div>
+                <button
+                  type="button"
+                  onClick={() => setCaptchaKey(Date.now())}
+                  className="bg-gray-300 px-4 rounded-md hover:bg-gray-400"
+                >
+                  Refresh
+                </button>
+              </div>
               <button
                 type="button"
                 onClick={handleValidateCaptcha}
