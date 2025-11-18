@@ -170,14 +170,14 @@
 //                   Refresh
 //                 </button>
 //               </div>
-//               <button
-//                 type="button"
-//                 onClick={handleValidateCaptcha}
-//                 className="mt-2 bg-amber-700 hover:bg-amber-800 text-white py-1 px-4 rounded-md"
-//               >
-//                 Validate CAPTCHA
-//               </button>
-//             </div>
+              <button
+                type="button"
+                onClick={handleValidateCaptcha}
+                className="mt-2 bg-amber-700 hover:bg-amber-800 text-white py-1 px-4 rounded-md"
+              >
+                Validate CAPTCHA
+              </button>
+            </div>
 
 
             <div className="flex justify-center">
