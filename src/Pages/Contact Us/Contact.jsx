@@ -1,30 +1,30 @@
-// import { useState, useEffect } from "react";
-// import ContactBanner from "./ContactBanner";
-// import ContactCard from "./ContactCard";
-// import { FaPaperPlane } from "react-icons/fa";
-// import { motion, AnimatePresence } from "framer-motion";
-// import { CheckCircle2, X } from "lucide-react";
-// import axios from "axios";
-// import { loadCaptchaEnginge, LoadCanvasTemplate, validateCaptcha } from "react-simple-captcha";
+import { useState, useEffect } from "react";
+import ContactBanner from "./ContactBanner";
+import ContactCard from "./ContactCard";
+import { FaPaperPlane } from "react-icons/fa";
+import { motion, AnimatePresence } from "framer-motion";
+import { CheckCircle2, X } from "lucide-react";
+import axios from "axios";
+import { loadCaptchaEnginge, LoadCanvasTemplate, validateCaptcha } from "react-simple-captcha";
 
-// const Contact = () => {
-//   const [showModal, setShowModal] = useState(false);
-//   const [successMessage, setSuccessMessage] = useState("");
-//   const [loading, setLoading] = useState(false);
-//   const [captchaInput, setCaptchaInput] = useState("");
-//   const [isCaptchaValid, setIsCaptchaValid] = useState(false);
-//   const [captchaKey, setCaptchaKey] = useState(Date.now()); 
+const Contact = () => {
+  const [showModal, setShowModal] = useState(false);
+  const [successMessage, setSuccessMessage] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [captchaInput, setCaptchaInput] = useState("");
+  const [isCaptchaValid, setIsCaptchaValid] = useState(false);
+  const [captchaKey, setCaptchaKey] = useState(Date.now()); 
 
-//   // Load captcha once
-//   useEffect(() => {
-//     loadCaptchaEnginge(6);
-//   }, [captchaKey]);
+  // Load captcha once
+  useEffect(() => {
+    loadCaptchaEnginge(6);
+  }, [captchaKey]);
 
-//   // Handle input change
-//   const handleCaptchaChange = (e) => {
-//     setCaptchaInput(e.target.value);
-//     setIsCaptchaValid(false);
-//   };
+  // Handle input change
+  const handleCaptchaChange = (e) => {
+    setCaptchaInput(e.target.value);
+    setIsCaptchaValid(false);
+  };
 
   // Validate captcha manually
   const handleValidateCaptcha = () => {
