@@ -26,29 +26,29 @@
 //     setIsCaptchaValid(false);
 //   };
 
-//   // Validate captcha manually
-//   const handleValidateCaptcha = () => {
-//     if (validateCaptcha(captchaInput)) {
-//       setIsCaptchaValid(true);
-//     } else {
-//       setIsCaptchaValid(false);
-//       setCaptchaInput("");
-//       setCaptchaKey(Date.now()); 
-//       alert("Incorrect CAPTCHA! Try again."); 
-//     }
-//   };
+  // Validate captcha manually
+  const handleValidateCaptcha = () => {
+    if (validateCaptcha(captchaInput)) {
+      setIsCaptchaValid(true);
+    } else {
+      setIsCaptchaValid(false);
+      setCaptchaInput("");
+      setCaptchaKey(Date.now()); 
+      alert("Incorrect CAPTCHA! Try again."); 
+    }
+  };
 
-//   const handleSubmit = async (e) => {
-//     e.preventDefault();
+  const handleSubmit = async (e) => {
+    e.preventDefault();
 
-//     // Validate captcha before submit
-//     if (!validateCaptcha(captchaInput)) {
-//       setIsCaptchaValid(false);
-//       setCaptchaInput("");
-//       setCaptchaKey(Date.now()); 
-//       alert("Incorrect CAPTCHA! Try again.");
-//       return;
-//     }
+    // Validate captcha before submit
+    if (!validateCaptcha(captchaInput)) {
+      setIsCaptchaValid(false);
+      setCaptchaInput("");
+      setCaptchaKey(Date.now()); 
+      alert("Incorrect CAPTCHA! Try again.");
+      return;
+    }
 
     setLoading(true);
 
