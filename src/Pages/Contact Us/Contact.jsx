@@ -180,21 +180,21 @@
 //             </div>
 
 
-//             <div className="flex justify-center">
-//               <button
-//                 type="submit"
-//                 disabled={loading || !isCaptchaValid}
-//                 className={`${isCaptchaValid
-//                   ? "bg-gradient-to-r from-[#835D23] to-[#B58130] hover:from-[#B58130] hover:to-[#835D23]"
-//                   : "bg-gray-400 cursor-not-allowed"
-//                   } text-white px-6 py-2 rounded-md flex items-center gap-2 transition duration-300`}
-//               >
-//                 {loading ? "Sending..." : "Send Message"} <FaPaperPlane />
-//               </button>
-//             </div>
-//           </form>
-//         </div>
-//       </div>
+            <div className="flex justify-center">
+              <button
+                type="submit"
+                disabled={loading || !isCaptchaValid}
+                className={`${isCaptchaValid
+                  ? "bg-gradient-to-r from-[#835D23] to-[#B58130] hover:from-[#B58130] hover:to-[#835D23]"
+                  : "bg-gray-400 cursor-not-allowed"
+                  } text-white px-6 py-2 rounded-md flex items-center gap-2 transition duration-300`}
+              >
+                {loading ? "Sending..." : "Send Message"} <FaPaperPlane />
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
 
 
       <ContactCard />
