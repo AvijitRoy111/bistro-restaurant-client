@@ -53,25 +53,25 @@
 //       <div className="bg-white/70 w-full max-w-2xl rounded-md shadow-md p-10">
 //         <h3 className="text-center text-xl font-semibold mb-4">RATE US!</h3>
 
-//         {/* Rating Stars */}
-//         <div className="flex justify-center mb-8 text-gray-400 space-x-2">
-//           {[...Array(5)].map((_, index) => {
-//             const starValue = index + 1;
-//             return (
-//               <FaStar
-//                 key={index}
-//                 className={`text-3xl cursor-pointer transition ${
-//                   starValue <= (hover || rating)
-//                     ? "text-yellow-500"
-//                     : "text-gray-400"
-//                 }`}
-//                 onClick={() => setRating(starValue)}
-//                 onMouseEnter={() => setHover(starValue)}
-//                 onMouseLeave={() => setHover(rating)}
-//               />
-//             );
-//           })}
-//         </div>
+        {/* Rating Stars */}
+        <div className="flex justify-center mb-8 text-gray-400 space-x-2">
+          {[...Array(5)].map((_, index) => {
+            const starValue = index + 1;
+            return (
+              <FaStar
+                key={index}
+                className={`text-3xl cursor-pointer transition ${
+                  starValue <= (hover || rating)
+                    ? "text-yellow-500"
+                    : "text-gray-400"
+                }`}
+                onClick={() => setRating(starValue)}
+                onMouseEnter={() => setHover(starValue)}
+                onMouseLeave={() => setHover(rating)}
+              />
+            );
+          })}
+        </div>
 
         {/* Review Form */}
         <form onSubmit={handleSubmitReview} className="space-y-6">
