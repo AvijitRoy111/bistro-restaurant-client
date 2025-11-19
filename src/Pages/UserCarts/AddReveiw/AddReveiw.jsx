@@ -7,33 +7,33 @@
 //   const [hover, setHover] = useState(0);
 //   const [success, setSuccess] = useState(false);
 
-//   const handleSubmitReview = async (e) => {
-//     e.preventDefault();
-//     const form = e.target;
-//     const recipe = form.recipe.value;
-//     const name = form.name.value;
-//     const image = form.image.value;
-//     const details = form.description.value;
+  const handleSubmitReview = async (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const recipe = form.recipe.value;
+    const name = form.name.value;
+    const image = form.image.value;
+    const details = form.description.value;
 
-//     const review = { name, image, details, rating, recipe };
+    const review = { name, image, details, rating, recipe };
 
-//     try {
-//       const { data } = await axios.post(
-//         `${import.meta.env.VITE_api}/reviews`,
-//         review
-//       );
-//       console.log(data)
+    try {
+      const { data } = await axios.post(
+        `${import.meta.env.VITE_api}/reviews`,
+        review
+      );
+      console.log(data)
      
-//       if (data?.success) {
-//         setSuccess(true);
-//         form.reset();
-//         setRating(0);
-//       }
-//     } catch (error) {
-//       console.error("Review post failed:", error);
-//       alert("Failed to submit review. Try again!");
-//     }
-//   };
+      if (data?.success) {
+        setSuccess(true);
+        form.reset();
+        setRating(0);
+      }
+    } catch (error) {
+      console.error("Review post failed:", error);
+      alert("Failed to submit review. Try again!");
+    }
+  };
 
   return (
     <div className="min-h-screen bg-slate-900 text-gray-800 py-10 px-6 flex flex-col items-center">
