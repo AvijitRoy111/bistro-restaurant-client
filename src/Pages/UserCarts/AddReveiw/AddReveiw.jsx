@@ -73,20 +73,20 @@
 //           })}
 //         </div>
 
-//         {/* Review Form */}
-//         <form onSubmit={handleSubmitReview} className="space-y-6">
-//           <div>
-//             <label className="block text-sm font-medium mb-1">
-//               Which recipe you liked most?
-//             </label>
-//             <input
-//               type="text"
-//               name="recipe"
-//               required
-//               placeholder="Recipe you liked most"
-//               className="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-yellow-600"
-//             />
-//           </div>
+        {/* Review Form */}
+        <form onSubmit={handleSubmitReview} className="space-y-6">
+          <div>
+            <label className="block text-sm font-medium mb-1">
+              Which recipe you liked most?
+            </label>
+            <input
+              type="text"
+              name="recipe"
+              required
+              placeholder="Recipe you liked most"
+              className="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-yellow-600"
+            />
+          </div>
 
           <div>
             <label className="block text-sm font-medium mb-1">Your Name</label>
