@@ -122,16 +122,16 @@
 //             ></textarea>
 //           </div>
 
-//           <div className="text-center">
-//             <button
-//               type="submit"
-//               className="bg-amber-700 text-white px-6 py-2 rounded-md font-medium hover:bg-yellow-700 transition flex items-center justify-center mx-auto gap-2"
-//             >
-//               Send Review 
-//             </button>
-//           </div>
-//         </form>
-//       </div>
+          <div className="text-center">
+            <button
+              type="submit"
+              className="bg-amber-700 text-white px-6 py-2 rounded-md font-medium hover:bg-yellow-700 transition flex items-center justify-center mx-auto gap-2"
+            >
+              Send Review 
+            </button>
+          </div>
+        </form>
+      </div>
 
       {/* Success Modal */}
       {success && (
