@@ -98,17 +98,17 @@
 //           </select>
 //         </div>
 
-//         {/* Name */}
-//         <div className="flex flex-col md:col-span-1">
-//           <label className="font-medium text-sm mb-1 text-white">Name*</label>
-//           <input
-//             type="text"
-//             name="name"
-//             placeholder="Your Name"
-//             required
-//             className="border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:border-yellow-600"
-//           />
-//         </div>
+        {/* Name */}
+        <div className="flex flex-col md:col-span-1">
+          <label className="font-medium text-sm mb-1 text-white">Name*</label>
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            required
+            className="border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:border-yellow-600"
+          />
+        </div>
 
         {/* Phone */}
         <div className="flex flex-col md:col-span-1">
