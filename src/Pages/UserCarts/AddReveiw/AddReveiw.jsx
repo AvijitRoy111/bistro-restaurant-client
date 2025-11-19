@@ -1,6 +1,6 @@
-// import { useState } from "react";
-// import { FaStar,  FaCheckCircle } from "react-icons/fa";
-// import axios from "axios";
+import { useState } from "react";
+import { FaStar,  FaCheckCircle } from "react-icons/fa";
+import axios from "axios";
 
 const AddReview = () => {
   const [rating, setRating] = useState(0);
