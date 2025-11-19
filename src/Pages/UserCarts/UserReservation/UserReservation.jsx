@@ -168,16 +168,16 @@
 //           </div>
 //         </div>
 
-//         {/* Address */}
-//         <div>
-//           <div className="bg-amber-700 text-white py-3 ">
-//             <FaMapMarkerAlt className="mx-auto text-2xl" />
-//           </div>
-//           <div className="bg-gray-50 py-6 h-[125px]">
-//             <h3 className="font-semibold mb-1">ADDRESS</h3>
-//             <p className="text-gray-600">123 Main Street, City, Country</p>
-//           </div>
-//         </div>
+        {/* Address */}
+        <div>
+          <div className="bg-amber-700 text-white py-3 ">
+            <FaMapMarkerAlt className="mx-auto text-2xl" />
+          </div>
+          <div className="bg-gray-50 py-6 h-[125px]">
+            <h3 className="font-semibold mb-1">ADDRESS</h3>
+            <p className="text-gray-600">123 Main Street, City, Country</p>
+          </div>
+        </div>
 
         {/* Working Hours */}
         <div>
