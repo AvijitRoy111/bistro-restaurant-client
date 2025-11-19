@@ -99,15 +99,15 @@
 //             />
 //           </div>
 
-//           <div>
-//             <label className="block text-sm font-medium mb-1">Your Image URL</label>
-//             <input
-//               type="text"
-//               name="image"
-//               placeholder="Image URL"
-//               className="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-yellow-600"
-//             />
-//           </div>
+          <div>
+            <label className="block text-sm font-medium mb-1">Your Image URL</label>
+            <input
+              type="text"
+              name="image"
+              placeholder="Image URL"
+              className="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-yellow-600"
+            />
+          </div>
 
           <div>
             <label className="block text-sm font-medium mb-1">
