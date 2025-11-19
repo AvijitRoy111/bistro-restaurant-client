@@ -179,18 +179,18 @@
 //           </div>
 //         </div>
 
-//         {/* Working Hours */}
-//         <div>
-//           <div className="bg-amber-700 text-white py-3">
-//             <FaClock className="mx-auto text-2xl" />
-//           </div>
-//           <div className="bg-gray-50 py-6 h-[125px]">
-//             <h3 className="font-semibold mb-1">WORKING HOURS</h3>
-//             <p className="text-gray-600">Mon - Fri: 08:00 - 22:00</p>
-//             <p className="text-gray-600">Sat - Sun: 10:00 - 23:00</p>
-//           </div>
-//         </div>
-//       </div>
+        {/* Working Hours */}
+        <div>
+          <div className="bg-amber-700 text-white py-3">
+            <FaClock className="mx-auto text-2xl" />
+          </div>
+          <div className="bg-gray-50 py-6 h-[125px]">
+            <h3 className="font-semibold mb-1">WORKING HOURS</h3>
+            <p className="text-gray-600">Mon - Fri: 08:00 - 22:00</p>
+            <p className="text-gray-600">Sat - Sun: 10:00 - 23:00</p>
+          </div>
+        </div>
+      </div>
 
       {/* Success Modal */}
       {success && (
