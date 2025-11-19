@@ -197,12 +197,12 @@
 //         <div className="fixed inset-0 flex items-center justify-center bg-black/60 z-50">
 //           <div className="bg-white rounded-xl p-8 text-center shadow-lg max-w-sm mx-auto animate-fadeIn">
 //             <FaCheckCircle className="text-green-500 text-5xl mx-auto mb-3" />
-//             <h3 className="text-xl font-bold mb-2 text-gray-800">
-//               Booking Submitted Successfully!
-//             </h3>
-//             <p className="text-gray-600 mb-4">
-//               Thank you! Your reservation has been saved.
-//             </p>
+            <h3 className="text-xl font-bold mb-2 text-gray-800">
+              Booking Submitted Successfully!
+            </h3>
+            <p className="text-gray-600 mb-4">
+              Thank you! Your reservation has been saved.
+            </p>
             <button
               onClick={() => setSuccess(false)}
               className="bg-amber-700 text-white px-4 py-2 rounded-md hover:bg-yellow-700 transition"
