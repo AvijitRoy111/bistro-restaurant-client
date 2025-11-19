@@ -110,17 +110,17 @@
 //           />
 //         </div>
 
-//         {/* Phone */}
-//         <div className="flex flex-col md:col-span-1">
-//           <label className="font-medium text-sm mb-1 text-white">Phone*</label>
-//           <input
-//             type="tel"
-//             name="phone"
-//             placeholder="Phone Number"
-//             required
-//             className="border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:border-yellow-600"
-//           />
-//         </div>
+        {/* Phone */}
+        <div className="flex flex-col md:col-span-1">
+          <label className="font-medium text-sm mb-1 text-white">Phone*</label>
+          <input
+            type="tel"
+            name="phone"
+            placeholder="Phone Number"
+            required
+            className="border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:border-yellow-600"
+          />
+        </div>
 
         {/* Email */}
         <div className="flex flex-col md:col-span-1">
