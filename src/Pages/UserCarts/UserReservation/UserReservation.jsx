@@ -43,17 +43,17 @@
 //     }
 //   };
 
-//   return (
-//     <div className="bg-slate-800 text-gray-800 py-10 md:px-20">
-//       {/* ---Reservation--- */}
-//       <div className="flex flex-col items-center justify-center mb-8 space-y-4">
-//         <p className="text-center text-yellow-600 italic mb-2">---Reservation---</p>
-//         <hr className="border-2 border-gray-300 w-[350px]" />
-//         <h2 className="text-center text-3xl font-bold tracking-wide text-white">
-//           BOOK A TABLE
-//         </h2>
-//         <hr className="border-2 border-gray-300 w-[350px]" />
-//       </div>
+  return (
+    <div className="bg-slate-800 text-gray-800 py-10 md:px-20">
+      {/* ---Reservation--- */}
+      <div className="flex flex-col items-center justify-center mb-8 space-y-4">
+        <p className="text-center text-yellow-600 italic mb-2">---Reservation---</p>
+        <hr className="border-2 border-gray-300 w-[350px]" />
+        <h2 className="text-center text-3xl font-bold tracking-wide text-white">
+          BOOK A TABLE
+        </h2>
+        <hr className="border-2 border-gray-300 w-[350px]" />
+      </div>
 
       {/* Reservation Form */}
       <form
