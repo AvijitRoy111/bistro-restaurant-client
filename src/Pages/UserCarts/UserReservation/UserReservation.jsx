@@ -159,9 +159,9 @@
 //       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto text-center mb-10">
 //         {/* Phone */}
 //         <div>
-//           <div className="bg-amber-700 text-white py-3">
-//             <FaPhoneAlt className="mx-auto text-2xl" />
-//           </div>
+          <div className="bg-amber-700 text-white py-3">
+            <FaPhoneAlt className="mx-auto text-2xl" />
+          </div>
           <div className="bg-gray-50 py-6 h-[125px]">
             <h3 className="font-semibold mb-1">PHONE</h3>
             <p className="text-gray-600">+38 (012) 34 56 789</p>
