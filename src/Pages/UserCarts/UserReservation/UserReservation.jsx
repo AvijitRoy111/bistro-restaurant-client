@@ -71,16 +71,16 @@
 //           />
 //         </div>
 
-//         {/* Time */}
-//         <div className="flex flex-col">
-//           <label className="font-medium text-sm mb-1 text-white">Time*</label>
-//           <input
-//             type="time"
-//             name="time"
-//             required
-//             className="border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:border-yellow-600"
-//           />
-//         </div>
+        {/* Time */}
+        <div className="flex flex-col">
+          <label className="font-medium text-sm mb-1 text-white">Time*</label>
+          <input
+            type="time"
+            name="time"
+            required
+            className="border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:border-yellow-600"
+          />
+        </div>
 
         {/* Guest */}
         <div className="flex flex-col">
