@@ -145,15 +145,15 @@
 //         </div>
 //       </form>
 
-//       {/* ---Visit Us--- */}
-//       <div className="flex flex-col items-center justify-center mb-8 space-y-4">
-//         <p className="text-center text-yellow-600 italic mb-2">---Visit Us---</p>
-//         <hr className="border-2 border-gray-300 w-[350px]" />
-//         <h2 className="text-center text-3xl font-bold tracking-wide text-white">
-//           OUR LOCATION
-//         </h2>
-//         <hr className="border-2 border-gray-300 w-[350px]" />
-//       </div>
+      {/* ---Visit Us--- */}
+      <div className="flex flex-col items-center justify-center mb-8 space-y-4">
+        <p className="text-center text-yellow-600 italic mb-2">---Visit Us---</p>
+        <hr className="border-2 border-gray-300 w-[350px]" />
+        <h2 className="text-center text-3xl font-bold tracking-wide text-white">
+          OUR LOCATION
+        </h2>
+        <hr className="border-2 border-gray-300 w-[350px]" />
+      </div>
 
       {/* Location Info */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto text-center mb-10">
