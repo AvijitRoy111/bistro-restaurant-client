@@ -98,9 +98,9 @@
 //           </select>
 //         </div>
 
-//         {/* Name */}
-//         <div className="flex flex-col md:col-span-1">
-//           <label className="font-medium text-sm mb-1 text-white">Name*</label>
+        {/* Name */}
+        <div className="flex flex-col md:col-span-1">
+          <label className="font-medium text-sm mb-1 text-white">Name*</label>
           <input
             type="text"
             name="name"
