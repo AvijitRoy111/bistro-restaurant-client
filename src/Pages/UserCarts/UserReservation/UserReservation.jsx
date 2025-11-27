@@ -1,47 +1,47 @@
-// import { useState } from "react";
-// import axios from "axios";
-// import { FaPhoneAlt, FaMapMarkerAlt, FaClock, FaCheckCircle } from "react-icons/fa";
+import { useState } from "react";
+import axios from "axios";
+import { FaPhoneAlt, FaMapMarkerAlt, FaClock, FaCheckCircle } from "react-icons/fa";
 
-// const UserReservation = () => {
-//   const [success, setSuccess] = useState(false);
+const UserReservation = () => {
+  const [success, setSuccess] = useState(false);
 
-//   const handleSubmitReservation = async (e) => {
-//     e.preventDefault();
-//     const form = e.target;
+  const handleSubmitReservation = async (e) => {
+    e.preventDefault();
+    const form = e.target;
 
-//     // Get form data
-//     const date = form.date.value;
-//     const timeInput = form.time.value; 
-//     const guest = form.guest.value;
-//     const name = form.name.value;
-//     const phone = form.phone.value;
-//     const email = form.email.value;
+    // Get form data
+    const date = form.date.value;
+    const timeInput = form.time.value; 
+    const guest = form.guest.value;
+    const name = form.name.value;
+    const phone = form.phone.value;
+    const email = form.email.value;
 
-//     //  Convert time to 12-hour format with AM/PM
-//     const [hour, minute] = timeInput.split(":");
-//     const hourNum = parseInt(hour, 10);
-//     const ampm = hourNum >= 12 ? "PM" : "AM";
-//     const hour12 = hourNum % 12 === 0 ? 12 : hourNum % 12;
-//     const formattedTime = `${hour12}:${minute} ${ampm}`;
+    //  Convert time to 12-hour format with AM/PM
+    const [hour, minute] = timeInput.split(":");
+    const hourNum = parseInt(hour, 10);
+    const ampm = hourNum >= 12 ? "PM" : "AM";
+    const hour12 = hourNum % 12 === 0 ? 12 : hourNum % 12;
+    const formattedTime = `${hour12}:${minute} ${ampm}`;
 
-//     // Send data with formatted time
-//     const bookingData = { date, time: formattedTime, guest, name, phone, email };
+    // Send data with formatted time
+    const bookingData = { date, time: formattedTime, guest, name, phone, email };
 
-//     try {
-//       const { data } = await axios.post(
-//         `${import.meta.env.VITE_api}/bookings`,
-//         bookingData
-//       );
+    try {
+      const { data } = await axios.post(
+        `${import.meta.env.VITE_api}/bookings`,
+        bookingData
+      );
 
-//       if (data?.success) {
-//         setSuccess(true);
-//         form.reset();
-//       }
-//     } catch (error) {
-//       console.error("Booking failed:", error);
-//       alert("Failed to submit reservation. Try again!");
-//     }
-//   };
+      if (data?.success) {
+        setSuccess(true);
+        form.reset();
+      }
+    } catch (error) {
+      console.error("Booking failed:", error);
+      alert("Failed to submit reservation. Try again!");
+    }
+  };
 
   return (
     <div className="bg-slate-800 text-gray-800 py-10 md:px-20">
