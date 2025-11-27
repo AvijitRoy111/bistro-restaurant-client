@@ -155,10 +155,10 @@
 //         <hr className="border-2 border-gray-300 w-[350px]" />
 //       </div>
 
-//       {/* Location Info */}
-//       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto text-center mb-10">
-//         {/* Phone */}
-//         <div>
+      {/* Location Info */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto text-center mb-10">
+        {/* Phone */}
+        <div>
           <div className="bg-amber-700 text-white py-3">
             <FaPhoneAlt className="mx-auto text-2xl" />
           </div>
