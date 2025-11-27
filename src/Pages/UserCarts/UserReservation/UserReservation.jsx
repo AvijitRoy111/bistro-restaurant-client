@@ -60,16 +60,16 @@
 //         onSubmit={handleSubmitReservation}
 //         className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 mb-10"
 //       >
-//         {/* Date */}
-//         <div className="flex flex-col">
-//           <label className="font-medium text-sm mb-1 text-white">Date*</label>
-//           <input
-//             type="date"
-//             name="date"
-//             required
-//             className="border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:border-yellow-600"
-//           />
-//         </div>
+        {/* Date */}
+        <div className="flex flex-col">
+          <label className="font-medium text-sm mb-1 text-white">Date*</label>
+          <input
+            type="date"
+            name="date"
+            required
+            className="border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:border-yellow-600"
+          />
+        </div>
 
         {/* Time */}
         <div className="flex flex-col">
