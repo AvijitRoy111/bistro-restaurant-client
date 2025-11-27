@@ -110,9 +110,9 @@
 //           />
 //         </div>
 
-//         {/* Phone */}
-//         <div className="flex flex-col md:col-span-1">
-//           <label className="font-medium text-sm mb-1 text-white">Phone*</label>
+        {/* Phone */}
+        <div className="flex flex-col md:col-span-1">
+          <label className="font-medium text-sm mb-1 text-white">Phone*</label>
           <input
             type="tel"
             name="phone"
