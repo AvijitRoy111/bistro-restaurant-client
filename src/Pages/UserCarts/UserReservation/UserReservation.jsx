@@ -136,14 +136,14 @@
 
 //         {/* Submit Button */}
 //         <div className="md:col-span-3 text-center mt-6">
-//           <button
-//             type="submit"
-//             className="bg-amber-700 text-white px-8 py-3 rounded-md font-semibold hover:bg-yellow-700 transition"
-//           >
-//             Book A Table
-//           </button>
-//         </div>
-//       </form>
+          <button
+            type="submit"
+            className="bg-amber-700 text-white px-8 py-3 rounded-md font-semibold hover:bg-yellow-700 transition"
+          >
+            Book A Table
+          </button>
+        </div>
+      </form>
 
       {/* ---Visit Us--- */}
       <div className="flex flex-col items-center justify-center mb-8 space-y-4">
