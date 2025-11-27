@@ -82,21 +82,21 @@
 //           />
 //         </div>
 
-//         {/* Guest */}
-//         <div className="flex flex-col">
-//           <label className="font-medium text-sm mb-1 text-white">Guest*</label>
-//           <select
-//             name="guest"
-//             required
-//             className="border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:border-yellow-600"
-//           >
-//             <option>1 Person</option>
-//             <option>2 Person</option>
-//             <option>3 Person</option>
-//             <option>4 Person</option>
-//             <option>5 Person</option>
-//           </select>
-//         </div>
+        {/* Guest */}
+        <div className="flex flex-col">
+          <label className="font-medium text-sm mb-1 text-white">Guest*</label>
+          <select
+            name="guest"
+            required
+            className="border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:border-yellow-600"
+          >
+            <option>1 Person</option>
+            <option>2 Person</option>
+            <option>3 Person</option>
+            <option>4 Person</option>
+            <option>5 Person</option>
+          </select>
+        </div>
 
         {/* Name */}
         <div className="flex flex-col md:col-span-1">
