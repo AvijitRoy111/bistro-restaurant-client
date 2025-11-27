@@ -203,17 +203,17 @@
 //             <p className="text-gray-600 mb-4">
 //               Thank you! Your reservation has been saved.
 //             </p>
-//             <button
-//               onClick={() => setSuccess(false)}
-//               className="bg-amber-700 text-white px-4 py-2 rounded-md hover:bg-yellow-700 transition"
-//             >
-//               Close
-//             </button>
-//           </div>
-//         </div>
-//       )}
-//     </div>
-//   );
-// };
+            <button
+              onClick={() => setSuccess(false)}
+              className="bg-amber-700 text-white px-4 py-2 rounded-md hover:bg-yellow-700 transition"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+};
 
 export default UserReservation;
