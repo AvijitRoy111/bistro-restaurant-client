@@ -125,14 +125,14 @@
 //         {/* Email */}
 //         <div className="flex flex-col md:col-span-1">
 //           <label className="font-medium text-sm mb-1 text-white">Email*</label>
-//           <input
-//             type="email"
-//             name="email"
-//             placeholder="Email"
-//             required
-//             className="border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:border-yellow-600"
-//           />
-//         </div>
+          <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            required
+            className="border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:border-yellow-600"
+          />
+        </div>
 
         {/* Submit Button */}
         <div className="md:col-span-3 text-center mt-6">
