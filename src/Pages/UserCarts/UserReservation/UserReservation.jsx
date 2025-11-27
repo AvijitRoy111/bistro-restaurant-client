@@ -55,11 +55,11 @@
 //         <hr className="border-2 border-gray-300 w-[350px]" />
 //       </div>
 
-//       {/* Reservation Form */}
-//       <form
-//         onSubmit={handleSubmitReservation}
-//         className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 mb-10"
-//       >
+      {/* Reservation Form */}
+      <form
+        onSubmit={handleSubmitReservation}
+        className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 mb-10"
+      >
         {/* Date */}
         <div className="flex flex-col">
           <label className="font-medium text-sm mb-1 text-white">Date*</label>
