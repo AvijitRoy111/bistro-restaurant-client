@@ -122,9 +122,9 @@
 //           />
 //         </div>
 
-//         {/* Email */}
-//         <div className="flex flex-col md:col-span-1">
-//           <label className="font-medium text-sm mb-1 text-white">Email*</label>
+        {/* Email */}
+        <div className="flex flex-col md:col-span-1">
+          <label className="font-medium text-sm mb-1 text-white">Email*</label>
           <input
             type="email"
             name="email"
