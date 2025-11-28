@@ -2,10 +2,10 @@
 // import { FaStar,  FaCheckCircle } from "react-icons/fa";
 // import axios from "axios";
 
-// const AddReview = () => {
-//   const [rating, setRating] = useState(0);
-//   const [hover, setHover] = useState(0);
-//   const [success, setSuccess] = useState(false);
+const AddReview = () => {
+  const [rating, setRating] = useState(0);
+  const [hover, setHover] = useState(0);
+  const [success, setSuccess] = useState(false);
 
   const handleSubmitReview = async (e) => {
     e.preventDefault();
