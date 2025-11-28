@@ -109,18 +109,18 @@
 //             />
 //           </div>
 
-//           <div>
-//             <label className="block text-sm font-medium mb-1">
-//               Kindly express your care in a short way.
-//             </label>
-//             <textarea
-//               rows="4"
-//               name="description"
-//               required
-//               placeholder="Review in detail"
-//               className="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-yellow-600"
-//             ></textarea>
-//           </div>
+          <div>
+            <label className="block text-sm font-medium mb-1">
+              Kindly express your care in a short way.
+            </label>
+            <textarea
+              rows="4"
+              name="description"
+              required
+              placeholder="Review in detail"
+              className="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-yellow-600"
+            ></textarea>
+          </div>
 
           <div className="text-center">
             <button
