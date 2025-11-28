@@ -99,8 +99,8 @@
 //             />
 //           </div>
 
-//           <div>
-//             <label className="block text-sm font-medium mb-1">Your Image URL</label>
+          <div>
+            <label className="block text-sm font-medium mb-1">Your Image URL</label>
             <input
               type="text"
               name="image"
