@@ -49,9 +49,9 @@
 //         <hr className="border-2 border-gray-300 w-[350px]" />
 //       </div>
 
-//       {/* Review Card */}
-//       <div className="bg-white/70 w-full max-w-2xl rounded-md shadow-md p-10">
-//         <h3 className="text-center text-xl font-semibold mb-4">RATE US!</h3>
+      {/* Review Card */}
+      <div className="bg-white/70 w-full max-w-2xl rounded-md shadow-md p-10">
+        <h3 className="text-center text-xl font-semibold mb-4">RATE US!</h3>
 
         {/* Rating Stars */}
         <div className="flex justify-center mb-8 text-gray-400 space-x-2">
