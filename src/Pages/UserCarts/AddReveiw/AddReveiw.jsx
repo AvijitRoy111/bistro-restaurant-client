@@ -42,7 +42,7 @@
 //         <p className="text-center text-yellow-600 italic mb-2">
 //           ---Sharing is Caring!!---
 //         </p>
-//         <hr className="border-2 border-gray-300 w-[350px]" />
+        <hr className="border-2 border-gray-300 w-[350px]" />
         <h2 className="text-center text-3xl font-bold tracking-wide text-white">
           GIVE A REVIEW...
         </h2>
