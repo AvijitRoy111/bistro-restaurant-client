@@ -7,15 +7,15 @@
 //   const [hover, setHover] = useState(0);
 //   const [success, setSuccess] = useState(false);
 
-//   const handleSubmitReview = async (e) => {
-//     e.preventDefault();
-//     const form = e.target;
-//     const recipe = form.recipe.value;
-//     const name = form.name.value;
-//     const image = form.image.value;
-//     const details = form.description.value;
+  const handleSubmitReview = async (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const recipe = form.recipe.value;
+    const name = form.name.value;
+    const image = form.image.value;
+    const details = form.description.value;
 
-//     const review = { name, image, details, rating, recipe };
+    const review = { name, image, details, rating, recipe };
 
     try {
       const { data } = await axios.post(
