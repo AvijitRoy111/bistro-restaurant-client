@@ -43,11 +43,11 @@
 //           ---Sharing is Caring!!---
 //         </p>
 //         <hr className="border-2 border-gray-300 w-[350px]" />
-//         <h2 className="text-center text-3xl font-bold tracking-wide text-white">
-//           GIVE A REVIEW...
-//         </h2>
-//         <hr className="border-2 border-gray-300 w-[350px]" />
-//       </div>
+        <h2 className="text-center text-3xl font-bold tracking-wide text-white">
+          GIVE A REVIEW...
+        </h2>
+        <hr className="border-2 border-gray-300 w-[350px]" />
+      </div>
 
       {/* Review Card */}
       <div className="bg-white/70 w-full max-w-2xl rounded-md shadow-md p-10">
