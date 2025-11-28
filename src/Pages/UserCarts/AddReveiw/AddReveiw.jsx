@@ -58,20 +58,20 @@
 //           {[...Array(5)].map((_, index) => {
 //             const starValue = index + 1;
 //             return (
-//               <FaStar
-//                 key={index}
-//                 className={`text-3xl cursor-pointer transition ${
-//                   starValue <= (hover || rating)
-//                     ? "text-yellow-500"
-//                     : "text-gray-400"
-//                 }`}
-//                 onClick={() => setRating(starValue)}
-//                 onMouseEnter={() => setHover(starValue)}
-//                 onMouseLeave={() => setHover(rating)}
-//               />
-//             );
-//           })}
-//         </div>
+              <FaStar
+                key={index}
+                className={`text-3xl cursor-pointer transition ${
+                  starValue <= (hover || rating)
+                    ? "text-yellow-500"
+                    : "text-gray-400"
+                }`}
+                onClick={() => setRating(starValue)}
+                onMouseEnter={() => setHover(starValue)}
+                onMouseLeave={() => setHover(rating)}
+              />
+            );
+          })}
+        </div>
 
         {/* Review Form */}
         <form onSubmit={handleSubmitReview} className="space-y-6">
