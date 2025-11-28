@@ -17,23 +17,23 @@
 
 //     const review = { name, image, details, rating, recipe };
 
-//     try {
-//       const { data } = await axios.post(
-//         `${import.meta.env.VITE_api}/reviews`,
-//         review
-//       );
-//       console.log(data)
+    try {
+      const { data } = await axios.post(
+        `${import.meta.env.VITE_api}/reviews`,
+        review
+      );
+      console.log(data)
      
-//       if (data?.success) {
-//         setSuccess(true);
-//         form.reset();
-//         setRating(0);
-//       }
-//     } catch (error) {
-//       console.error("Review post failed:", error);
-//       alert("Failed to submit review. Try again!");
-//     }
-//   };
+      if (data?.success) {
+        setSuccess(true);
+        form.reset();
+        setRating(0);
+      }
+    } catch (error) {
+      console.error("Review post failed:", error);
+      alert("Failed to submit review. Try again!");
+    }
+  };
 
   return (
     <div className="min-h-screen bg-slate-900 text-gray-800 py-10 px-6 flex flex-col items-center">
