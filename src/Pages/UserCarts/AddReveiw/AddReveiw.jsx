@@ -35,13 +35,13 @@
 //     }
 //   };
 
-//   return (
-//     <div className="min-h-screen bg-slate-900 text-gray-800 py-10 px-6 flex flex-col items-center">
-//       {/* Header */}
-//       <div className="flex flex-col items-center justify-center mb-8 space-y-4">
-//         <p className="text-center text-yellow-600 italic mb-2">
-//           ---Sharing is Caring!!---
-//         </p>
+  return (
+    <div className="min-h-screen bg-slate-900 text-gray-800 py-10 px-6 flex flex-col items-center">
+      {/* Header */}
+      <div className="flex flex-col items-center justify-center mb-8 space-y-4">
+        <p className="text-center text-yellow-600 italic mb-2">
+          ---Sharing is Caring!!---
+        </p>
         <hr className="border-2 border-gray-300 w-[350px]" />
         <h2 className="text-center text-3xl font-bold tracking-wide text-white">
           GIVE A REVIEW...
