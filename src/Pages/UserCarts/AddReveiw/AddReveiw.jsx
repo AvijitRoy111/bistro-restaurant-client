@@ -141,9 +141,9 @@
 //             <h3 className="text-xl font-bold mb-2 text-gray-800">
 //               Review Submitted Successfully!
 //             </h3>
-//             <p className="text-gray-600 mb-4">
-//               Thank you for sharing your feedback 
-//             </p>
+            <p className="text-gray-600 mb-4">
+              Thank you for sharing your feedback 
+            </p>
             <button
               onClick={() => setSuccess(false)}
               className="bg-amber-700 text-white px-4 py-2 rounded-md hover:bg-yellow-700 transition"
