@@ -66,20 +66,20 @@
 //           </p>
 //         </div>
 
-//         {/* Table */}
-//         <div className="overflow-x-auto">
-//           <table className="min-w-full text-sm text-left text-gray-700">
-//             <thead className="bg-yellow-700 text-white">
-//               <tr>
-//                 <th className="px-4 py-3">#</th>
-//                 <th className="px-4 py-3">User Name</th>
-//                 <th className="px-4 py-3">Email</th>
-//                 <th className="px-4 py-3">Guest</th>
-//                 <th className="px-4 py-3">Date</th>
-//                 <th className="px-4 py-3 text-center">Action</th>
-//               </tr>
-//             </thead>
-//             <tbody>
+        {/* Table */}
+        <div className="overflow-x-auto">
+          <table className="min-w-full text-sm text-left text-gray-700">
+            <thead className="bg-yellow-700 text-white">
+              <tr>
+                <th className="px-4 py-3">#</th>
+                <th className="px-4 py-3">User Name</th>
+                <th className="px-4 py-3">Email</th>
+                <th className="px-4 py-3">Guest</th>
+                <th className="px-4 py-3">Date</th>
+                <th className="px-4 py-3 text-center">Action</th>
+              </tr>
+            </thead>
+            <tbody>
               {bookings.map((booking, index) => (
                 <tr
                   key={booking._id}
