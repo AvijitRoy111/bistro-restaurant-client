@@ -3,13 +3,13 @@
 // import { Trash2, XCircle } from "lucide-react";
 // import { AuthContext } from "../../../AuthProvider/AuthProvider";
 
-// const Booking = () => {
-//   const {user} = useContext(AuthContext)
-//   const [bookings, setBookings] = useState([]);
-//   const [loading, setLoading] = useState(true);
-//   const [deleteId, setDeleteId] = useState(null);
-//   const [showConfirm, setShowConfirm] = useState(false);
-//   const [showSuccess, setShowSuccess] = useState(false);
+const Booking = () => {
+  const {user} = useContext(AuthContext)
+  const [bookings, setBookings] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [deleteId, setDeleteId] = useState(null);
+  const [showConfirm, setShowConfirm] = useState(false);
+  const [showSuccess, setShowSuccess] = useState(false);
 
   //  Fetch bookings
   useEffect(() => {
