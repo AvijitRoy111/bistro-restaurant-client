@@ -11,20 +11,20 @@
 //   const [showConfirm, setShowConfirm] = useState(false);
 //   const [showSuccess, setShowSuccess] = useState(false);
 
-//   //  Fetch bookings
-//   useEffect(() => {
-//     const fetchBookings = async () => {
-//       try {
-//         const { data } = await axios.get(`${import.meta.env.VITE_api}/bookings?email=${user.email}`);
-//         setBookings(data.data || []);
-//         setLoading(false);
-//       } catch (error) {
-//         console.error("Failed to fetch bookings:", error);
-//         setLoading(false);
-//       }
-//     };
-//     fetchBookings();
-//   }, []);
+  //  Fetch bookings
+  useEffect(() => {
+    const fetchBookings = async () => {
+      try {
+        const { data } = await axios.get(`${import.meta.env.VITE_api}/bookings?email=${user.email}`);
+        setBookings(data.data || []);
+        setLoading(false);
+      } catch (error) {
+        console.error("Failed to fetch bookings:", error);
+        setLoading(false);
+      }
+    };
+    fetchBookings();
+  }, []);
 
   //  Delete Booking
   const handleDelete = async () => {
