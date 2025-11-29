@@ -57,14 +57,14 @@
 //         </h2>
 //       </div>
 
-//       {/* Booking Summary */}
-//       <div className="bg-white shadow-lg rounded-2xl p-6 w-full max-w-4xl">
-//         <div className="flex justify-between items-center mb-4">
-//           <p className="text-gray-700 font-medium text-lg">
-//             Total Bookings:{" "}
-//             <span className="font-semibold">{bookings.length}</span>
-//           </p>
-//         </div>
+      {/* Booking Summary */}
+      <div className="bg-white shadow-lg rounded-2xl p-6 w-full max-w-4xl">
+        <div className="flex justify-between items-center mb-4">
+          <p className="text-gray-700 font-medium text-lg">
+            Total Bookings:{" "}
+            <span className="font-semibold">{bookings.length}</span>
+          </p>
+        </div>
 
         {/* Table */}
         <div className="overflow-x-auto">
