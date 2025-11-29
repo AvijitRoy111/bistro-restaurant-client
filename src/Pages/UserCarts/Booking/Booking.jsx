@@ -152,4 +152,4 @@
 //   );
 // };
 
-// export default Booking;
+export default Booking;
