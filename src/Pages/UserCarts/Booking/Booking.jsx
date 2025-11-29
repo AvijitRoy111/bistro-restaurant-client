@@ -117,7 +117,7 @@
 //       {showConfirm && (
 //         <div className="fixed inset-0 bg-black bg-opacity-60 flex justify-center items-center z-50">
 //           <div className="bg-white p-6 rounded-lg shadow-xl text-center">
-//             <XCircle size={60} className="text-red-500 mx-auto mb-4" />
+            <XCircle size={60} className="text-red-500 mx-auto mb-4" />
             <h3 className="text-xl font-semibold mb-2 text-gray-800">
               Are you sure 
             </h3>
