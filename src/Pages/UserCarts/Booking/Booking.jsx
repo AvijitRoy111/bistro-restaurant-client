@@ -91,20 +91,20 @@
 //                   <td className="px-4 py-3">{booking.guest}</td>
 //                   <td className="px-4 py-3">{booking.date}</td>
 //                   <td className="px-4 py-3 text-center">
-//                     <button
-//                       onClick={() => {
-//                         setDeleteId(booking._id);
-//                         setShowConfirm(true);
-//                       }}
-//                       className="bg-red-700 hover:bg-red-800 text-white p-2 rounded-md transition"
-//                     >
-//                       <Trash2 size={16} />
-//                     </button>
-//                   </td>
-//                 </tr>
-//               ))}
-//             </tbody>
-//           </table>
+                    <button
+                      onClick={() => {
+                        setDeleteId(booking._id);
+                        setShowConfirm(true);
+                      }}
+                      className="bg-red-700 hover:bg-red-800 text-white p-2 rounded-md transition"
+                    >
+                      <Trash2 size={16} />
+                    </button>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
           {bookings.length === 0 && (
             <p className="text-center text-gray-500 py-6">
               No bookings found.
