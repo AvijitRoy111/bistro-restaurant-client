@@ -105,13 +105,13 @@
 //               ))}
 //             </tbody>
 //           </table>
-//           {bookings.length === 0 && (
-//             <p className="text-center text-gray-500 py-6">
-//               No bookings found.
-//             </p>
-//           )}
-//         </div>
-//       </div>
+          {bookings.length === 0 && (
+            <p className="text-center text-gray-500 py-6">
+              No bookings found.
+            </p>
+          )}
+        </div>
+      </div>
 
       {/*  Confirm Delete Modal */}
       {showConfirm && (
