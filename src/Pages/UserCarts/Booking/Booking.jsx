@@ -39,13 +39,13 @@
 //     }
 //   };
 
-//   if (loading) {
-//     return (
-//       <div className="min-h-screen bg-slate-900 flex justify-center items-center text-white text-xl">
-//         Loading...
-//       </div>
-//     );
-//   }
+  if (loading) {
+    return (
+      <div className="min-h-screen bg-slate-900 flex justify-center items-center text-white text-xl">
+        Loading...
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-slate-900 flex flex-col items-center py-10 px-4">
