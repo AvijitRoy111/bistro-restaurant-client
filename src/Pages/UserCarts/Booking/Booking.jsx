@@ -140,16 +140,16 @@
 //         </div>
 //       )}
 
-//       {/*  Success Modal */}
-//       {showSuccess && (
-//         <div className="fixed inset-0 flex justify-center items-center z-50">
-//           <div className="bg-green-600 text-white px-6 py-3 rounded-lg shadow-lg">
-//             Booking deleted successfully 
-//           </div>
-//         </div>
-//       )}
-//     </div>
-//   );
-// };
+      {/*  Success Modal */}
+      {showSuccess && (
+        <div className="fixed inset-0 flex justify-center items-center z-50">
+          <div className="bg-green-600 text-white px-6 py-3 rounded-lg shadow-lg">
+            Booking deleted successfully 
+          </div>
+        </div>
+      )}
+    </div>
+  );
+};
 
 export default Booking;
