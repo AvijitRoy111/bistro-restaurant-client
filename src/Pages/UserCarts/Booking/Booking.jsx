@@ -81,16 +81,16 @@
 //             </thead>
 //             <tbody>
 //               {bookings.map((booking, index) => (
-//                 <tr
-//                   key={booking._id}
-//                   className="border-b hover:bg-gray-100 transition"
-//                 >
-//                   <td className="px-4 py-3 font-medium">{index + 1}</td>
-//                   <td className="px-4 py-3">{booking.name}</td>
-//                   <td className="px-4 py-3">{booking.email}</td>
-//                   <td className="px-4 py-3">{booking.guest}</td>
-//                   <td className="px-4 py-3">{booking.date}</td>
-//                   <td className="px-4 py-3 text-center">
+                <tr
+                  key={booking._id}
+                  className="border-b hover:bg-gray-100 transition"
+                >
+                  <td className="px-4 py-3 font-medium">{index + 1}</td>
+                  <td className="px-4 py-3">{booking.name}</td>
+                  <td className="px-4 py-3">{booking.email}</td>
+                  <td className="px-4 py-3">{booking.guest}</td>
+                  <td className="px-4 py-3">{booking.date}</td>
+                  <td className="px-4 py-3 text-center">
                     <button
                       onClick={() => {
                         setDeleteId(booking._id);
