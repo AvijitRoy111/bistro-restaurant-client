@@ -129,16 +129,16 @@
 //               >
 //                 Confirm
 //               </button>
-//               <button
-//                 onClick={() => setShowConfirm(false)}
-//                 className="bg-gray-400 hover:bg-gray-500 text-white px-4 py-2 rounded-md"
-//               >
-//                 Cancel
-//               </button>
-//             </div>
-//           </div>
-//         </div>
-//       )}
+              <button
+                onClick={() => setShowConfirm(false)}
+                className="bg-gray-400 hover:bg-gray-500 text-white px-4 py-2 rounded-md"
+              >
+                Cancel
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/*  Success Modal */}
       {showSuccess && (
