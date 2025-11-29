@@ -47,15 +47,15 @@
 //     );
 //   }
 
-//   return (
-//     <div className="min-h-screen bg-slate-900 flex flex-col items-center py-10 px-4">
-//       {/* Header */}
-//       <div className="flex flex-col items-center mb-8">
-//         <p className="text-yellow-500 italic mb-1">--- My Reservations ---</p>
-//         <h2 className="text-3xl font-bold text-white border-y border-gray-400 py-2">
-//           MY BOOKINGS
-//         </h2>
-//       </div>
+  return (
+    <div className="min-h-screen bg-slate-900 flex flex-col items-center py-10 px-4">
+      {/* Header */}
+      <div className="flex flex-col items-center mb-8">
+        <p className="text-yellow-500 italic mb-1">--- My Reservations ---</p>
+        <h2 className="text-3xl font-bold text-white border-y border-gray-400 py-2">
+          MY BOOKINGS
+        </h2>
+      </div>
 
       {/* Booking Summary */}
       <div className="bg-white shadow-lg rounded-2xl p-6 w-full max-w-4xl">
