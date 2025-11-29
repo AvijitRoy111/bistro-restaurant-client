@@ -123,12 +123,12 @@
 //             </h3>
 //             <p className="text-lg font-normal mb-4 text-gray-500">you want to delete this booking?</p>
 //             <div className="flex justify-center space-x-4">
-//               <button
-//                 onClick={handleDelete}
-//                 className="bg-amber-700 hover:bg-amber-800 text-white px-4 py-2 rounded-md"
-//               >
-//                 Confirm
-//               </button>
+              <button
+                onClick={handleDelete}
+                className="bg-amber-700 hover:bg-amber-800 text-white px-4 py-2 rounded-md"
+              >
+                Confirm
+              </button>
               <button
                 onClick={() => setShowConfirm(false)}
                 className="bg-gray-400 hover:bg-gray-500 text-white px-4 py-2 rounded-md"
