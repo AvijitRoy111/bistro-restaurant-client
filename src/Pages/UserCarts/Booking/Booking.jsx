@@ -80,7 +80,7 @@
 //               </tr>
 //             </thead>
 //             <tbody>
-//               {bookings.map((booking, index) => (
+              {bookings.map((booking, index) => (
                 <tr
                   key={booking._id}
                   className="border-b hover:bg-gray-100 transition"
