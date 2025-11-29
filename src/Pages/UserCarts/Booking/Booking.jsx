@@ -26,18 +26,18 @@
 //     fetchBookings();
 //   }, []);
 
-//   //  Delete Booking
-//   const handleDelete = async () => {
-//     try {
-//       await axios.delete(`${import.meta.env.VITE_api}/bookings/${deleteId}`);
-//       setBookings(bookings.filter((b) => b._id !== deleteId));
-//       setShowConfirm(false);
-//       setShowSuccess(true);
-//       setTimeout(() => setShowSuccess(false), 1500);
-//     } catch (error) {
-//       console.error("Failed to delete booking:", error);
-//     }
-//   };
+  //  Delete Booking
+  const handleDelete = async () => {
+    try {
+      await axios.delete(`${import.meta.env.VITE_api}/bookings/${deleteId}`);
+      setBookings(bookings.filter((b) => b._id !== deleteId));
+      setShowConfirm(false);
+      setShowSuccess(true);
+      setTimeout(() => setShowSuccess(false), 1500);
+    } catch (error) {
+      console.error("Failed to delete booking:", error);
+    }
+  };
 
   if (loading) {
     return (
