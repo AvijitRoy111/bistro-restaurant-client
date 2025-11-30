@@ -44,9 +44,9 @@
 //           <h3 className="text-lg font-semibold text-gray-800">Avijit Roy</h3>
 //         </div>
 
-//         {/* Right - Activities */}
-//         <div className="bg-[#fff9c4] flex flex-col justify-center p-10">
-//           <h2 className="text-2xl font-bold text-gray-800 mb-5">Your Activities</h2>
+        {/* Right - Activities */}
+        <div className="bg-[#fff9c4] flex flex-col justify-center p-10">
+          <h2 className="text-2xl font-bold text-gray-800 mb-5">Your Activities</h2>
           <ul className="space-y-2 text-lg">
             <li className="flex items-center text-sky-600 font-semibold">
               <FaCartArrowDown className="mr-2" /> ORDERS: <span className="ml-1 text-gray-700">6</span>
