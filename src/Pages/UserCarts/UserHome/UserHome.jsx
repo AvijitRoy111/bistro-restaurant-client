@@ -50,10 +50,10 @@
 //           <ul className="space-y-2 text-lg">
 //             <li className="flex items-center text-sky-600 font-semibold">
 //               <FaCartArrowDown className="mr-2" /> ORDERS: <span className="ml-1 text-gray-700">6</span>
-//             </li>
-//             <li className="flex items-center text-teal-500 font-semibold">
-//               <FaStar className="mr-2" /> REVIEWS: <span className="ml-1 text-gray-700">2</span>
-//             </li>
+            </li>
+            <li className="flex items-center text-teal-500 font-semibold">
+              <FaStar className="mr-2" /> REVIEWS: <span className="ml-1 text-gray-700">2</span>
+            </li>
             <li className="flex items-center text-orange-500 font-semibold">
               <FaBookmark className="mr-2" /> BOOKMARKS: <span className="ml-1 text-gray-700">3</span>
             </li>
