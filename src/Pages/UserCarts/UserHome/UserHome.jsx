@@ -1,4 +1,4 @@
-// import { FaUtensils, FaShopify, FaPhoneAlt, FaCartArrowDown, FaStar, FaBookmark, FaMoneyCheckAlt } from "react-icons/fa";
+import { FaUtensils, FaShopify, FaPhoneAlt, FaCartArrowDown, FaStar, FaBookmark, FaMoneyCheckAlt } from "react-icons/fa";
 
 const UserHome = () => {
   return (
