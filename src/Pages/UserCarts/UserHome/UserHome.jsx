@@ -41,8 +41,8 @@
 //         {/* Left - User Info */}
 //         <div className="flex flex-col items-center justify-center bg-[#ffedd5] py-10">
 //           <div className="w-32 h-32 border-4 border-[#f2b97f] bg-white rounded-full mb-4"></div>
-//           <h3 className="text-lg font-semibold text-gray-800">Avijit Roy</h3>
-//         </div>
+          <h3 className="text-lg font-semibold text-gray-800">Avijit Roy</h3>
+        </div>
 
         {/* Right - Activities */}
         <div className="bg-[#fff9c4] flex flex-col justify-center p-10">
