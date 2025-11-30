@@ -1,10 +1,10 @@
 // import { FaUtensils, FaShopify, FaPhoneAlt, FaCartArrowDown, FaStar, FaBookmark, FaMoneyCheckAlt } from "react-icons/fa";
 
-// const UserHome = () => {
-//   return (
-//     <div className="min-h-screen bg-slate-900 px-4 md:px-10 py-10">
-//       {/* Welcome Text */}
-//       <h2 className="text-lg md:text-xl text-white font-semibold mb-6">Hi, WELCOME BACK!</h2>
+const UserHome = () => {
+  return (
+    <div className="min-h-screen bg-slate-900 px-4 md:px-10 py-10">
+      {/* Welcome Text */}
+      <h2 className="text-lg md:text-xl text-white font-semibold mb-6">Hi, WELCOME BACK!</h2>
 
       {/* Top Stats */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10">
