@@ -6,11 +6,11 @@
 //       {/* Welcome Text */}
 //       <h2 className="text-lg md:text-xl text-white font-semibold mb-6">Hi, WELCOME BACK!</h2>
 
-//       {/* Top Stats */}
-//       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10">
-//         {/* Menu */}
-//         <div className="flex items-center justify-between bg-gradient-to-r from-pink-300 to-purple-300 rounded-xl p-6 shadow-md">
-//           <div>
+      {/* Top Stats */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10">
+        {/* Menu */}
+        <div className="flex items-center justify-between bg-gradient-to-r from-pink-300 to-purple-300 rounded-xl p-6 shadow-md">
+          <div>
             <h3 className="text-3xl font-bold text-white">205</h3>
             <p className="text-white font-medium">Menu</p>
           </div>
