@@ -61,10 +61,10 @@
 //               <FaMoneyCheckAlt className="mr-2" /> PAYMENTS: <span className="ml-1 text-gray-700">1</span>
 //             </li>
 //           </ul>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export default UserHome;
