@@ -31,10 +31,10 @@
 //           <div>
 //             <h3 className="text-3xl font-bold text-white">03</h3>
 //             <p className="text-white font-medium">Contact</p>
-//           </div>
-//           <FaPhoneAlt className="text-white text-4xl" />
-//         </div>
-//       </div>
+          </div>
+          <FaPhoneAlt className="text-white text-4xl" />
+        </div>
+      </div>
 
       {/* Profile & Activities Section */}
       <div className="grid grid-cols-1 md:grid-cols-2 bg-white rounded-xl shadow-md overflow-hidden">
