@@ -28,9 +28,9 @@
 
 //         {/* Contact */}
 //         <div className="flex items-center justify-between bg-gradient-to-r from-pink-400 to-rose-400 rounded-xl p-6 shadow-md">
-//           <div>
-//             <h3 className="text-3xl font-bold text-white">03</h3>
-//             <p className="text-white font-medium">Contact</p>
+          <div>
+            <h3 className="text-3xl font-bold text-white">03</h3>
+            <p className="text-white font-medium">Contact</p>
           </div>
           <FaPhoneAlt className="text-white text-4xl" />
         </div>
