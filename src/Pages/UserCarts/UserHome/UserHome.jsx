@@ -11,11 +11,11 @@
 //         {/* Menu */}
 //         <div className="flex items-center justify-between bg-gradient-to-r from-pink-300 to-purple-300 rounded-xl p-6 shadow-md">
 //           <div>
-//             <h3 className="text-3xl font-bold text-white">205</h3>
-//             <p className="text-white font-medium">Menu</p>
-//           </div>
-//           <FaUtensils className="text-white text-4xl" />
-//         </div>
+            <h3 className="text-3xl font-bold text-white">205</h3>
+            <p className="text-white font-medium">Menu</p>
+          </div>
+          <FaUtensils className="text-white text-4xl" />
+        </div>
 
         {/* Shop */}
         <div className="flex items-center justify-between bg-gradient-to-r from-yellow-300 to-amber-400 rounded-xl p-6 shadow-md">
