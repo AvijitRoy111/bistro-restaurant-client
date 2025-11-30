@@ -17,11 +17,11 @@
 //           <FaUtensils className="text-white text-4xl" />
 //         </div>
 
-//         {/* Shop */}
-//         <div className="flex items-center justify-between bg-gradient-to-r from-yellow-300 to-amber-400 rounded-xl p-6 shadow-md">
-//           <div>
-//             <h3 className="text-3xl font-bold text-white">103</h3>
-//             <p className="text-white font-medium">Shop</p>
+        {/* Shop */}
+        <div className="flex items-center justify-between bg-gradient-to-r from-yellow-300 to-amber-400 rounded-xl p-6 shadow-md">
+          <div>
+            <h3 className="text-3xl font-bold text-white">103</h3>
+            <p className="text-white font-medium">Shop</p>
           </div>
           <FaShopify className="text-white text-4xl" />
         </div>
