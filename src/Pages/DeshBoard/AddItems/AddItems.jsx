@@ -32,29 +32,29 @@
 //         formData
 //       );
 
-//       if (!imgRes.data.success) throw new Error("Image upload failed");
+      if (!imgRes.data.success) throw new Error("Image upload failed");
 
-//       const image = imgRes.data.data.display_url;
+      const image = imgRes.data.data.display_url;
 
-//       // Send data to backend using Axios
-//       const menuItem = { name, category, price, recipe, image };
-//       const res = await axios.post(`${import.meta.env.VITE_api}/menuItems`, menuItem);
+      // Send data to backend using Axios
+      const menuItem = { name, category, price, recipe, image };
+      const res = await axios.post(`${import.meta.env.VITE_api}/menuItems`, menuItem);
 
-//       if (res.data.success) {
-//         setSuccessMessage("Menu item added successfully!");
-//         setShowModal(true);
-//         form.reset();
-//       } else {
-//         throw new Error("Failed to save data to database");
-//       }
-//     } catch (error) {
-//       console.error("Error:", error);
-//       setSuccessMessage(error.message || "Something went wrong!");
-//       setShowModal(true);
-//     } finally {
-//       setLoading(false);
-//     }
-//   };
+      if (res.data.success) {
+        setSuccessMessage("Menu item added successfully!");
+        setShowModal(true);
+        form.reset();
+      } else {
+        throw new Error("Failed to save data to database");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      setSuccessMessage(error.message || "Something went wrong!");
+      setShowModal(true);
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     <div className="min-h-screen bg-slate-900 flex flex-col items-center py-12 px-4">
