@@ -8,29 +8,29 @@
 //   const [showModal, setShowModal] = useState(false);
 //   const [successMessage, setSuccessMessage] = useState("");
 
-//   const handleAddMenuItems = async (e) => {
-//     e.preventDefault();
-//     setLoading(true);
+  const handleAddMenuItems = async (e) => {
+    e.preventDefault();
+    setLoading(true);
 
-//     const form = e.target;
-//     const name = form.name.value;
-//     const category = form.category.value;
-//     const price = parseFloat(form.price.value);
-//     const recipe = form.recipe.value;
-//     const imageFile = form.image.files[0];
+    const form = e.target;
+    const name = form.name.value;
+    const category = form.category.value;
+    const price = parseFloat(form.price.value);
+    const recipe = form.recipe.value;
+    const imageFile = form.image.files[0];
 
-//     const imgbbKey = "0a09262de568e9918e006ba7b68b098f";
+    const imgbbKey = "0a09262de568e9918e006ba7b68b098f";
  
 
-//     try {
-//       // 1️⃣ Upload image to imgbb
-//       const formData = new FormData();
-//       formData.append("image", imageFile);
+    try {
+      //  Upload image to imgbb
+      const formData = new FormData();
+      formData.append("image", imageFile);
 
-//       const imgRes = await axios.post(
-//         `https://api.imgbb.com/1/upload?key=${imgbbKey}`,
-//         formData
-//       );
+      const imgRes = await axios.post(
+        `https://api.imgbb.com/1/upload?key=${imgbbKey}`,
+        formData
+      );
 
       if (!imgRes.data.success) throw new Error("Image upload failed");
 
