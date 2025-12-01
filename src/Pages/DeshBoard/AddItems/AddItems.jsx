@@ -176,10 +176,10 @@
 //               animate={{ scale: 1, opacity: 1 }}
 //               exit={{ scale: 0.8, opacity: 0 }}
 //             >
-//               {/* Close Button */}
-//               <button
-//                 onClick={() => setShowModal(false)}
-//                 className="absolute top-3 right-3 text-gray-500 hover:text-gray-700"
+              {/* Close Button */}
+              <button
+                onClick={() => setShowModal(false)}
+                className="absolute top-3 right-3 text-gray-500 hover:text-gray-700"
               >
                 <X size={20} />
               </button>
