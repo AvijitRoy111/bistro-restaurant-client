@@ -197,17 +197,17 @@
 //               {/* Message */}
 //               <p className="text-gray-600 mb-4">{successMessage}</p>
 
-//               {/* Close Button */}
-//               <button
-//                 onClick={() => setShowModal(false)}
-//                 className="bg-amber-700 hover:bg-amber-800 text-white py-2 px-6 rounded-md font-medium"
-//               >
-//                 Close
-//               </button>
-//             </motion.div>
-//           </motion.div>
-//         )}
-//       </AnimatePresence>
+              {/* Close Button */}
+              <button
+                onClick={() => setShowModal(false)}
+                className="bg-amber-700 hover:bg-amber-800 text-white py-2 px-6 rounded-md font-medium"
+              >
+                Close
+              </button>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       {/* Loading Spinner */}
       {loading && (
