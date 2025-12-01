@@ -1,12 +1,12 @@
-// import { useState } from "react";
-// import axios from "axios";
-// import { motion, AnimatePresence } from "framer-motion";
-// import { CheckCircle2, X } from "lucide-react";
+import { useState } from "react";
+import axios from "axios";
+import { motion, AnimatePresence } from "framer-motion";
+import { CheckCircle2, X } from "lucide-react";
 
-// export const AddItems = () => {
-//   const [loading, setLoading] = useState(false);
-//   const [showModal, setShowModal] = useState(false);
-//   const [successMessage, setSuccessMessage] = useState("");
+export const AddItems = () => {
+  const [loading, setLoading] = useState(false);
+  const [showModal, setShowModal] = useState(false);
+  const [successMessage, setSuccessMessage] = useState("");
 
   const handleAddMenuItems = async (e) => {
     e.preventDefault();
