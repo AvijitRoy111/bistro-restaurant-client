@@ -191,8 +191,8 @@
 
 //               {/* Success Header */}
 //               <h3 className="text-xl font-semibold text-gray-800 mb-1">
-//                 Success!
-//               </h3>
+                Success!
+              </h3>
 
               {/* Message */}
               <p className="text-gray-600 mb-4">{successMessage}</p>
