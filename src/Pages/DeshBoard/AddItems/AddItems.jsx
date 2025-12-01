@@ -66,21 +66,21 @@
 //         ADD AN ITEM
 //       </h2>
 
-//       <div className="bg-white shadow-lg rounded-2xl p-6 w-full max-w-4xl">
-//         <form onSubmit={handleAddMenuItems} className="space-y-5">
-//           {/* Recipe Name */}
-//           <div>
-//             <label className="block text-sm font-medium text-gray-700 mb-1">
-//               Recipe name*
-//             </label>
-//             <input
-//               type="text"
-//               name="name"
-//               placeholder="Recipe name"
-//               className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-600"
-//               required
-//             />
-//           </div>
+      <div className="bg-white shadow-lg rounded-2xl p-6 w-full max-w-4xl">
+        <form onSubmit={handleAddMenuItems} className="space-y-5">
+          {/* Recipe Name */}
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1">
+              Recipe name*
+            </label>
+            <input
+              type="text"
+              name="name"
+              placeholder="Recipe name"
+              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-600"
+              required
+            />
+          </div>
 
           {/* Category & Price */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
