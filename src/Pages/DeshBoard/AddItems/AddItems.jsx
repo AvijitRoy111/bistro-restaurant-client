@@ -93,16 +93,16 @@
 //                 className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-600"
 //                 required
 //               >
-//                 <option value="">Select Category</option>
-//                 <option value="Salad">Salad</option>
-//                 <option value="Drink">Drink</option>
-//                 <option value="Popular">Popular</option>
-//                 <option value="Dessert">Dessert</option>
-//                 <option value="Pizza">Pizza</option>
-//                 <option value="Soup">Soup</option>
-//                 <option value="Offered">Offered</option>
-//               </select>
-//             </div>
+                <option value="">Select Category</option>
+                <option value="Salad">Salad</option>
+                <option value="Drink">Drink</option>
+                <option value="Popular">Popular</option>
+                <option value="Dessert">Dessert</option>
+                <option value="Pizza">Pizza</option>
+                <option value="Soup">Soup</option>
+                <option value="Offered">Offered</option>
+              </select>
+            </div>
 
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">
