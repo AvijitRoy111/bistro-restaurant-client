@@ -194,8 +194,8 @@
 //                 Success!
 //               </h3>
 
-//               {/* Message */}
-//               <p className="text-gray-600 mb-4">{successMessage}</p>
+              {/* Message */}
+              <p className="text-gray-600 mb-4">{successMessage}</p>
 
               {/* Close Button */}
               <button
