@@ -189,8 +189,8 @@
 //                 <CheckCircle2 className="text-green-500 w-14 h-14" />
 //               </div>
 
-//               {/* Success Header */}
-//               <h3 className="text-xl font-semibold text-gray-800 mb-1">
+              {/* Success Header */}
+              <h3 className="text-xl font-semibold text-gray-800 mb-1">
                 Success!
               </h3>
 
