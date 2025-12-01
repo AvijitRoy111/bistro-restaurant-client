@@ -209,14 +209,14 @@
 //         )}
 //       </AnimatePresence>
 
-//       {/* Loading Spinner */}
-//       {loading && (
-//         <div className="fixed inset-0 bg-black/40 flex items-center justify-center z-50">
-//           <div className="w-16 h-16 border-4 border-amber-600 border-t-transparent rounded-full animate-spin"></div>
-//         </div>
-//       )}
-//     </div>
-//   );
-// };
+      {/* Loading Spinner */}
+      {loading && (
+        <div className="fixed inset-0 bg-black/40 flex items-center justify-center z-50">
+          <div className="w-16 h-16 border-4 border-amber-600 border-t-transparent rounded-full animate-spin"></div>
+        </div>
+      )}
+    </div>
+  );
+};
 
 export default AddItems;
