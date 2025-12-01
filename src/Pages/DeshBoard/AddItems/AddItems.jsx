@@ -82,17 +82,17 @@
 //             />
 //           </div>
 
-//           {/* Category & Price */}
-//           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-//             <div>
-//               <label className="block text-sm font-medium text-gray-700 mb-1">
-//                 Category*
-//               </label>
-//               <select
-//                 name="category"
-//                 className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-600"
-//                 required
-//               >
+          {/* Category & Price */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">
+                Category*
+              </label>
+              <select
+                name="category"
+                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-600"
+                required
+              >
                 <option value="">Select Category</option>
                 <option value="Salad">Salad</option>
                 <option value="Drink">Drink</option>
