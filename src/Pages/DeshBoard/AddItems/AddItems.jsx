@@ -146,12 +146,12 @@
 //             />
 //           </div>
 
-//           {/* Submit Button */}
-//           <button
-//             type="submit"
-//             disabled={loading}
-//             className="w-full bg-amber-700 text-white py-2 rounded-md font-medium hover:bg-amber-800 transition disabled:opacity-50"
-//           >
+          {/* Submit Button */}
+          <button
+            type="submit"
+            disabled={loading}
+            className="w-full bg-amber-700 text-white py-2 rounded-md font-medium hover:bg-amber-800 transition disabled:opacity-50"
+          >
             {loading ? <div className="flex items-center justify-center space-x-2">
               <div className="w-4 h-4 rounded-full animate-pulse dark:bg-violet-800"></div>
               <div className="w-4 h-4 rounded-full animate-pulse dark:bg-violet-800"></div>
