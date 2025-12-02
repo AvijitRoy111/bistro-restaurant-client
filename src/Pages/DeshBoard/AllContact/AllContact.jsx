@@ -148,7 +148,7 @@
 //             <h3 className="text-lg font-semibold text-yellow-400">
 //               Confirm Delete
 //             </h3>
-//             <p>Are you sure you want to delete this contact?</p>
+            <p>Are you sure you want to delete this contact?</p>
             <div className="flex justify-center gap-3 pt-3">
               <button
                 onClick={() => setShowConfirm(false)}
