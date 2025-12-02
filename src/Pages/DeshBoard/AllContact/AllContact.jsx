@@ -149,7 +149,7 @@
 //               Confirm Delete
 //             </h3>
 //             <p>Are you sure you want to delete this contact?</p>
-//             <div className="flex justify-center gap-3 pt-3">
+            <div className="flex justify-center gap-3 pt-3">
               <button
                 onClick={() => setShowConfirm(false)}
                 className="bg-gray-600 hover:bg-gray-700 px-4 py-2 rounded-md"
