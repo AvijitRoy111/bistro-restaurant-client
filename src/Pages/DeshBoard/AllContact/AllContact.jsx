@@ -174,9 +174,9 @@
 //             <h3 className="text-lg font-semibold">Deleted Successfully </h3>
 //           </div>
 //         </div>
-//       )}
-//     </div>
-//   );
-// };
+      )}
+    </div>
+  );
+};
 
 export default AllContact;
