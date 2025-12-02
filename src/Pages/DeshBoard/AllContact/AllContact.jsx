@@ -141,13 +141,13 @@
 //         )}
 //       </div>
 
-//       {/* Confirm Modal */}
-//       {showConfirm && (
-//         <div className="fixed inset-0 flex items-center justify-center bg-black/50 z-50">
-//           <div className="bg-slate-800 p-6 rounded-xl shadow-lg text-center space-y-4 mx-3">
-//             <h3 className="text-lg font-semibold text-yellow-400">
-//               Confirm Delete
-//             </h3>
+      {/* Confirm Modal */}
+      {showConfirm && (
+        <div className="fixed inset-0 flex items-center justify-center bg-black/50 z-50">
+          <div className="bg-slate-800 p-6 rounded-xl shadow-lg text-center space-y-4 mx-3">
+            <h3 className="text-lg font-semibold text-yellow-400">
+              Confirm Delete
+            </h3>
             <p>Are you sure you want to delete this contact?</p>
             <div className="flex justify-center gap-3 pt-3">
               <button
