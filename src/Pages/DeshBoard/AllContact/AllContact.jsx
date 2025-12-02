@@ -50,10 +50,10 @@
 //         <hr className="border-2 border-gray-300 w-64 md:w-80" />
 //       </div>
 
-//       {/* Count Section */}
-//       <div className="text-center mt-6 text-lg font-semibold text-yellow-400">
-//         Total Contacts: {contacts.length}
-//       </div>
+      {/* Count Section */}
+      <div className="text-center mt-6 text-lg font-semibold text-yellow-400">
+        Total Contacts: {contacts.length}
+      </div>
 
       {/* Table Section */}
       <div className="overflow-x-auto mt-6 px-3 md:px-6 pb-10">
