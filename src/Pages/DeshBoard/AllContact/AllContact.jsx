@@ -156,16 +156,16 @@
 //               >
 //                 Cancel
 //               </button>
-//               <button
-//                 onClick={handleDelete}
-//                 className="bg-red-600 hover:bg-red-700 px-4 py-2 rounded-md"
-//               >
-//                 Delete
-//               </button>
-//             </div>
-//           </div>
-//         </div>
-//       )}
+              <button
+                onClick={handleDelete}
+                className="bg-red-600 hover:bg-red-700 px-4 py-2 rounded-md"
+              >
+                Delete
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Success Modal */}
       {showSuccess && (
