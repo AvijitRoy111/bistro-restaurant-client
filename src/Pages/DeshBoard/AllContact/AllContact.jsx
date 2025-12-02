@@ -112,17 +112,17 @@
 //                     <td className="py-2 px-2 md:px-4 border-b border-gray-700 whitespace-nowrap">
 //                       {contact.phone || contact.number}
 //                     </td>
-//                     <td className="py-2 px-2 md:px-4 border-b border-gray-700 max-w-[150px] md:max-w-[250px] overflow-hidden text-ellipsis whitespace-nowrap text-gray-300">
-//                       {contact.description?.length > 40
-//                         ? contact.description.slice(0, 40) + "..."
-//                         : contact.description || contact.message}
-//                     </td>
-//                     <td className="py-2 px-2 md:px-4 border-b border-gray-700 text-gray-400 whitespace-nowrap">
-//                       {contact.createdAt
-//                         ? moment(contact.createdAt).fromNow()
-//                         : "—"}
-//                     </td>
-//                     <td className="py-2 px-2 md:px-4 border-b border-gray-700 text-center">
+                    <td className="py-2 px-2 md:px-4 border-b border-gray-700 max-w-[150px] md:max-w-[250px] overflow-hidden text-ellipsis whitespace-nowrap text-gray-300">
+                      {contact.description?.length > 40
+                        ? contact.description.slice(0, 40) + "..."
+                        : contact.description || contact.message}
+                    </td>
+                    <td className="py-2 px-2 md:px-4 border-b border-gray-700 text-gray-400 whitespace-nowrap">
+                      {contact.createdAt
+                        ? moment(contact.createdAt).fromNow()
+                        : "—"}
+                    </td>
+                    <td className="py-2 px-2 md:px-4 border-b border-gray-700 text-center">
                       <button
                         onClick={() => {
                           setDeleteId(contact._id);
