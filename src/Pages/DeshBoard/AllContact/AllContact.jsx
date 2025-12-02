@@ -123,23 +123,23 @@
 //                         : "—"}
 //                     </td>
 //                     <td className="py-2 px-2 md:px-4 border-b border-gray-700 text-center">
-//                       <button
-//                         onClick={() => {
-//                           setDeleteId(contact._id);
-//                           setShowConfirm(true);
-//                         }}
-//                         className="bg-red-600 hover:bg-red-700 text-white px-3 py-1 rounded-lg text-sm whitespace-nowrap"
-//                       >
-//                         Delete
-//                       </button>
-//                     </td>
-//                   </tr>
-//                 ))}
-//               </tbody>
-//             </table>
-//           </div>
-//         )}
-//       </div>
+                      <button
+                        onClick={() => {
+                          setDeleteId(contact._id);
+                          setShowConfirm(true);
+                        }}
+                        className="bg-red-600 hover:bg-red-700 text-white px-3 py-1 rounded-lg text-sm whitespace-nowrap"
+                      >
+                        Delete
+                      </button>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        )}
+      </div>
 
       {/* Confirm Modal */}
       {showConfirm && (
