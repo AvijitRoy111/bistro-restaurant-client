@@ -179,4 +179,4 @@
 //   );
 // };
 
-// export default AllContact;
+export default AllContact;
