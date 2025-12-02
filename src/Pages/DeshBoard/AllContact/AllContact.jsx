@@ -55,42 +55,42 @@
 //         Total Contacts: {contacts.length}
 //       </div>
 
-//       {/* Table Section */}
-//       <div className="overflow-x-auto mt-6 px-3 md:px-6 pb-10">
-//         {loading ? (
-//           // Skeleton Loading
-//           <div className="space-y-3">
-//             {[...Array(5)].map((_, i) => (
-//               <div
-//                 key={i}
-//                 className="animate-pulse bg-slate-800 rounded-md h-12 w-full"
-//               ></div>
-//             ))}
-//           </div>
-//         ) : contacts.length === 0 ? (
-//           <p className="text-center text-gray-400">No contacts found.</p>
-//         ) : (
-//           <div className="min-w-full overflow-x-auto">
-//             <table className="w-full bg-slate-800 border border-gray-700 rounded-lg text-sm md:text-base">
-//               <thead>
-//                 <tr className="bg-amber-700 text-white">
-//                   <th className="py-3 px-2 md:px-4 border-b border-gray-600">#</th>
-//                   <th className="py-3 px-2 md:px-4 border-b border-gray-600">
-//                     Name & Email
-//                   </th>
-//                   <th className="py-3 px-2 md:px-4 border-b border-gray-600">
-//                     Number
-//                   </th>
-//                   <th className="py-3 px-2 md:px-4 border-b border-gray-600">
-//                     Message
-//                   </th>
-//                   <th className="py-3 px-2 md:px-4 border-b border-gray-600">
-//                     Added
-//                   </th>
-//                   <th className="py-3 px-2 md:px-4 border-b border-gray-600">
-//                     Action
-//                   </th>
-//                 </tr>
+      {/* Table Section */}
+      <div className="overflow-x-auto mt-6 px-3 md:px-6 pb-10">
+        {loading ? (
+          // Skeleton Loading
+          <div className="space-y-3">
+            {[...Array(5)].map((_, i) => (
+              <div
+                key={i}
+                className="animate-pulse bg-slate-800 rounded-md h-12 w-full"
+              ></div>
+            ))}
+          </div>
+        ) : contacts.length === 0 ? (
+          <p className="text-center text-gray-400">No contacts found.</p>
+        ) : (
+          <div className="min-w-full overflow-x-auto">
+            <table className="w-full bg-slate-800 border border-gray-700 rounded-lg text-sm md:text-base">
+              <thead>
+                <tr className="bg-amber-700 text-white">
+                  <th className="py-3 px-2 md:px-4 border-b border-gray-600">#</th>
+                  <th className="py-3 px-2 md:px-4 border-b border-gray-600">
+                    Name & Email
+                  </th>
+                  <th className="py-3 px-2 md:px-4 border-b border-gray-600">
+                    Number
+                  </th>
+                  <th className="py-3 px-2 md:px-4 border-b border-gray-600">
+                    Message
+                  </th>
+                  <th className="py-3 px-2 md:px-4 border-b border-gray-600">
+                    Added
+                  </th>
+                  <th className="py-3 px-2 md:px-4 border-b border-gray-600">
+                    Action
+                  </th>
+                </tr>
               </thead>
               <tbody>
                 {contacts.map((contact, index) => (
