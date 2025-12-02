@@ -1,54 +1,54 @@
-// import React, { useEffect, useState } from "react";
-// import axios from "axios";
-// import moment from "moment";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+import moment from "moment";
 
-// const AllContact = () => {
-//   const [contacts, setContacts] = useState([]);
-//   const [loading, setLoading] = useState(true);
-//   const [deleteId, setDeleteId] = useState(null);
-//   const [showConfirm, setShowConfirm] = useState(false);
-//   const [showSuccess, setShowSuccess] = useState(false);
+const AllContact = () => {
+  const [contacts, setContacts] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [deleteId, setDeleteId] = useState(null);
+  const [showConfirm, setShowConfirm] = useState(false);
+  const [showSuccess, setShowSuccess] = useState(false);
 
-//   // Fetch all contacts
-//   const fetchContacts = async () => {
-//     try {
-//       const res = await axios.get(`${import.meta.env.VITE_api}/contacts`);
-//       setContacts(res.data.data || []);
-//     } catch (err) {
-//       console.error("Error fetching contacts:", err);
-//     } finally {
-//       setLoading(false);
-//     }
-//   };
+  // Fetch all contacts
+  const fetchContacts = async () => {
+    try {
+      const res = await axios.get(`${import.meta.env.VITE_api}/contacts`);
+      setContacts(res.data.data || []);
+    } catch (err) {
+      console.error("Error fetching contacts:", err);
+    } finally {
+      setLoading(false);
+    }
+  };
 
-//   // Delete contact
-//   const handleDelete = async () => {
-//     try {
-//       await axios.delete(`${import.meta.env.VITE_api}/contacts/${deleteId}`);
-//       setContacts((prev) => prev.filter((c) => c._id !== deleteId));
-//       setShowConfirm(false);
-//       setShowSuccess(true);
-//       setTimeout(() => setShowSuccess(false), 1500);
-//     } catch (err) {
-//       console.error("Delete failed:", err);
-//     }
-//   };
+  // Delete contact
+  const handleDelete = async () => {
+    try {
+      await axios.delete(`${import.meta.env.VITE_api}/contacts/${deleteId}`);
+      setContacts((prev) => prev.filter((c) => c._id !== deleteId));
+      setShowConfirm(false);
+      setShowSuccess(true);
+      setTimeout(() => setShowSuccess(false), 1500);
+    } catch (err) {
+      console.error("Delete failed:", err);
+    }
+  };
 
-//   useEffect(() => {
-//     fetchContacts();
-//   }, []);
+  useEffect(() => {
+    fetchContacts();
+  }, []);
 
-//   return (
-//     <div className="max-w-full mx-auto min-h-screen bg-slate-900 text-gray-200">
-//       {/* Header Section */}
-//       <div className="flex flex-col items-center justify-center space-y-3 pt-10 px-3">
-//         <p className="text-yellow-500 italic mb-2">---Check it out---</p>
-//         <hr className="border-2 border-gray-300 w-64 md:w-80" />
-//         <h2 className="text-2xl font-bold tracking-wide text-white text-center">
-//           All Contacts
-//         </h2>
-//         <hr className="border-2 border-gray-300 w-64 md:w-80" />
-//       </div>
+  return (
+    <div className="max-w-full mx-auto min-h-screen bg-slate-900 text-gray-200">
+      {/* Header Section */}
+      <div className="flex flex-col items-center justify-center space-y-3 pt-10 px-3">
+        <p className="text-yellow-500 italic mb-2">---Check it out---</p>
+        <hr className="border-2 border-gray-300 w-64 md:w-80" />
+        <h2 className="text-2xl font-bold tracking-wide text-white text-center">
+          All Contacts
+        </h2>
+        <hr className="border-2 border-gray-300 w-64 md:w-80" />
+      </div>
 
       {/* Count Section */}
       <div className="text-center mt-6 text-lg font-semibold text-yellow-400">
