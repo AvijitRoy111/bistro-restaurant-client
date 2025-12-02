@@ -107,11 +107,11 @@
 //                         <p className="text-gray-400 text-xs md:text-sm truncate">
 //                           {contact.email}
 //                         </p>
-//                       </div>
-//                     </td>
-//                     <td className="py-2 px-2 md:px-4 border-b border-gray-700 whitespace-nowrap">
-//                       {contact.phone || contact.number}
-//                     </td>
+                      </div>
+                    </td>
+                    <td className="py-2 px-2 md:px-4 border-b border-gray-700 whitespace-nowrap">
+                      {contact.phone || contact.number}
+                    </td>
                     <td className="py-2 px-2 md:px-4 border-b border-gray-700 max-w-[150px] md:max-w-[250px] overflow-hidden text-ellipsis whitespace-nowrap text-gray-300">
                       {contact.description?.length > 40
                         ? contact.description.slice(0, 40) + "..."
