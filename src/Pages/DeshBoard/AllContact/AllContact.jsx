@@ -91,22 +91,22 @@
 //                     Action
 //                   </th>
 //                 </tr>
-//               </thead>
-//               <tbody>
-//                 {contacts.map((contact, index) => (
-//                   <tr
-//                     key={contact._id}
-//                     className="hover:bg-slate-700 transition-colors duration-150"
-//                   >
-//                     <td className="py-2 px-2 md:px-4 text-center border-b border-gray-700">
-//                       {index + 1}
-//                     </td>
-//                     <td className="py-2 px-2 md:px-4 border-b border-gray-700">
-//                       <div className="whitespace-nowrap overflow-hidden text-ellipsis max-w-[160px] md:max-w-none">
-//                         <p className="font-semibold truncate">{contact.name}</p>
-//                         <p className="text-gray-400 text-xs md:text-sm truncate">
-//                           {contact.email}
-//                         </p>
+              </thead>
+              <tbody>
+                {contacts.map((contact, index) => (
+                  <tr
+                    key={contact._id}
+                    className="hover:bg-slate-700 transition-colors duration-150"
+                  >
+                    <td className="py-2 px-2 md:px-4 text-center border-b border-gray-700">
+                      {index + 1}
+                    </td>
+                    <td className="py-2 px-2 md:px-4 border-b border-gray-700">
+                      <div className="whitespace-nowrap overflow-hidden text-ellipsis max-w-[160px] md:max-w-none">
+                        <p className="font-semibold truncate">{contact.name}</p>
+                        <p className="text-gray-400 text-xs md:text-sm truncate">
+                          {contact.email}
+                        </p>
                       </div>
                     </td>
                     <td className="py-2 px-2 md:px-4 border-b border-gray-700 whitespace-nowrap">
