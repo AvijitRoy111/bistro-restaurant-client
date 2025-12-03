@@ -29,10 +29,10 @@
 //       setShowConfirm(false);
 //       setShowSuccess(true);
 //       setTimeout(() => setShowSuccess(false), 1500);
-//     } catch (err) {
-//       console.error("Delete failed:", err);
-//     }
-//   };
+    } catch (err) {
+      console.error("Delete failed:", err);
+    }
+  };
 
   useEffect(() => {
     fetchContacts();
