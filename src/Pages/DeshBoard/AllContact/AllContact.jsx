@@ -6,8 +6,8 @@
 //   const [contacts, setContacts] = useState([]);
 //   const [loading, setLoading] = useState(true);
 //   const [deleteId, setDeleteId] = useState(null);
-//   const [showConfirm, setShowConfirm] = useState(false);
-//   const [showSuccess, setShowSuccess] = useState(false);
+  const [showConfirm, setShowConfirm] = useState(false);
+  const [showSuccess, setShowSuccess] = useState(false);
 
   // Fetch all contacts
   const fetchContacts = async () => {
