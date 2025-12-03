@@ -11,9 +11,9 @@
 
 //   // Fetch all contacts
 //   const fetchContacts = async () => {
-//     try {
-//       const res = await axios.get(`${import.meta.env.VITE_api}/contacts`);
-//       setContacts(res.data.data || []);
+    try {
+      const res = await axios.get(`${import.meta.env.VITE_api}/contacts`);
+      setContacts(res.data.data || []);
     } catch (err) {
       console.error("Error fetching contacts:", err);
     } finally {
