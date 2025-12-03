@@ -24,7 +24,7 @@
 //   // Delete contact
 //   const handleDelete = async () => {
 //     try {
-//       await axios.delete(`${import.meta.env.VITE_api}/contacts/${deleteId}`);
+      await axios.delete(`${import.meta.env.VITE_api}/contacts/${deleteId}`);
       setContacts((prev) => prev.filter((c) => c._id !== deleteId));
       setShowConfirm(false);
       setShowSuccess(true);
