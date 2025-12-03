@@ -34,9 +34,9 @@
 //     }
 //   };
 
-//   useEffect(() => {
-//     fetchContacts();
-//   }, []);
+  useEffect(() => {
+    fetchContacts();
+  }, []);
 
   return (
     <div className="max-w-full mx-auto min-h-screen bg-slate-900 text-gray-200">
