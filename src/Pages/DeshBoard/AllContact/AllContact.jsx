@@ -26,9 +26,9 @@
 //     try {
 //       await axios.delete(`${import.meta.env.VITE_api}/contacts/${deleteId}`);
 //       setContacts((prev) => prev.filter((c) => c._id !== deleteId));
-//       setShowConfirm(false);
-//       setShowSuccess(true);
-//       setTimeout(() => setShowSuccess(false), 1500);
+      setShowConfirm(false);
+      setShowSuccess(true);
+      setTimeout(() => setShowSuccess(false), 1500);
     } catch (err) {
       console.error("Delete failed:", err);
     }
