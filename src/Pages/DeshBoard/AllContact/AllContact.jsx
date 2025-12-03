@@ -3,7 +3,7 @@
 // import moment from "moment";
 
 // const AllContact = () => {
-//   const [contacts, setContacts] = useState([]);
+  const [contacts, setContacts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [deleteId, setDeleteId] = useState(null);
   const [showConfirm, setShowConfirm] = useState(false);
