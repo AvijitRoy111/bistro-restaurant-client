@@ -9,8 +9,8 @@
 //   const [showConfirm, setShowConfirm] = useState(false);
 //   const [showSuccess, setShowSuccess] = useState(false);
 
-//   // Fetch all contacts
-//   const fetchContacts = async () => {
+  // Fetch all contacts
+  const fetchContacts = async () => {
     try {
       const res = await axios.get(`${import.meta.env.VITE_api}/contacts`);
       setContacts(res.data.data || []);
