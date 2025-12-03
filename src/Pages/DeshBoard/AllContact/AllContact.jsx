@@ -2,7 +2,7 @@
 // import axios from "axios";
 // import moment from "moment";
 
-// const AllContact = () => {
+const AllContact = () => {
   const [contacts, setContacts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [deleteId, setDeleteId] = useState(null);
