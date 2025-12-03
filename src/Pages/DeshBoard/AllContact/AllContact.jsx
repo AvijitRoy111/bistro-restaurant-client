@@ -48,7 +48,7 @@
 //           All Contacts
 //         </h2>
 //         <hr className="border-2 border-gray-300 w-64 md:w-80" />
-//       </div>
+      </div>
 
       {/* Count Section */}
       <div className="text-center mt-6 text-lg font-semibold text-yellow-400">
