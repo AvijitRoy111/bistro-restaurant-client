@@ -38,7 +38,7 @@
 //     fetchContacts();
 //   }, []);
 
-//   return (
+  return (
     <div className="max-w-full mx-auto min-h-screen bg-slate-900 text-gray-200">
       {/* Header Section */}
       <div className="flex flex-col items-center justify-center space-y-3 pt-10 px-3">
