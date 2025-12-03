@@ -16,10 +16,10 @@
 //       setContacts(res.data.data || []);
 //     } catch (err) {
 //       console.error("Error fetching contacts:", err);
-//     } finally {
-//       setLoading(false);
-//     }
-//   };
+    } finally {
+      setLoading(false);
+    }
+  };
 
   // Delete contact
   const handleDelete = async () => {
