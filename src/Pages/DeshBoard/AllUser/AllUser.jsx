@@ -179,10 +179,10 @@
 //               >
 //                 Confirm
 //               </button>
-//             </div>
-//           </div>
-//         </div>
-//       )}
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Success Modal */}
       {showSuccessModal && (
