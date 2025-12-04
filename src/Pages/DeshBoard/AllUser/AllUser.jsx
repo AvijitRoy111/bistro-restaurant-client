@@ -123,7 +123,7 @@
 //                   <p className="text-sm text-gray-600">{user.email}</p>
 //                 </div>
 
-//                 {/* Role */}
+                {/* Role */}
                 <div>
                   <button className="bg-yellow-600 hover:bg-yellow-700 text-white px-3 py-2 rounded-md flex items-center gap-2">
                     <FaUserShield /> {user.role || "user"}
