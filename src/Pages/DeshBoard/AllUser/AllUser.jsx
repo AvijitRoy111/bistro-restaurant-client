@@ -184,18 +184,18 @@
 //         </div>
 //       )}
 
-//       {/* Success Modal */}
-//       {showSuccessModal && (
-//         <div className="fixed inset-0 bg-black/60 flex justify-center items-center z-50">
-//           <div className="bg-white rounded-lg shadow-lg p-6 w-[300px] text-center">
-//             <h3 className="text-lg font-semibold text-green-600 mb-2">
-//               User Deleted Successfully!
-//             </h3>
-//           </div>
-//         </div>
-//       )}
-//     </div>
-//   );
-// };
+      {/* Success Modal */}
+      {showSuccessModal && (
+        <div className="fixed inset-0 bg-black/60 flex justify-center items-center z-50">
+          <div className="bg-white rounded-lg shadow-lg p-6 w-[300px] text-center">
+            <h3 className="text-lg font-semibold text-green-600 mb-2">
+              User Deleted Successfully!
+            </h3>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+};
 
 export default AllUser;
