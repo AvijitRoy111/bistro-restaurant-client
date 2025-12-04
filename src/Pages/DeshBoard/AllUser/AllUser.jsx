@@ -117,11 +117,11 @@
 //                   />
 //                 </div>
 
-//                 {/* Name + Email */}
-//                 <div>
-//                   <p className="font-semibold">{user.name}</p>
-//                   <p className="text-sm text-gray-600">{user.email}</p>
-//                 </div>
+                {/* Name + Email */}
+                <div>
+                  <p className="font-semibold">{user.name}</p>
+                  <p className="text-sm text-gray-600">{user.email}</p>
+                </div>
 
                 {/* Role */}
                 <div>
