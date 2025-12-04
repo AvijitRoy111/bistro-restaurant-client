@@ -135,19 +135,19 @@
 //                    N/A
 //                 </div>
 
-//                 {/* Delete */}
-//                 <div className="flex justify-center">
-//                   <button
-//                     onClick={() => {
-//                       setSelectedUser(user);
-//                       setShowModal(true);
-//                     }}
-//                     className="bg-amber-700 hover:bg-amber-800 text-white p-2 rounded-md"
-//                   >
-//                     <FaTrashAlt />
-//                   </button>
-//                 </div>
-//               </div>
+                {/* Delete */}
+                <div className="flex justify-center">
+                  <button
+                    onClick={() => {
+                      setSelectedUser(user);
+                      setShowModal(true);
+                    }}
+                    className="bg-amber-700 hover:bg-amber-800 text-white p-2 rounded-md"
+                  >
+                    <FaTrashAlt />
+                  </button>
+                </div>
+              </div>
             ))
           ) : (
             <p className="text-center py-6 text-gray-500">No users found!</p>
