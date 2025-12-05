@@ -85,7 +85,7 @@
 //                 cy="50%"
 //                 outerRadius={80}
 //                 label
-//               >
+              >
                 {pieData.map((entry, index) => (
                   <Cell
                     key={`cell-${index}`}
