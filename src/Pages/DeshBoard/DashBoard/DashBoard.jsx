@@ -93,11 +93,11 @@
 //                   />
 //                 ))}
 //               </Pie>
-//               <Legend />
-//             </PieChart>
-//           </ResponsiveContainer>
-//         </div>
-//       </div>
+              <Legend />
+            </PieChart>
+          </ResponsiveContainer>
+        </div>
+      </div>
 
      
     </div>
