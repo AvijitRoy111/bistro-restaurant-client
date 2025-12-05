@@ -77,13 +77,13 @@
 //         <div className="bg-white p-5 rounded-xl shadow-sm flex justify-center items-center">
 //           <ResponsiveContainer width="100%" height={250}>
 //             <PieChart>
-//               <Pie
-//                 data={pieData}
-//                 dataKey="value"
-//                 nameKey="name"
-//                 cx="50%"
-//                 cy="50%"
-//                 outerRadius={80}
+              <Pie
+                data={pieData}
+                dataKey="value"
+                nameKey="name"
+                cx="50%"
+                cy="50%"
+                outerRadius={80}
                 label
               >
                 {pieData.map((entry, index) => (
