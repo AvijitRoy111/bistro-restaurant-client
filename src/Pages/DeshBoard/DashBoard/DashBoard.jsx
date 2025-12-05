@@ -87,7 +87,7 @@
 //                 label
 //               >
 //                 {pieData.map((entry, index) => (
-//                   <Cell
+                  <Cell
                     key={`cell-${index}`}
                     fill={COLORS[index % COLORS.length]}
                   />
