@@ -70,7 +70,7 @@
 //               <Legend />
 //               <Bar dataKey="sold" fill="#8884d8" radius={[10, 10, 0, 0]} />
 //             </BarChart>
-//           </ResponsiveContainer>
+          </ResponsiveContainer>
         </div>
 
         {/* Pie Chart */}
