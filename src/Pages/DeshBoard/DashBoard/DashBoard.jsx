@@ -61,7 +61,7 @@
 //       {/* Chart Section */}
 //       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 //         {/* Bar Chart */}
-//         <div className="bg-white p-5 rounded-xl shadow-sm">
+        <div className="bg-white p-5 rounded-xl shadow-sm">
           <ResponsiveContainer width="100%" height={250}>
             <BarChart data={barData}>
               <XAxis dataKey="name" />
