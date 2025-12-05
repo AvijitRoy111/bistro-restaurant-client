@@ -63,11 +63,11 @@
 //         {/* Bar Chart */}
 //         <div className="bg-white p-5 rounded-xl shadow-sm">
 //           <ResponsiveContainer width="100%" height={250}>
-//             <BarChart data={barData}>
-//               <XAxis dataKey="name" />
-//               <YAxis />
-//               <Tooltip />
-//               <Legend />
+            <BarChart data={barData}>
+              <XAxis dataKey="name" />
+              <YAxis />
+              <Tooltip />
+              <Legend />
               <Bar dataKey="sold" fill="#8884d8" radius={[10, 10, 0, 0]} />
             </BarChart>
           </ResponsiveContainer>
