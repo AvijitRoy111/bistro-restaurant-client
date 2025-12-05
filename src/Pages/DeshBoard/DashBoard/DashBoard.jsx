@@ -92,7 +92,7 @@
 //                     fill={COLORS[index % COLORS.length]}
 //                   />
 //                 ))}
-//               </Pie>
+              </Pie>
               <Legend />
             </PieChart>
           </ResponsiveContainer>
