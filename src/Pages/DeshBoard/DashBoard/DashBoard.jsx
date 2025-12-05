@@ -88,7 +88,7 @@
 //               >
 //                 {pieData.map((entry, index) => (
 //                   <Cell
-//                     key={`cell-${index}`}
+                    key={`cell-${index}`}
                     fill={COLORS[index % COLORS.length]}
                   />
                 ))}
