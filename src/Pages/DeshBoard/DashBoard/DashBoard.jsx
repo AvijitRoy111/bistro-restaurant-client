@@ -90,7 +90,7 @@
 //                   <Cell
 //                     key={`cell-${index}`}
 //                     fill={COLORS[index % COLORS.length]}
-//                   />
+                  />
                 ))}
               </Pie>
               <Legend />
