@@ -76,7 +76,7 @@
 //         {/* Pie Chart */}
 //         <div className="bg-white p-5 rounded-xl shadow-sm flex justify-center items-center">
 //           <ResponsiveContainer width="100%" height={250}>
-//             <PieChart>
+            <PieChart>
               <Pie
                 data={pieData}
                 dataKey="value"
