@@ -42,7 +42,7 @@
 //       <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-10">
 //         <div className="bg-gradient-to-r from-purple-400 to-pink-400 text-white rounded-xl p-5 text-center shadow-md">
 //           <h3 className="text-3xl font-bold">100</h3>
-//           <p className="text-sm mt-1">Revenue</p>
+          <p className="text-sm mt-1">Revenue</p>
         </div>
         <div className="bg-gradient-to-r from-yellow-400 to-orange-300 text-white rounded-xl p-5 text-center shadow-md">
           <h3 className="text-3xl font-bold">150</h3>
