@@ -22,12 +22,12 @@
 //     { name: "Offer", sold: 15 },
 //   ];
 
-//   const pieData = [
-//     { name: "Dessert", value: 21 },
-//     { name: "Pizza", value: 21 },
-//     { name: "Salad", value: 28 },
-//     { name: "Soup", value: 31 },
-//   ];
+  const pieData = [
+    { name: "Dessert", value: 21 },
+    { name: "Pizza", value: 21 },
+    { name: "Salad", value: 28 },
+    { name: "Soup", value: 31 },
+  ];
 
   const COLORS = ["#0088FE", "#FF7F0E", "#FFBB28", "#FF4D4D"];
 
