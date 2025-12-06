@@ -29,7 +29,7 @@
 //     { name: "Soup", value: 31 },
 //   ];
 
-//   const COLORS = ["#0088FE", "#FF7F0E", "#FFBB28", "#FF4D4D"];
+  const COLORS = ["#0088FE", "#FF7F0E", "#FFBB28", "#FF4D4D"];
 
 
 
