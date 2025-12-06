@@ -54,7 +54,7 @@
 //         </div>
 //         <div className="bg-gradient-to-r from-blue-400 to-sky-400 text-white rounded-xl p-5 text-center shadow-md">
 //           <h3 className="text-3xl font-bold">50</h3>
-//           <p className="text-sm mt-1">Orders</p>
+          <p className="text-sm mt-1">Orders</p>
         </div>
       </div>
 
