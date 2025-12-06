@@ -48,7 +48,7 @@
 //           <h3 className="text-3xl font-bold">150</h3>
 //           <p className="text-sm mt-1">Customers</p>
 //         </div>
-//         <div className="bg-gradient-to-r from-pink-400 to-red-400 text-white rounded-xl p-5 text-center shadow-md">
+        <div className="bg-gradient-to-r from-pink-400 to-red-400 text-white rounded-xl p-5 text-center shadow-md">
           <h3 className="text-3xl font-bold">10</h3>
           <p className="text-sm mt-1">Products</p>
         </div>
