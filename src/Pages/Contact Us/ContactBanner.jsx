@@ -1,4 +1,4 @@
-// import banner1 from "../../assets/contact/banner.jpg";
+import banner1 from "../../assets/contact/banner.jpg";
 
 const ContactBanner = () => {
   const title = "CONTACT US";
