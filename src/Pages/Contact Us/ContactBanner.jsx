@@ -24,8 +24,8 @@
 //           <p className="text-sm sm:text-lg opacity-90">{subtitle}</p>
 //         </div>
 //       </div>
-//     </div>
-//   );
-// };
+    </div>
+  );
+};
 
 export default ContactBanner;
