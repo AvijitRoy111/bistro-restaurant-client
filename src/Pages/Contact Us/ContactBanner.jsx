@@ -7,10 +7,10 @@
 //     <div>
 //       <div className="relative w-full h-[70vh] max-h-[700px] overflow-hidden mb-16">
 //         {/* Background Banner */}
-//         <img
-//           src={banner1}
-//           alt="banner"
-//           className="w-full h-full object-cover"
+        <img
+          src={banner1}
+          alt="banner"
+          className="w-full h-full object-cover"
         />
 
         {/* Center Gradient Card */}
