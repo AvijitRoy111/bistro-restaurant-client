@@ -11,7 +11,7 @@
 //           src={banner1}
 //           alt="banner"
 //           className="w-full h-full object-cover"
-//         />
+        />
 
         {/* Center Gradient Card */}
         <div
