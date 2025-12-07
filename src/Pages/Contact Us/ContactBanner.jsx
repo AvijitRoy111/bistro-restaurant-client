@@ -4,7 +4,7 @@
 //   const title = "CONTACT US";
 //   const subtitle = "Would you like to try a dish";
 //   return (
-//     <div>
+    <div>
       <div className="relative w-full h-[70vh] max-h-[700px] overflow-hidden mb-16">
         {/* Background Banner */}
         <img
