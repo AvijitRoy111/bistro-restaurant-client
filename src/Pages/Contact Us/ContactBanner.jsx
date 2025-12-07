@@ -5,7 +5,7 @@
 //   const subtitle = "Would you like to try a dish";
 //   return (
 //     <div>
-//       <div className="relative w-full h-[70vh] max-h-[700px] overflow-hidden mb-16">
+      <div className="relative w-full h-[70vh] max-h-[700px] overflow-hidden mb-16">
         {/* Background Banner */}
         <img
           src={banner1}
