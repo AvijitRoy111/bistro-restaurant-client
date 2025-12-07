@@ -13,7 +13,7 @@
 //           className="w-full h-full object-cover"
 //         />
 
-//         {/* Center Gradient Card */}
+        {/* Center Gradient Card */}
         <div
           className="absolute top-60 md:top-64 left-1/2 -translate-x-1/2 -translate-y-1/2
                          bg-black/40 rounded-2xl px-8 py-10 sm:px-12 sm:py-14
