@@ -21,7 +21,7 @@
 //                          max-w-3xl h-44 md:h-64 w-[90%] space-y-4 backdrop-blur-sm"
 //         >
 //           <h2 className="text-3xl sm:text-5xl font-bold mb-3">{title}</h2>
-//           <p className="text-sm sm:text-lg opacity-90">{subtitle}</p>
+          <p className="text-sm sm:text-lg opacity-90">{subtitle}</p>
         </div>
       </div>
     </div>
