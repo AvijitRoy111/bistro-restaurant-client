@@ -54,9 +54,9 @@
 //             <p className="text-gray-600 text-sm">Sat - Sun: 10:00 - 23:00</p>
 //           </div>
 //         </div>
-//       </div>
-//     </div>
-//   );
-// };
+      </div>
+    </div>
+  );
+};
 
 export default ContactCard;
