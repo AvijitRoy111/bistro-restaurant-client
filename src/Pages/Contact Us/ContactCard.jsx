@@ -38,8 +38,8 @@
 //               ADDRESS
 //             </h3>
 //             <p className="text-gray-600 text-sm">123 Main Street, NY</p>
-//           </div>
-//         </div>
+          </div>
+        </div>
 
         {/* card-3 */}
         <div className="w-64 shadow-md border border-gray-100 rounded-b-md overflow-hidden text-center">
