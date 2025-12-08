@@ -52,8 +52,8 @@
 //             </h3>
 //             <p className="text-gray-600 text-sm">Mon - Fri: 08:00 - 22:00</p>
 //             <p className="text-gray-600 text-sm">Sat - Sun: 10:00 - 23:00</p>
-//           </div>
-//         </div>
+          </div>
+        </div>
       </div>
     </div>
   );
