@@ -23,7 +23,7 @@
 //             <Phone className="text-white w-6 h-6" />
 //           </div>
 //           <div className="bg-gray-200 h-32 py-6 mx-3 mb-3 rounded-b-md">
-//             <h3 className="text-gray-800 text-lg font-semibold mb-1">PHONE</h3>
+            <h3 className="text-gray-800 text-lg font-semibold mb-1">PHONE</h3>
             <p className="text-gray-600 text-sm">+38 (012) 34 58 789</p>
           </div>
         </div>
