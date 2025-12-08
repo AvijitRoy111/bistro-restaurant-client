@@ -59,4 +59,4 @@
 //   );
 // };
 
-// export default ContactCard;
+export default ContactCard;
