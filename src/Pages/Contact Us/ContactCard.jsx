@@ -28,8 +28,8 @@
 //           </div>
 //         </div>
 
-//         {/* card-2 */}
-//         <div className="w-64 shadow-md border border-gray-100 rounded-b-md overflow-hidden text-center">
+        {/* card-2 */}
+        <div className="w-64 shadow-md border border-gray-100 rounded-b-md overflow-hidden text-center">
           <div className="bg-[#D1A054] py-4 flex justify-center items-center">
             <Phone className="text-white w-6 h-6" />
           </div>
