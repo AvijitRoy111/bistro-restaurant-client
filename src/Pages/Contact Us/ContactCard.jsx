@@ -15,8 +15,8 @@
 //         <hr className="border-2 border-gray-300 w-80" />
 //       </div>
 
-//       {/* contact card section......... */}
-//       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 justify-items-center px-44">
+      {/* contact card section......... */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 justify-items-center px-44">
         {/* card-1 */}
         <div className="w-64 shadow-md border border-gray-100 rounded-b-md overflow-hidden text-center">
           <div className="bg-[#D1A054] py-4 flex justify-center items-center">
