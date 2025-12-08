@@ -30,7 +30,7 @@
 
 //         {/* card-2 */}
 //         <div className="w-64 shadow-md border border-gray-100 rounded-b-md overflow-hidden text-center">
-//           <div className="bg-[#D1A054] py-4 flex justify-center items-center">
+          <div className="bg-[#D1A054] py-4 flex justify-center items-center">
             <Phone className="text-white w-6 h-6" />
           </div>
           <div className="bg-gray-200 h-32 py-6 mx-3 mb-3 rounded-b-md">
