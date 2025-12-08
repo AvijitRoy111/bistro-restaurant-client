@@ -37,7 +37,7 @@
 //             <h3 className="text-gray-800 text-lg font-semibold mb-1">
 //               ADDRESS
 //             </h3>
-//             <p className="text-gray-600 text-sm">123 Main Street, NY</p>
+            <p className="text-gray-600 text-sm">123 Main Street, NY</p>
           </div>
         </div>
 
