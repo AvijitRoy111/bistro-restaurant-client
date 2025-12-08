@@ -47,9 +47,9 @@
 //             <Phone className="text-white w-6 h-6" />
 //           </div>
 //           <div className="bg-gray-200 h-32 py-6 mx-3 mb-3 rounded-b-md">
-//             <h3 className="text-gray-800 text-lg font-semibold mb-1">
-//               WORKING HOURS
-//             </h3>
+            <h3 className="text-gray-800 text-lg font-semibold mb-1">
+              WORKING HOURS
+            </h3>
             <p className="text-gray-600 text-sm">Mon - Fri: 08:00 - 22:00</p>
             <p className="text-gray-600 text-sm">Sat - Sun: 10:00 - 23:00</p>
           </div>
