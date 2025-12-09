@@ -3,9 +3,9 @@
 // import Footer from "../Components/Footer/Footer";
 
 // const HomeLayouts = () => {
-//   return (
-//     <div className="relative min-h-screen flex flex-col">
-//       {/* Fixed Navbar */}
+  return (
+    <div className="relative min-h-screen flex flex-col">
+      {/* Fixed Navbar */}
       <header className="fixed top-0 left-0 w-full z-50">
         <Navbar />
       </header>
