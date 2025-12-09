@@ -16,7 +16,7 @@
 //       </main>
 
 //       {/* Footer */}
-//       <footer className="mt-auto">
+      <footer className="mt-auto">
         <Footer />
       </footer>
     </div>
