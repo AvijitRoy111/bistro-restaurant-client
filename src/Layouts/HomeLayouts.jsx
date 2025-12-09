@@ -23,4 +23,4 @@
 //   );
 // };
 
-// export default HomeLayouts;
+export default HomeLayouts;
