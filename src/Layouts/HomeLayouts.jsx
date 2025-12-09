@@ -17,8 +17,8 @@
 
 //       {/* Footer */}
 //       <footer className="mt-auto">
-//         <Footer />
-//       </footer>
+        <Footer />
+      </footer>
     </div>
   );
 };
