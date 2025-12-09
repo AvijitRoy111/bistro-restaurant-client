@@ -13,7 +13,7 @@
 //       {/* Main Content */}
 //       <main className="flex-1 "> 
 //         <Outlet />
-//       </main>
+      </main>
 
       {/* Footer */}
       <footer className="mt-auto">
