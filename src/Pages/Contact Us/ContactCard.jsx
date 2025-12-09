@@ -5,9 +5,9 @@
 //     <div className="mb-20">
 //       {/* Title Section */}
 //       <div className="flex flex-col items-center gap-3 pb-10">
-//         <h1 className="text-xl font-bold text-center text-[#D99904]">
-//           ---Visit Us---
-//         </h1>
+        <h1 className="text-xl font-bold text-center text-[#D99904]">
+          ---Visit Us---
+        </h1>
         <hr className="border-2 border-gray-300 w-80" />
         <h2 className="text-3xl font-bold text-center text-[#151515]">
           OUR LOCATION
