@@ -1,6 +1,6 @@
 // import { Phone } from "lucide-react";
 
-// const ContactCard = () => {
+const ContactCard = () => {
   return (
     <div className="mb-20">
       {/* Title Section */}
