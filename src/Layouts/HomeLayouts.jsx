@@ -8,7 +8,7 @@
 //       {/* Fixed Navbar */}
 //       <header className="fixed top-0 left-0 w-full z-50">
 //         <Navbar />
-//       </header>
+      </header>
 
       {/* Main Content */}
       <main className="flex-1 "> 
