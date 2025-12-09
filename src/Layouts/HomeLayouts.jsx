@@ -10,7 +10,7 @@
 //         <Navbar />
 //       </header>
 
-//       {/* Main Content */}
+      {/* Main Content */}
       <main className="flex-1 "> 
         <Outlet />
       </main>
