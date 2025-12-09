@@ -12,7 +12,7 @@
 //         <h2 className="text-3xl font-bold text-center text-[#151515]">
 //           OUR LOCATION
 //         </h2>
-//         <hr className="border-2 border-gray-300 w-80" />
+        <hr className="border-2 border-gray-300 w-80" />
       </div>
 
       {/* contact card section......... */}
