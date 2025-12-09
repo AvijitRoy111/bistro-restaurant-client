@@ -19,8 +19,8 @@
 //       <footer className="mt-auto">
 //         <Footer />
 //       </footer>
-//     </div>
-//   );
-// };
+    </div>
+  );
+};
 
 export default HomeLayouts;
