@@ -1,7 +1,7 @@
 // import { Phone } from "lucide-react";
 
 // const ContactCard = () => {
-//   return (
+  return (
     <div className="mb-20">
       {/* Title Section */}
       <div className="flex flex-col items-center gap-3 pb-10">
