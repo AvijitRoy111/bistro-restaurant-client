@@ -13,7 +13,7 @@
 //           OUR LOCATION
 //         </h2>
 //         <hr className="border-2 border-gray-300 w-80" />
-//       </div>
+      </div>
 
       {/* contact card section......... */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 justify-items-center px-44">
