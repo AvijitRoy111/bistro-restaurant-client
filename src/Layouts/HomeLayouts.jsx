@@ -12,7 +12,7 @@
 
 //       {/* Main Content */}
 //       <main className="flex-1 "> 
-//         <Outlet />
+        <Outlet />
       </main>
 
       {/* Footer */}
