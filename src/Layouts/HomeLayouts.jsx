@@ -15,7 +15,7 @@
 //         <Outlet />
 //       </main>
 
-//       {/* Footer */}
+      {/* Footer */}
       <footer className="mt-auto">
         <Footer />
       </footer>
