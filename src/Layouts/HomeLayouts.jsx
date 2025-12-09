@@ -2,7 +2,7 @@
 // import Navbar from "../Components/Navbar/Navbar";
 // import Footer from "../Components/Footer/Footer";
 
-// const HomeLayouts = () => {
+const HomeLayouts = () => {
   return (
     <div className="relative min-h-screen flex flex-col">
       {/* Fixed Navbar */}
