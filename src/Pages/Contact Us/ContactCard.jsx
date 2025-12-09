@@ -4,7 +4,7 @@
 //   return (
 //     <div className="mb-20">
 //       {/* Title Section */}
-//       <div className="flex flex-col items-center gap-3 pb-10">
+      <div className="flex flex-col items-center gap-3 pb-10">
         <h1 className="text-xl font-bold text-center text-[#D99904]">
           ---Visit Us---
         </h1>
