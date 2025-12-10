@@ -359,12 +359,12 @@
 //             <p className="text-gray-500 mb-4">
 //               {addedItem?.name ? `${addedItem.name} has been added to your cart.` : ""}
 //             </p>
-//             <button
-//               onClick={() => setShowModal(false)}
-//               className="px-6 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition"
-//             >
-//               Close
-//             </button>
+            <button
+              onClick={() => setShowModal(false)}
+              className="px-6 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition"
+            >
+              Close
+            </button>
           </div>
         </div>
       )}
