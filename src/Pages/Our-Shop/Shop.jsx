@@ -331,10 +331,10 @@
 //                     }}
 //                     className="border border-gray-300 rounded-md px-2 py-1 text-sm focus:outline-none focus:ring focus:ring-amber-700"
 //                   >
-//                     <option value={3}>3</option>
-//                     <option value={6}>6</option>
-//                     <option value={9}>9</option>
-//                   </select>
+                    <option value={3}>3</option>
+                    <option value={6}>6</option>
+                    <option value={9}>9</option>
+                  </select>
                 </div>
 
                 <button
