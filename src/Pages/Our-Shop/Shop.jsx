@@ -356,9 +356,9 @@
 //           <div className="bg-white rounded-2xl shadow-xl p-6 text-center w-[90%] max-w-sm animate-fadeIn">
 //             <CheckCircle size={60} className="text-green-500 mx-auto mb-4" />
 //             <h3 className="text-xl font-bold text-gray-800 mb-2">Item Added Successfully!</h3>
-//             <p className="text-gray-500 mb-4">
-//               {addedItem?.name ? `${addedItem.name} has been added to your cart.` : ""}
-//             </p>
+            <p className="text-gray-500 mb-4">
+              {addedItem?.name ? `${addedItem.name} has been added to your cart.` : ""}
+            </p>
             <button
               onClick={() => setShowModal(false)}
               className="px-6 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition"
