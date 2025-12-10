@@ -309,7 +309,7 @@
 //                   Previous
 //                 </button>
 
-//                 {[...Array(totalPages)].map((_, i) => (
+                {[...Array(totalPages)].map((_, i) => (
                   <button
                     key={i}
                     onClick={() => handlePageChange(i + 1)}
