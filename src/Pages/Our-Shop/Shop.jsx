@@ -283,7 +283,7 @@
 //                     ${item.price}
 //                   </span>
 //                 </div>
-//                 <div className="text-center mt-4">
+                <div className="text-center mt-4">
                   <h3 className="text-xl font-bold">{item.name}</h3>
                   <p className="text-sm text-gray-500 mt-2">{item.recipe}</p>
                   <button
