@@ -322,7 +322,7 @@
 //                   </button>
 //                 ))}
 
-//                 <div className="flex justify-end max-w-6xl mx-auto px-4">
+                <div className="flex justify-end max-w-6xl mx-auto px-4">
                   <select
                     value={itemsPerPage}
                     onChange={(e) => {
