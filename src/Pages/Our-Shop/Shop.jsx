@@ -294,8 +294,8 @@
 //                   </button>
 //                 </div>
 //               </div>
-//             ))}
-//           </div>
+            ))}
+          </div>
 
           {/* Pagination */}
           {totalPages > 1 && (
