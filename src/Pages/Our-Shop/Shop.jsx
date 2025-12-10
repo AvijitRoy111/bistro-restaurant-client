@@ -297,17 +297,17 @@
 //             ))}
 //           </div>
 
-//           {/* Pagination */}
-//           {totalPages > 1 && (
-//             <div className="flex flex-col items-center space-y-4 mb-20">
-//               <div className="flex justify-center items-center space-x-2">
-//                 <button
-//                   onClick={() => handlePageChange(currentPage - 1)}
-//                   disabled={currentPage === 1}
-//                   className="px-3 py-1 text-sm rounded-md border bg-gray-100 hover:bg-amber-700 disabled:opacity-50 hover:text-white"
-//                 >
-//                   Previous
-//                 </button>
+          {/* Pagination */}
+          {totalPages > 1 && (
+            <div className="flex flex-col items-center space-y-4 mb-20">
+              <div className="flex justify-center items-center space-x-2">
+                <button
+                  onClick={() => handlePageChange(currentPage - 1)}
+                  disabled={currentPage === 1}
+                  className="px-3 py-1 text-sm rounded-md border bg-gray-100 hover:bg-amber-700 disabled:opacity-50 hover:text-white"
+                >
+                  Previous
+                </button>
 
                 {[...Array(totalPages)].map((_, i) => (
                   <button
