@@ -335,7 +335,7 @@
 //                     <option value={6}>6</option>
 //                     <option value={9}>9</option>
 //                   </select>
-//                 </div>
+                </div>
 
                 <button
                   onClick={() => handlePageChange(currentPage + 1)}
