@@ -286,11 +286,11 @@
 //                 <div className="text-center mt-4">
 //                   <h3 className="text-xl font-bold">{item.name}</h3>
 //                   <p className="text-sm text-gray-500 mt-2">{item.recipe}</p>
-//                   <button
-//                     onClick={() => handleAddToCart(item)}
-//                     className="mt-4 px-4 py-2 bg-gray-200 text-orange-600 font-medium rounded hover:bg-gray-300 transition border-b-4 border-b-orange-900"
-//                   >
-//                     ADD TO CART
+                  <button
+                    onClick={() => handleAddToCart(item)}
+                    className="mt-4 px-4 py-2 bg-gray-200 text-orange-600 font-medium rounded hover:bg-gray-300 transition border-b-4 border-b-orange-900"
+                  >
+                    ADD TO CART
                   </button>
                 </div>
               </div>
