@@ -292,8 +292,8 @@
 //                   >
 //                     ADD TO CART
 //                   </button>
-//                 </div>
-//               </div>
+                </div>
+              </div>
             ))}
           </div>
 
