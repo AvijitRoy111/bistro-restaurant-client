@@ -279,8 +279,8 @@
 //               >
 //                 <div className="relative">
 //                   <img src={item.image} alt={item.name} className="w-full h-48 object-cover rounded-md" />
-//                   <span className="absolute top-2 right-2 bg-black/70 text-white text-xs font-semibold px-2 py-1 rounded border-b-4 border-b-amber-800">
-//                     ${item.price}
+                  <span className="absolute top-2 right-2 bg-black/70 text-white text-xs font-semibold px-2 py-1 rounded border-b-4 border-b-amber-800">
+                    ${item.price}
                   </span>
                 </div>
                 <div className="text-center mt-4">
