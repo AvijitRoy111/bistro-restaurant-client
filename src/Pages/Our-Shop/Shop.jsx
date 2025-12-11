@@ -212,13 +212,13 @@
 //           {/* Search */}
 //           <div className="md:col-span-2">
 //             <label className="block text-sm font-semibold mb-1">Search</label>
-//             <input
-//               type="text"
-//               value={searchQuery}
-//               onChange={(e) => {
-//                 setSearchQuery(e.target.value);
-//                 setCurrentPage(1);
-//               }}
+            <input
+              type="text"
+              value={searchQuery}
+              onChange={(e) => {
+                setSearchQuery(e.target.value);
+                setCurrentPage(1);
+              }}
               placeholder="Search by name or category"
               className="w-full border px-2 py-1 rounded border-gray-300 focus:border-amber-700 focus:ring-1 focus:ring-amber-700 outline-none transition"
             />
