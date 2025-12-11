@@ -261,10 +261,10 @@
 //       {loading ? (
 //         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 px-4 pb-20">
 //           {Array(6)
-//             .fill(0)
-//             .map((_, i) => (
-//               <SkeletonCard key={i} />
-//             ))}
+            .fill(0)
+            .map((_, i) => (
+              <SkeletonCard key={i} />
+            ))}
         </div>
       ) : (
         <>
