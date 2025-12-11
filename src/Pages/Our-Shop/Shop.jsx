@@ -233,8 +233,8 @@
 //               Reset Filters
 //             </button>
 //           </div>
-//         </div>
-//       </div>
+        </div>
+      </div>
 
       {/* Tabs */}
       <div className="flex justify-center space-x-4 md:space-x-6 border-b border-gray-200 mb-8">
