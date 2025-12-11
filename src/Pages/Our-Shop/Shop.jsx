@@ -252,8 +252,8 @@
 //               : "text-gray-600 hover:text-yellow-500"
 //               }`}
 //           >
-//             {cat}
-//           </button>
+            {cat}
+          </button>
         ))}
       </div>
 
