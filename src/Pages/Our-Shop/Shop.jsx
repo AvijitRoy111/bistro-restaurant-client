@@ -226,10 +226,10 @@
 
 //           {/* Reset Button */}
 //           <div className="md:col-span-1 flex justify-end items-center mt-4 md:mt-0">
-//             <button
-//               onClick={handleReset}
-//               className="bg-amber-700 text-white px-4 py-2 rounded hover:bg-amber-800 transition"
-//             >
+            <button
+              onClick={handleReset}
+              className="bg-amber-700 text-white px-4 py-2 rounded hover:bg-amber-800 transition"
+            >
               Reset Filters
             </button>
           </div>
