@@ -254,8 +254,8 @@
 //           >
 //             {cat}
 //           </button>
-//         ))}
-//       </div>
+        ))}
+      </div>
 
       {/* Items */}
       {loading ? (
