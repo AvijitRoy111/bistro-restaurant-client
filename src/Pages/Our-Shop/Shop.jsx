@@ -232,7 +232,7 @@
 //             >
 //               Reset Filters
 //             </button>
-//           </div>
+          </div>
         </div>
       </div>
 
