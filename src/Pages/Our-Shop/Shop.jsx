@@ -239,14 +239,14 @@
 //       {/* Tabs */}
 //       <div className="flex justify-center space-x-4 md:space-x-6 border-b border-gray-200 mb-8">
 //         {categories.map((cat) => (
-//           <button
-//             key={cat}
-//             onClick={() => {
-//               setActive(cat);
-//               setHighlightId(null);
-//               setCurrentPage(1);
-//               setSelectedCategory(cat);
-//             }}
+          <button
+            key={cat}
+            onClick={() => {
+              setActive(cat);
+              setHighlightId(null);
+              setCurrentPage(1);
+              setSelectedCategory(cat);
+            }}
             className={`pb-3 text-sm font-semibold tracking-wide ${active === cat
               ? "text-yellow-500 border-b-2 border-yellow-500"
               : "text-gray-600 hover:text-yellow-500"
