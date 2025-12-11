@@ -219,8 +219,8 @@
 //                 setSearchQuery(e.target.value);
 //                 setCurrentPage(1);
 //               }}
-//               placeholder="Search by name or category"
-//               className="w-full border px-2 py-1 rounded border-gray-300 focus:border-amber-700 focus:ring-1 focus:ring-amber-700 outline-none transition"
+              placeholder="Search by name or category"
+              className="w-full border px-2 py-1 rounded border-gray-300 focus:border-amber-700 focus:ring-1 focus:ring-amber-700 outline-none transition"
             />
           </div>
 
