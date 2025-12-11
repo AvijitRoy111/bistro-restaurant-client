@@ -210,7 +210,7 @@
 //           </div> 
 
 //           {/* Search */}
-//           <div className="md:col-span-2">
+          <div className="md:col-span-2">
             <label className="block text-sm font-semibold mb-1">Search</label>
             <input
               type="text"
