@@ -270,13 +270,13 @@
 //         <>
 //           <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 px-4 pb-10">
 //             {paginatedItems.map((item) => (
-//               <div
-//                 key={item._id}
-//                 className={`border rounded-lg shadow-sm transition p-4 relative ${item._id === highlightId
-//                   ? "ring-2 ring-amber-700 bg-green-300/10 scale-[1.05]"
-//                   : "hover:shadow-md"
-//                   }`}
-//               >
+              <div
+                key={item._id}
+                className={`border rounded-lg shadow-sm transition p-4 relative ${item._id === highlightId
+                  ? "ring-2 ring-amber-700 bg-green-300/10 scale-[1.05]"
+                  : "hover:shadow-md"
+                  }`}
+              >
                 <div className="relative">
                   <img src={item.image} alt={item.name} className="w-full h-48 object-cover rounded-md" />
                   <span className="absolute top-2 right-2 bg-black/70 text-white text-xs font-semibold px-2 py-1 rounded border-b-4 border-b-amber-800">
