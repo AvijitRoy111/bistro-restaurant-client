@@ -247,11 +247,11 @@
 //               setCurrentPage(1);
 //               setSelectedCategory(cat);
 //             }}
-//             className={`pb-3 text-sm font-semibold tracking-wide ${active === cat
-//               ? "text-yellow-500 border-b-2 border-yellow-500"
-//               : "text-gray-600 hover:text-yellow-500"
-//               }`}
-//           >
+            className={`pb-3 text-sm font-semibold tracking-wide ${active === cat
+              ? "text-yellow-500 border-b-2 border-yellow-500"
+              : "text-gray-600 hover:text-yellow-500"
+              }`}
+          >
             {cat}
           </button>
         ))}
