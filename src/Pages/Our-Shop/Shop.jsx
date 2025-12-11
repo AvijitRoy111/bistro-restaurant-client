@@ -224,7 +224,7 @@
 //             />
 //           </div>
 
-//           {/* Reset Button */}
+          {/* Reset Button */}
           <div className="md:col-span-1 flex justify-end items-center mt-4 md:mt-0">
             <button
               onClick={handleReset}
