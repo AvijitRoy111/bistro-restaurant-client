@@ -192,7 +192,7 @@
 
 //           {/* Sort By */}
 //          <div>
-//             <label className="block text-sm font-semibold mb-1">Sort By</label>
+            <label className="block text-sm font-semibold mb-1">Sort By</label>
             <select
               value={sortOrder}
               onChange={(e) => {
