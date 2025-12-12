@@ -188,7 +188,7 @@
 //                 </option>
 //               ))}
 //             </select>
-//           </div>
+          </div>
 
           {/* Sort By */}
          <div>
