@@ -202,7 +202,7 @@
 //               className="w-full border px-2 py-1 rounded border-gray-300 focus:border-amber-700 focus:ring-1 focus:ring-amber-700 outline-none transition"
 //             >
 //               <option className="block text-sm  text-gray-600 font-semibold mb-1" value="">Default</option>
-//               <option className="block text-sm  text-gray-600 font-semibold mb-1" value="lowToHigh">Price: Low → High</option>
+              <option className="block text-sm  text-gray-600 font-semibold mb-1" value="lowToHigh">Price: Low → High</option>
               <option className="block text-sm  text-gray-600 font-semibold mb-1" value="highToLow">Price: High → Low</option>
               <option className="block text-sm  text-gray-600 font-semibold mb-1"  value="asc">Name: A → Z</option>
               <option className="block text-sm  text-gray-600 font-semibold mb-1" value="desc">Name: Z → A</option>
