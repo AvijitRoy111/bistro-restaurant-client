@@ -182,7 +182,7 @@
 //               className="w-full border px-2 py-1 rounded border-gray-300 focus:border-amber-700 focus:ring-1 focus:ring-amber-700 outline-none transition"
 //             >
 //               <option value="">All</option>
-//               {categories.map((cat) => (
+              {categories.map((cat) => (
                 <option key={cat} value={cat}>
                   {cat}
                 </option>
