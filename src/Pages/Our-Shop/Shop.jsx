@@ -183,7 +183,7 @@
 //             >
 //               <option value="">All</option>
 //               {categories.map((cat) => (
-//                 <option key={cat} value={cat}>
+                <option key={cat} value={cat}>
                   {cat}
                 </option>
               ))}
