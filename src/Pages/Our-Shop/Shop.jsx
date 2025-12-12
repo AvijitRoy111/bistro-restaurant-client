@@ -186,8 +186,8 @@
 //                 <option key={cat} value={cat}>
 //                   {cat}
 //                 </option>
-//               ))}
-//             </select>
+              ))}
+            </select>
           </div>
 
           {/* Sort By */}
