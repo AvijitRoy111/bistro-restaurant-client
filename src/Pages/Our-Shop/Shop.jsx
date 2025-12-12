@@ -176,11 +176,11 @@
 //           {/* Category */}
 //           <div>
 //             <label className="block text-sm font-semibold mb-1">Category</label>
-//             <select
-//               value={selectedCategory}
-//               onChange={(e) => setSelectedCategory(e.target.value)}
-//               className="w-full border px-2 py-1 rounded border-gray-300 focus:border-amber-700 focus:ring-1 focus:ring-amber-700 outline-none transition"
-//             >
+            <select
+              value={selectedCategory}
+              onChange={(e) => setSelectedCategory(e.target.value)}
+              className="w-full border px-2 py-1 rounded border-gray-300 focus:border-amber-700 focus:ring-1 focus:ring-amber-700 outline-none transition"
+            >
               <option value="">All</option>
               {categories.map((cat) => (
                 <option key={cat} value={cat}>
