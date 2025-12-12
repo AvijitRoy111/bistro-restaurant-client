@@ -190,8 +190,8 @@
 //             </select>
 //           </div>
 
-//           {/* Sort By */}
-//          <div>
+          {/* Sort By */}
+         <div>
             <label className="block text-sm font-semibold mb-1">Sort By</label>
             <select
               value={sortOrder}
