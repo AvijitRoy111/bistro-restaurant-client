@@ -193,12 +193,12 @@
 //           {/* Sort By */}
 //          <div>
 //             <label className="block text-sm font-semibold mb-1">Sort By</label>
-//             <select
-//               value={sortOrder}
-//               onChange={(e) => {
-//                 setSortOrder(e.target.value);
-//                 setCurrentPage(1);
-//               }}
+            <select
+              value={sortOrder}
+              onChange={(e) => {
+                setSortOrder(e.target.value);
+                setCurrentPage(1);
+              }}
               className="w-full border px-2 py-1 rounded border-gray-300 focus:border-amber-700 focus:ring-1 focus:ring-amber-700 outline-none transition"
             >
               <option className="block text-sm  text-gray-600 font-semibold mb-1" value="">Default</option>
