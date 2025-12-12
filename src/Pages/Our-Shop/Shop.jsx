@@ -171,7 +171,7 @@
 //       </div>
 
 //       {/* Filters */}
-//       <div className="max-w-6xl mx-auto mb-8 px-4">
+      <div className="max-w-6xl mx-auto mb-8 px-4">
         <div className="grid grid-cols-1 md:grid-cols-5 gap-4 items-end">
           {/* Category */}
           <div>
