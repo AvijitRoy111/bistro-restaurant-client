@@ -175,7 +175,7 @@
 //         <div className="grid grid-cols-1 md:grid-cols-5 gap-4 items-end">
 //           {/* Category */}
 //           <div>
-//             <label className="block text-sm font-semibold mb-1">Category</label>
+            <label className="block text-sm font-semibold mb-1">Category</label>
             <select
               value={selectedCategory}
               onChange={(e) => setSelectedCategory(e.target.value)}
