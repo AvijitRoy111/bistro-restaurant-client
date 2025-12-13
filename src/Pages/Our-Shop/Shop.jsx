@@ -131,10 +131,10 @@
 //         setShowModal(true);
 //         fetchCartCount();
 //       }
-//     } catch (error) {
-//       console.error("Error adding to cart:", error);
-//     }
-//   };
+    } catch (error) {
+      console.error("Error adding to cart:", error);
+    }
+  };
 
   const handleReset = () => {
     setSelectedCategory(active || "");
