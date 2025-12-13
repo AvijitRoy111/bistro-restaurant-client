@@ -145,8 +145,8 @@
 //     setCurrentPage(1);
 //   };
 
-//   const title = "OUR SHOP";
-//   const subtitle = "Would you like to try a dish";
+  const title = "OUR SHOP";
+  const subtitle = "Would you like to try a dish";
 
   const SkeletonCard = () => (
     <div className="border rounded-lg shadow-sm p-4 animate-pulse">
