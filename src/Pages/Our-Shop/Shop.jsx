@@ -125,12 +125,12 @@
 //         userEmail: user?.email || "Not Logged In",
 //       };
 
-//       const res = await axios.post(`${import.meta.env.VITE_api}/carts`, newItem);
-//       if (res.data.insertedId) {
-//         setAddedItem(item);
-//         setShowModal(true);
-//         fetchCartCount();
-//       }
+      const res = await axios.post(`${import.meta.env.VITE_api}/carts`, newItem);
+      if (res.data.insertedId) {
+        setAddedItem(item);
+        setShowModal(true);
+        fetchCartCount();
+      }
     } catch (error) {
       console.error("Error adding to cart:", error);
     }
