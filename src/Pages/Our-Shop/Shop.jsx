@@ -168,7 +168,7 @@
 //           <h2 className="text-3xl sm:text-5xl font-bold mb-3">{title}</h2>
 //           <p className="text-sm sm:text-lg opacity-90">{subtitle}</p>
 //         </div>
-//       </div>
+      </div>
 
       {/* Filters */}
       <div className="max-w-6xl mx-auto mb-8 px-4">
