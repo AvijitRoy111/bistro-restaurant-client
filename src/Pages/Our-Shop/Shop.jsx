@@ -136,14 +136,14 @@
 //     }
 //   };
 
-//   const handleReset = () => {
-//     setSelectedCategory(active || "");
-//     setMinPrice(0);
-//     setMaxPrice(500);
-//     setSortOrder("");
-//     setSearchQuery("");
-//     setCurrentPage(1);
-//   };
+  const handleReset = () => {
+    setSelectedCategory(active || "");
+    setMinPrice(0);
+    setMaxPrice(500);
+    setSortOrder("");
+    setSearchQuery("");
+    setCurrentPage(1);
+  };
 
   const title = "OUR SHOP";
   const subtitle = "Would you like to try a dish";
