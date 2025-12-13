@@ -150,7 +150,7 @@
 
 //   const SkeletonCard = () => (
 //     <div className="border rounded-lg shadow-sm p-4 animate-pulse">
-//       <div className="w-full h-48 bg-gray-200 rounded-md mb-4"></div>
+      <div className="w-full h-48 bg-gray-200 rounded-md mb-4"></div>
       <div className="space-y-3 text-center">
         <div className="h-5 bg-gray-200 rounded w-3/4 mx-auto"></div>
         <div className="h-4 bg-gray-200 rounded w-full"></div>
