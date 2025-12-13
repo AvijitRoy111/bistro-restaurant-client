@@ -154,7 +154,7 @@
 //       <div className="space-y-3 text-center">
 //         <div className="h-5 bg-gray-200 rounded w-3/4 mx-auto"></div>
 //         <div className="h-4 bg-gray-200 rounded w-full"></div>
-//         <div className="h-8 bg-gray-300 rounded w-1/2 mx-auto mt-3"></div>
+        <div className="h-8 bg-gray-300 rounded w-1/2 mx-auto mt-3"></div>
       </div>
     </div>
   );
