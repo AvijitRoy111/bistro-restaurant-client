@@ -113,8 +113,8 @@
 //     if (page >= 1 && page <= totalPages) setCurrentPage(page);
 //   };
 
-//   // Add to cart
-//   const handleAddToCart = async (item) => {
+  // Add to cart
+  const handleAddToCart = async (item) => {
     try {
       const newItem = {
         name: item.name,
