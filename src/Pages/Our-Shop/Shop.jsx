@@ -160,7 +160,7 @@
 //   );
 
 //   return (
-//     <div>
+    <div>
       {/* Banner */}
       <div className="relative w-full h-[70vh] overflow-hidden mb-10">
         <img src={banner1} alt="banner" className="w-full h-full object-cover" />
