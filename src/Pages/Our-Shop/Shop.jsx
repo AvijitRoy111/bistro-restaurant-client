@@ -109,9 +109,9 @@
 //   const startIndex = (currentPage - 1) * itemsPerPage;
 //   const paginatedItems = filtered.slice(startIndex, startIndex + itemsPerPage);
 
-//   const handlePageChange = (page) => {
-//     if (page >= 1 && page <= totalPages) setCurrentPage(page);
-//   };
+  const handlePageChange = (page) => {
+    if (page >= 1 && page <= totalPages) setCurrentPage(page);
+  };
 
   // Add to cart
   const handleAddToCart = async (item) => {
