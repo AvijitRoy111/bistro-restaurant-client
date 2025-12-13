@@ -167,7 +167,7 @@
 //         <div className="absolute top-60 md:top-64 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-black/40 rounded-2xl px-8 py-10 text-center text-white max-w-3xl h-44 md:h-64 w-[90%] backdrop-blur-sm flex flex-col items-center justify-center">
 //           <h2 className="text-3xl sm:text-5xl font-bold mb-3">{title}</h2>
 //           <p className="text-sm sm:text-lg opacity-90">{subtitle}</p>
-//         </div>
+        </div>
       </div>
 
       {/* Filters */}
