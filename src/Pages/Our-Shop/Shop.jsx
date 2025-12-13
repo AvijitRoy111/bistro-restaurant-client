@@ -161,7 +161,7 @@
 
 //   return (
 //     <div>
-//       {/* Banner */}
+      {/* Banner */}
       <div className="relative w-full h-[70vh] overflow-hidden mb-10">
         <img src={banner1} alt="banner" className="w-full h-full object-cover" />
         <div className="absolute top-60 md:top-64 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-black/40 rounded-2xl px-8 py-10 text-center text-white max-w-3xl h-44 md:h-64 w-[90%] backdrop-blur-sm flex flex-col items-center justify-center">
