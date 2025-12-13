@@ -159,7 +159,7 @@
 //     </div>
 //   );
 
-//   return (
+  return (
     <div>
       {/* Banner */}
       <div className="relative w-full h-[70vh] overflow-hidden mb-10">
