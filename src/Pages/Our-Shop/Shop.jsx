@@ -115,15 +115,15 @@
 
 //   // Add to cart
 //   const handleAddToCart = async (item) => {
-//     try {
-//       const newItem = {
-//         name: item.name,
-//         image: item.image,
-//         recipe: item.recipe,
-//         price: item.price,
-//         userName: user?.displayName || "Guest",
-//         userEmail: user?.email || "Not Logged In",
-//       };
+    try {
+      const newItem = {
+        name: item.name,
+        image: item.image,
+        recipe: item.recipe,
+        price: item.price,
+        userName: user?.displayName || "Guest",
+        userEmail: user?.email || "Not Logged In",
+      };
 
       const res = await axios.post(`${import.meta.env.VITE_api}/carts`, newItem);
       if (res.data.insertedId) {
