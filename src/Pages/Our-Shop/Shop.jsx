@@ -89,7 +89,7 @@
 //   );
 
 //   const filtered = filteredByCategory
-//     .filter((item) => {
+    .filter((item) => {
       const query = searchQuery.toLowerCase();
       const matchSearch = !query || item.name.toLowerCase().includes(query);
       const price = Number(item.price);
