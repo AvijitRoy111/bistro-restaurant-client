@@ -90,7 +90,7 @@
 
 //   const filtered = filteredByCategory
 //     .filter((item) => {
-//       const query = searchQuery.toLowerCase();
+      const query = searchQuery.toLowerCase();
       const matchSearch = !query || item.name.toLowerCase().includes(query);
       const price = Number(item.price);
       const matchPrice = price >= minPrice && price <= maxPrice;
