@@ -97,7 +97,7 @@
 //       return matchSearch && matchPrice;
 //     })
 //     .sort((a, b) => {
-//       if (sortOrder === "lowToHigh") return Number(a.price) - Number(b.price);
+      if (sortOrder === "lowToHigh") return Number(a.price) - Number(b.price);
       if (sortOrder === "highToLow") return Number(b.price) - Number(a.price);
       if (sortOrder === "asc") return a.name.localeCompare(b.name);
       if (sortOrder === "desc") return b.name.localeCompare(a.name);
