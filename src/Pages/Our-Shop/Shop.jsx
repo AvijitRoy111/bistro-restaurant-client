@@ -83,7 +83,7 @@
 //     }
 //   }, [searchQuery]);
 
-//   // Filter
+  // Filter
   const filteredByCategory = items.filter((item) =>
     active ? item.category.toUpperCase() === active.toUpperCase() : true
   );
