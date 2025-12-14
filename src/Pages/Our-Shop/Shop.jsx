@@ -75,7 +75,7 @@
 //     if (!searchQuery) return;
 //     const matchedCategory = categories.find((cat) =>
 //       cat.toLowerCase().includes(searchQuery.toLowerCase())
-//     );
+    );
     if (matchedCategory) {
       setActive(matchedCategory);
       setSelectedCategory(matchedCategory);
