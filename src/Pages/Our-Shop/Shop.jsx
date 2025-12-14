@@ -96,7 +96,7 @@
 //       const matchPrice = price >= minPrice && price <= maxPrice;
 //       return matchSearch && matchPrice;
 //     })
-//     .sort((a, b) => {
+    .sort((a, b) => {
       if (sortOrder === "lowToHigh") return Number(a.price) - Number(b.price);
       if (sortOrder === "highToLow") return Number(b.price) - Number(a.price);
       if (sortOrder === "asc") return a.name.localeCompare(b.name);
