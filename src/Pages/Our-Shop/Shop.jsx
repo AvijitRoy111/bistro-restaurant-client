@@ -76,7 +76,7 @@
 //     const matchedCategory = categories.find((cat) =>
 //       cat.toLowerCase().includes(searchQuery.toLowerCase())
 //     );
-//     if (matchedCategory) {
+    if (matchedCategory) {
       setActive(matchedCategory);
       setSelectedCategory(matchedCategory);
       setCurrentPage(1);
