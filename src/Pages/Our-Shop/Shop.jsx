@@ -86,7 +86,7 @@
 //   // Filter
 //   const filteredByCategory = items.filter((item) =>
 //     active ? item.category.toUpperCase() === active.toUpperCase() : true
-//   );
+  );
 
   const filtered = filteredByCategory
     .filter((item) => {
