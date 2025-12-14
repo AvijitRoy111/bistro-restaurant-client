@@ -93,7 +93,7 @@
 //       const query = searchQuery.toLowerCase();
 //       const matchSearch = !query || item.name.toLowerCase().includes(query);
 //       const price = Number(item.price);
-//       const matchPrice = price >= minPrice && price <= maxPrice;
+      const matchPrice = price >= minPrice && price <= maxPrice;
       return matchSearch && matchPrice;
     })
     .sort((a, b) => {
