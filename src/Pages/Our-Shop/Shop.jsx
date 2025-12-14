@@ -80,7 +80,7 @@
 //       setActive(matchedCategory);
 //       setSelectedCategory(matchedCategory);
 //       setCurrentPage(1);
-//     }
+    }
   }, [searchQuery]);
 
   // Filter
