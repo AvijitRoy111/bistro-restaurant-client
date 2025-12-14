@@ -94,8 +94,8 @@
 //       const matchSearch = !query || item.name.toLowerCase().includes(query);
 //       const price = Number(item.price);
 //       const matchPrice = price >= minPrice && price <= maxPrice;
-//       return matchSearch && matchPrice;
-//     })
+      return matchSearch && matchPrice;
+    })
     .sort((a, b) => {
       if (sortOrder === "lowToHigh") return Number(a.price) - Number(b.price);
       if (sortOrder === "highToLow") return Number(b.price) - Number(a.price);
