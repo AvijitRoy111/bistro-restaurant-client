@@ -88,7 +88,7 @@
 //     active ? item.category.toUpperCase() === active.toUpperCase() : true
 //   );
 
-//   const filtered = filteredByCategory
+  const filtered = filteredByCategory
     .filter((item) => {
       const query = searchQuery.toLowerCase();
       const matchSearch = !query || item.name.toLowerCase().includes(query);
