@@ -102,7 +102,7 @@
 //       if (sortOrder === "asc") return a.name.localeCompare(b.name);
 //       if (sortOrder === "desc") return b.name.localeCompare(a.name);
 //       return 0;
-//     });
+    });
 
   // Pagination
   const totalPages = Math.ceil(filtered.length / itemsPerPage || 1);
