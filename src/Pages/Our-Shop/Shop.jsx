@@ -81,7 +81,7 @@
 //       setSelectedCategory(matchedCategory);
 //       setCurrentPage(1);
 //     }
-//   }, [searchQuery]);
+  }, [searchQuery]);
 
   // Filter
   const filteredByCategory = items.filter((item) =>
