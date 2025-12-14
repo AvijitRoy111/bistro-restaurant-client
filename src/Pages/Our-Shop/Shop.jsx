@@ -73,7 +73,7 @@
 //   //  Detect if search partially matches any category -> auto switch tab
 //   useEffect(() => {
 //     if (!searchQuery) return;
-//     const matchedCategory = categories.find((cat) =>
+    const matchedCategory = categories.find((cat) =>
       cat.toLowerCase().includes(searchQuery.toLowerCase())
     );
     if (matchedCategory) {
