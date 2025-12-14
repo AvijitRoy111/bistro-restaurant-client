@@ -77,7 +77,7 @@
 //       cat.toLowerCase().includes(searchQuery.toLowerCase())
 //     );
 //     if (matchedCategory) {
-//       setActive(matchedCategory);
+      setActive(matchedCategory);
       setSelectedCategory(matchedCategory);
       setCurrentPage(1);
     }
