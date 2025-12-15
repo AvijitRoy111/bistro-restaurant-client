@@ -42,7 +42,7 @@
 //       try {
 //         setLoading(true);
 //         const res = await axios.get(`${import.meta.env.VITE_api}/menuItems`);
-//         setItems(res.data.data);
+        setItems(res.data.data);
       } catch (err) {
         console.error("Error fetching shop items:", err);
       } finally {
