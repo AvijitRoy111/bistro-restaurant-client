@@ -50,7 +50,7 @@
 //       }
 //     };
 //     fetchData();
-//   }, [category]);
+  }, [category]);
 
   // Categories
   const categories = [...new Set(items.map((item) => item.category.toUpperCase()))];
