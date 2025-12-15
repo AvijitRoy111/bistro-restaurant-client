@@ -63,7 +63,7 @@
 //     }
 //   }, [active]);
 
-//   useEffect(() => {
+  useEffect(() => {
     if (selectedCategory) {
       setActive(selectedCategory.toUpperCase());
       setCurrentPage(1);
