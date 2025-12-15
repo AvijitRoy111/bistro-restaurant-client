@@ -55,7 +55,7 @@
 //   // Categories
 //   const categories = [...new Set(items.map((item) => item.category.toUpperCase()))];
 
-//   // Sync select with tab
+  // Sync select with tab
   useEffect(() => {
     if (active) {
       setSelectedCategory(active);
@@ -70,7 +70,7 @@
     }
   }, [selectedCategory]);
 
-   Detect if search partially matches any category -> auto switch tab
+  //  Detect if search partially matches any category -> auto switch tab
   useEffect(() => {
     if (!searchQuery) return;
     const matchedCategory = categories.find((cat) =>
