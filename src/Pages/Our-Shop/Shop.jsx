@@ -68,7 +68,7 @@
 //       setActive(selectedCategory.toUpperCase());
 //       setCurrentPage(1);
 //     }
-//   }, [selectedCategory]);
+  }, [selectedCategory]);
 
    Detect if search partially matches any category -> auto switch tab
   useEffect(() => {
