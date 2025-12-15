@@ -36,8 +36,8 @@
 //     setHighlightId(highlight);
 //   }, [location.search]);
 
-//   // Fetch items
-//   useEffect(() => {
+  // Fetch items
+  useEffect(() => {
     const fetchData = async () => {
       try {
         setLoading(true);
