@@ -44,7 +44,7 @@
 //         const res = await axios.get(`${import.meta.env.VITE_api}/menuItems`);
 //         setItems(res.data.data);
 //       } catch (err) {
-//         console.error("Error fetching shop items:", err);
+        console.error("Error fetching shop items:", err);
       } finally {
         setLoading(false);
       }
