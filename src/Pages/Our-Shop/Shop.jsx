@@ -52,7 +52,7 @@
 //     fetchData();
 //   }, [category]);
 
-//   // Categories
+  // Categories
   const categories = [...new Set(items.map((item) => item.category.toUpperCase()))];
 
   // Sync select with tab
