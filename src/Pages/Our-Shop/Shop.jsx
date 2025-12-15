@@ -38,8 +38,8 @@
 
 //   // Fetch items
 //   useEffect(() => {
-//     const fetchData = async () => {
-//       try {
+    const fetchData = async () => {
+      try {
         setLoading(true);
         const res = await axios.get(`${import.meta.env.VITE_api}/menuItems`);
         setItems(res.data.data);
