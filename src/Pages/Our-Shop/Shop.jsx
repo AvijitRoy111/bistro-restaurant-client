@@ -59,7 +59,7 @@
 //   useEffect(() => {
 //     if (active) {
 //       setSelectedCategory(active);
-//       setCurrentPage(1);
+      setCurrentPage(1);
     }
   }, [active]);
 
