@@ -47,8 +47,8 @@
 //         console.error("Error fetching shop items:", err);
 //       } finally {
 //         setLoading(false);
-//       }
-//     };
+      }
+    };
     fetchData();
   }, [category]);
 
