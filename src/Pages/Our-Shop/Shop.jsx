@@ -60,7 +60,7 @@
 //     if (active) {
 //       setSelectedCategory(active);
 //       setCurrentPage(1);
-//     }
+    }
   }, [active]);
 
   useEffect(() => {
