@@ -67,7 +67,7 @@
 //     if (selectedCategory) {
 //       setActive(selectedCategory.toUpperCase());
 //       setCurrentPage(1);
-//     }
+    }
   }, [selectedCategory]);
 
    Detect if search partially matches any category -> auto switch tab
