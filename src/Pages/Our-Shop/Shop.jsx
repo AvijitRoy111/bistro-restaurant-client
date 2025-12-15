@@ -45,7 +45,7 @@
 //         setItems(res.data.data);
 //       } catch (err) {
 //         console.error("Error fetching shop items:", err);
-//       } finally {
+      } finally {
         setLoading(false);
       }
     };
