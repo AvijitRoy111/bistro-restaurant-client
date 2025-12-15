@@ -61,7 +61,7 @@
 //       setSelectedCategory(active);
 //       setCurrentPage(1);
 //     }
-//   }, [active]);
+  }, [active]);
 
   useEffect(() => {
     if (selectedCategory) {
