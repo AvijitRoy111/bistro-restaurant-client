@@ -49,7 +49,7 @@
 //         setLoading(false);
 //       }
 //     };
-//     fetchData();
+    fetchData();
   }, [category]);
 
   // Categories
