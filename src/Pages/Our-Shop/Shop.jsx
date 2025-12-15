@@ -53,7 +53,7 @@
 //   }, [category]);
 
 //   // Categories
-//   const categories = [...new Set(items.map((item) => item.category.toUpperCase()))];
+  const categories = [...new Set(items.map((item) => item.category.toUpperCase()))];
 
   // Sync select with tab
   useEffect(() => {
