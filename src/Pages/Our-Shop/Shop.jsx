@@ -57,7 +57,7 @@
 
 //   // Sync select with tab
 //   useEffect(() => {
-//     if (active) {
+    if (active) {
       setSelectedCategory(active);
       setCurrentPage(1);
     }
