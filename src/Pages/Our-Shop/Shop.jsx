@@ -29,7 +29,7 @@
 //   const [sortOrder, setSortOrder] = useState("");
 //   const [searchQuery, setSearchQuery] = useState("");
 
-//   // Highlight
+  // Highlight
   useEffect(() => {
     const query = new URLSearchParams(location.search);
     const highlight = query.get("highlight");
