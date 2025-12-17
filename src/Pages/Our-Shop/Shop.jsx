@@ -31,7 +31,7 @@
 
 //   // Highlight
 //   useEffect(() => {
-//     const query = new URLSearchParams(location.search);
+    const query = new URLSearchParams(location.search);
     const highlight = query.get("highlight");
     setHighlightId(highlight);
   }, [location.search]);
