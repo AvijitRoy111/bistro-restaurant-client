@@ -34,7 +34,7 @@
 //     const query = new URLSearchParams(location.search);
 //     const highlight = query.get("highlight");
 //     setHighlightId(highlight);
-//   }, [location.search]);
+  }, [location.search]);
 
   // Fetch items
   useEffect(() => {
