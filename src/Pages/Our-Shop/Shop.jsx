@@ -10,7 +10,7 @@
 //   const { user } = useContext(AuthContext);
 //   const { category } = useParams();
 //   const location = useLocation();
-//   const [items, setItems] = useState([]);
+  const [items, setItems] = useState([]);
   const [active, setActive] = useState(category?.toUpperCase() || "SALAD");
   const [highlightId, setHighlightId] = useState(null);
   const [loading, setLoading] = useState(true);
