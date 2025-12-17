@@ -18,7 +18,7 @@
 //   const [addedItem, setAddedItem] = useState(null);
 //   const { fetchCartCount } = useContext(CartContext);
 
-//   // Pagination
+  // Pagination
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage, setItemsPerPage] = useState(6);
 
