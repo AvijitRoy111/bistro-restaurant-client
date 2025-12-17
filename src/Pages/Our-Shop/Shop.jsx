@@ -7,7 +7,7 @@
 // import { CartContext } from "../../Components/Carts/CartContext";
 
 // const Shop = () => {
-//   const { user } = useContext(AuthContext);
+  const { user } = useContext(AuthContext);
   const { category } = useParams();
   const location = useLocation();
   const [items, setItems] = useState([]);
