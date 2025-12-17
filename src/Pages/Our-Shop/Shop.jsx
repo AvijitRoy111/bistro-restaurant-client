@@ -24,7 +24,7 @@
 
 //   // Filters
 //   const [selectedCategory, setSelectedCategory] = useState("");
-//   const [minPrice, setMinPrice] = useState(0);
+  const [minPrice, setMinPrice] = useState(0);
   const [maxPrice, setMaxPrice] = useState(500);
   const [sortOrder, setSortOrder] = useState("");
   const [searchQuery, setSearchQuery] = useState("");
