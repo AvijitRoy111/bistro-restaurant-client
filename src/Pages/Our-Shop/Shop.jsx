@@ -30,7 +30,7 @@
 //   const [searchQuery, setSearchQuery] = useState("");
 
 //   // Highlight
-//   useEffect(() => {
+  useEffect(() => {
     const query = new URLSearchParams(location.search);
     const highlight = query.get("highlight");
     setHighlightId(highlight);
