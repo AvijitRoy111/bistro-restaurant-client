@@ -8,7 +8,7 @@
 
 // const Shop = () => {
 //   const { user } = useContext(AuthContext);
-//   const { category } = useParams();
+  const { category } = useParams();
   const location = useLocation();
   const [items, setItems] = useState([]);
   const [active, setActive] = useState(category?.toUpperCase() || "SALAD");
