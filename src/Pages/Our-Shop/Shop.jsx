@@ -6,7 +6,7 @@
 // import { CheckCircle } from "lucide-react";
 // import { CartContext } from "../../Components/Carts/CartContext";
 
-// const Shop = () => {
+const Shop = () => {
   const { user } = useContext(AuthContext);
   const { category } = useParams();
   const location = useLocation();
