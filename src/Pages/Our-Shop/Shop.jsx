@@ -23,7 +23,7 @@
 //   const [itemsPerPage, setItemsPerPage] = useState(6);
 
 //   // Filters
-//   const [selectedCategory, setSelectedCategory] = useState("");
+  const [selectedCategory, setSelectedCategory] = useState("");
   const [minPrice, setMinPrice] = useState(0);
   const [maxPrice, setMaxPrice] = useState(500);
   const [sortOrder, setSortOrder] = useState("");
