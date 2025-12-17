@@ -27,7 +27,7 @@
 //   const [minPrice, setMinPrice] = useState(0);
 //   const [maxPrice, setMaxPrice] = useState(500);
 //   const [sortOrder, setSortOrder] = useState("");
-//   const [searchQuery, setSearchQuery] = useState("");
+  const [searchQuery, setSearchQuery] = useState("");
 
   // Highlight
   useEffect(() => {
