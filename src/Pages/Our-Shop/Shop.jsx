@@ -16,7 +16,7 @@
 //   const [loading, setLoading] = useState(true);
 //   const [showModal, setShowModal] = useState(false);
 //   const [addedItem, setAddedItem] = useState(null);
-//   const { fetchCartCount } = useContext(CartContext);
+  const { fetchCartCount } = useContext(CartContext);
 
   // Pagination
   const [currentPage, setCurrentPage] = useState(1);
