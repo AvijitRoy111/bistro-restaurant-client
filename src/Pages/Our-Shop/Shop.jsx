@@ -11,7 +11,7 @@
 //   const { category } = useParams();
 //   const location = useLocation();
 //   const [items, setItems] = useState([]);
-//   const [active, setActive] = useState(category?.toUpperCase() || "SALAD");
+  const [active, setActive] = useState(category?.toUpperCase() || "SALAD");
   const [highlightId, setHighlightId] = useState(null);
   const [loading, setLoading] = useState(true);
   const [showModal, setShowModal] = useState(false);
