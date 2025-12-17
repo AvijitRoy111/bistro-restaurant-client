@@ -1,10 +1,10 @@
-// import { useContext, useEffect, useState } from "react";
-// import { useParams, useLocation } from "react-router-dom";
-// import axios from "axios";
-// import banner1 from "../../assets/shop/banner.png";
-// import { AuthContext } from "../../AuthProvider/AuthProvider";
-// import { CheckCircle } from "lucide-react";
-// import { CartContext } from "../../Components/Carts/CartContext";
+import { useContext, useEffect, useState } from "react";
+import { useParams, useLocation } from "react-router-dom";
+import axios from "axios";
+import banner1 from "../../assets/shop/banner.png";
+import { AuthContext } from "../../AuthProvider/AuthProvider";
+import { CheckCircle } from "lucide-react";
+import { CartContext } from "../../Components/Carts/CartContext";
 
 const Shop = () => {
   const { user } = useContext(AuthContext);
